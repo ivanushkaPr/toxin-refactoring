@@ -4,6 +4,9 @@
 // Шрифты
 @import '../assets/fonts/quicksand_bold/fonts.css';
 @import '../assets/fonts/quicksand_regular/fonts.css';
+@import '../assets/fonts/montserrat_bold/fonts.css';
+@import '../assets/fonts/montserrat_regular/fonts.css';
+
 
 @import '../assets/templates/logo/logo.scss';
 @import '../assets/full_pages/colors_and_types.scss';
@@ -11,6 +14,8 @@
 @import '../assets/BEM/app/app.scss';
 @import '../assets/BEM/rect/rect.scss';
 @import '../assets/BEM/color/color.scss';
+@import '../assets/BEM/HTMLtag/HTMLtag.scss';
+@import '../assets/BEM/HTMLstyle/HTMLstyle.scss';
 
 
 html {

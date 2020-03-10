@@ -66,6 +66,23 @@
         code: "#6FCF97",
       },
 
+      HTMLTagH1: {modificators: 'HTMLtag__character--xl', tagName: 'H1'},
+      HTMLStyleH1: {
+        modificators: 'HTMLstyle__description--lg', 
+        text: `This one is the sub-section or 
+  widget title`
+      },
+      
+      HTMLTagH2: {modificators: 'HTMLtag__character--md', tagName: 'H2'},
+      HTMLStyleH2: {modificators: 'HTMLstyle__description--md HTMLstyle__description--md-margin', text: `Next one is the item title inside
+  widgets`},
+      
+      HTMLTagH3: {modificators: 'HTMLtag__character--xs', tagName: 'H3'},
+      HTMLStyleH3: {modificators: 'HTMLstyle__description--xs', text: 'THIS IS A LABEL OR CTA TEXT'},
+
+      HTMLTagBody: {modificators: 'HTMLtag__character--sm', tagName: 'Body'},
+      HTMLStyleBody: {modificators: 'HTMLstyle__description--sm', text: `This is the body text which is used for most 
+  of the design, like paragraphs, lists, etc.`},
     }
 
 mixin cont()
@@ -104,6 +121,18 @@ mixin colors_and_types(colors_and_type_configuration)
         +colorInfo(colors_and_type_configuration.green_info)
 
     div(class="app__container app__container--fonts")
+      div(class="app__font")
+        +HTMLtag(colors_and_type_configuration.HTMLTagH1)
+        +HTMLstyle(colors_and_type_configuration.HTMLStyleH1)
+      div(class="app__font")
+        +HTMLtag(colors_and_type_configuration.HTMLTagH2)
+        +HTMLstyle(colors_and_type_configuration.HTMLStyleH2)
+      div(class="app__font")
+        +HTMLtag(colors_and_type_configuration.HTMLTagH3)
+        +HTMLstyle(colors_and_type_configuration.HTMLStyleH3)
+      div(class="app__font")
+        +HTMLtag(colors_and_type_configuration.HTMLTagBody)
+        +HTMLstyle(colors_and_type_configuration.HTMLStyleBody)
       
 
 

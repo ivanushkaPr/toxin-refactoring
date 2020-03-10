@@ -1,4 +1,6 @@
-.app {}
+.app {
+  display: flex;
+}
 
 .app__container {}
 
@@ -12,4 +14,12 @@
 }
 
 
-.app__container--fonts {}
+.app__container--fonts {
+  padding-left: 423px;
+  padding-top: 39px;
+}
+
+.app__font {
+  display: flex;
+  
+}

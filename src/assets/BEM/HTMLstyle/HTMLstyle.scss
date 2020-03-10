@@ -1,0 +1,42 @@
+.HTMLstyle__description {
+  font-family: 'Conv_Quicksand-Bold';
+  font-style: normal;
+  font-weight: bold;
+  color: $dark_shade_100;
+  margin-left: 29px;
+  margin-bottom: 34px;
+}
+
+.HTMLstyle__description--lg {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.018em;
+}
+
+.HTMLstyle__description--md {
+  margin-top: 16px;
+  margin-bottom: 37px;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: -0.018em;
+}
+
+.HTMLstyle__description--md-margin {
+  margin-top: 16px;
+  margin-bottom: 38px;
+}
+
+.HTMLstyle__description--xs {
+  font-family: 'Conv_Montserrat-Bold';
+  font-size: 12px;
+  line-height: 15px;
+} 
+
+.HTMLstyle__description--sm {
+  font-family: 'Conv_Montserrat-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark_shade_75;
+}
