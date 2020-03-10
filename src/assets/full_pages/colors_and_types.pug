@@ -1,0 +1,109 @@
+-
+  let colors_and_type_configuration = {
+      rect_dark_shade_100:
+      {
+        background_color:"rect__body--dark_shade-100"
+      },
+      dark_shade_100_info: {
+        name: 'Dark Shade 100%',
+        code: "#1F2041",
+      },
+
+
+      rect_dark_shade_75:
+      {
+        background_color:"rect__body--dark_shade-75"
+      },
+
+      dark_shade_75_info: {
+        name: 'Dark Shade 75%',
+        code: "#1F2041",
+      },
+
+      rect_dark_shade_50:
+      {
+        background_color:"rect__body--dark_shade-50"
+      },
+
+      dark_shade_50_info: {
+        name: 'Dark Shade 50%',
+        code: "#1F2041",
+      },
+
+      rect_dark_shade_25:
+      {
+        background_color:"rect__body--dark_shade-25"
+      },
+      dark_shade_25_info: {
+        name: 'Dark Shade 25%',
+        code: "#1F2041",
+      },
+
+      rect_dark_shade_5:
+      {
+        background_color:"rect__body--dark_shade-5"
+      },
+      dark_shade_5_info: {
+        name: 'Dark Shade 5%',
+        code: "#1F2041",
+      },
+
+      rect_purple:
+      {
+        background_color:"rect__body--purple"
+      },
+      purple_info: {
+        name: 'Purple',
+        code: "#BC9CFF",
+      },
+
+      rect_green:
+      {
+        background_color:"rect__body--green"
+      },
+      green_info: {
+        name: 'Green',
+        code: "#6FCF97",
+      },
+
+    }
+
+mixin cont()
+  div(class="container")
+
+mixin colors_and_types(colors_and_type_configuration)
+  div(class="app")
+    div(class="app__container app__container--palette")
+      
+      div(class="app__shade")
+        +rect(colors_and_type_configuration.rect_dark_shade_100)
+        +colorInfo(colors_and_type_configuration.dark_shade_100_info)
+
+      div(class="app__shade")
+        +rect(colors_and_type_configuration.rect_dark_shade_75)
+        +colorInfo(colors_and_type_configuration.dark_shade_75_info)
+
+      div(class="app__shade")
+        +rect(colors_and_type_configuration.rect_dark_shade_50)
+        +colorInfo(colors_and_type_configuration.dark_shade_50_info)
+        
+      div(class="app__shade")
+        +rect(colors_and_type_configuration.rect_dark_shade_25)
+        +colorInfo(colors_and_type_configuration.dark_shade_25_info)
+      
+      div(class="app__shade")
+        +rect(colors_and_type_configuration.rect_dark_shade_5)
+        +colorInfo(colors_and_type_configuration.dark_shade_5_info)
+      
+      div(class="app__shade")
+        +rect(colors_and_type_configuration.rect_purple)
+        +colorInfo(colors_and_type_configuration.purple_info)
+      
+      div(class="app__shade")
+        +rect(colors_and_type_configuration.rect_green)
+        +colorInfo(colors_and_type_configuration.green_info)
+
+    div(class="app__container app__container--fonts")
+      
+
+

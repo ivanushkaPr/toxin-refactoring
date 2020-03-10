@@ -1,0 +1,25 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+// Шрифты
+@import '../assets/fonts/quicksand_bold/fonts.css';
+@import '../assets/fonts/quicksand_regular/fonts.css';
+
+@import '../assets/templates/logo/logo.scss';
+@import '../assets/full_pages/colors_and_types.scss';
+
+@import '../assets/BEM/app/app.scss';
+@import '../assets/BEM/rect/rect.scss';
+@import '../assets/BEM/color/color.scss';
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  width: 100%;
+}
