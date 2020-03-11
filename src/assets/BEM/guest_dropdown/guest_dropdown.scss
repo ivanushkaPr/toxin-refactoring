@@ -1,0 +1,37 @@
+.guest_dropdown {
+  position: relative;
+}
+
+
+.guest_dropdown__input {
+
+
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-family: 'montserrat-regular';
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark_shade_75;
+}
+
+.guest_dropdown__button {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 1px;
+  right: 0px;
+  background-color: transparent;
+  border: none; 
+}
+
+.guest_dropdown__open {
+
+}

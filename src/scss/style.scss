@@ -18,6 +18,16 @@
 @import '../assets/BEM/HTMLstyle/HTMLstyle.scss';
 
 
+@import '../assets/BEM/grid/grid.scss';
+
+@import '../assets/BEM/input_description_container/input_description_container.scss';
+@import '../assets/BEM/input_description/input_description.scss';
+@import '../assets/BEM/textField/textField.scss';
+
+@import '../assets/BEM/guest_dropdown/guest_dropdown.scss';
+@import '../assets/BEM/masked_text_field/masked_text_field.scss';
+
+
 html {
   font-size: 16px;
 }

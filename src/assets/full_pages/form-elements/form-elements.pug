@@ -1,0 +1,103 @@
+-
+  let form_elements_configuration = {
+      email_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'none',
+      type: 'text',
+      placeholder: 'Email',
+      name: 'email',
+      value: '',
+    },
+      email_text_field_container: {},
+      email_text_field_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'text field'
+      },
+      email_text_field_state: {
+        containerMods: '',
+        contentMods: 'input_description__content--weight-regular',
+        description: 'default'
+      },
+      email_text_field_hover_effect: {
+        contClassMods: 'none',
+        inputClassMods: 'text-field__input--hovered',
+        type: 'text',
+        placeholder: 'Email',
+        name: 'email-hovered',
+        value: 'This is pretty awesome',
+      },
+      email_text_field_hover_effect_container: {},
+      email_text_field_hover_effect_state: {
+        containerMods: '',
+        contentMods: 'input_description__content--weight-regular',
+        description: 'hover / focus'
+      },
+      guest_dropdown_container: {},
+      guest_dropdown_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'dropdown'
+      },
+      guest_dropdown_state: {
+        containerMods: '',
+        contentMods: 'input_description__content--weight-regular',
+        description: 'default'
+      },
+      guest_dropdown_default: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'Сколько гостей',
+        name: 'guest_dropdown_default',
+        value: '',
+      },
+      masked_text_field_container: {
+
+      },
+      masked_text_field_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'masked text field'
+      },
+      masked_text_field_state: {
+        containerMods: '',
+        contentMods: 'input_description__content--weight-regular',
+        description: 'default'
+      },
+      masked_text_field: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'ДД.ММ.ГГГГ',
+        name: 'masked_text_field',
+        value: '',
+      },
+
+  };
+
+
+mixin form-elements(form_elements_configuration)
+  +grid
+    +input_description_container(form_elements_configuration.email_text_field_container)
+      +input_description(form_elements_configuration.email_text_field_description)
+      +input_description(form_elements_configuration.email_text_field_state)
+    +text-field(form_elements_configuration.email_text_field)
+
+    +input_description_container(form_elements_configuration.email_text_field_hover_effect_container)
+      +input_description(form_elements_configuration.email_text_field_description)
+      +input_description(form_elements_configuration.email_text_field_hover_effect_state)
+    +text-field(form_elements_configuration.email_text_field_hover_effect)
+
+
+    +input_description_container(form_elements_configuration.guest_dropdown_container)
+      +input_description(form_elements_configuration.guest_dropdown_description)
+      +input_description(form_elements_configuration.guest_dropdown_state)
+    +guest_dropdown(form_elements_configuration.guest_dropdown_default)
+
+    +input_description_container(form_elements_configuration.masked_text_field_container)
+      +input_description(form_elements_configuration.masked_text_field_description)
+      +input_description(form_elements_configuration.masked_text_field_state)
+    +masked_text_field(form_elements_configuration.masked_text_field)
+
+  +grid

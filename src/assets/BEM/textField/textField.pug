@@ -1,0 +1,13 @@
+-
+  let text_field_config = {
+    contClassMods: 'none',
+    inputClassMods: 'none',
+    type: 'text',
+    blockquote: 'Email',
+    name: 'email',
+    value: '',
+  }
+
+mixin text-field(input)
+  div(class=`text-field ${input.contClassMods}`)
+    input(class=`text-field__input ${input.inputClassMods}` type=`${input.type}` placeholder=`${input.placeholder}` name=`${input.name}` value=`${input.value}`)

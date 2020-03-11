@@ -14,8 +14,13 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/pug/pages/page.pug',
+      template: './src/pug/pages/form-elements.pug',
       filename: './index.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/page.pug',
+      filename: './colorAndTypes.html',
       inject: true
     }),
   ],
