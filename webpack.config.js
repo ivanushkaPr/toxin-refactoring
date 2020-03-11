@@ -31,6 +31,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
+      },
+      {
         test: /\.pug$/,
         loader: 'pug-loader'
       },

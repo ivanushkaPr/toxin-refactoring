@@ -1,0 +1,43 @@
+.expandable_checkbox_list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 266px;
+}
+
+.expandable_checkbox_list__description {
+  font-family: 'montserrat-bold';
+  font-size: 12px;
+  line-height: 15px;
+  color: $dark_shade_100;
+  text-transform: uppercase;
+}
+
+.expandable_checkbox_list__button-open {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 44px;
+  height: 44px;
+  background-color: #FFFFFF;
+  border: none;
+ 
+
+}
+
+.expandable_checkbox_list__checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid $dark_shade_25;
+  border-radius: 4px;
+}
+
+.expandable_checkbox_list__input:checked ~ .expandable_checkbox_list__checkbox {
+  border: 1px solid $purple;
+  
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
