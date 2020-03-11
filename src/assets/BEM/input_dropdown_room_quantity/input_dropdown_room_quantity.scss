@@ -1,0 +1,114 @@
+.dropdown_room_quantity {
+  position: relative;
+  max-width: 266px;
+}
+
+.dropdown_room_quantity__input {
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 2px 2px 0px 0px;
+  
+    font-family: 'montserrat-regular';
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark_shade_75;
+}
+
+.dropdown_room_quantity__input--controls-opened {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+
+.dropdown_room_quantity__button {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 1px;
+  right: 0px;
+  background-color: transparent;
+  border: none; 
+}
+
+.dropdown_room_quantity__controls {
+  background: #FFFFFF;
+
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: none;
+  border-radius: 0px 0px 2px 2px;
+  padding-left: 15px;
+  padding-right: 7px;
+  padding-top: 7px;
+}
+
+.dropdown_room_quantity__controls--closed {
+  display: none;
+}
+
+.dropdown_room_quantity__control_buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+}
+
+.dropdown_room_quantity__property{
+  display: flex;
+  align-items: center;
+
+  height: 30px;
+  
+  font-family: 'montserrat-bold';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin: 0px;
+}
+
+.dropdown_room_quantity__container {
+  display: flex;
+}
+
+.dropdown_room_quantity__substract_button, .dropdown_room_quantity__add_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  
+
+  font: {
+    family: 'montserrat-bold';
+    style: normal;
+    weight: normal;
+    size: 18px;
+  }
+  line-height: 22px;
+}
+
+.dropdown_room_quantity__total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0px;
+  height: 30px;
+  width: 30px;
+
+
+  font-family: 'montserrat-bold';
+  font-size: 12px;
+  line-height: 15px;
+}
+

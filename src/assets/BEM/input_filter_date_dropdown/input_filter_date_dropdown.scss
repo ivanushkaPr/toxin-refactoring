@@ -1,11 +1,10 @@
-.input_date_dropdown {
+.input_filter_date_dropdown {
   position: relative;
-  max-width: 150px;
+  max-width: 266px;
 }
 
-.input_date_dropdown__input {
+.input_filter_date_dropdown__input {
   width: 100%;
-  max-width: 150px;
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -21,11 +20,11 @@
   color: $dark_shade_75;
 }
 
-.input_date_dropdown__input::placeholder {
+.input_filter_date_dropdown__input::placeholder {
   color: $dark_shade_75;
 }
 
-.input_date_dropdown__button {
+.input_filter_date_dropdown__button {
   position: absolute;
   width: 44px;
   height: 44px;

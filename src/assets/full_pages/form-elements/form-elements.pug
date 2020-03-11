@@ -73,8 +73,101 @@
         name: 'masked_text_field',
         value: '',
       },
+      input_date_dropdown_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'date dropdown'
+      },
+      input_date_dropdown_default: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'ДД.ММ.ГГГГ',
+        name: 'input_date_dropdown_default',
+        value: '',
 
-  };
+      },
+      input_date_dropdown_data_selected: {
+         contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'ДД.ММ.ГГГГ',
+        name: 'input_date_dropdown_default',
+        value: '19.08.2019',
+      },
+      input_filter_date_dropdown_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'filter date dropdown'
+      },
+      input_filter_date_dropdown: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'ДД.ММ.ГГГГ',
+        name: 'input_date_dropdown_default',
+        value: '19 авг - 23 авг',
+      },
+      subscription_text_field_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'subscription text field'
+      },
+      subscription_text_field: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'Email',
+        name: 'subscription_text_field',
+        value: '',
+      },
+      input_dropdown_room_quantity_container: {},
+      input_dropdown_room_quantity_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'dropdown'
+      },
+      input_dropdown_room_quantity_state: {
+        containerMods: '',
+        contentMods: 'input_description__content--weight-regular',
+        description: 'default'
+      },
+      input_dropdown_room_quantity: {
+        properties: [['спальни', 2], ['кровати',2], ['ванные комнаты', 0]],
+        controlsMods: 'dropdown_room_quantity__controls--closed',
+        contClassMods: '',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'Выберите удобства',
+        name: 'input_dropdown_room_quantity',
+        value: '2 спальни, 2 кровати...',
+      },
+
+
+
+
+      input_dropdown_room_quantity_expanded_container: {},
+      input_dropdown_room_quantity_expanded_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'dropdown'
+      },
+      input_dropdown_room_quantity_expanded_state: {
+        containerMods: '',
+        contentMods: 'input_description__content--weight-regular',
+        description: 'expanded'
+      },
+      input_dropdown_room_quantity_expanded: {
+        properties: [['спальни', 2], ['кровати',2], ['ванные комнаты', 0]],
+        controlsMods: '',
+        contClassMods: '',
+        inputClassMods: 'dropdown_room_quantity__input--controls-opened ',
+        type: 'text',
+        placeholder: 'Выберите удобства',
+        name: 'input_dropdown_room_quantity',
+        value: '2 спальни, 2 кровати...',
+      }
+  }
 
 
 mixin form-elements(form_elements_configuration)
@@ -100,4 +193,30 @@ mixin form-elements(form_elements_configuration)
       +input_description(form_elements_configuration.masked_text_field_state)
     +masked_text_field(form_elements_configuration.masked_text_field)
 
+    +input_date_dropdown_container({})
+      +input_and_description_wrapper({})
+        +input_description(form_elements_configuration.input_date_dropdown_description)
+        +input_date_dropdown(form_elements_configuration.input_date_dropdown_default)
+
+      +input_and_description_wrapper({})
+        +input_description(form_elements_configuration.input_date_dropdown_description)
+        +input_date_dropdown(form_elements_configuration.input_date_dropdown_data_selected)
+
+    +input_description(form_elements_configuration.input_filter_date_dropdown_description)
+    +input_filter_date_dropdown(form_elements_configuration.input_filter_date_dropdown)
+
+    +input_description(form_elements_configuration.subscription_text_field_description)
+    +subscription_text_field(form_elements_configuration.subscription_text_field)
+
+    +input_and_description_wrapper({mods: 'input_and_description_wrapper--md'})
+      +input_description_container(form_elements_configuration.input_dropdown_room_quantity_container)
+        +input_description(form_elements_configuration.input_dropdown_room_quantity_description)
+        +input_description(form_elements_configuration.input_dropdown_room_quantity_state)
+      +input_dropdown_room_quantity(form_elements_configuration.input_dropdown_room_quantity)
+
+    +input_and_description_wrapper({mods: 'input_and_description_wrapper--md'})
+      +input_description_container(form_elements_configuration.input_dropdown_room_quantity_expanded_container)
+        +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_description)
+        +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_state)
+      +input_dropdown_room_quantity(form_elements_configuration.input_dropdown_room_quantity_expanded)
   +grid

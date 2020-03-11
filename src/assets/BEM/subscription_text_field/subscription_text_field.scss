@@ -1,11 +1,10 @@
-.input_date_dropdown {
+.subscription_text_field {
   position: relative;
-  max-width: 150px;
+  max-width: 266px;
 }
 
-.input_date_dropdown__input {
+.subscription_text_field__input {
   width: 100%;
-  max-width: 150px;
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -21,11 +20,11 @@
   color: $dark_shade_75;
 }
 
-.input_date_dropdown__input::placeholder {
+.subscription_text_field__input::placeholder {
   color: $dark_shade_75;
 }
 
-.input_date_dropdown__button {
+.subscription_text_field__button {
   position: absolute;
   width: 44px;
   height: 44px;
@@ -35,6 +34,6 @@
   border: none; 
 }
 
-.input_date_dropdown__open {
+.subscription_text_field__open {
 
 }
