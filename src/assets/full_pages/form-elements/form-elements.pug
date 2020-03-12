@@ -243,5 +243,11 @@ mixin form-elements(form_elements_configuration)
     +radio_buttons({options: [['Мужчина', true], ['Женщина', false]]})
 
     +input_description({containerMods: '',contentMods: '', description: 'toggle'})
-    +toggle({descText: 'Получать спецпредложения', labelMods: 'toggle__label--divider'})
-    +toggle({checked: true, descText: 'Получать спецпредложения'})
+    +toggle({checked: true, descText: 'Получать спецпредложения', labelMods: 'toggle__label--divider'})
+    +toggle({descText: 'Получать спецпредложения'})
+
+    +input_description({containerMods: '',contentMods: '', description: 'like button'})
+
+    +like_button_container({})
+      +like_button({count: 2})
+      +like_button({buttonMods: 'like_button__add--pressed', counterMods: 'like_button__counter--button-pressed',count: 12})
