@@ -191,6 +191,10 @@
         resetMods: 'input_dropdown_guests__button_reset--hidden'
       }, 
 
+      rich_checkbox_buttons: {
+        description: 'rich checkbox buttons',
+        items:[['Широкий коридор', 'Ширина коридоров в номере не менее 91 см.'], ['Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.']],
+      }
 
   }
 
@@ -271,3 +275,4 @@ mixin form-elements(form_elements_configuration)
 
 
     +input_dropdown_guests(form_elements_configuration.input_dropdown_guests)
+    +rich_checkbox_buttons(form_elements_configuration.rich_checkbox_buttons)

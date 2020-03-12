@@ -20,6 +20,10 @@
     color: $dark_shade_75;
 }
 
+.input_dropdown_guests__input--controls-opened {
+  border-color: $dark_shade_50;
+}
+
 .input_dropdown_guests__button {
   position: absolute;
   width: 44px;
@@ -40,6 +44,8 @@
   padding-right: 7px;
   padding-top: 7px;
 }
+
+
 
 .input_dropdown_guests__controls--closed {
   display: none;
@@ -128,7 +134,7 @@
 }
 
 .input_dropdown_guests__button_reset--hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .input_dropdown_guests__button_reset {
