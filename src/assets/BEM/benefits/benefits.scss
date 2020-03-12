@@ -1,0 +1,42 @@
+.benefit {
+  display: flex;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  max-width: 280px;
+}
+
+.benefit__image{
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+
+  border: none;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefit__image--background-smile {
+  background-image: url('https://svgshare.com/getbyhash/sha1-ZUWn+H4V+xdDo1OM3avJ5KSlwTE=');
+}
+
+.benefit__image--background-building {
+  background-image: url('https://svgshare.com/getbyhash/sha1-7K7774jrwNMHr4ynN4eqsBhjyCo=');
+}
+
+.benefit__name, .benefit__property {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.benefit__name {
+  font-family: 'montserrat-bold';
+  color: $dark_shade_75;
+  
+} 
+
+.benefit__property {
+  font-family: 'montserrat-regular';
+  color: $dark_shade_50;
+}

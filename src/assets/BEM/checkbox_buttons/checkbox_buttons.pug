@@ -1,0 +1,12 @@
+mixin checkbox_buttons(object)
+  div(class=`checkbox_buttons`)
+    p(class=`checkbox_buttons__description`) #{object.description}
+  
+
+    ul(class=`checkbox_buttons__list ${object.listMods}`)
+      each item in object.items
+        label(class=`checkbox_buttons_label`)
+          input(class=`checkbox_buttons__input` type=`checkbox`) 
+          div(class=`checkbox_buttons__checkbox`)
+          p(class=`checkbox_buttons__text`) #{item}
+      

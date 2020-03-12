@@ -166,6 +166,16 @@
         placeholder: 'Выберите удобства',
         name: 'input_dropdown_room_quantity',
         value: '2 спальни, 2 кровати...',
+      }, 
+      expandable_checkbox_list: {
+        items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор' , 'Шампунь' , 'Телевизор', 'Шампунь'],
+        description: 'expandable checkbox list'
+      },
+      expandable_checkbox_list_opened: {
+        items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор' , 'Шампунь' , 'Телевизор', 'Шампунь'],
+        description: 'expandable checkbox list',
+        buttonMods: 'expandable_checkbox_list__button-opened',
+        listMods: 'expandable_checkbox_list__list--opened'
       }
   }
 
@@ -220,7 +230,12 @@ mixin form-elements(form_elements_configuration)
         +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_state)
       +input_dropdown_room_quantity(form_elements_configuration.input_dropdown_room_quantity_expanded)
 
-    +expandable_checkbox_list({items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор' , 'Шампунь' , 'Телевизор', 'Шампунь'], description: 'expandable checkbox list'})
-    +expandable_checkbox_list({items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор' , 'Шампунь' , 'Телевизор', 'Шампунь'], description: 'expandable checkbox list', buttonMods: 'expandable_checkbox_list__button-opened', listMods: 'expandable_checkbox_list__list--opened'})
+    +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list)
+    +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list_opened)
+
+    +benefit({imageMods: 'benefit__image--background-smile', nameText: 'Комфорт', propText: 'Шумопоглощающие стены'}) 
+    +benefit({imageMods: 'benefit__image--background-building', nameText: 'Удобство', propText: 'Окно в каждой из спален'})
+
   +grid
+    +checkbox_buttons({description: 'checkbox buttons', items:['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'], })
 

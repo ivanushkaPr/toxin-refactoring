@@ -1,64 +1,39 @@
-.expandable_checkbox_list {
-
-  
-}
-
-.expandable_checkbox_list__wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
+.checkbox_buttons {
   height: 44px;
   width: 100%;
   max-width: 266px;
-} 
+}
 
-.expandable_checkbox_list__description {
+.checkbox_buttons__description {
   font-family: 'montserrat-bold';
   font-size: 12px;
   line-height: 15px;
   color: $dark_shade_100;
   text-transform: uppercase;
   margin: 0px;
+  margin-bottom: 16.56px;
 }
 
-.expandable_checkbox_list__button-open {
-  position: absolute;
-  top: 0px;
-  right: 0px;
 
-  width: 44px;
-  height: 44px;
-  background-color: #FFFFFF;
-  border: none;
-}
 
-.expandable_checkbox_list__button-opened {
-  transform: rotate(180deg);
-}
-
-.expandable_checkbox_list__list {
+.checkbox_buttons__list {
   margin: 0px;
   margin-bottom: 17.44px;
   padding: 0px;
-  display: none;
-}
-
-.expandable_checkbox_list__list--opened {
-  display: block;
 }
 
 
-.expandable_checkbox_list_label {
+
+.checkbox_buttons_label {
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px;
 }
-
-.expandable_checkbox_list__input {
+.checkbox_buttons__input {
   display: none;
 }
 
-.expandable_checkbox_list__checkbox {
+.checkbox_buttons__checkbox {
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
@@ -68,18 +43,19 @@
   
 }
 
-.expandable_checkbox_list__input:checked ~ .expandable_checkbox_list__checkbox {
+.checkbox_buttons__input:checked ~ .checkbox_buttons__checkbox {
   border: 1px solid $purple;
   background-image:  url('https://svgshare.com/getbyhash/sha1-hy2oPMJxARkVfIJ2Z8P4u6OaGiY=');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.expandable_checkbox_list__text {
+.checkbox_buttons__text {
   font-family: 'montserrat-regular';
   font-size: 14px;
   line-height: 18px;
   color: $dark_shade_50;
   text-transform: capitalize;
   margin: 0px;
+  max-width: 220px;
 }
