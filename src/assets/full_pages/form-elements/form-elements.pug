@@ -176,7 +176,22 @@
         description: 'expandable checkbox list',
         buttonMods: 'expandable_checkbox_list__button-opened',
         listMods: 'expandable_checkbox_list__list--opened'
-      }
+      },
+
+
+      input_dropdown_guests: {
+        properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
+        controlsMods: '',
+        contClassMods: '',
+        inputClassMods: 'input_dropdown_guests__input--controls-opened',
+        type: 'text',
+        placeholder: 'Сколько гостей',
+        name: 'input_dropdown_guests__input',
+        value: '',
+        resetMods: 'input_dropdown_guests__button_reset--hidden'
+      }, 
+
+
   }
 
 
@@ -251,3 +266,8 @@ mixin form-elements(form_elements_configuration)
     +like_button_container({})
       +like_button({count: 2})
       +like_button({buttonMods: 'like_button__add--pressed', counterMods: 'like_button__counter--button-pressed',count: 12})
+
+    +input_description({containerMods: '',contentMods: '', description: 'dropdown'})
+
+
+    +input_dropdown_guests(form_elements_configuration.input_dropdown_guests)
