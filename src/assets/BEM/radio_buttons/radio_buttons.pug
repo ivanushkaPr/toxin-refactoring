@@ -1,0 +1,10 @@
+mixin radio_buttons(object)
+  div(class=`radio_buttons ${object.blockMods}`)
+    each option in object.options
+      label(class=`radio_buttons__label ${object.labelMods}`)
+        if(option[1] === true)
+          input(class=`radio_buttons__input ${object.inputMods}` type='radio' name='sex' checked)
+        else
+          input(class=`radio_buttons__input ${object.inputMods}` type='radio' name='sex')
+        div(class=`radio_buttons__fake_radio`)
+        p(class=`radio_buttons__option`) #{option[0]}
