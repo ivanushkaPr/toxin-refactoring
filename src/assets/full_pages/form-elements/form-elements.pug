@@ -239,5 +239,9 @@ mixin form-elements(form_elements_configuration)
   +grid
     +checkbox_buttons({description: 'checkbox buttons', items:['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'], })
     
+    +input_description({containerMods: '',contentMods: '', description: 'radio buttons'})
     +radio_buttons({options: [['Мужчина', true], ['Женщина', false]]})
 
+    +input_description({containerMods: '',contentMods: '', description: 'toggle'})
+    +toggle({descText: 'Получать спецпредложения', labelMods: 'toggle__label--divider'})
+    +toggle({checked: true, descText: 'Получать спецпредложения'})
