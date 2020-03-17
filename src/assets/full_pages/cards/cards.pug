@@ -1,8 +1,133 @@
 -
   let cards_congiguration = {
+    search_room: {
+    search_room_headline: {
+      description: 'Найдём номера под ваши пожелания',
+    },
+    input_date_dropdown_first_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'Прибытие'
+      },
+    input_date_dropdown_first: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'ДД.ММ.ГГГГ',
+        name: 'input_date_dropdown_default',
+        value: '',
+      },
+      input_date_dropdown_second_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'Выезд'
+      },
+      input_date_dropdown_second: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: 'ДД.ММ.ГГГГ',
+        name: 'input_date_dropdown_default',
+        value: '',
+      },
+      input_dropdown_guests: {
+        properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
+        controlsMods: 'input_dropdown_guests__controls--closed',
+        contClassMods: 'input_dropdown_guests--cards-margin-bottom',
+        inputClassMods: 'input_dropdown_guests__input--controls-closed ',
+        type: 'text',
+        placeholder: 'Сколько гостей',
+        name: 'input_dropdown_guests__input',
+        value: '',
+        resetMods: 'input_dropdown_guests__button_reset--hidden'
+      }, 
+    },
+    registration: {
+      registation_conf_headline: {
+      description: 'Регистрация аккаунта',
+    },
+    name_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom',
+      type: 'text',
+      placeholder: 'Имя',
+      name: 'firstName',
+      value: '',
+    },
+    surname_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--second-element-margin-bottom',
+      type: 'text',
+      placeholder: 'Фамилия',
+      name: 'secondName',
+      value: '',
+    },
+    radio_buttons: {options: [['Мужчина', true], ['Женщина', false]], blockMods: 'radio_buttons--registration-margin-bottom'},
+    masked_text_field_container: {
 
+    },
+    masked_text_field_description: {
+      containerMods: '',
+      contentMods: '',
+      description: 'дата рождения'
+    },
+    masked_text_field_state: {
+      containerMods: '',
+      contentMods: 'input_description__content--weight-regular',
+      description: 'default'
+    },
+    masked_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'masked_text_field__input--registration-margin-bottom',
+      type: 'text',
+      placeholder: 'ДД.ММ.ГГГГ',
+      name: 'masked_text_field',
+      value: '',
+    },
+    auth_block_headline: {
+      containerMods: '',
+      contentMods: '',
+      description: 'данные для входа в сервис'
+    },
+    email_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom',
+      type: 'text',
+      placeholder: 'Email',
+      name: 'Email',
+      value: '',
+    }, 
+    password_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom',
+      type: 'text',
+      placeholder: 'Пароль',
+      name: 'password',
+      value: '',
+    },
+      toggle:{
+        descText: 'Получать спецпредложения',
+        labelMods: 'toggle__label--registration-margin-bottom'
+      },
+      checkout_button: {
+        buttonText: 'перейти к оплате',
+      },
+      button_submit_cont: {
+        buttonContMods: 'buttonContainer--registration-rules',
+      },
+      button_submit_description: {
+        containerMods: '',
+        contentMods: 'input_description__content--button-description',
+        description: 'Уже есть аккаунт на Toxin'
+      },
+      button_submit: {
+        buttonText: 'click me', buttonMods: 'button__body--button__ellipse '
+      },
+      
+    },
   }
 
 
-mixin cards(cards_configuration)
-  +search_room({})
+mixin cards(cards_congiguration)
+  +search_room(cards_congiguration.search_room)
+  +registration(cards_congiguration.registration)

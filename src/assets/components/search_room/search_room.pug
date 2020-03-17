@@ -1,6 +1,5 @@
--
+//-
   let search_room_conf = {
-    someText: 'aaaa',
     search_room_headline: {
       description: 'Найдём номера под ваши пожелания',
     },
@@ -42,8 +41,9 @@
         resetMods: 'input_dropdown_guests__button_reset--hidden'
       }, 
   }
+  //
 
-mixin search_room(object)
+mixin search_room(search_room_conf)
   section(class=`search_room`)
     +component_headline(search_room_conf.search_room_headline)
 

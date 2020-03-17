@@ -1,0 +1,53 @@
+-
+  let registation_conf = {
+    registation_conf_headline: {
+      description: 'Регистрация аккаунта',
+    },
+    name_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom',
+      type: 'text',
+      placeholder: 'Имя',
+      name: 'email',
+      value: '',
+    },
+    surname_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--second-element-margin-bottom',
+      type: 'text',
+      placeholder: 'Фамилия',
+      name: 'email',
+      value: '',
+    },
+    radio_buttons: {
+      options: [['Мужчина', true], ['Женщина', false]]
+    },
+    
+  }
+
+mixin registration(registation_conf)
+  section(class=`registration`)
+    +component_headline(registation_conf.registation_conf_headline)
+    +text-field(registation_conf.name_text_field)
+    +text-field(registation_conf.surname_text_field)
+    +radio_buttons(registation_conf.radio_buttons)
+
+
+    
+    +input_description(registation_conf.masked_text_field_description)
+    +masked_text_field(registation_conf.masked_text_field)
+
+    +input_description(registation_conf.auth_block_headline)
+    +text-field(registation_conf.email_text_field)
+    +text-field(registation_conf.password_text_field)
+    +toggle(registation_conf.toggle)
+
+
+    +button_wide(registation_conf.checkout_button)
+
+    +button_container(registation_conf.button_submit_cont)
+      +input_description(registation_conf.button_submit_description)
+      +button(registation_conf.button_submit)
+
+    
+

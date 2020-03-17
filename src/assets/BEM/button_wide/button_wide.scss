@@ -1,8 +1,4 @@
 .button_wide {
-  width: 100%;
-}
-
-.button_wide {
   position: relative;
   width: 100%;
   padding: 0px;
@@ -40,6 +36,10 @@
   padding: 0px;
   background-color: transparent;
   border: none;
+}
+
+.button_wide__button--registration-rules-margin {
+  margin-bottom: 30px;
 }
 
 .button_wide__arrow {
