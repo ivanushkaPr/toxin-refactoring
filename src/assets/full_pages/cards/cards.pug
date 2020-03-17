@@ -126,36 +126,35 @@
     },
     auth_form: {
       auth_form_headline: {
-      description: 'Войти',
-    },
-    name_text_field: {
-      contClassMods: 'none',
-      inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom',
-      type: 'text',
-      placeholder: 'Имя',
-      name: 'firstName',
-      value: '',
-    },
-    surname_text_field: {
-      contClassMods: 'none',
-      inputClassMods: 'text-field__input--emailtextfield text-field_input--second-element-margin-bottom',
-      type: 'text',
-      placeholder: 'Фамилия',
-      name: 'secondName',
-      value: '',
-    },
-    radio_buttons: {options: [['Мужчина', true], ['Женщина', false]], blockMods: 'radio_buttons--registration-margin-bottom'},
-    masked_text_field_container: {
+        description: 'Войти',
+      },
+      name_text_field: {
+        contClassMods: 'none',
+        inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom',
+        type: 'text',
+        placeholder: 'Имя',
+        name: 'firstName',
+        value: '',
+      },
+      surname_text_field: {
+        contClassMods: 'none',
+        inputClassMods: 'text-field__input--emailtextfield text-field_input--second-element-margin-bottom',
+        type: 'text',
+        placeholder: 'Фамилия',
+        name: 'secondName',
+        value: '',
+      },
+      masked_text_field_container: {
 
-    },
-    masked_text_field: {
-      contClassMods: 'none',
-      inputClassMods: 'masked_text_field__input--registration-margin-bottom',
-      type: 'text',
-      placeholder: 'ДД.ММ.ГГГГ',
-      name: 'masked_text_field',
-      value: '',
-    },
+      },
+      masked_text_field: {
+        contClassMods: 'none',
+        inputClassMods: 'masked_text_field__input--registration-margin-bottom',
+        type: 'text',
+        placeholder: 'ДД.ММ.ГГГГ',
+        name: 'masked_text_field',
+        value: '',
+      },
 
       checkout_button: {
         buttonText: 'перейти к оплате',
@@ -173,7 +172,6 @@
       },
     }
   }
-
 
 mixin cards(cards_congiguration)
   +search_room(cards_congiguration.search_room)
