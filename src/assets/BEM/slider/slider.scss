@@ -6,9 +6,14 @@
 .slider__header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 23px;
 }
 
-.slider__description{
+.slider__description, .slider__selected_range {
+  margin: 0px
+}
+
+.slider__description {
   font-family: 'Montserrat-bold';
   font-size: 12px;
   line-height: 15px;

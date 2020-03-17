@@ -1,0 +1,47 @@
+.button_wide {
+  width: 100%;
+}
+
+.button_wide {
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  
+  font-family: 'montserrat-bold';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $purple;
+  box-sizing: border-box;
+
+  border-radius: 22px;
+  padding: 14px 20px 15px 20px;
+
+  border: none;
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.button_wide__text {
+  margin: 0px;
+}
+
+
+.button_wide__button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+.button_wide__arrow {
+
+}

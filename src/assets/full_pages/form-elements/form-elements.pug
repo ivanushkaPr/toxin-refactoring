@@ -284,3 +284,22 @@ mixin form-elements(form_elements_configuration)
   
   +grid
     +slider(form_elements_configuration.slider)
+
+    +input_description({containerMods: '',contentMods: '', description: 'buttons'})
+
+    +button_container({buttonContMods: 'buttonContainer--md'})
+      +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--background_linear_gradient__purple'})
+      +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--button__ellipse__active button__body--background_linear_gradient__purple  button__body--background_linear_gradient__purple_active'})
+
+    +button_container({buttonContMods: 'buttonContainer--md'})
+      +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse '})
+      +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--button__ellipse__active'})
+      
+    +button_container({buttonContMods: 'buttonContainer--sm'})
+      +button({buttonText: 'click me'})
+      +button({buttonText: 'click me', buttonMods: 'button__body--active'})
+
+    +button_wide({buttonText: 'перейти к оплате'})
+
+
+    
