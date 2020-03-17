@@ -302,4 +302,8 @@ mixin form-elements(form_elements_configuration)
     +button_wide({buttonText: 'перейти к оплате'})
 
 
+    +input_description({containerMods: '',contentMods: '', description: 'pagination'})
+    +pagination({
+      list: [[true, 1], [false, 2], [false, 3], [false, '...'], [false, 15]]
+    })
     

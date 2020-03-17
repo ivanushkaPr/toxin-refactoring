@@ -1,0 +1,28 @@
+.pagination__list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+
+.pagination__item  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 22px;
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  line-height: 15px;
+  color: $dark_shade_50;
+}
+
+.pagination__item--active {
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: white;
+}
+
+.pagination__item--next_button {
+  background-image: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
