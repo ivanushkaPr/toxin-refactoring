@@ -123,11 +123,62 @@
       button_submit: {
         buttonText: 'click me', buttonMods: 'button__body--button__ellipse '
       },
-      
     },
+    auth_form: {
+      auth_form_headline: {
+      description: 'Войти',
+    },
+    name_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom',
+      type: 'text',
+      placeholder: 'Имя',
+      name: 'firstName',
+      value: '',
+    },
+    surname_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--second-element-margin-bottom',
+      type: 'text',
+      placeholder: 'Фамилия',
+      name: 'secondName',
+      value: '',
+    },
+    radio_buttons: {options: [['Мужчина', true], ['Женщина', false]], blockMods: 'radio_buttons--registration-margin-bottom'},
+    masked_text_field_container: {
+
+    },
+    masked_text_field: {
+      contClassMods: 'none',
+      inputClassMods: 'masked_text_field__input--registration-margin-bottom',
+      type: 'text',
+      placeholder: 'ДД.ММ.ГГГГ',
+      name: 'masked_text_field',
+      value: '',
+    },
+
+      checkout_button: {
+        buttonText: 'перейти к оплате',
+      },
+      button_submit_cont: {
+        buttonContMods: 'buttonContainer--registration-rules',
+      },
+      button_submit_description: {
+        containerMods: '',
+        contentMods: 'input_description__content--button-description',
+        description: 'Уже есть аккаунт на Toxin'
+      },
+      button_submit: {
+        buttonText: 'click me', buttonMods: 'button__body--button__ellipse '
+      },
+    }
   }
 
 
 mixin cards(cards_congiguration)
   +search_room(cards_congiguration.search_room)
   +registration(cards_congiguration.registration)
+  +auth_form(cards_congiguration.auth_form)
+
+
+  
