@@ -2,7 +2,7 @@
   let form_elements_configuration = {
       email_text_field: {
       contClassMods: 'none',
-      inputClassMods: 'none',
+      inputClassMods: 'text-field__input--emailtextfield',
       type: 'text',
       placeholder: 'Email',
       name: 'email',
@@ -217,110 +217,111 @@
 
 
 mixin form-elements(form_elements_configuration)
-  +grid
-    +input_description_container(form_elements_configuration.email_text_field_container)
-      +input_description(form_elements_configuration.email_text_field_description)
-      +input_description(form_elements_configuration.email_text_field_state)
-    +text-field(form_elements_configuration.email_text_field)
+  div(class='form_elements_container')
+    +grid({mods: 'grid--form-elements-first-row'})
+      +input_description_container(form_elements_configuration.email_text_field_container)
+        +input_description(form_elements_configuration.email_text_field_description)
+        +input_description(form_elements_configuration.email_text_field_state)
+      +text-field(form_elements_configuration.email_text_field)
 
-    +input_description_container(form_elements_configuration.email_text_field_hover_effect_container)
-      +input_description(form_elements_configuration.email_text_field_description)
-      +input_description(form_elements_configuration.email_text_field_hover_effect_state)
-    +text-field(form_elements_configuration.email_text_field_hover_effect)
-
-
-    +input_description_container(form_elements_configuration.guest_dropdown_container)
-      +input_description(form_elements_configuration.guest_dropdown_description)
-      +input_description(form_elements_configuration.guest_dropdown_state)
-    +guest_dropdown(form_elements_configuration.guest_dropdown_default)
-
-    +input_description_container(form_elements_configuration.masked_text_field_container)
-      +input_description(form_elements_configuration.masked_text_field_description)
-      +input_description(form_elements_configuration.masked_text_field_state)
-    +masked_text_field(form_elements_configuration.masked_text_field)
-
-    +input_date_dropdown_container({})
-      +input_and_description_wrapper({})
-        +input_description(form_elements_configuration.input_date_dropdown_description)
-        +input_date_dropdown(form_elements_configuration.input_date_dropdown_default)
-
-      +input_and_description_wrapper({})
-        +input_description(form_elements_configuration.input_date_dropdown_description)
-        +input_date_dropdown(form_elements_configuration.input_date_dropdown_data_selected)
-
-    +input_description(form_elements_configuration.input_filter_date_dropdown_description)
-    +input_filter_date_dropdown(form_elements_configuration.input_filter_date_dropdown)
-
-    +input_description(form_elements_configuration.subscription_text_field_description)
-    +subscription_text_field(form_elements_configuration.subscription_text_field)
-
-    +input_and_description_wrapper({mods: 'input_and_description_wrapper--md'})
-      +input_description_container(form_elements_configuration.input_dropdown_room_quantity_container)
-        +input_description(form_elements_configuration.input_dropdown_room_quantity_description)
-        +input_description(form_elements_configuration.input_dropdown_room_quantity_state)
-      +input_dropdown_room_quantity(form_elements_configuration.input_dropdown_room_quantity)
-
-    +input_and_description_wrapper({mods: 'input_and_description_wrapper--md'})
-      +input_description_container(form_elements_configuration.input_dropdown_room_quantity_expanded_container)
-        +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_description)
-        +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_state)
-      +input_dropdown_room_quantity(form_elements_configuration.input_dropdown_room_quantity_expanded)
-
-    +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list)
-    +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list_opened)
-
-    +benefit({imageMods: 'benefit__image--background-smile', nameText: 'Комфорт', propText: 'Шумопоглощающие стены'}) 
-    +benefit({imageMods: 'benefit__image--background-building', nameText: 'Удобство', propText: 'Окно в каждой из спален'})
-
-  +grid
-    +checkbox_buttons({description: 'checkbox buttons', items:['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'], })
-    
-    +input_description({containerMods: '',contentMods: '', description: 'radio buttons'})
-    +radio_buttons({options: [['Мужчина', true], ['Женщина', false]]})
-
-    +input_description({containerMods: '',contentMods: '', description: 'toggle'})
-    +toggle({checked: true, descText: 'Получать спецпредложения', labelMods: 'toggle__label--divider'})
-    +toggle({descText: 'Получать спецпредложения'})
-
-    +input_description({containerMods: '',contentMods: '', description: 'like button'})
-
-    +like_button_container({})
-      +like_button({count: 2})
-      +like_button({buttonMods: 'like_button__add--pressed', counterMods: 'like_button__counter--button-pressed',count: 12})
-
-    +input_description({containerMods: '',contentMods: '', description: 'dropdown'})
+      +input_description_container(form_elements_configuration.email_text_field_hover_effect_container)
+        +input_description(form_elements_configuration.email_text_field_description)
+        +input_description(form_elements_configuration.email_text_field_hover_effect_state)
+      +text-field(form_elements_configuration.email_text_field_hover_effect)
 
 
-    +input_dropdown_guests(form_elements_configuration.input_dropdown_guests)
-    +rich_checkbox_buttons(form_elements_configuration.rich_checkbox_buttons)
-  
-  +grid
-    +slider(form_elements_configuration.slider)
+      +input_description_container(form_elements_configuration.guest_dropdown_container)
+        +input_description(form_elements_configuration.guest_dropdown_description)
+        +input_description(form_elements_configuration.guest_dropdown_state)
+      +guest_dropdown(form_elements_configuration.guest_dropdown_default)
 
-    +input_description({containerMods: '',contentMods: '', description: 'buttons'})
+      +input_description_container(form_elements_configuration.masked_text_field_container)
+        +input_description(form_elements_configuration.masked_text_field_description)
+        +input_description(form_elements_configuration.masked_text_field_state)
+      +masked_text_field(form_elements_configuration.masked_text_field)
 
-    +button_container({buttonContMods: 'buttonContainer--md'})
-      +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--background_linear_gradient__purple'})
-      +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--button__ellipse__active button__body--background_linear_gradient__purple  button__body--background_linear_gradient__purple_active'})
+      +input_date_dropdown_container({})
+        +input_and_description_wrapper({})
+          +input_description(form_elements_configuration.input_date_dropdown_description)
+          +input_date_dropdown(form_elements_configuration.input_date_dropdown_default)
 
-    +button_container({buttonContMods: 'buttonContainer--md'})
-      +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse '})
-      +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--button__ellipse__active'})
+        +input_and_description_wrapper({})
+          +input_description(form_elements_configuration.input_date_dropdown_description)
+          +input_date_dropdown(form_elements_configuration.input_date_dropdown_data_selected)
+
+      +input_description(form_elements_configuration.input_filter_date_dropdown_description)
+      +input_filter_date_dropdown(form_elements_configuration.input_filter_date_dropdown)
+
+      +input_description(form_elements_configuration.subscription_text_field_description)
+      +subscription_text_field(form_elements_configuration.subscription_text_field)
+
+      +input_and_description_wrapper({mods: 'input_and_description_wrapper--md'})
+        +input_description_container(form_elements_configuration.input_dropdown_room_quantity_container)
+          +input_description(form_elements_configuration.input_dropdown_room_quantity_description)
+          +input_description(form_elements_configuration.input_dropdown_room_quantity_state)
+        +input_dropdown_room_quantity(form_elements_configuration.input_dropdown_room_quantity)
+
+      +input_and_description_wrapper({mods: 'input_and_description_wrapper--md'})
+        +input_description_container(form_elements_configuration.input_dropdown_room_quantity_expanded_container)
+          +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_description)
+          +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_state)
+        +input_dropdown_room_quantity(form_elements_configuration.input_dropdown_room_quantity_expanded)
+
+      +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list)
+      +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list_opened)
+
+      +benefit({imageMods: 'benefit__image--background-smile', nameText: 'Комфорт', propText: 'Шумопоглощающие стены'}) 
+      +benefit({imageMods: 'benefit__image--background-building', nameText: 'Удобство', propText: 'Окно в каждой из спален'})
+
+    +grid({mods: 'grid--form-elements-second-row'})
+      +checkbox_buttons({description: 'checkbox buttons', items:['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'], })
       
-    +button_container({buttonContMods: 'buttonContainer--sm'})
-      +button({buttonText: 'click me'})
-      +button({buttonText: 'click me', buttonMods: 'button__body--active'})
+      +input_description({containerMods: '',contentMods: '', description: 'radio buttons'})
+      +radio_buttons({options: [['Мужчина', true], ['Женщина', false]]})
 
-    +button_wide({buttonText: 'перейти к оплате'})
+      +input_description({containerMods: '',contentMods: '', description: 'toggle'})
+      +toggle({checked: true, descText: 'Получать спецпредложения', labelMods: 'toggle__label--divider'})
+      +toggle({descText: 'Получать спецпредложения'})
+
+      +input_description({containerMods: '',contentMods: '', description: 'like button'})
+
+      +like_button_container({})
+        +like_button({count: 2})
+        +like_button({buttonMods: 'like_button__add--pressed', counterMods: 'like_button__counter--button-pressed',count: 12})
+
+      +input_description({containerMods: '',contentMods: '', description: 'dropdown'})
 
 
-    +input_description({containerMods: '',contentMods: '', description: 'pagination'})
-    +pagination({
-      list: [[true, 1], [false, 2], [false, 3], [false, '...'], [false, 15]],
-      description: '1 – 12 из 100+ вариантов аренды'
-    })
+      +input_dropdown_guests(form_elements_configuration.input_dropdown_guests)
+      +rich_checkbox_buttons(form_elements_configuration.rich_checkbox_buttons)
+    
+    +grid({})
+      +slider(form_elements_configuration.slider)
 
-    +input_dropdown_guests(form_elements_configuration.input_dropdown_guests_selected)
+      +input_description({containerMods: '',contentMods: '', description: 'buttons'})
 
-    +bulletlist({description: 'bullet list', items: ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00']})
+      +button_container({buttonContMods: 'buttonContainer--md'})
+        +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--background_linear_gradient__purple'})
+        +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--button__ellipse__active button__body--background_linear_gradient__purple  button__body--background_linear_gradient__purple_active'})
+
+      +button_container({buttonContMods: 'buttonContainer--md'})
+        +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse '})
+        +button({buttonText: 'click me', buttonMods: 'button__body--button__ellipse button__body--button__ellipse__active'})
+        
+      +button_container({buttonContMods: 'buttonContainer--sm'})
+        +button({buttonText: 'click me'})
+        +button({buttonText: 'click me', buttonMods: 'button__body--active'})
+
+      +button_wide({buttonText: 'перейти к оплате'})
+
+
+      +input_description({containerMods: '',contentMods: '', description: 'pagination'})
+      +pagination({
+        list: [[true, 1], [false, 2], [false, 3], [false, '...'], [false, 15]],
+        description: '1 – 12 из 100+ вариантов аренды'
+      })
+
+      +input_dropdown_guests(form_elements_configuration.input_dropdown_guests_selected)
+
+      +bulletlist({description: 'bullet list', items: ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00']})
     

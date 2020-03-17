@@ -14,15 +14,22 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/pug/pages/form-elements.pug',
+      template: './src/pug/pages/cards.pug',
       filename: './index.html',
       inject: true
     }),
+    /*
     new HtmlWebpackPlugin({
-      template: './src/pug/pages/page.pug',
+      template: './src/pug/pages/form-elements.pug',
+      filename: './form-elements.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/colors&types.pug',
       filename: './colorAndTypes.html',
       inject: true
     }),
+    */
   ],
   output: {
     filename: '[name].bundle.js',

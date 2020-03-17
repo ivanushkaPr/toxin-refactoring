@@ -1,4 +1,6 @@
 .input_description__content {
+  margin-top: 3px;
+  margin-bottom: 5px;
   font-family: 'montserrat-bold';
   font-size: 12px;
   line-height: 15px;
@@ -7,6 +9,8 @@
 }
 
 .input_description__content--weight-regular {
+  margin-top: 0px;
+  margin-bottom: 8px;
   font-family: 'montserrat-regular';
   color: $dark_shade_50;
 }

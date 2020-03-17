@@ -3,6 +3,10 @@
   max-width: 320px;
 }
 
+.input_dropdown_guests--cards-margin-bottom {
+  margin-bottom: 31px;
+}
+
 .input_dropdown_guests__input {
     width: 100%;
     padding-left: 15px;
@@ -22,6 +26,10 @@
 
 .input_dropdown_guests__input--controls-opened {
   border-color: $dark_shade_50;
+}
+
+.input_dropdown_guests__input--controls-closed {
+  border-radius: 2px;
 }
 
 .input_dropdown_guests__button {
@@ -57,7 +65,7 @@
   padding-bottom: 7px;
 }
 
-.input_dropdown_guests__property{
+.input_dropdown_guests__property {
   display: flex;
   align-items: center;
 

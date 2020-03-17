@@ -1,0 +1,9 @@
+include ../blocks/doctype/doctype.pug
+include ../../assets/utils/mixins.pug
+
+block title
+  title cards
+block logo
+  include ../../assets/templates/logo/logo.pug
+block content
+  +cards(cards_configuration)

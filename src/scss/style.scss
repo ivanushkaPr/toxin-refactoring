@@ -7,6 +7,10 @@
 @import '../assets/fonts/montserrat_bold/fonts.css';
 @import '../assets/fonts/montserrat_regular/fonts.css';
 
+@import '../assets/fonts/opensans_bold/fonts.css';
+@import '../assets/fonts/opensans_regular/fonts.css';
+
+
 
 @import '../assets/templates/logo/logo.scss';
 @import '../assets/full_pages/colors_and_types.scss';
@@ -17,6 +21,8 @@
 @import '../assets/BEM/HTMLtag/HTMLtag.scss';
 @import '../assets/BEM/HTMLstyle/HTMLstyle.scss';
 
+
+@import '../assets/full_pages/form-elements/form-elements.scss';
 
 @import '../assets/BEM/grid/grid.scss';
 
@@ -71,6 +77,11 @@
 @import '../assets/BEM/pagination/pagination.scss';
 
 @import '../assets/BEM/bullet_list/bullet_list.scss';
+
+
+@import '../assets/BEM/component_headline/component_headline.scss';
+
+@import '../assets/components/search_room/search_room.scss';
 
 html {
   font-size: 16px;
