@@ -1,0 +1,22 @@
+.bulletlist__description {
+  font-family: 'montserrat-bold';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark_shade_100;
+}
+
+.bulletlist__list {
+  padding-left: 17px;
+  list-style-image: url("https://svgshare.com/getbyhash/sha1-eQk21EGC4vEA+YmS7zyCYKjuCtE=");
+}
+
+.bulletlist__item {
+  max-width: 240px;
+  padding-left: 10.56px;
+  font-family: 'montserrat-regular';
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark_shade_75;
+}
+

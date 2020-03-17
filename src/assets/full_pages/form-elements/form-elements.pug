@@ -199,8 +199,20 @@
         description: 'Range Slider',
         rangeSelected: '5 000₽ - 10 000₽',
         slider__range: '',
-      } 
+      },
 
+
+      input_dropdown_guests_selected: {
+        properties: [['взрослые', 2], ['дети', 1], ['младенцы', 0]],
+        controlsMods: '',
+        contClassMods: '',
+        inputClassMods: 'input_dropdown_guests__input--controls-opened',
+        type: 'text',
+        placeholder: '3 гостя',
+        name: 'input_dropdown_guests__input',
+        value: '',
+        resetMods: ''
+      }
   }
 
 
@@ -304,6 +316,11 @@ mixin form-elements(form_elements_configuration)
 
     +input_description({containerMods: '',contentMods: '', description: 'pagination'})
     +pagination({
-      list: [[true, 1], [false, 2], [false, 3], [false, '...'], [false, 15]]
+      list: [[true, 1], [false, 2], [false, 3], [false, '...'], [false, 15]],
+      description: '1 – 12 из 100+ вариантов аренды'
     })
+
+    +input_dropdown_guests(form_elements_configuration.input_dropdown_guests_selected)
+
+    +bulletlist({description: 'bullet list', items: ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00']})
     

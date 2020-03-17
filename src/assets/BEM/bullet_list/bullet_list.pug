@@ -1,0 +1,6 @@
+mixin bulletlist(object)
+  div(class=`bulletlist`)
+    p(class=`bulletlist__description`) #{object.description}
+    ul(class=`bulletlist__list`)
+      each item in object.items
+        li(class=`bulletlist__item`) #{item}
