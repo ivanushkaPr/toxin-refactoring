@@ -24,6 +24,13 @@
   color: $dark_shade_75;
 }
 
+
+.subscription_text_field__input--footer {
+  min-width: 260px;
+  padding-left: 14px;
+  padding-top: 11px;
+}
+
 .subscription_text_field__button {
   position: absolute;
   width: 44px;

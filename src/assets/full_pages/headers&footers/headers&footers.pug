@@ -5,6 +5,16 @@
     },
     header_authorized: {
 
+    },
+    footer: {
+      subscription_text_field: {
+        contClassMods: 'none',
+        inputClassMods: 'subscription_text_field__input--footer',
+        type: 'Email',
+        placeholder: 'Your email address',
+        name: 'subscription_text_field',
+        value: '',
+      },
     }
   }
 
@@ -12,3 +22,4 @@ mixin headers_and_footers(headers_and_footers_configuration)
   div(class=`headers_and_footers`)
     +header_register(headers_and_footers_configuration.header_register)
     +header_authorized(headers_and_footers_configuration.header_authorized)
+    +footer(headers_and_footers_configuration.footer)
