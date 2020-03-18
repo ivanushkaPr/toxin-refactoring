@@ -1,0 +1,50 @@
+.room_info {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.room__overall {
+ display: flex;
+ align-items: baseline;
+}
+
+.room__number {
+  font-family: 'openSans-bold';
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark_shade_100;
+  margin: 0px;
+}
+
+.room__type {
+  font-family:'montserrat-bold';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $purple;
+  margin: 0px;
+}
+
+.room__price {
+  display: flex;
+}
+
+.room__cost{
+  font-family: 'montserrat-bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark_shade_50;
+  margin: 0px;
+}
+
+.room__period {
+  font-family: 'montserrat-regular';
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark_shade_50;
+  margin: 0px;
+}

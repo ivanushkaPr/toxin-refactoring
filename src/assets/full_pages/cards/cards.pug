@@ -155,7 +155,6 @@
         name: 'masked_text_field',
         value: '',
       },
-
       checkout_button: {
         buttonText: 'перейти к оплате',
       },
@@ -170,13 +169,84 @@
       button_submit: {
         buttonText: 'click me', buttonMods: 'button__body--button__ellipse '
       },
-    }
+    },
+    cost_calculator: {
+      room_info: {
+        blockMods: '',
+        overallMods: '',
+        numberMods: '',
+        numberText: '№ 888 ',
+        typeMods: '',
+        typeText: 'люкс',
+        priceMods: '',
+        costMods:'',
+        costText: '9 990₽ ',
+        periodMods: '',
+        periodText: 'в сутки',
+      },
+      input_date_dropdown_first_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'Прибытие'
+      },
+    input_date_dropdown_first: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: '19.08.2019',
+        name: 'input_date_dropdown_default',
+        value: '',
+      },
+      input_date_dropdown_second_description: {
+        containerMods: '',
+        contentMods: '',
+        description: 'Выезд'
+      },
+      input_date_dropdown_second: {
+        contClassMods: 'none',
+        inputClassMods: '',
+        type: 'text',
+        placeholder: '23.08.2019',
+        name: 'input_date_dropdown_default',
+        value: '',
+      },
+      input_dropdown_guests: {
+        properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
+        controlsMods: 'input_dropdown_guests__controls--closed',
+        contClassMods: 'input_dropdown_guests--balance-margin-bottom',
+        inputClassMods: 'input_dropdown_guests__input--controls-closed ',
+        type: 'text',
+        placeholder: 'Сколько гостей',
+        name: 'input_dropdown_guests__input',
+        value: '3 гостя',
+        resetMods: 'input_dropdown_guests__button_reset--hidden'
+      },
+      balance: {
+        blockMods: '',
+        services: [['9 990₽ х 4 суток', false, '39 960₽'], ['Сбор за услуги: скидка 2 179₽', true, '0₽'], ['Сбор за дополнительные услуги', true, '300₽']],
+        feeMods: '',
+        contMods: '',
+        serviceMods: '',
+        tooltipMods: '',
+        contMods: '',
+        totalMods: '',
+        totalCostText: 'Итого',
+        sumText: '38 081₽',
+      },
+      bookButton: {
+        buttonText: 'Забронировать'
+      }
+    },
   }
+
+
 
 mixin cards(cards_congiguration)
   +search_room(cards_congiguration.search_room)
   +registration(cards_congiguration.registration)
   +auth_form(cards_congiguration.auth_form)
+
+  +cost_calculator(cards_congiguration.cost_calculator)
 
 
   

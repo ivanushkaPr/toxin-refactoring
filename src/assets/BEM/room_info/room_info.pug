@@ -1,0 +1,8 @@
+mixin room_info(obj)
+  div(class=`room_info ${obj.blockMods}`)
+    div(class=`room__overall ${obj.overallMods}`)
+      p(class=`room__number ${obj.numberMods}`) #{obj.numberText}
+      p(class=`room__type ${obj.typeMods}`) #{obj.typeText}
+    div(class=`room__price ${obj.priceMods}`)
+      p(class=`room__cost ${obj.costMods}`) #{obj.costText}
+      p(class=`room__period ${obj.periodMods}`)  #{obj.periodText}

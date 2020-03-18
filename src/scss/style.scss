@@ -87,6 +87,10 @@
 
 @import '../assets/components/auth_form/auth_form.scss';
 
+@import '../assets/BEM/room_info/room_info.scss';
+@import '../assets/BEM/balance/balance.scss';
+@import '../assets/components/cost_calculator/cost_calculator.scss';
+
 html {
   font-size: 16px;
 }
