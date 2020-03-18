@@ -1,0 +1,72 @@
+.header_register {
+  padding-left: 140px;
+  padding-right: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: flex;
+}
+
+.header__logo {
+  margin-right: 296px;
+}
+
+.header__menu {
+  display: flex;
+}
+
+.header__list {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+  list-style-type: none;
+}
+
+.header__item {
+  margin-right: 30px;
+}
+
+.header__link {
+  font-family: 'montserrat-regular';
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark_shade_50;
+  text-decoration: none;
+}
+
+.header__item--active {
+  font-family:'montserrat-bold';
+
+/* Dark 75% */
+
+  color: $dark_shade_75;
+}
+
+.header__item:nth-child(3) {
+  margin-right: 22px;
+  display: flex;
+}
+
+.header__item_button {
+  width: 18px;
+  height: 19px;
+  background-color: transparent;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+} 
+
+
+.header__item:last-child {
+  margin-right: 28px;
+}
+
+.header__enter {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,10 @@
+-
+  let headers_and_footers_configuration = {
+    header_register: {
+
+    }
+  }
+
+mixin headers_and_footers(headers_and_footers_configuration)
+  div(class=`headers_and_footers`)
+    +header_register(headers_and_footers_configuration.header_register)
