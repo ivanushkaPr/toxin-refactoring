@@ -2,9 +2,13 @@
   let headers_and_footers_configuration = {
     header_register: {
 
+    },
+    header_authorized: {
+
     }
   }
 
 mixin headers_and_footers(headers_and_footers_configuration)
   div(class=`headers_and_footers`)
     +header_register(headers_and_footers_configuration.header_register)
+    +header_authorized(headers_and_footers_configuration.header_authorized)
