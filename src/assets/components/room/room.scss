@@ -1,0 +1,147 @@
+.room {
+  max-width: 270px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+.room__images {
+  width: 270px;
+  height: 152px;
+  overflow: hidden;
+  position: relative;
+}
+
+.room__gallery {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.room__image {
+  width: 270px;
+  height: 250px;
+  flex-shrink: 0;
+}
+
+.room__image--background-1 {
+  background-image: url('./../assets/components/room/image.svg');
+  background-repeat: no-repeat;
+}
+
+.room__button {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  top: 53px;
+}
+
+.room__button--left {
+
+}
+
+.room__button--right {
+  right: 0;
+}
+
+.room__dots {
+  position: absolute;
+  top: 115px;
+  left: 140px;
+  height: 10px;
+  width: 100px;
+  list-style-type: none;
+  display: flex;
+}
+
+.room__dot {
+  width: 7.5px;
+  height: 7.5px;
+  margin-left: 3.75px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+}
+
+.room__overall {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 17px;
+  border-bottom: 1px solid $dark_shade_50;
+  padding-bottom: 10px;
+}
+
+.room__number {
+  font-family: 'openSans-regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* Dark 100% */
+
+  color: #1F2041;
+}
+
+.room__status {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.room_price {
+  font-family: 'montserrat-bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+
+
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__period {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__rating {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 17px;
+  padding-top: 11.56px;
+}
+
+.room__feedbacks {
+  margin: 0px;
+  font-family: 'montserrat-bold';
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.room__number {
+  display: inline-block;
+  margin-left: 5px;
+  font-family: 'montserrat-regular';
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}

@@ -97,6 +97,8 @@
 
 @import '../assets/components/calendar/calendar.scss';
 
+@import '../assets/components/room/room.scss';
+
 @import '../assets/components/header_register/header_register.scss';
 
 @import '../assets/components/header_authorized/header_authorized.scss';
@@ -114,4 +116,5 @@ body {
   padding: 0px;
   border: none;
   width: 100%;
+  background: #F4F4F6;
 }
