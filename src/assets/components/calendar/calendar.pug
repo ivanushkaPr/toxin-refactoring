@@ -1,0 +1,74 @@
+mixin calendar(obj)
+  div(class=`calendar`)
+    div(class=`calendar__header`)
+      button(class=`calendar__button`)
+        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.1755 8.01562V9.98438H3.98801L9.56613 15.6094L8.15988 17.0156L0.144258 9L8.15988 0.984375L9.56613 2.39062L3.98801 8.01562H16.1755Z" fill="#BC9CFF"/>
+        </svg>
+      p(class=`calendar__period`) Август 2019
+      button(class=`calendar__button`)
+        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z" fill="#BC9CFF"/>
+        </svg>
+
+    div(class=`calendar__body`)
+      table(class=`calendar__table`)
+        tr(class=`calendar__row`)
+          td(class=`calendar__data calendar__data--color-purple`) пн
+          td(class=`calendar__data calendar__data--color-purple`) вт
+          td(class=`calendar__data calendar__data--color-purple`) ср
+          td(class=`calendar__data calendar__data--color-purple`) чт
+          td(class=`calendar__data calendar__data--color-purple`) пт
+          td(class=`calendar__data calendar__data--color-purple`) сб
+          td(class=`calendar__data calendar__data--color-purple`) вс
+        
+        tr(class=`calendar__row`)
+          td(class=`calendar__data`) 29
+          td(class=`calendar__data`) 30
+          td(class=`calendar__data`) 31
+          td(class=`calendar__data`) 1
+          td(class=`calendar__data`) 2
+          td(class=`calendar__data`) 3
+          td(class=`calendar__data`) 4
+        
+        tr(class=`calendar__row`)
+          td(class=`calendar__data`) 5
+          td(class=`calendar__data`) 6
+          td(class=`calendar__data`) 7
+          td(class=`calendar__data`) 8
+          td(class=`calendar__data`) 9
+          td(class=`calendar__data`) 10
+          td(class=`calendar__data`) 11
+
+        tr(class=`calendar__row`)
+          td(class=`calendar__data`) 12
+          td(class=`calendar__data`) 13
+          td(class=`calendar__data`) 14
+          td(class=`calendar__data`) 15
+          td(class=`calendar__data`) 16
+          td(class=`calendar__data`) 17
+          td(class=`calendar__data`) 18
+
+        tr(class=`calendar__row`)
+          td(class=`calendar__data`) 19
+          td(class=`calendar__data`) 20
+          td(class=`calendar__data`) 21
+          td(class=`calendar__data`) 22
+          td(class=`calendar__data`) 23
+          td(class=`calendar__data`) 24
+          td(class=`calendar__data`) 25
+
+        tr(class=`calendar__row`)
+          td(class=`calendar__data`) 26
+          td(class=`calendar__data`) 27
+          td(class=`calendar__data`) 28
+          td(class=`calendar__data`) 29
+          td(class=`calendar__data`) 30
+          td(class=`calendar__data`) 31
+          td(class=`calendar__data`) 1
+
+        
+        
+    div(class=`calendar__footer`)
+      button(class=`calendar__button_reset ${obj.resetMods}`) Очистить
+      button(class=`calendar__button_apply ${obj.applyMods}`) Применить
