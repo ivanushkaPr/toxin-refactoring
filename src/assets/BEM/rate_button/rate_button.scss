@@ -1,0 +1,36 @@
+.rate_button {
+  display: flex;
+}
+
+.rate_button__counter {
+  display: none;
+}
+
+.rate_button__checkbox {
+  display: none;
+}
+
+.rate_button__fake_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+
+}
+
+.rate_button__sprite {
+  position: relative;
+}
+
+.rate_button__sprite--checkbox-checked {
+  top: -24px;
+}
+
+.rate__button_fake_input svg {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+
+}

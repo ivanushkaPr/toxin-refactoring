@@ -13,25 +13,25 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    /*
+/*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
       filename: './index.html',
       inject: true
     }),
-    */
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',
       filename: './index.html',
       inject: true
     }),
-    
-    /*
+  */
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
-      filename: './form-elements.html',
+      filename: './index.html',
       inject: true
     }),
+
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/colors&types.pug',
       filename: './colorAndTypes.html',
