@@ -1,6 +1,6 @@
 mixin rich_checkbox_buttons(object)
   div(class=`rich_checkbox_buttons`)
-    p(class=`rich_checkbox_buttons__description`) #{object.description}
+    p(class=`rich_checkbox_buttons__description ${object.mods}`) #{object.description}
   
 
     ul(class=`rich_checkbox_buttons__list ${object.listMods}`)

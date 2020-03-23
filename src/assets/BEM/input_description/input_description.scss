@@ -1,3 +1,4 @@
+
 .input_description__content {
   margin-top: 3px;
   margin-bottom: 5px;
@@ -15,6 +16,11 @@
   color: $dark_shade_50;
 }
 
+.input_description__content--weight-regular--expanded{
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
 .input_description__content--button-description {
   font-family: 'montserrat-regular';
   font-size: 14px;
@@ -23,3 +29,58 @@
   text-transform: none;
 }
 
+.input_description__content--pp-text-field-hover {
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.input_description--pp {
+  padding-top: 38px;
+}
+
+.input_description--filter_date_dropdown_padding-top  {
+  margin-top: 41px;
+} 
+
+.input_description--subscription_text_field_padding-top  {
+  padding-top: 39px;
+} 
+
+
+.input_description__content--pp-radio-button {
+  padding-top: 23px;
+  padding-bottom: 11px;
+ }
+
+.input_description__content--pp-toggle {
+  padding-top: 37px;
+  padding-bottom: 8px;
+ }
+
+ .input_description__content--pp-like-button {
+  padding-top: 38px;
+  padding-bottom: 11px;
+ }
+
+.input_description__content--pp-rate-button  {
+  padding-top: 33px;
+  padding-bottom: 15px;
+ }
+
+.input_description__content--pp-guest-dropdown  {
+  padding-top: 190px;
+ }
+
+.input_description__content--pp-buttons {
+  padding-top: 39px;
+  padding-bottom: 11px;
+ }
+
+.input_description__content--pp-pagination {
+  margin-top: 40px;
+  margin-bottom: 16px;
+ }
+
+.input_description__content--pp-guest-dropdown-selected {
+  padding-top: 230px;
+ }

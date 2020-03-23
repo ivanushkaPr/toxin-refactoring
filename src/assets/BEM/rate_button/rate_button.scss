@@ -1,3 +1,9 @@
+.rate_button__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+}
+
 .rate_button {
   display: flex;
 }

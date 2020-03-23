@@ -3,6 +3,14 @@
   
 }
 
+.expandable_checkbox_list--pp-form-elements {
+  padding-top: 40px;
+}
+
+.expandable_checkbox_list--pp-expanded-form-elements {
+  padding-top: 21px;
+}
+
 .expandable_checkbox_list__wrapper {
   position: relative;
   display: flex;
@@ -40,6 +48,7 @@
   margin: 0px;
   margin-bottom: 17.44px;
   padding: 0px;
+  padding-top: 3px;
   display: none;
 }
 
@@ -59,12 +68,12 @@
 }
 
 .expandable_checkbox_list__checkbox {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-color: #FFFFFF;
   border: 1px solid $dark_shade_25;
   border-radius: 4px;
-  margin-right: 10px;
+  margin-right: 9px;
   
 }
 

@@ -1,14 +1,18 @@
 .benefit {
   display: flex;
-  padding-bottom: 17px;
+  padding-bottom: 19px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
   max-width: 280px;
+}
+
+.benefit-pp {
+  padding-top: 23px;
 }
 
 .benefit__image{
   width: 48px;
   height: 48px;
-  margin-right: 10px;
+  margin-right: 8px;
 
   border: none;
 
@@ -22,6 +26,10 @@
 
 .benefit__image--background-building {
   background-image: url('https://svgshare.com/getbyhash/sha1-7K7774jrwNMHr4ynN4eqsBhjyCo=');
+}
+
+.benefit__description {
+  padding-top: 1px;
 }
 
 .benefit__name, .benefit__property {
