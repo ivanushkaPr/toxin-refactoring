@@ -1,0 +1,6 @@
+mixin registration_page(object)
+  div(class=`registration_page`)
+    +header_register(object.header_register_configuration)
+    div(class=`registration__layer`)
+      +registration(object.registration)
+    +footer(object.footer_configuration)

@@ -1,0 +1,6 @@
+mixin landing_page(object)
+  div(class=`landing_page`)
+    +header_register(object.header_register_configuration)
+    div(class=`landing_page__layer`)
+      +search_room(object.search_room_configuration)
+    +footer(object.footer_configuration)

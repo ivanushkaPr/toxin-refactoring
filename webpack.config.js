@@ -13,15 +13,25 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/registration.pug',
+      filename: './index.html',
+      inject: true
+    }),
+    /*
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/landing_page.pug',
+      filename: './index.html',
+      inject: true
+    }),
+    */
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
       filename: './index.html',
       inject: true
     }),
-
-  
-
+    */
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',
@@ -29,6 +39,7 @@ module.exports = {
       inject: true
     }),
   */
+
  /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
