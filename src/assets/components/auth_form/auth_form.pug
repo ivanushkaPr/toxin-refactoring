@@ -1,5 +1,5 @@
 mixin auth_form(auth_form)
-  section(class=`auth_form`)
+  section(class=`auth_form ${auth_form.mods}`)
     +component_headline(auth_form.auth_form_headline)
     +text-field(auth_form.name_text_field)
     +text-field(auth_form.surname_text_field)

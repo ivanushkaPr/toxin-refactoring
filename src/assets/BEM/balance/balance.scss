@@ -9,21 +9,33 @@
 
 .balance__service, .balance__tooltip, .balance__total {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   
   font-family: 'montserrat-regular';
   font-size: 14px;
   line-height: 24px;
   color: $dark_shade_75;
-  
+}
+
+.balance__total {
+  margin-bottom: 0px;
 }
 
 .balance__fee:nth-child(3) .balance__service {
   line-height: 18px;
 }
 
+.balance__fee:nth-child(3) .balance__container {
+  padding-top: 2px;
+}
+.balance__fee:nth-child(3) .balance__total  {
+  margin-top: 7px;
+}
+
 .balance__service {
   max-width: 214px;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .balance__tooltip {

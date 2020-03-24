@@ -126,8 +126,10 @@
       },
     },
     auth_form: {
+      mods: 'auth_form--cards_margin-top',
       auth_form_headline: {
         description: 'Войти',
+        mods: 'component_headline__text--auth-form-margin-bottom'
       },
       name_text_field: {
         contClassMods: 'none',
@@ -139,7 +141,7 @@
       },
       surname_text_field: {
         contClassMods: 'none',
-        inputClassMods: 'text-field__input--emailtextfield text-field_input--second-element-margin-bottom',
+        inputClassMods: 'text-field__input--emailtextfield text-field_input--auth-form_margin-bottom_password-input ',
         type: 'text',
         placeholder: 'Фамилия',
         name: 'secondName',
@@ -157,7 +159,7 @@
         value: '',
       },
       checkout_button: {
-        buttonText: 'перейти к оплате',
+        buttonText: 'войти',
       },
       button_submit_cont: {
         buttonContMods: 'buttonContainer--registration-rules',
@@ -165,10 +167,10 @@
       button_submit_description: {
         containerMods: '',
         contentMods: 'input_description__content--button-description',
-        description: 'Уже есть аккаунт на Toxin'
+        description: 'Нет аккаунта на Toxin?'
       },
       button_submit: {
-        buttonText: 'click me', buttonMods: 'button__body--button__ellipse '
+        buttonText: 'создать', buttonMods: 'button__body--button__ellipse '
       },
     },
     cost_calculator: {
@@ -176,14 +178,15 @@
         blockMods: '',
         overallMods: '',
         numberMods: '',
-        numberText: '№ 888 ',
+        numberSymbol: '№ ',
+        numberText: '888',
         typeMods: '',
         typeText: 'люкс',
         priceMods: '',
         costMods:'',
         costText: '9 990₽ ',
         periodMods: '',
-        periodText: 'в сутки',
+        periodText: '&nbsp; в сутки',
       },
       input_date_dropdown_first_description: {
         containerMods: '',
@@ -252,8 +255,9 @@ mixin cards(cards_congiguration)
       +registration(cards_congiguration.registration)
 
     +grid({mods: 'grid--cards--second-row grid--md'})
-      +auth_form(cards_congiguration.auth_form)
       +cost_calculator(cards_congiguration.cost_calculator)
+      +auth_form(cards_congiguration.auth_form)
+ 
 
     +grid({mods: 'grid--cards--third-row '})
       +calendar(cards_congiguration.calendar)
