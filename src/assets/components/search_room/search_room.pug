@@ -44,7 +44,7 @@
   //
 
 mixin search_room(search_room_conf)
-  section(class=`search_room`)
+  section(class=`search_room ${search_room_conf.mods}`)
     +component_headline(search_room_conf.search_room_headline)
 
     +input_date_dropdown_container({mods: 'input_date_dropdown_container--cards-margin-bottom'})

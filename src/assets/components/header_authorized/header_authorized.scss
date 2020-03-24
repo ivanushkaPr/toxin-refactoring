@@ -1,14 +1,16 @@
 .header_auth {
   padding-left: 140px;
+  padding-right: 140px;
   padding-top: 15px;
   padding-bottom: 9px;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   display: flex;
+  justify-content: space-between;
 }
 
 .header_auth__logo {
-  margin-right: 348px;;
+
 }
 
 .header_auth__menu {

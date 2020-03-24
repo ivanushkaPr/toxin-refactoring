@@ -1,0 +1,8 @@
+mixin landing_page(object)
+  div(class=`filter_page`)
+    +header_register(object.header_register_configuration)
+    div(class=`filter_page__controls`)
+
+    div(class=`filter_page__rooms`)
+    
+    +footer(object.footer_configuration)
