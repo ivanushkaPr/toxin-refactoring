@@ -45,6 +45,7 @@
     registration: {
       registation_conf_headline: {
       description: 'Регистрация аккаунта',
+      mods: 'component_headline__text--registartion-margin-bottom',
     },
     name_text_field: {
       contClassMods: 'none',
@@ -56,7 +57,7 @@
     },
     surname_text_field: {
       contClassMods: 'none',
-      inputClassMods: 'text-field__input--emailtextfield text-field_input--second-element-margin-bottom',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--second-element-margin-bottom text-field_input--registration-margin-bottom',
       type: 'text',
       placeholder: 'Фамилия',
       name: 'secondName',
@@ -99,7 +100,7 @@
     }, 
     password_text_field: {
       contClassMods: 'none',
-      inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom',
+      inputClassMods: 'text-field__input--emailtextfield text-field_input--first-element-margin-bottom text-field_input--registration-login-data-margin-bottom',
       type: 'text',
       placeholder: 'Пароль',
       name: 'password',
@@ -121,7 +122,7 @@
         description: 'Уже есть аккаунт на Toxin'
       },
       button_submit: {
-        buttonText: 'click me', buttonMods: 'button__body--button__ellipse '
+        buttonText: 'Войти', buttonMods: 'button__body--button__ellipse button__body--registration_padding'
       },
     },
     auth_form: {
@@ -245,13 +246,18 @@
 
 
 mixin cards(cards_congiguration)
-  +search_room(cards_congiguration.search_room)
-  +registration(cards_congiguration.registration)
-  +auth_form(cards_congiguration.auth_form)
+  div(class=`cards`)
+    +grid({mods: 'grid--cards--first-row grid--md'})
+      +search_room(cards_congiguration.search_room)
+      +registration(cards_congiguration.registration)
 
-  +cost_calculator(cards_congiguration.cost_calculator)
-  +calendar(cards_congiguration.calendar)
-  +room({roomNumber: '№ 888', status:'люкс', price: '9 990₽', period: 'в сутки', ammount: 145})
+    +grid({mods: 'grid--cards--second-row grid--md'})
+      +auth_form(cards_congiguration.auth_form)
+      +cost_calculator(cards_congiguration.cost_calculator)
+
+    +grid({mods: 'grid--cards--third-row '})
+      +calendar(cards_congiguration.calendar)
+      +room({roomNumber: '№ 888', status:'люкс', price: '9 990₽', period: 'в сутки', ammount: 145})
 
 
   

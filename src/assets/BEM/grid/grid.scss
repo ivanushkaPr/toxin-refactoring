@@ -2,6 +2,10 @@
   width: 320px;
 }
 
+.grid--md {
+  width: 380px;
+}
+
 .grid--form-elements-first-row {
   margin-right: 126px;
 }
@@ -23,4 +27,19 @@
 
 .grid--form-elements--pp-padding-top {
   padding-top: 3px;
+}
+
+.grid--cards--first-row {
+  padding-left: 140px;
+  padding-top: 68px;
+}
+
+.grid--cards--second-row {
+  padding-left: 40px;
+  padding-top: 68px;
+}
+
+.grid--cards--third-row {
+  margin-left: 40px;
+  margin-top: 68px;
 }

@@ -22,19 +22,20 @@ module.exports = {
 
     */
 
-    /*
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',
       filename: './index.html',
       inject: true
     }),
-  */
+  
+ /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
       filename: './index.html',
       inject: true
     }),
-
+*/
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/colors&types.pug',

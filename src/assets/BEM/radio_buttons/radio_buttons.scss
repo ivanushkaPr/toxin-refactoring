@@ -3,7 +3,7 @@
 }
 
 .radio_buttons--registration-margin-bottom  {
-  padding-bottom: 24.56px;
+  padding-bottom: 21.56px;
 }
 
 .radio_buttons__label {
@@ -26,6 +26,7 @@
   margin-right: 10px;
   border: 1px solid $dark_shade_25;
   border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .radio_buttons__input:checked ~ .radio_buttons__fake_radio {
@@ -35,8 +36,8 @@
 
 .radio_buttons__input:checked ~ .radio_buttons__fake_radio:after {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 3px;
+  left: 3px;
   content: '';
   background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   padding: 6px;
