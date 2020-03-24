@@ -1,6 +1,6 @@
 mixin room(obj)
   div(class=`room`)
-    div(class=`room__images`)
+    div(class=`room__images ${obj.imagesMods}`)
       ul(class=`room__gallery`)
         li(class=`room__image room__image--background-1`)
         li(class=`room__image`)
@@ -19,16 +19,18 @@ mixin room(obj)
         </svg>
 
       ul(class=`room__dots`)
-        li(class=`room__dot`)
+        li(class=`room__dot room__dot--active `)
         li(class=`room__dot`)
         li(class=`room__dot`)
         li(class=`room__dot`)
     div(class=`room__overall`)
-      p(class=`room__number`) #{obj.roomNumber}
+      p(class=`room__number`)
+        spane(class=`room__special_char`) #{obj.specialChar}
+        span(class=`room__special_number`) #{obj.roomNumber}
         span(class=`room__status`) #{obj.status}
       p(class=`room_price`) #{obj.price}
         span(class=`room__period`) #{obj.period}
     div(class=`room__rating`)
       +rate_button({checkboxes: [1,2,3,4,5], rating: 5})
       p(class=`room__feedbacks`) #{obj.ammount}
-        span(class=`room__number`) Отзывов
+        span(class=`room__number-span`) Отзывов
