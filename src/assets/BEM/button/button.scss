@@ -31,6 +31,8 @@
 }
 
 
+
+
 .button__body--button__ellipse
 
 .button__body--small_vertical_padding_transparent {
@@ -71,4 +73,13 @@
 .button__body--background_linear_gradient__purple:active {
   background-image: linear-gradient(180deg, rgba(	188,	156,	255, 0.5) 0%,  rgba(139,	164,	249, 0.5) 100%);
   color: white; 
+}
+
+.button__body--header-size_sm {
+  margin-top: -6px;
+  padding: 9px 18px 9px 18px;
+}
+
+.button__body--header-margin_right {
+  margin-right: 20px;
 }
