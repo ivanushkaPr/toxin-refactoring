@@ -14,13 +14,17 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      template: './src/pug/pages/room_details.pug',
+      filename: './index.html',
+      inject: true
+    }),
+    /*
+    new HtmlWebpackPlugin({
       template: './src/pug/pages/filter_page.pug',
       filename: './index.html',
       inject: true
     }),
-    
-
-
+    */
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/sign_in_page.pug',

@@ -1,6 +1,7 @@
 .component_headline {
 
 }
+
 .component_headline__text {
   font-family: 'openSans-bold';
   font-size: 24px;
@@ -11,6 +12,13 @@
 
   color: #1F2041;
 }
+
+.component_headline__text--md {
+  font-size: 19px;
+  line-height: 24px;
+}
+
+
 
 .component_headline__text--filter_page {
   max-width: inherit;
@@ -23,5 +31,14 @@
 }
 
 .component_headline__text--auth-form-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.component_headline__text--room_details-margin-top {
+  margin-top: 69px;
+}
+
+.component_headline__text--room_details-feedback-margin-top {
+  margin-top: 14px;
   margin-bottom: 20px;
 }

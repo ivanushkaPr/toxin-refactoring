@@ -9,8 +9,21 @@
   background-position: center -10px;
   margin-right: 10px;
 }
+
+.patricia {
+  width: 48px;
+  height: 48px;
+  background-image: url('./../assets/BEM/appointment/patricia.svg');
+  background-position: center -10px;
+  margin-right: 10px;
+}
+
 .appointment__user {
   display: flex;
+}
+
+.appointment__user--second_appointment--margin-top {
+  margin-top: 23px;
 }
 
 .appointment__name, .appointment__date{

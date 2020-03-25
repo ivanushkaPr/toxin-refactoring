@@ -1,6 +1,6 @@
 mixin appointment(obj)
   div(class=`appointment`)
-    div(class=`appointment__user`)
+    div(class=`appointment__user ${obj.userMods}`)
       div(class=`appointment__portrait ${obj.image}`)
       div(class=`appointment__info`) 
         p(class=`appointment__name`) #{obj.name}

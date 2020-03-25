@@ -1,0 +1,48 @@
+.room_details__review {
+  display: grid;
+  grid-template-columns: 981px 461px;
+  grid-template-rows: 242px 242px;
+}
+
+.room_details__image-bg {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.room_details__image-bg--big {
+  background-image: url('./../assets/full_pages/room_details/image-bg.svg');
+}
+
+.room_details__image-sm--sm-first{
+  background-image: url('./../assets/full_pages/room_details/image-sm-1.svg');
+}
+
+
+.room_details__image-sm--sm-second {
+  background-image: url('./../assets/full_pages/room_details/image-sm-2.svg');
+}
+
+.room_details__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 140px;
+
+  background-color: white;
+}
+
+.room_details__booking {
+  min-width: 380px;
+  padding-top: 70px;
+}
+
+
+.room_details__wrapper--rules-and-cancelation {
+  max-width: 686px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.room_details__cancelation {
+  margin-top: 14px;
+}
