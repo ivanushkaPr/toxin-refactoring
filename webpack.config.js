@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
@@ -13,11 +14,17 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/room_details.pug',
       filename: './index.html',
       inject: true
     }),
+    */
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/filter_page.pug',
@@ -62,13 +69,13 @@ module.exports = {
     }),
   */
 
- /*
+ 
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
       filename: './index.html',
       inject: true
     }),
-*/
+
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/colors&types.pug',
