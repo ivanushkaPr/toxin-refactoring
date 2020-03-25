@@ -1,8 +1,27 @@
-mixin landing_page(object)
+mixin filter_page(object)
   div(class=`filter_page`)
     +header_register(object.header_register_configuration)
-    div(class=`filter_page__controls`)
+    section(class=`filter_page__content`)
+      div(class=`filter_page__controls`)
+        +input_description(object.input_filter_date_dropdown_description)
+        +input_filter_date_dropdown(object.input_filter_date_dropdown)
+        +input_description(object.input_dropdown_guests_description)
+        +input_dropdown_guests(object.input_dropdown_guests)
+        +slider(object.slider)
+        +checkbox_buttons(object.checkbox_buttons)
 
-    div(class=`filter_page__rooms`)
+        +rich_checkbox_buttons(object.rich_checkbox_buttons)
+
+        +input_description(object.input_dropdown_room_quantity_description)
+        +input_dropdown_room_quantity(object.input_dropdown_room_quantity)
+
+        +expandable_checkbox_list(object.expandable_checkbox_list)
+      div(class=`filter_page__rooms`)
+        +component_headline(object.rooms_headline)
+        div(class=`filter_page__container`)
+          each room in object.rooms
+            +room(room)
+          div(class='filter_page__pagination')
+            +pagination(object.pagination)
     
     +footer(object.footer_configuration)

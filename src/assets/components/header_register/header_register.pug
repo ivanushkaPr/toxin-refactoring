@@ -27,23 +27,22 @@ mixin header_register(header_register_conf)
       </svg>
     nav(class=`header__menu`)
       ul(class=`header__list`)
-        li(class=`header__item header__item--active`) 
-          a(class=`header__link` href=`href="/mock-address/change-me`) Home
-        li(class=`header__item`)
-          a(class=`header__link` href=`href="/mock-address/change-me`) About Us
-        li(class=`header__item`)
-          a(class=`header__link` href=`href="/mock-address/change-me`)  Services
-          button(class=`header__item_button`) 
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
-            </svg>
+        each menu_item in header_register_conf.items
+          if(menu_item.active === true)
+            li(class=`header__item header__item--active ${menu_item.itemMods}`) 
+              a(class=`header__link` href=`href="/mock-address/change-me`) #{menu_item.value}
+          else
+            li(class=`header__item ${menu_item.itemMods}`)
+              a(class=`header__link` href=`href="/mock-address/change-me`) #{menu_item.value}
 
-        li(class=`header__item`)
-          a(class=`header__link` href=`href="/mock-address/change-me`) Careers
-        li(class=`header__item`)
-          a(class=`header__link` href=`href="/mock-address/change-me`) News
-        li(class=`header__item`) 
-          a(class=`header__link` href=`href="/mock-address/change-me`) Documentation
+              if(menu_item.submenu === true)
+                button(class=`header__item_button`) 
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+                  </svg>
+
       div(class=`header__enter`)
-        +button({buttonText: 'login', buttonMods: 'button__body--button__ellipse button__body--small_vertical_padding_transparent button__body--header-size_sm button__body--header-margin_right'})
-        +button({buttonText: 'register', buttonMods: 'button__body--button__ellipse button__body--background_linear_gradient__purple button__body--small_vertical_padding button__body--header-size_sm '})
+        +button(header_register_conf.buttonLogin)
+        +button(header_register_conf.buttonRegister)
+
+       

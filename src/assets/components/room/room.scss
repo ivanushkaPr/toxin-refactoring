@@ -6,16 +6,23 @@
   padding-bottom: 16px;
 }
 
+.room--padding-bottom {
+  padding-bottom: 36px;
+}
+
 .room__images {
   width: 270px;
   height: 152px;
-  margin-top: 39px;
   overflow: hidden;
   position: relative;
 }
 
 .room__images--cards__margin-top {
   margin-top: 39px;
+}
+
+.room__images {
+
 }
 
 .room__gallery {

@@ -7,7 +7,22 @@ block logo
 block content 
   +landing_page({
     header_register_configuration: {
-      mods: 'header_register--padding'
+      mods: 'header_register--padding',
+      items: [
+        {value: 'О нас', active: true, submenu: false},
+        {value: 'Услуги', active: false, submenu: true},
+        {value: 'Вакансии', active: false, submenu: false},
+        {value: 'Новости', active: false, submenu: false},
+        {value: 'Соглашения', active: false, submenu: true},
+        ],
+        buttonLogin: {
+        buttonText: 'Войти', 
+        buttonMods: 'button__body--button__ellipse button__body--small_vertical_padding_transparent button__body--header-size_sm button__body--header-margin_right',
+      },
+      buttonRegister: {
+        buttonText: 'Зарегистрироваться',
+        buttonMods: 'button__body--button__ellipse button__body--background_linear_gradient__purple button__body--small_vertical_padding button__body--header-size_sm',
+      },
     },
     search_room_configuration: {
       mods: 'search_room--position-absolute-landing-page',

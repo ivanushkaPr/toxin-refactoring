@@ -1,5 +1,5 @@
 mixin room(obj)
-  div(class=`room`)
+  div(class=`room ${obj.blockMods}`)
     div(class=`room__images ${obj.imagesMods}`)
       ul(class=`room__gallery`)
         li(class=`room__image room__image--background-1`)

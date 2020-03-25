@@ -13,6 +13,13 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/filter_page.pug',
+      filename: './index.html',
+      inject: true
+    }),
+    
+
 
     /*
     new HtmlWebpackPlugin({
@@ -27,20 +34,22 @@ module.exports = {
       inject: true
     }),
     */
+
     /*
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/landing_page.pug',
       filename: './index.html',
       inject: true
     }),
     */
-    
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
       filename: './index.html',
       inject: true
     }),
-    
+    */
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',

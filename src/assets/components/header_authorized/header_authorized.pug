@@ -27,23 +27,21 @@ mixin header_authorized(header_authorized_conf)
       </svg>
     nav(class=`header_auth__menu`)
       ul(class=`header_auth__list`)
-        li(class=`header_auth__item header__item--active`) 
-          a(class=`header_auth__link` href=`href="/mock-address/change-me`) Home
-        li(class=`header_auth__item`)
-          a(class=`header_auth__link` href=`href="/mock-address/change-me`) About Us
-        li(class=`header_auth__item`)
-          a(class=`header_auth__link` href=`href="/mock-address/change-me`)  Services
-          button(class=`header_auth__item_button`) 
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
-            </svg>
 
-        li(class=`header_auth__item`)
-          a(class=`header_auth__link` href=`href="/mock-address/change-me`) Careers
-        li(class=`header_auth__item`)
-          a(class=`header_auth__link` href=`href="/mock-address/change-me`) News
-        li(class=`header_auth__item`) 
-          a(class=`header_auth__link` href=`href="/mock-address/change-me`) Documentation
+        each menu_item in header_authorized_conf.items
+          if(menu_item.active === true)
+            li(class=`header_auth__item header__item--active`)
+               a(class=`header_auth__link` href=`href="/mock-address/change-me`) #{menu_item.value}
+          else
+            li(class=`header_auth__item`) 
+                a(class=`header_auth__link` href=`href="/mock-address/change-me`) #{menu_item.value}
+
+                if(menu_item.submenu === true)
+                   button(class=`header_auth__item_button`) 
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+                    </svg>
+
       div(class=`header_auth__enter`)
         div(class=`header_auth__vertical_line`)
-        p(class=`header_auth__user_name`) Cosmin Negoita
+        p(class=`header_auth__user_name`) #{header_authorized_conf.userName}

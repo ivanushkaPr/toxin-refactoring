@@ -1,5 +1,5 @@
 mixin pagination(object)
-  div(class=`pagination`)
+  div(class=`pagination ${object.blockMods}`)
     ul(class=`pagination__list`)
       each item in object.list
         if(item[0] === true)
