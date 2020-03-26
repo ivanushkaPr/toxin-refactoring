@@ -12,12 +12,18 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
+  resolve: {
+    alias: {
+      'jquery': path.join(__dirname, 'node_modules/jquery/src/jquery')
+    }
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
+      $: "jquery",
+      jQuery: "jquery",
+
+ }),
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/room_details.pug',
@@ -61,21 +67,21 @@ module.exports = {
       inject: true
     }),
     */
-    /*
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',
       filename: './index.html',
       inject: true
     }),
-  */
+  
 
- 
+  /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
       filename: './index.html',
       inject: true
     }),
-
+  */
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/colors&types.pug',
