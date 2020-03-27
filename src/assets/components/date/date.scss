@@ -115,7 +115,8 @@
       color: #fff;
       background: #5cc4ef; }
     .datepicker--cell.-selected-.-focus- {
-      background: #45bced; }
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    }
   .datepicker--cell:empty {
     cursor: default; }
 

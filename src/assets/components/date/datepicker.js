@@ -825,8 +825,6 @@
         },
 
         hide: function () {
-            console.log(this.$datepicker, 'gajgkahjg');
-            console.log('here we are')
             var onHide = this.opts.onHide;
             
             this.$datepicker

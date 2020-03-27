@@ -1,3 +1,30 @@
+// form elements
+// form elements masked text field date picker
+
+$(document).ready(function() {
+  $('.masked-text-field-datepicker').datepicker({
+    clearButton: true,
+    range: false,
+    inline: true,
+    navTitles: {
+      days: 'MM yyyy',
+    },
+  });
+
+  $('.masked-text-field-datepicker').focus(function(e) { 
+    
+  })
+  
+
+  
+  
+})
+
+
+//
+
+
+// search_room component datepicker
 $(document).ready(function() {
   let firstData;
   let secondData;
@@ -26,11 +53,12 @@ $(document).ready(function() {
   })
 
 
-  $('.datepicker--buttons').append('<span class="datepicker--button datepicker--button--purple" data-action="do">Применить</span>');
-  $('.datepicker--buttons .datepicker--button--purple').click(function(e) {
+  $('.datepick-start .datepicker--buttons').append('<span class="datepicker--button datepicker--button--purple" data-action="do">Применить</span>');
+  $('.datepick-start .datepicker--buttons .datepicker--button--purple').click(function(e) {
 
     const calendar = $(this).parent().parent().parent();
     calendar.css({position: 'absolute', left: '-10000px'})
     console.log(calendar)
   })
 });
+
