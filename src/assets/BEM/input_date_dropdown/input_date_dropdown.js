@@ -1,6 +1,9 @@
 $(document).ready(function() {
-  $('.datepick').datepicker({
-  inline: true,
+  let firstData;
+  let secondData;
+
+  $('.datepick-start').datepicker({
+
   navTitles: {
     days: 'MM yyyy',
   },
@@ -8,12 +11,26 @@ $(document).ready(function() {
     range: true,
     clearButton: true,
     doButton: true,
+    inline:true,
+    onSelect: function (fd, d, picker) { 
+      firstData = fd.split(",")[0];
+      secondData = fd.split(",")[1];
+
+      $(".datepick-start").val(firstData);
+      $(".datepick-end").val(secondData);
+    },
   });
 
-  $('.datepicker--button[data-action="do"]').text('Применить');
+  $('.datepick-start').focus(function(e) { 
+    $(this).next().css({position: 'static', left: '0px'})
+  })
 
-  
-  
 
-  
+  $('.datepicker--buttons').append('<span class="datepicker--button datepicker--button--purple" data-action="do">Применить</span>');
+  $('.datepicker--buttons .datepicker--button--purple').click(function(e) {
+
+    const calendar = $(this).parent().parent().parent();
+    calendar.css({position: 'absolute', left: '-10000px'})
+    console.log(calendar)
+  })
 });

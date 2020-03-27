@@ -1,0 +1,87 @@
+.pie_chart {
+  display: flex;
+  justify-content: space-between;
+  min-width: 420px;
+}
+
+
+.pie_chart__canvas  {
+
+  margin-left: 106px;
+    margin-top: 3px;
+}
+
+.pie_chart__graphic {
+  position: relative;
+}
+
+
+.pie_chart__overall {
+  position: absolute;
+  top: 41px;
+  left: 138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pie_chart__summary {
+  margin: 0px;
+  font-family: 'openSans-bold';
+  font-size: 24px;
+  line-height: 30px;
+  color: #BC9CFF;
+}
+
+.pie_chart__units {
+  margin: 0px;
+  font-family: 'montserrat-bold';
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+.pie_chart__legend {
+  margin-top:32px;
+}
+
+.pie_chart__categories {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.pie_chart__indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.pie_chart__indicator--great {
+
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+
+.pie_chart__indicator--good {
+
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.pie_chart__indicator--bad {
+
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.pie_chart__indicator--very_bad{
+
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+}
+
+.pie__chart__category {
+  font-family: 'montserrat-regular';
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark_shade_75;
+}

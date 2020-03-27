@@ -1,0 +1,12 @@
+mixin pie_chart(obj)
+  div(class=`pie_chart`)
+    div(class=`pie_chart__graphic`)
+      canvas(class=`pie_chart__canvas ${obj.canvasName}` width=`${obj.width}` height=`${obj.height}`)
+      div(class=`pie_chart__overall`)
+        p(class=`pie_chart__summary`) #{obj.summary}
+        p(class=`pie_chart__units`) #{obj.units}
+    div(class=`pie_chart__legend`)
+      each desc in obj.leg
+        p(class=`pie_chart__categories`) 
+          span(class=`pie_chart__indicator ${desc.mod} `)
+          span(class=`pie__chart__category`) #{desc.text}

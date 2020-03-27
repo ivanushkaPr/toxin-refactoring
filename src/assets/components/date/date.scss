@@ -245,7 +245,7 @@
   padding-bottom: 8px;
   border-color: #d7d7d7;
   box-shadow: none;
-  position: static;
+  position: absolute;
   left: auto;
   right: auto;
   opacity: 1;
@@ -462,7 +462,11 @@
       color: $dark_shade_50;
     }
 
-    .datepicker--buttons .datepicker--button[data-action="do"] {
+    .datepicker--buttons .datepicker--button[data-button="do"] {
+      color: $purple;
+    }
+
+    .datepicker--button--purple {
       color: $purple;
     }
 /* -------------------------------------------------
@@ -691,4 +695,7 @@
     background: none;
     border: none; }
 
+    .datepicker {
+      position: absolute;
+    }
  

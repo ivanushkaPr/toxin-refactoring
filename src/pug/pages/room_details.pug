@@ -30,6 +30,20 @@ block content
       description: 'Сведения о номере'
     },
 
+    pie_chart: {
+      canvasName: 'room_stats',
+      width: 130,
+      height: 130,
+      summary: 260,
+      units: 'голосов',
+      leg: [
+        {mod:'pie_chart__indicator--great', text: 'Великолепно' },
+        {mod:'pie_chart__indicator--good', text: 'Хорошо' },
+        {mod:'pie_chart__indicator--bad', text: 'Удовлетворительно' },
+        {mod:'pie_chart__indicator--very_bad', text: 'Разочарован' },
+      ]
+    },
+
     feedback: {
       mods: 'component_headline__text--md component_headline__text--room_details-feedback-margin-top',
       description: 'Отзывы посетителей номера'
