@@ -62,7 +62,8 @@ mixin footer(obj)
         p(class=`footer__cta`) Subscribe to our newsletter
         p(class=`footer_descript`)
           | Receive our latest news and promotions in your inbox!
-        +subscription_text_field(obj.subscription_text_field)
+        form(class='footer__form' action=`${obj.send_to}`, method=`post` name=`${obj.form_name}` autocomplete=`false`)
+          +subscription_text_field(obj.subscription_text_field)
     div(class=`footer__widgets`)
       p(class=`footer__copyright`) Copyright © 2018 Toxin UI Kit. All rights reserved.
       ul(class=`footer__social`)
