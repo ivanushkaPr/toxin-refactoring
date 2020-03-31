@@ -41,8 +41,6 @@
   padding-top: 1px;
 }
 
-
-
 .benefit__name, .benefit__property {
   font-size: 14px;
   line-height: 24px;
@@ -50,12 +48,14 @@
 }
 
 .benefit__name {
+  max-width: 200px;
   font-family: 'montserrat-bold';
   color: $dark_shade_75;
   
 } 
 
 .benefit__property {
+  max-width: 225px;
   font-family: 'montserrat-regular';
   color: $dark_shade_50;
 }

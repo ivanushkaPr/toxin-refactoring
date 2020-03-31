@@ -19,18 +19,19 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 44px;
   width: 100%;
   max-width: 266px;
+  word-break: break-all;
 } 
 
 .expandable_checkbox_list__description {
+  word-break: break-all;
   font-family: 'montserrat-bold';
   font-size: 12px;
   line-height: 15px;
   color: $dark_shade_100;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 14.5px 0px;
 }
 
 .expandable_checkbox_list__button-open {
@@ -89,6 +90,8 @@
 }
 
 .expandable_checkbox_list__text {
+  max-width: 240px;
+  word-break: break-all;
   font-family: 'montserrat-regular';
   font-size: 14px;
   line-height: 18px;

@@ -4,7 +4,7 @@
       contClassMods: 'none',
       inputClassMods: 'text-field__input--emailtextfield',
       type: 'text',
-      placeholder: 'Email',
+      placeholder: 'Email ',
       name: 'email',
       value: '',
     },
@@ -12,7 +12,7 @@
       email_text_field_description: {
         containerMods: '',
         contentMods: '',
-        description: 'text field'
+        description: 'text field '
       },
       email_text_field_state: {
         containerMods: '',
@@ -167,7 +167,7 @@
         description: 'expanded'
       },
       input_dropdown_room_quantity_expanded: {
-        properties: [['спальни', 2], ['кровати',2], ['ванные комнаты', 0]],
+        properties: [['спальни', 2], ['кровати',2], ['ванные комнаты', 0], ],
         controlsMods: '',
         contClassMods: '',
         inputClassMods: 'dropdown_room_quantity__input--controls-opened ',
@@ -178,7 +178,7 @@
       }, 
       expandable_checkbox_list: {
         mods: 'expandable_checkbox_list--pp-form-elements',
-        items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор' , 'Шампунь' , 'Телевизор', 'Шампунь'],
+        items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор' , 'Шампунь' , 'Телевизор', 'Шампунь', ],
         description: 'expandable checkbox list'
       },
       expandable_checkbox_list_opened: {
@@ -215,7 +215,7 @@
 
 
       input_dropdown_guests_selected: {
-        properties: [['взрослые', 2], ['дети', 1], ['младенцы', 0]],
+        properties: [['взрослые', 2], ['дети', 1], ['младенцы', 0],],
         controlsMods: '',
         contClassMods: '',
         inputClassMods: 'input_dropdown_guests__input--controls-opened',
@@ -341,7 +341,12 @@ mixin form-elements(form_elements_configuration)
       +input_description({containerMods: '',contentMods: 'input_description__content--pp-guest-dropdown-selected', description: 'dropdown'})
       +input_dropdown_guests(form_elements_configuration.input_dropdown_guests_selected)
 
-      +bulletlist({descMods: 'bulletlist__description--pp-form-elements', description: 'bullet list', items: ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00']})
+      +bulletlist({
+        descMods: 'bulletlist__description--pp-form-elements',
+        description: 'bullet list',
+        items: ['Нельзя с питомцами', 'Без вечеринок и мероприятий',
+        'Время прибытия — после 13:00, а выезд до 12:00', ]
+      })
 
     +grid({mods: 'grid--aside'})
       +appointment({

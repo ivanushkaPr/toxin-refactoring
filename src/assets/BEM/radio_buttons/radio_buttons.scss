@@ -45,12 +45,14 @@
 }
 
 .radio_buttons__option {
+  max-width: 100px;
   margin: 0px;
 
   font-family: 'montserrat-regular';
   font-size: 14px;
   line-height: 19px;
   color: $dark_shade_75;
+  word-break: break-all;
 }
 
 

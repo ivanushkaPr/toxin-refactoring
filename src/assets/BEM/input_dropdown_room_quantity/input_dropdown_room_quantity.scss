@@ -53,6 +53,7 @@
 .dropdown_room_quantity__control_buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 7px;
 }
 
@@ -60,7 +61,6 @@
   display: flex;
   align-items: center;
 
-  height: 30px;
   
   font-family: 'montserrat-bold';
   font-size: 12px;
@@ -68,6 +68,9 @@
   text-transform: uppercase;
   color: #1F2041;
   margin: 0px;
+
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .dropdown_room_quantity__container {
