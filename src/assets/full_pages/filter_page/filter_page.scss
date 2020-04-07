@@ -24,3 +24,58 @@
   margin: 0 auto;
   margin-top: 21px;
 }
+
+@media(max-width: 1200px ) {
+  .filter_page__content {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media(max-width: 1065px ) {
+  .filter_page__content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media(max-width: 965px ) {
+  .filter_page__content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media(max-width: 915px ) {
+  .filter_page__content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .filter_page__container {
+    justify-content: center;
+  }
+
+  
+
+}
+
+@media(max-width: 640px ) {
+  .filter_page__content {
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter_page__controls {
+    max-width:266px;
+  }
+
+  .filter_page__rooms {
+    margin-left: 0px;
+  }
+
+  .component_headline__text--filter_page {
+    text-align: center;
+  }
+}

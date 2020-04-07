@@ -31,13 +31,13 @@ module.exports = {
       inject: true
     }),
     */
-    /*
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/filter_page.pug',
       filename: './index.html',
       inject: true
     }),
-    */
+    
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/sign_in_page.pug',
@@ -53,13 +53,13 @@ module.exports = {
     */
 
     
-    
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/landing_page.pug',
       filename: './index.html',
       inject: true
     }),
-  
+    */
     
     /*
     new HtmlWebpackPlugin({

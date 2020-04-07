@@ -40,3 +40,9 @@
   margin-top: 0px;
   margin-bottom: 20px;
 }
+
+@media(max-width: 640px ) {
+  .component_headline__text--filter_page {
+    text-align: center;
+  }
+}

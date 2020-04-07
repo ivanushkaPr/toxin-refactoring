@@ -49,3 +49,13 @@
 .pagination--negative-margin {
   margin-left: -14px;
 }
+
+@media(max-width: 915px) {
+  .pagination {
+    min-width: 270px;
+  }
+
+  .pagination--negative-margin {
+    margin-left: 0px;
+  }
+}
