@@ -1,4 +1,3 @@
-
 import './icon.jpg';
 import './scss/style.scss';
 

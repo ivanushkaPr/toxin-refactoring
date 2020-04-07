@@ -1,6 +1,31 @@
 .landing_page__layer {
-  width: 1440px;
+  width: 100%;
   min-height: 829px;
   background-position: center -72px;
   background-image: url('./../assets/full_pages/landing_page/landing_page_background.svg');
+  background-repeat: no-repeat;
+}
+
+@media(max-width: 1301px) {
+  .landing_page__layer {
+    
+  }
+}
+
+@media(min-width: 1441px) {
+  .landing_page__layer  {
+    min-height: 1100px;
+    background-size: cover;
+    background-position: center;
+
+  }
+}
+
+@media(max-width: 765px){
+  .landing_page__layer {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
