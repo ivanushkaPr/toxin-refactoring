@@ -45,7 +45,7 @@
 
 mixin search_room(search_room_conf)
   section(class=`search_room ${search_room_conf.mods}`)
-    form(class='search_room__form' 	action=`${search_room_conf.send_to}`, method=`post` name=`${search_room_conf.form_name}` autocomplete=`false`)
+    form(class='search_room__form' action=`${search_room_conf.send_to}`, method=`post` name=`${search_room_conf.form_name}` autocomplete=`false`)
       +component_headline(search_room_conf.search_room_headline)
 
       +input_date_dropdown_container({mods: 'input_date_dropdown_container--cards-margin-bottom'})

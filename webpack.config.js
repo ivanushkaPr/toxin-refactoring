@@ -61,6 +61,7 @@ module.exports = {
     }),
     */
     
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
       filename: './index.html',
@@ -75,7 +76,7 @@ module.exports = {
     }),
   */
 
-/*  
+/*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
       filename: './index.html',
