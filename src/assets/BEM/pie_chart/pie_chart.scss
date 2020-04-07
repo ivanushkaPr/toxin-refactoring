@@ -85,3 +85,24 @@
   line-height: 24px;
   color: $dark_shade_75;
 }
+
+
+@media(max-width: 670px) {
+  .pie_chart__canvas {
+    margin-left: 0px;  
+  }
+}
+
+@media(max-width: 500px) {
+
+  .pie_chart {
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: auto;
+  }
+  
+
+  .pie_chart__overall{
+    left: 33px;
+  }
+}

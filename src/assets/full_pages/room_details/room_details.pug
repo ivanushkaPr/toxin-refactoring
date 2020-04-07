@@ -1,10 +1,12 @@
 mixin room_details(object)
   section(class=`room_details`)
     +header_register(object.header_register_configuration)
-    section(class=`room_details__review`)
-      div(class=`room_details__image-bg room_details__image-bg--big`) 
-      div(class=`room_details__image-sm room_details__image-sm--sm-first`)
-      div(class=`room_details__image-sm room_details__image-sm--sm-second`)
+
+    //
+      section(class=`room_details__review`)
+        div(class=`room_details__image-bg room_details__image-bg--big`) 
+        div(class=`room_details__image-sm room_details__image-sm--sm-first`)
+        div(class=`room_details__image-sm room_details__image-sm--sm-second`)
     section(class=`room_details__content`)
         section(class=`room_details__information`)
           +component_headline(object.information)

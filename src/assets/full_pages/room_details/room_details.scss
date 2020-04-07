@@ -49,4 +49,57 @@
 
 .room_details__cancelation {
   margin-top: 14px;
+
 }
+
+@media(max-width: 1400px) {
+  .room_details__content {
+    padding: 0px 50px;
+  }
+  
+}
+
+@media(max-width: 1170px) {
+  .room_details__content {
+    padding: 0px 25px;
+  }
+  
+}
+
+@media(max-width: 1170px) {
+  .room_details__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }  
+}
+
+@media(max-width: 670px) {
+  .room_details__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media(max-width: 500px) {
+  .room_details__booking {
+    
+  }
+}
+@media(max-width: 450px) {
+  .room_details__booking {
+    width: auto;
+    min-width: auto;
+    justify-content: center;
+  }
+
+  .room_details__content {
+
+  }
+
+  .room_details__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
