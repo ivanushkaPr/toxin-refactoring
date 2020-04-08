@@ -74,7 +74,15 @@
   font-family: 'montserrat-regular';
   font-size: 14px;
   line-height: 17px;
+}
+
+.footer__list_link {
   color: $dark_shade_50;
+  text-decoration: none;
+}
+
+.footer__list_link:visited {
+  
 }
 
 .footer_descript {
