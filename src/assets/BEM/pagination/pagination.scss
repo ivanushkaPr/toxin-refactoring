@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+@media(max-width: 915px) {
+  .pagination {
+    min-width: 270px;
+  }
+}
+
 .pagination__list {
   max-width: 241px;
   list-style-type: none;
@@ -63,10 +69,6 @@
 }
 
 @media(max-width: 915px) {
-  .pagination {
-    min-width: 270px;
-  }
-
   .pagination--negative-margin {
     margin-left: 0px;
   }

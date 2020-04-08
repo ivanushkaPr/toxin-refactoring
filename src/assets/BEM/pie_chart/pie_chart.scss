@@ -4,11 +4,26 @@
   min-width: 420px;
 }
 
+@media(max-width: 500px) {
+  .pie_chart {
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: auto;
+  }
+
+}
+
 
 .pie_chart__canvas  {
 
   margin-left: 106px;
     margin-top: 3px;
+}
+
+@media(max-width: 670px) {
+  .pie_chart__canvas {
+    margin-left: 0px;  
+  }
 }
 
 .pie_chart__graphic {
@@ -24,6 +39,13 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media(max-width: 500px) {
+  .pie_chart__overall{
+    left: 33px;
+  }
+}
+
 .pie_chart__summary {
   margin: 0px;
   font-family: 'openSans-bold';
@@ -87,22 +109,3 @@
 }
 
 
-@media(max-width: 670px) {
-  .pie_chart__canvas {
-    margin-left: 0px;  
-  }
-}
-
-@media(max-width: 500px) {
-
-  .pie_chart {
-    justify-content: center;
-    flex-wrap: wrap;
-    min-width: auto;
-  }
-  
-
-  .pie_chart__overall{
-    left: 33px;
-  }
-}
