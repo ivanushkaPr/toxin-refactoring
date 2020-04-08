@@ -19,25 +19,29 @@
   position: relative;
   width: 40px;
   height: 20px;
-
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
   border: 1px solid $dark_shade_25;
   box-sizing: border-box;
   border-radius: 10px;
 
   background: #FFF;
+  display: flex;
+  align-items: center;
+
 }
 
 .toggle__fake_checkbox:after  {
   content: '';
   position: absolute;
   padding: 6px;
-  top: 3px;
-  left: 4px;
-
+  left: 6px;
   background-color: $dark_shade_25;
   border-radius: 10px;
   transition-property: background-image, left;
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
 }
 
 .toggle__checkbox:checked ~ .toggle__fake_checkbox:after {

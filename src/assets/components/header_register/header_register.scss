@@ -3,8 +3,8 @@
 .header_register {
   padding-left: 140px;
   padding-right: 140px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 8px;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   display: flex;
@@ -23,7 +23,7 @@
 
 .header_register--h_f-margin_top {
   margin-top: 65px;
-  margin-bottom: 27px;
+  margin-bottom: 38px;
 }
 
 
@@ -35,6 +35,7 @@
 .header__list {
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 18px;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;

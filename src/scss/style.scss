@@ -119,13 +119,16 @@
 
 @import '../assets/BEM/pie_chart/pie_chart.scss';
 @import '../assets/full_pages/room_details/room_details.scss';
-
+@import '../assets/full_pages/registration_page/registration.scss';
 
 @import '../assets/BEM/text_block/text_block.scss';
 
 
 html {
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $dark_shade_100;
+  background-color: #fff;
 }
 
 body {

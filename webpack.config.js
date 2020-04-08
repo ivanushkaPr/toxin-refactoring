@@ -24,13 +24,13 @@ module.exports = {
       jQuery: "jquery",
 
  }),
-    
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/room_details.pug',
       filename: './index.html',
       inject: true
     }),
-    
+    */
     
     /*
     new HtmlWebpackPlugin({
@@ -39,16 +39,16 @@ module.exports = {
       inject: true
     }),
     */
-    
     /*
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/sign_in_page.pug',
       filename: './index.html',
       inject: true
     }),
     */
-    
-   /*
+    /*
+   
     new HtmlWebpackPlugin({
       template: './src/pug/pages/registration.pug',
       filename: './index.html',
@@ -79,14 +79,13 @@ module.exports = {
       inject: true
     }),
   */
-/*
 
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
       filename: './index.html',
       inject: true
     }),
-*/
+
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/colors&types.pug',

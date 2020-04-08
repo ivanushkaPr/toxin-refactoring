@@ -47,7 +47,7 @@
 }
 
 .pagination--negative-margin {
-  margin-left: -14px;
+  margin-left: -14px; // отрицательное значение Margin. Не Form elements.
 }
 
 @media(max-width: 915px) {
