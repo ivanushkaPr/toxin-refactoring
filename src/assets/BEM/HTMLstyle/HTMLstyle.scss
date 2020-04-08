@@ -1,6 +1,5 @@
 .HTMLstyle__description {
-  font-family: 'quicksand-bold';
-  font-style: normal;
+  font-family: 'quicksand';
   font-weight: bold;
   color: $dark_shade_100;
   margin-left: 29px;
@@ -28,13 +27,13 @@
 
 .HTMLstyle__description--xs {
   font-family: 'montserrat-bold';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
 } 
 
 .HTMLstyle__description--sm {
-  font-family: 'montserrat-regular';
-  font-style: normal;
+  font-family: 'montserrat';
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;

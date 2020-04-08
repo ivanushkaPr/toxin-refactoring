@@ -35,8 +35,8 @@
 }
 
 .header_auth__link {
-  font-family: 'montserrat-regular';
-
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: $dark_shade_50;
@@ -44,10 +44,8 @@
 }
 
 .header_auth__item--active {
-  font-family:'montserrat-bold';
-
-/* Dark 75% */
-
+  font-family: 'montserrat';
+  font-weight: bold;
   color: $dark_shade_75;
 }
 
@@ -90,7 +88,8 @@
 .header_auth__user_name{
   margin-top: 11px;
   margin-bottom: 18px;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);

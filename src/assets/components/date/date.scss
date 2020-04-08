@@ -45,7 +45,8 @@
           justify-content: center;
   height: 40px;
   width: 39px;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: $dark_shade_50;
@@ -134,7 +135,8 @@
 .datepicker--day-name {
   width: 40px;
   height: 40px;
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   color: #BC9CFF;
   text-transform: capitalize;
   display: -webkit-flex;
@@ -382,7 +384,8 @@
   border-radius: 4px;
   padding: 0 8px; 
   margin: 0px;
-  font-family: 'openSans-bold';
+  font-family: 'opensans';
+  font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: #1F2041;
@@ -451,7 +454,8 @@
     border: none; }
 
     .datepicker--buttons .datepicker--button {
-      font-family: 'montserrat-bold';
+      font-family: 'montserrat';
+      font-weight: bold;
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase;

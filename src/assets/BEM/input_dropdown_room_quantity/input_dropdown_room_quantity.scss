@@ -14,7 +14,8 @@
     box-sizing: border-box;
     border-radius: 2px 2px 0px 0px;
   
-    font-family: 'montserrat-regular';
+    font-family: 'montserrat';
+    font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: $dark_shade_75;
@@ -64,7 +65,8 @@
   align-items: center;
 
   
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -94,9 +96,8 @@
   
 
   font: {
-    family: 'montserrat-bold';
-    style: normal;
-    weight: normal;
+    font-family: 'montserrat';
+    font-weight: bold;
     size: 18px;
   }
   line-height: 22px;
@@ -113,7 +114,8 @@
   width: 30px;
 
 
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   

@@ -21,7 +21,8 @@
 
 .calendar__period {
   margin: 0px;
-  font-family: 'openSans-bold';
+  font-family: 'opensans';
+  font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: #1F2041;
@@ -53,14 +54,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: $dark_shade_50;
 }
 
 .calendar__data--color-purple {
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   color: $purple;
   text-transform: capitalize;
 }
@@ -79,7 +82,8 @@
   background-color: transparent;
   border: none;
   padding: 0px;
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;

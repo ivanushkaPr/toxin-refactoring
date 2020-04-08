@@ -4,7 +4,8 @@
 }
 
 .checkbox_buttons__description {
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: $dark_shade_100;
@@ -55,7 +56,8 @@
 }
 
 .checkbox_buttons__text {
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $dark_shade_50;

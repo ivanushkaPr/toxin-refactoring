@@ -2,7 +2,8 @@
 .input_description__content {
   margin-top: 3px;
   margin-bottom: 5px;
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -13,7 +14,8 @@
 .input_description__content--weight-regular {
   margin-top: 0px;
   margin-bottom: 8px;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   color: $dark_shade_50;
 }
 
@@ -23,7 +25,8 @@
 }
 
 .input_description__content--button-description {
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: #000000;

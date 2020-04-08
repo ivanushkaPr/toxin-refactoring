@@ -12,7 +12,8 @@
 }
 
 .room_info__number {
-  font-family: 'openSans-bold';
+  font-family: 'opensans';
+  font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   color: $dark_shade_100;
@@ -32,7 +33,8 @@
 }
 
 .room_info__type {
-  font-family:'montserrat-bold';
+  font-family:'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -49,7 +51,8 @@
   display: inline-block;
   margin-right: 1px;
   
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -60,7 +63,8 @@
 }
 
 .room_info__period {
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: $dark_shade_50;

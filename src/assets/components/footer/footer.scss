@@ -59,7 +59,8 @@
 .footer__information {
   max-width: 260px;
   margin-top: 10px;
-  font-family: 'Montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $dark_shade_75;
@@ -128,7 +129,8 @@
   margin-top: 7px;
   margin-bottom: 18px;
 
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -142,7 +144,8 @@
 .footer__item {
   margin-bottom: 20px;
 
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
 }
@@ -156,7 +159,8 @@
 .footer_descript {
   max-width: 196px;
   margin-bottom: 23px;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
@@ -200,7 +204,8 @@
 
 .footer__copyright{
   margin-top: 9px;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.75);

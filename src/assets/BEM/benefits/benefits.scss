@@ -49,13 +49,15 @@
 
 .benefit__name {
   max-width: 200px;
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   color: $dark_shade_75;
   
 } 
 
 .benefit__property {
   max-width: 225px;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   color: $dark_shade_50;
 }

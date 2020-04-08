@@ -26,7 +26,8 @@
 
 .expandable_checkbox_list__description {
   word-break: break-all;
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: $dark_shade_100;
@@ -89,7 +90,8 @@
 .expandable_checkbox_list__text {
   max-width: 240px;
   word-break: break-all;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $dark_shade_50;

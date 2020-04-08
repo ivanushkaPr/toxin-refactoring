@@ -48,7 +48,8 @@
 
 .pie_chart__summary {
   margin: 0px;
-  font-family: 'openSans-bold';
+  font-family: 'opensans';
+  font-family: bold;
   font-size: 24px;
   line-height: 30px;
   color: #BC9CFF;
@@ -56,7 +57,8 @@
 
 .pie_chart__units {
   margin: 0px;
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -102,7 +104,8 @@
 }
 
 .pie__chart__category {
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $dark_shade_75;

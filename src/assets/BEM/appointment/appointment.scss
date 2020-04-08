@@ -34,13 +34,15 @@
 }
 
 .appointment__name {
-font-family: 'montserrat-bold';
+font-family: 'montserrat';
+font-weight: bold;
 color: $dark_shade_75;
 letter-spacing: 0.025em;
 }
 
 .appointment__date{
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   color: $dark_shade_50;
 }
 
@@ -52,7 +54,8 @@ letter-spacing: 0.025em;
 .appointment__text{
   max-width: 655px;
   margin: 0px;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);

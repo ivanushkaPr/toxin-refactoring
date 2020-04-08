@@ -4,7 +4,8 @@
 }
 
 .rich_checkbox_buttons__description {
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: $dark_shade_100;
@@ -59,7 +60,8 @@
 }
 
 .rich_checkbox_buttons__headline {
-  font-family: 'montserrat-bold';
+  font-family: 'montserrat';
+  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
   color: $dark_shade_50;
@@ -71,7 +73,8 @@
   line-break: normal;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  font-family: 'montserrat-regular';
+  font-family: 'montserrat';
+  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   color: $dark_shade_50;
