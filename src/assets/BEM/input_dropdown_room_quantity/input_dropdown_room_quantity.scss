@@ -33,6 +33,7 @@
   right: 1px;
   background-color: transparent;
   border: none; 
+  cursor: pointer;
 }
 
 .dropdown_room_quantity__controls {
@@ -99,6 +100,7 @@
     size: 18px;
   }
   line-height: 22px;
+  cursor: pointer;
 }
 
 .dropdown_room_quantity__total {
@@ -114,5 +116,6 @@
   font-family: 'montserrat-bold';
   font-size: 12px;
   line-height: 15px;
+  
 }
 

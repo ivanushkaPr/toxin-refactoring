@@ -45,6 +45,7 @@
   right: 0px;
   background-color: transparent;
   border: none; 
+  cursor: pointer;
 }
 
 .input_dropdown_guests__controls {
@@ -111,6 +112,7 @@
     size: 18px;
   }
   line-height: 22px;
+  cursor: pointer;
 }
 
 .input_dropdown_guests__total {
@@ -145,6 +147,7 @@
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .input_dropdown_guests__button_reset--hidden {

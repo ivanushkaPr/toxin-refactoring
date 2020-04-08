@@ -22,15 +22,11 @@
     padding-top: 99px;
 }
 
-
-
 .rich_checkbox_buttons__list {
   margin: 0px;
   margin-bottom: 17.44px;
   padding: 0px;
 }
-
-
 
 .rich_checkbox_buttons_label {
   display: flex;
@@ -48,7 +44,7 @@
   border: 1px solid $dark_shade_25;
   border-radius: 4px;
   margin-right: 10px;
-  
+  cursor: pointer;
 }
 
 .rich_checkbox_buttons__input:checked ~ .rich_checkbox_buttons__checkbox {

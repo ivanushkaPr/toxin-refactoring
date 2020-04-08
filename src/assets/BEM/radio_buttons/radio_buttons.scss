@@ -27,6 +27,7 @@
   border: 1px solid $dark_shade_25;
   border-radius: 50%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .radio_buttons__input:checked ~ .radio_buttons__fake_radio {
