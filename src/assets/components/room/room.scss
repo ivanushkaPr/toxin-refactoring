@@ -21,9 +21,7 @@
   margin-top: 39px;
 }
 
-.room__images {
 
-}
 
 .room__gallery {
   display: flex;
@@ -54,9 +52,6 @@
   top: 53px;
 }
 
-.room__button--left {
-
-}
 
 .room__button--right {
   right: 0;
@@ -97,7 +92,7 @@
 
 .room__number {
   margin-bottom: 12px;
-  font-family: 'opensans';
+  font-family: 'opensans', Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -116,7 +111,7 @@
 .room__status {
   display: inline-block;
   margin-left: 5px;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -126,7 +121,7 @@
 
 .room_price {
   margin-bottom: 12px;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
@@ -139,7 +134,7 @@
 
 .room__period {
   display: inline-block;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   font-size: 10px;
   line-height: 15px;
@@ -157,7 +152,7 @@
 
 .room__feedbacks {
   margin: 0px;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
@@ -167,7 +162,7 @@
 .room__number-span {
   display: inline-block;
   margin-left: 5px;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;

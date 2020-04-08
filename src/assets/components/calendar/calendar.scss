@@ -21,7 +21,7 @@
 
 .calendar__period {
   margin: 0px;
-  font-family: 'opensans';
+  font-family: 'opensans', Arial, sans-serif;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -54,7 +54,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -62,7 +62,7 @@
 }
 
 .calendar__data--color-purple {
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: bold;
   color: $purple;
   text-transform: capitalize;
@@ -82,7 +82,7 @@
   background-color: transparent;
   border: none;
   padding: 0px;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
