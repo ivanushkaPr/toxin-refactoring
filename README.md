@@ -22,12 +22,11 @@
 2. [Form Elements](https://ivanushkapr.github.io/hotel/form_elements.html)
 3. [Cards](https://ivanushkapr.github.io/hotel/cards.html)
 4. [Headers & Footers](https://ivanushkapr.github.io/hotel/headers_&_footers.html)
-5. [Headers & Footers](https://ivanushkapr.github.io/hotel/headers_&_footers.html)
-6. [Landing page](https://ivanushkapr.github.io/hotel/landing_page.html)
-7. [Search Room](https://ivanushkapr.github.io/hotel/filter_page.html)
-8. [Room Details](https://ivanushkapr.github.io/hotel/room_details.html)
-9. [Registration](https://ivanushkapr.github.io/hotel/registration.html)
-10. [Sign in](https://ivanushkapr.github.io/hotel/registration.html)
+5. [Landing page](https://ivanushkapr.github.io/hotel/landing_page.html)
+6. [Search Room](https://ivanushkapr.github.io/hotel/filter_page.html)
+7. [Room Details](https://ivanushkapr.github.io/hotel/room_details.html)
+8. [Registration](https://ivanushkapr.github.io/hotel/registration.html)
+9. [Sign in](https://ivanushkapr.github.io/hotel/sign_in.html)
 
 #### Информация о проекте.
 
