@@ -18,7 +18,16 @@
   2. NPM run build - сборка проекта для его последующего размещения на сервере.
 
 ### Демонстрация проекта
-1. [Landing page](https://ivanushkapr.github.io/dist/landing_page.html)
+1. [Colors and Type](https://ivanushkapr.github.io/hotel/color_and_types.html)
+2. [Form Elements](https://ivanushkapr.github.io/hotel/form_elements.html)
+3. [Cards](https://ivanushkapr.github.io/hotel/cards.html)
+4. [Headers & Footers](https://ivanushkapr.github.io/hotel/headers_&_footers.html)
+5. [Headers & Footers](https://ivanushkapr.github.io/hotel/headers_&_footers.html)
+6. [Landing page](https://ivanushkapr.github.io/hotel/landing_page.html)
+7. [Search Room](https://ivanushkapr.github.io/hotel/filter_page.html)
+8. [Room Details](https://ivanushkapr.github.io/hotel/room_details.html)
+9. [Registration](https://ivanushkapr.github.io/hotel/registration.html)
+10. [Sign in](https://ivanushkapr.github.io/hotel/registration.html)
 
 #### Информация о проекте.
 
