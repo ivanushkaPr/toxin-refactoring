@@ -17,6 +17,9 @@
   1. NPM run start - запуск веб - сервера webpack и открытие страниц в браузере.
   2. NPM run build - сборка проекта для его последующего размещения на сервере.
 
+### Демонстрация проекта
+1. [Landing page](https://ivanushkapr.github.io/dist/landing_page.html)
+
 #### Информация о проекте.
 
 Выполнен для компании - Full Stack Development.
