@@ -10,41 +10,60 @@
   margin-top: 40px;
   margin-bottom: 16px;
   max-width: 320px;
+  
 
   color: #1F2041;
 }
 
-.component_headline__text--md {
+// component_headline__text--md
+.component_headline__text--font-size-md {
   font-size: 19px;
   line-height: 24px;
 }
 
-.component_headline__text--filter_page {
-  max-width: inherit;
+// component_headline__text--filter_page
+.component_headline__text--vertical-margin {
   margin-top: 29px;
   margin-bottom: 21px;
 }
 
+// component_headline__text--filter_page
+.component_headline__text--max-width-auto {
+  max-width: inherit;
+}
+
+
 @media(max-width: 640px ) {
-  .component_headline__text--filter_page {
+  // component_headline__text--filter_page
+  .component_headline__text--text-align-center {
     text-align: center;
   }
 }
 
-.component_headline__text--registartion-margin-bottom {
+// Внимательно дубли.
+//component_headline__text--registartion-margin-bottom
+.component_headline__text--margin-bottom {
   margin-bottom: 20px;
 }
 
-.component_headline__text--auth-form-margin-bottom {
+//component_headline__text--auth-form-margin-bottom
+.component_headline__text--margin-bottom  {
   margin-bottom: 20px;
 }
 
-.component_headline__text--room_details-margin-top {
+//component_headline__text--room_details-margin-top 
+.component_headline__text--margin-top {
   margin-top: 69px;
 }
 
-.component_headline__text--room_details-feedback-margin-top {
+
+//component_headline__text--room_details-feedback-margin-top 
+// Вместо одного добавляем два класса
+.component_headline__text--margin-top-zero {
   margin-top: 0px;
-  margin-bottom: 20px;
 }
+
+.component_headline__text--margin-bottom  {
+  margin-bottom: 20px;
+} 
 

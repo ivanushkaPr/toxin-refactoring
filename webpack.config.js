@@ -24,77 +24,82 @@ module.exports = {
       jQuery: "jquery",
 
  }),
-    /*
+    
+ /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/room_details.pug',
       filename: './index.html',
       inject: true
     }),
-    */
+  */
     
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/filter_page.pug',
-      filename: './index.html',
+      filename: './filter_page.html',
       inject: true
     }),
-    */
-    /*
     
     new HtmlWebpackPlugin({
       template: './src/pug/pages/sign_in_page.pug',
-      filename: './index.html',
+      filename: './sign_in_page.html',
       inject: true
     }),
-    */
-    /*
+    
    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/registration.pug',
-      filename: './index.html',
+      filename: './registration.html',
       inject: true
     }),
-  */
+  
 
-    /*
+
     new HtmlWebpackPlugin({
       template: './src/pug/pages/landing_page.pug',
-      filename: './index.html',
+      filename: './landing_page.html',
       inject: true
     }),
-    */
+  
     
-    /*
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
-      filename: './index.html',
+      filename: './headers_&_footers.html',
       inject: true
     }),
-    /*
-    /*
+  
+  
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',
-      filename: './index.html',
+      filename: './cards.html',
       inject: true
     }),
-  */
+  
   
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
+      filename: './form_elements.html',
+      inject: true
+    }),
+  */
+  
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/colors&types.pug',
+      filename: './color_and_types.html',
+      inject: true
+    }),
+/*
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/presentation.pug',
       filename: './index.html',
       inject: true
     }),
-  
-    /*
-    new HtmlWebpackPlugin({
-      template: './src/pug/pages/colors&types.pug',
-      filename: './colorAndTypes.html',
-      inject: true
-    }),
     */
+  
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {

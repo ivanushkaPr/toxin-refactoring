@@ -53,11 +53,15 @@
   cursor: pointer;
 }
 
-.slider__runner--first-runner {
+
+// slider__runner--first-runner
+.slider__runner--first-runner-position {
   left: 74px;
 }
 
-.slider__runner--second-runner { 
+
+// slider__runner--second-runner
+.slider__runner--second-runner-position { 
   left: 159px;
 }
 
@@ -71,6 +75,7 @@
   
 }
 
-.slider--filter-page_padding-top {
+// slider--filter-page_padding-top
+.slider--padding-top {
   margin-top: 30px;
 }

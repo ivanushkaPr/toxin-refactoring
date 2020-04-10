@@ -2,27 +2,30 @@
 
 }
 
-.murad {
+
+// Общий класс картинки
+.appointment__photo {
   width: 48px;
   height: 48px;
-  background-image: url('./../assets/BEM/appointment/murad.svg');
   background-position: center -10px;
   margin-right: 10px;
 }
 
-.patricia {
-  width: 48px;
-  height: 48px;
+//.murad
+
+.appointment__photo--background-image_man {
+  background-image: url('./../assets/BEM/appointment/murad.svg');
+}
+
+.appointment__photo--background-image_girl {
   background-image: url('./../assets/BEM/appointment/patricia.svg');
-  background-position: center -10px;
-  margin-right: 10px;
 }
 
 .appointment__user {
   display: flex;
 }
 
-.appointment__user--second_appointment--margin-top {
+.appointment__user--with-margin-top {
   margin-top: 23px;
 }
 
@@ -40,7 +43,7 @@ color: $dark_shade_75;
 letter-spacing: 0.025em;
 }
 
-.appointment__date{
+.appointment__date {
   font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   color: $dark_shade_50;
@@ -51,7 +54,7 @@ letter-spacing: 0.025em;
   margin-top: 10px;
 }
 
-.appointment__text{
+.appointment__text {
   max-width: 655px;
   margin: 0px;
   font-family: 'montserrat', Arial, sans-serif;

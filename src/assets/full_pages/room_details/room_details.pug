@@ -12,16 +12,16 @@ mixin room_details(object)
           +component_headline(object.information)
           div(class=`room_details__wrapper`)
             div(class=`room_details__benefits`)
-              +benefit({contMods: "benefit--room_details--pp", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"}) 
-              +benefit({contMods: "benefit--room_details--pp", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"})
-              +benefit({contMods: "benefit--room_details--pp", imageMods: "benefit__image--background-hot", nameText: "Уют", propText: "Номер оснащен камином"})
+              +benefit({contMods: "benefit--extra-fields", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"}) 
+              +benefit({contMods: "benefit--extra-fields", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"})
+              +benefit({contMods: "benefit--extra-fields", imageMods: "benefit__image--background-bonfire", nameText: "Уют", propText: "Номер оснащен камином"})
             div(class=`room_details__statistiks`)
               +pie_chart(object.pie_chart)
 
           +component_headline(object.feedback)
           div(class=`room_details__feedback`)
             +appointment({
-              image: "murad",
+              image: "appointment__photo--background-image_man",
               name: "Мурад Сафронов",
               date: "5 дней назад",
               text: `Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.
@@ -29,8 +29,8 @@ mixin room_details(object)
               не жаловался из соседей.`})
 
             +appointment({
-              userMods: "appointment__user--second_appointment--margin-top ",
-              image: "patricia",
+              userMods: "appointment__user--with-margin-top",
+              image: "appointment__photo--background-image_girl",
               name: "Патрисия Стёклышкова",
               date: "Неделю назад",
               text: `Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент`})

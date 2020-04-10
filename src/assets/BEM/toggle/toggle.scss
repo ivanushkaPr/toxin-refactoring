@@ -3,11 +3,14 @@
   align-items: center;
 }
 
-.toggle__label--registration-margin-bottom {
+
+// .toggle__label--registration-margin-bottom
+.toggle__label--mb-reg {
   margin-bottom: 22px;
 }
 
-.toggle__label--divider {
+// toggle__label--divider
+.toggle__label--mb {
   margin-bottom: 11px;
 }
 
@@ -57,7 +60,7 @@
 .toggle__description {
   margin: 0px;
   margin-left: 10px;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;

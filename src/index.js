@@ -10,3 +10,7 @@ import './assets/BEM/guest_dropdown/guest_dropdown.js';
 import './assets/BEM/input_date_dropdown/input_date_dropdown.js';
 import './assets/BEM/pie_chart/pie_chart.js';
 import './assets/components/date/datepicker.js';
+import './assets/favicons/favicons';
+
+
+

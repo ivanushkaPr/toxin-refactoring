@@ -83,23 +83,26 @@
   margin-right: 5px;
 }
 
-.pie_chart__indicator--great {
 
+// pie_chart__indicator--great 
+.pie_chart__indicator--grade-great {
   background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
 }
 
-.pie_chart__indicator--good {
-
+// pie_chart__indicator--good 
+.pie_chart__indicator--grade-good {
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
 
-.pie_chart__indicator--bad {
 
+// pie_chart__indicator--bad
+.pie_chart__indicator--grade-bad {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
-.pie_chart__indicator--very_bad{
 
+// pie_chart__indicator--very_bad
+.pie_chart__indicator--grade-very-bad {
   background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
 }
 

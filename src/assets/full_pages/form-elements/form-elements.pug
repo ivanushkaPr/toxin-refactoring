@@ -282,7 +282,7 @@ mixin form-elements(form_elements_configuration)
       +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list)
       +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list_opened)
 
-      +benefit({contMods: "benefit-pp", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"}) 
+      +benefit({contMods: "benefit--pading-top", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"}) 
       +benefit({contMods: "benefit-pp", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"})
 
     +grid({mods: "grid--form-elements-second-row  grid--form-elements--pp-padding-top"})
@@ -342,7 +342,7 @@ mixin form-elements(form_elements_configuration)
       +input_dropdown_guests(form_elements_configuration.input_dropdown_guests_selected)
 
       +bulletlist({
-        descMods: "bulletlist__description--pp-form-elements",
+        descMods: "bulletlist__description--padding-top",
         description: "bullet list",
         items: ["Нельзя с питомцами", "Без вечеринок и мероприятий",
         "Время прибытия — после 13:00, а выезд до 12:00", ]
@@ -350,7 +350,7 @@ mixin form-elements(form_elements_configuration)
 
     +grid({mods: "grid--aside"})
       +appointment({
-        image: "murad",
+        image: "appointment__photo--background-image_man",
         name: "Мурад Сафронов",
         date: "5 дней назад",
         text: `Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.

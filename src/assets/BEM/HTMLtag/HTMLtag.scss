@@ -4,26 +4,30 @@
   color: $dark_shade_25;
   text-align: right;
   min-width: 37px;
-  
 }
 
-.HTMLtag__character--xl {
+
+//HTMLtag__character--xl
+.HTMLtag__character--font-size-lg {
   font-size: 24px;
   line-height: 29px;
 }
 
-.HTMLtag__character--md {
-
+// .HTMLtag__character--md
+.HTMLtag__character--font-size-md {
   font-size: 19px;
   line-height: 23px;
 }
 
-.HTMLtag__character--xs {
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.HTMLtag__character--sm {
+// .HTMLtag__character--sm
+.HTMLtag__character--font-size-sm {
   font-size: 14px;
   line-height: 24px;
+}
+
+
+// HTMLtag__character--xs
+.HTMLtag__character--font-size-xs {
+  font-size: 12px;
+  line-height: 15px;
 }

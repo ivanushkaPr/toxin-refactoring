@@ -14,11 +14,11 @@
   margin-bottom: 16.56px;
 }
 
-.checkbox_buttons__description--filter_page-margin_top {
+// checkbox_buttons__description--filter_page-margin_top 
+
+.checkbox_buttons__description--margin-top {
   margin-top: 56px;
 }
-
-
 
 .checkbox_buttons__list {
   margin: 0px;
@@ -28,11 +28,13 @@
 
 
 
-.checkbox_buttons_label {
+//checkbox_buttons_label 
+.checkbox_buttons__label {
   display: flex;
   align-items: flex-start;
   margin-bottom: 12px;
 }
+
 .checkbox_buttons__input {
   display: none;
 }

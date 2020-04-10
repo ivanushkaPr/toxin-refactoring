@@ -3,11 +3,16 @@
   max-width: 320px;
 }
 
-.input_dropdown_guests--cards-margin-bottom {
+
+// input_dropdown_guests--cards-margin-bottom
+
+.input_dropdown_guests--margin-bottom-on-cards-page {
   margin-bottom: 31px;
 }
 
-.input_dropdown_guests--balance-margin-bottom {
+
+// input_dropdown_guests--balance-margin-bottom
+.input_dropdown_guests--margin-bottom-in-balance-component {
   margin-bottom: 7.56px;
 }
 
@@ -145,7 +150,8 @@
   background-color: transparent;
   border: none;
   padding: 0px;
-  font-family: 'montserrat-bold', Arial, sans-serif;
+  font-family: 'montserrat', Arial, sans-serif;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;

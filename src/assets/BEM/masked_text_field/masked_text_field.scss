@@ -10,13 +10,15 @@
   box-sizing: border-box;
   border-radius: 4px;
 
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $dark_shade_75;
 }
 
-.masked_text_field__input--registration-margin-bottom {
+
+// masked_text_field__input--registration-margin-bottom
+.masked_text_field__input--margin-bottom {
   margin-bottom: 15px;
 }

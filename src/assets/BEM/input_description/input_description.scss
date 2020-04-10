@@ -2,7 +2,7 @@
 .input_description__content {
   margin-top: 3px;
   margin-bottom: 5px;
-  font-family: 'montserrat';
+  font-family: 'montserrat', Arial, sans-serif;;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -11,10 +11,14 @@
   word-break: break-all;
 }
 
-.input_description__content--weight-regular {
+// input_description__content--weight-regular 
+// old rules
+// font-family: 'montserrat', Arial, sans-serif;
+//  font-weight: normal;
+
+.input_description__content--font-weight-normal {
   margin-top: 0px;
   margin-bottom: 8px;
-  font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   color: $dark_shade_50;
 }
@@ -24,7 +28,8 @@
   margin-bottom: 5px;
 }
 
-.input_description__content--button-description {
+// input_description__content--button-description
+.input_description__content--description-for-buttons {
   font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -33,70 +38,93 @@
   text-transform: none;
 }
 
-.input_description__content--pp-text-field-hover {
+
+// input_description__content--pp-text-field-hover 
+.input_description__content--margins {
   margin-top: 3px;
   margin-bottom: 5px;
 }
 
-.input_description--pp {
+// input_description--pp
+.input_description--pading-top {
   padding-top: 38px;
 }
 
-.input_description--filter_date_dropdown_padding-top  {
+
+// input_description--filter_date_dropdown_padding-top
+.input_description--margin-top-on-filter-date-page {
   margin-top: 41px;
 } 
 
-.input_description--subscription_text_field_padding-top  {
+// input_description--subscription_text_field_padding-top 
+.input_description--padding-top-for-subscriptio-text-field  {
   padding-top: 39px;
 } 
 
-
-.input_description__content--pp-radio-button {
+// input_description__content--pp-radio-button 
+.input_description__content--vertical-padding-near-radio-buttons {
   padding-top: 23px;
   padding-bottom: 11px;
  }
 
-.input_description__content--pp-toggle {
+
+// input_description__content--pp-toggle 
+.input_description__content--vertical-padding-near-toggle {
   padding-top: 37px;
   padding-bottom: 8px;
  }
 
- .input_description__content--pp-like-button {
+
+ //input_description__content--pp-like-button 
+ .input_description__content--vertical-padding-near-like-button{
   padding-top: 38px;
   padding-bottom: 11px;
  }
 
-.input_description__content--pp-rate-button  {
+
+// input_description__content--pp-rate-button
+.input_description__content--vertical-padding-near-rate-button  {
   padding-top: 33px;
   padding-bottom: 15px;
  }
 
+
+ // input_description__content--pp-guest-dropdown 
 .input_description__content--pp-guest-dropdown  {
   padding-top: 190px;
  }
 
-.input_description__content--pp-buttons {
+
+ // input_description__content--pp-buttons
+.input_description__content--vertical-padding-buttons-block {
   padding-top: 39px;
   padding-bottom: 11px;
  }
 
-.input_description__content--pp-pagination {
+// input_description__content--pp-pagination 
+// Заменить на padding
+.input_description__content--vertical-margin-pagination {
   margin-top: 40px;
   margin-bottom: 16px;
  }
 
-.input_description__content--pp-guest-dropdown-selected {
+// input_description__content--pp-guest-dropdown-selected
+.input_description__content--padding-top-guest-dropdown-block{
   padding-top: 230px;
  }
 
- .input_description--filter-page_filter-date-dropdown {
+ // input_description--filter-page_filter-date-dropdown
+ .input_description--margin-top-for-filter-date-dropdown {
   margin-top: 29px;
  }
 
- .input_description--filter-page_guest-dropdown {
+// input_description--filter-page_guest-dropdown
+ .input_description--margin-top-for_guest-dropdown {
   margin-top: 20px;
  }
 
- .input_description--filter-page_dropdown-room-quantity {
+
+ // input_description--filter-page_dropdown-room-quantity
+ .input_description--margin-top-for_dropdown-room-quantity {
   margin-top: 30px;
  }

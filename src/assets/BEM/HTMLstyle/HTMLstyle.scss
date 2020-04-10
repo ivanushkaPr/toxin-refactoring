@@ -6,36 +6,59 @@
   margin-bottom: 34px;
 }
 
-.HTMLstyle__description--lg {
+// HTMLstyle__description--lg
+.HTMLstyle__description--font-size-lg {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: -0.018em;
 }
 
-.HTMLstyle__description--md {
-  margin-top: 16px;
-  margin-bottom: 37px;
+// HTMLstyle__description--lg
+.HTMLstyle__description--negative-letter-spacing {
+  letter-spacing: -0.018em;
+}
+
+
+// Убрать леттер спейсинг и марджины ниже. Дубликаци правила.
+// HTMLstyle__description--md 
+.HTMLstyle__description--font-size-md {
   font-size: 19px;
   line-height: 24px;
   letter-spacing: -0.018em;
 }
 
-.HTMLstyle__description--md-margin {
+.HTMLstyle__description--margin-top-and-left {
   margin-top: 16px;
   margin-bottom: 38px;
 }
 
-.HTMLstyle__description--xs {
+//HTMLstyle__description--xs 
+.HTMLstyle__description--font-size-xs {
   font-family: 'montserrat-bold', Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
 } 
 
-.HTMLstyle__description--sm {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
+//HTMLstyle__description--xs  
+.HTMLstyle__description--font-family-montserrat-bold {
+  font-family: 'montserrat-bold', Arial, sans-serif;
+  font-weight: bold;
+}
+
+//HTMLstyle__description--sm
+.HTMLstyle__description--font-size-sm {
   font-size: 14px;
   line-height: 24px;
+}
+
+//HTMLstyle__description--sm
+.HTMLstyle__description--color-dark-shade-75 {
   color: $dark_shade_75;
+}
+
+//HTMLstyle__description--sm 
+.HTMLstyle__description--font-family-montserrat {
+  font-family: 'montserrat', Arial, sans-serif;
+  font-weight: normal;
 }

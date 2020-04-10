@@ -5,15 +5,18 @@
   padding-top: 100px;
 }
 
-.footer--padding-top-landing-page {
+// footer--padding-top-landing-page 
+.footer--pt-lp {
   padding-top: 97px;
 }
 
-.footer--filter_page-padding-top {
+// footer--filter_page-padding-top 
+.footer--pt-fp {
   padding-top: 153px;
 }
 
-.footer--h_f_margin-top {
+// footer--h_f_margin-top
+.footer--mt-hf {
   margin-top: 36px;
   margin-bottom: 18px;
 }
@@ -53,8 +56,6 @@
     order: 0;
   }
 }
-
-
 
 .footer__information {
   max-width: 260px;
@@ -200,8 +201,6 @@
   }
 }
 
-
-
 .footer__copyright{
   margin-top: 9px;
   font-family: 'montserrat', Arial, sans-serif;
@@ -223,8 +222,6 @@
   margin-left: 11px;
   margin-right: 11px;
 }
-
-
 
 @media(max-width: 1000px) {
   .footer__subscribe {
