@@ -44,6 +44,10 @@
         value: "",
         resetMods: "input_dropdown_guests__button_reset--hidden"
       }, 
+      button_wide: {
+        buttonText: "подобрать номер",
+        type: "submit"
+      },
     },
     registration: {
       mods: "",
@@ -118,6 +122,7 @@
       },
       checkout_button: {
         buttonText: "перейти к оплате",
+        type: "submit"
       },
       button_submit_cont: {
         buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
@@ -128,7 +133,10 @@
         description: "Уже есть аккаунт на Toxin"
       },
       button_submit: {
-        buttonText: "Войти", buttonMods: "button__body--button__ellipse button__body--extra-padding"
+        buttonText: "Войти", buttonMods: "button__body--button__ellipse button__body--extra-padding",
+        type: "button",
+        link: true,
+        href: "https://www.mock-adress/full-stack-development.ru/submit",
       },
     },
     auth_form: {
@@ -168,6 +176,8 @@
       },
       checkout_button: {
         buttonText: "войти",
+        link: true,
+        href: 'https://www.mock-adress/full-stack-development.ru/createAccount'
       },
       button_submit_cont: {
         buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
@@ -178,7 +188,7 @@
         description: "Нет аккаунта на Toxin?"
       },
       button_submit: {
-        buttonText: "создать", buttonMods: "button__body--button__ellipse "
+        buttonText: "создать", buttonMods: "button__body--button__ellipse ", type: "submit",
       },
     },
     cost_calculator: {
@@ -249,7 +259,8 @@
         sumText: "38 081₽",
       },
       bookButton: {
-        buttonText: "Забронировать"
+        buttonText: "Забронировать",
+        type: 'submit'
       }
     },
     calendar: {

@@ -1,6 +1,8 @@
 $(document).ready(function() {
   let canvas = document.querySelector('.room_stats');
-  let ctx = canvas.getContext('2d');
+
+  if(canvas) {
+    let ctx = canvas.getContext('2d');
 
   let semiCircleStart = (Math.PI/180)*90;
   let semiCircleEnd = (Math.PI/180)*270;
@@ -47,6 +49,7 @@ $(document).ready(function() {
   ctx.lineTo(63, 0);
   ctx.fill();
   ctx.closePath();
-
-
+  } else {
+    console.log('no such id');
+  }
 })

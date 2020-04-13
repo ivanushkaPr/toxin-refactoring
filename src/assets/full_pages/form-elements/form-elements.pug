@@ -319,18 +319,18 @@ mixin form-elements(form_elements_configuration)
       +input_description({containerMods: "",contentMods: "input_description__content--vertical-padding-buttons-block", description: "buttons"})
 
       +button_container({buttonContMods: "buttonContainer--md"})
-        +button({buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--background_linear_gradient__purple"})
-        +button({buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--button__ellipse__active button__body--background_linear_gradient__purple  button__body--background_linear_gradient__purple_active"})
+        +button({buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--background_linear_gradient__purple", type: "button"})
+        +button({buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--button__ellipse__active button__body--background_linear_gradient__purple  button__body--background_linear_gradient__purple_active", type: "button"})
 
       +button_container({buttonContMods: "buttonContainer--md"})
-        +button({buttonText: "click me", buttonMods: "button__body--button__ellipse "})
-        +button({buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--button__ellipse__active"})
+        +button({buttonText: "click me", buttonMods: "button__body--button__ellipse", type: "button"})
+        +button({buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--button__ellipse__active", type: "button"})
         
       +button_container({buttonContMods: "buttonContainer--sm"})
-        +button({buttonText: "click me"})
-        +button({buttonText: "click me", buttonMods: "button__body--active"})
+        +button({buttonText: "click me", type: "button"})
+        +button({buttonText: "click me", buttonMods: "button__body--active", type: "button"})
 
-      +button_wide({contMods: "button_wide--negative-margin-top", buttonText: "перейти к оплате"})
+      +button_wide({contMods: "button_wide--negative-margin-top", buttonText: "перейти к оплате", type: "button"})
 
 
       +input_description({containerMods: "",contentMods: "input_description__content--vertical-margin-pagination", description: "pagination"})

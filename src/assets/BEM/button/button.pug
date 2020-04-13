@@ -1,3 +1,7 @@
 mixin button(object)
   div(class=`button ${object.contMods}`)
-    button(class=`button__body ${object.buttonMods}`) #{object.buttonText}
+      if(object.link === true)
+        button(class=`button__body ${object.buttonMods}` type=`${object.type}`)
+          a(class=`button__link` href=`${object.href}`) #{object.buttonText}
+      else 
+        button(class=`button__body ${object.buttonMods}` type=`${object.type}`) #{object.buttonText}
