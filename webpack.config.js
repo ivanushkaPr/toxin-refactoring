@@ -25,7 +25,7 @@ module.exports = {
 
  }),
     
- /*
+ 
     new HtmlWebpackPlugin({
       template: './src/pug/pages/room_details.pug',
       filename: './room_details.html',
@@ -52,21 +52,20 @@ module.exports = {
     }),
   
 
-*/
+
     new HtmlWebpackPlugin({
       template: './src/pug/pages/landing_page.pug',
       filename: './landing_page.html',
       inject: true
     }),
   
+
     /*
-    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
       filename: './headers_&_footers.html',
       inject: true
     }),
-  
   */
 
   /*
