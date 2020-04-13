@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function onCheckboxChangeHandler(e) {
     let parent = e.target.parentNode.parentNode;
-    let checkboxes = parent.querySelectorAll('.rate_button__checkbox');
+    let checkboxes = parent.querySelectorAll('.js-rate_button__checkbox');
     let ar = Array.from(checkboxes);
     let number = e.target.name;
     
@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    parent.querySelector('.rate_button__counter').value = number;
+    parent.querySelector('.js-rate_button__counter').value = number;
   }
 
-  let checkboxes = document.querySelectorAll('.rate_button__checkbox')
+  let checkboxes = document.querySelectorAll('.js-rate_button__checkbox')
 
   let checkboxesAr = Array.from(checkboxes);
 

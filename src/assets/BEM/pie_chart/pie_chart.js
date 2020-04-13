@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  let canvas = document.querySelector('.room_stats');
+  let canvas = document.querySelector('.js-room_stats');
 
   if(canvas) {
     let ctx = canvas.getContext('2d');
