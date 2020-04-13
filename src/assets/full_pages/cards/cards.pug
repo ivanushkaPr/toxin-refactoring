@@ -36,7 +36,7 @@
       input_dropdown_guests: {
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
         controlsMods: "input_dropdown_guests__controls--closed",
-        contClassMods: "input_dropdown_guests--cards-margin-bottom",
+        contClassMods: "input_dropdown_guests--margin-bottom-on-cards-page",
         inputClassMods: "input_dropdown_guests__input--controls-closed ",
         type: "text",
         placeholder: "Сколько гостей",
@@ -51,11 +51,11 @@
       form_name: "registration",
       registation_conf_headline: {
       description: "Регистрация аккаунта",
-      mods: "component_headline__text--registartion-margin-bottom",
+      mods: "component_headline__text--margin-bottom ",
     },
     name_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield text-field_input--first-element-margin-bottom",
+      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
       type: "text",
       placeholder: "Имя",
       name: "firstName",
@@ -63,13 +63,13 @@
     },
     surname_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield text-field_input--second-element-margin-bottom text-field_input--registration-margin-bottom",
+      inputClassMods: "text-field__input--pb-for-etf text-field_input--second-element-margin-bottom text-field_input--mb-reg",
       type: "text",
       placeholder: "Фамилия",
       name: "secondName",
       value: "",
     },
-    radio_buttons: {options: [["Мужчина", true], ["Женщина", false]], blockMods: "radio_buttons--registration-margin-bottom"},
+    radio_buttons: {options: [["Мужчина", true], ["Женщина", false]], blockMods: "radio_buttons--margin-bottom"},
     masked_text_field_container: {
 
     },
@@ -80,12 +80,12 @@
     },
     masked_text_field_state: {
       containerMods: "",
-      contentMods: "input_description__content--weight-regular",
+      contentMods: "input_description__content--font-weight-normal",
       description: "default"
     },
     masked_text_field: {
       contClassMods: "none",
-      inputClassMods: "masked_text_field__input--registration-margin-bottom",
+      inputClassMods: "",
       type: "text",
       placeholder: "ДД.ММ.ГГГГ",
       name: "masked_text_field",
@@ -98,7 +98,7 @@
     },
     email_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield text-field_input--first-element-margin-bottom",
+      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
       type: "text",
       placeholder: "Email",
       name: "Email",
@@ -106,7 +106,7 @@
     }, 
     password_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield text-field_input--first-element-margin-bottom text-field_input--registration-login-data-margin-bottom",
+      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe text-field_input--rmb-reg-ld",
       type: "text",
       placeholder: "Пароль",
       name: "password",
@@ -120,15 +120,15 @@
         buttonText: "перейти к оплате",
       },
       button_submit_cont: {
-        buttonContMods: "buttonContainer--registration-rules",
+        buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
       },
       button_submit_description: {
         containerMods: "",
-        contentMods: "input_description__content--button-description",
+        contentMods: "input_description__content--description-for-buttons",
         description: "Уже есть аккаунт на Toxin"
       },
       button_submit: {
-        buttonText: "Войти", buttonMods: "button__body--button__ellipse button__body--registration_padding"
+        buttonText: "Войти", buttonMods: "button__body--button__ellipse button__body--extra-padding"
       },
     },
     auth_form: {
@@ -137,11 +137,11 @@
       mods: "auth_form--cards_margin-top",
       auth_form_headline: {
         description: "Войти",
-        mods: "component_headline__text--auth-form-margin-bottom"
+        mods: "component_headline__text--margin-bottom"
       },
       name_text_field: {
         contClassMods: "none",
-        inputClassMods: "text-field__input--emailtextfield text-field_input--first-element-margin-bottom",
+        inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
         type: "text",
         placeholder: "Имя",
         name: "firstName",
@@ -149,7 +149,7 @@
       },
       surname_text_field: {
         contClassMods: "none",
-        inputClassMods: "text-field__input--emailtextfield text-field_input--auth-form_margin-bottom_password-input ",
+        inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-af-pi ",
         type: "text",
         placeholder: "Фамилия",
         name: "secondName",
@@ -160,7 +160,7 @@
       },
       masked_text_field: {
         contClassMods: "none",
-        inputClassMods: "masked_text_field__input--registration-margin-bottom",
+        inputClassMods: "masked_text_field__input--margin-bottom",
         type: "text",
         placeholder: "ДД.ММ.ГГГГ",
         name: "masked_text_field",
@@ -170,11 +170,11 @@
         buttonText: "войти",
       },
       button_submit_cont: {
-        buttonContMods: "buttonContainer--registration-rules",
+        buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
       },
       button_submit_description: {
         containerMods: "",
-        contentMods: "input_description__content--button-description",
+        contentMods: "input_description__content--description-for-buttons",
         description: "Нет аккаунта на Toxin?"
       },
       button_submit: {
@@ -228,7 +228,7 @@
       input_dropdown_guests: {
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
         controlsMods: "input_dropdown_guests__controls--closed",
-        contClassMods: "input_dropdown_guests--balance-margin-bottom",
+        contClassMods: "input_dropdown_guests--margin-bottom-in-balance-component",
         inputClassMods: "input_dropdown_guests__input--controls-closed ",
         type: "text",
         placeholder: "Сколько гостей",
@@ -261,16 +261,16 @@
 
 mixin cards(cards_congiguration)
   div(class=`cards`)
-    +grid({mods: "grid--cards--first-row grid--md"})
+    +grid({mods: "grid--paddings-for-first-row-on-cards-page grid--size-md"})
       +search_room(cards_congiguration.search_room)
       +registration(cards_congiguration.registration)
 
-    +grid({mods: "grid--cards--second-row grid--md"})
+    +grid({mods: "grid--paddings-for-second-row-on-cards-page grid--size-md"})
       +cost_calculator(cards_congiguration.cost_calculator)
       +auth_form(cards_congiguration.auth_form)
  
 
-    +grid({mods: "grid--cards--third-row "})
+    +grid({mods: "grid--paddings-for-third-row-on-cards-page"})
       +calendar(cards_congiguration.calendar)
       +room({specialChar: "№", roomNumber: "888", status:"люкс", price: "9 990₽ ", period: "в сутки", ammount: 145})
 

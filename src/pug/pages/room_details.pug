@@ -17,7 +17,7 @@ block content
         ],
         buttonLogin: {
         buttonText: "Войти", 
-        buttonMods: "button__body--button__ellipse button__body--small_vertical_padding_transparent button__body--header-size_sm button__body--header-margin_right",
+        buttonMods: "button__body--button__ellipse button__body--transparent_button_extra_fields button__body--header-size_sm button__body--header-margin_right",
       },
       buttonRegister: {
         buttonText: "Зарегистрироваться",
@@ -26,7 +26,7 @@ block content
     },
 
     information: {
-      mods: "component_headline__text--md component_headline__text--room_details-margin-top",
+      mods: "component_headline__text--font-size-md component_headline__text--margin-top",
       description: "Сведения о номере"
     },
 
@@ -37,15 +37,15 @@ block content
       summary: 260,
       units: "голосов",
       leg: [
-        {mod:"pie_chart__indicator--great", text: "Великолепно" },
-        {mod:"pie_chart__indicator--good", text: "Хорошо" },
-        {mod:"pie_chart__indicator--bad", text: "Удовлетворительно" },
-        {mod:"pie_chart__indicator--very_bad", text: "Разочарован" },
+        {mod:"pie_chart__indicator--grade-great", text: "Великолепно" },
+        {mod:"pie_chart__indicator--grade-good", text: "Хорошо" },
+        {mod:"pie_chart__indicator--grade-bad", text: "Удовлетворительно" },
+        {mod:"pie_chart__indicator--grade-very-bad", text: "Разочарован" },
       ]
     },
 
     feedback: {
-      mods: "component_headline__text--md component_headline__text--room_details-feedback-margin-top",
+      mods: "component_headline__text--font-size-md component_headline__text--margin-top-zero component_headline__text--margin-bottom",
       description: "Отзывы посетителей номера"
     },
 
@@ -98,7 +98,7 @@ block content
       input_dropdown_guests: {
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
         controlsMods: "input_dropdown_guests__controls--closed",
-        contClassMods: "input_dropdown_guests--balance-margin-bottom",
+        contClassMods: "input_dropdown_guests--margin-bottom-in-balance-component",
         inputClassMods: "input_dropdown_guests__input--controls-closed ",
         type: "text",
         placeholder: "Сколько гостей",
@@ -127,7 +127,7 @@ block content
       mods: "footer--filter_page-padding-top ",
       subscription_text_field: {
         contClassMods: "none",
-        inputClassMods: "subscription_text_field__input--footer",
+        inputClassMods: "subscription_text_field__input--width-correction",
         type: "Email",
         placeholder: "Your email address",
         name: "subscription_text_field",

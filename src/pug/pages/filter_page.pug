@@ -25,7 +25,7 @@ block content
       },
     },
     input_filter_date_dropdown_description: {
-        containerMods: "input_description--filter-page_filter-date-dropdown",
+        containerMods: "input_description--margin-top-for-filter-date-dropdown",
         contentMods: "",
         description: "Даты пребывания в отеле"
       },
@@ -39,7 +39,7 @@ block content
         value: "19 авг - 23 авг",
       },
 
-      input_dropdown_guests_description: {containerMods: "",contentMods: "input_description--filter-page_guest-dropdown", description: "Гости"},
+      input_dropdown_guests_description: {containerMods: "",contentMods: "input_description--margin-top-for_guest-dropdown", description: "Гости"},
       input_dropdown_guests: {
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
         controlsMods: "input_dropdown_guests__controls--closed ",
@@ -60,7 +60,7 @@ block content
       },
 
       checkbox_buttons: {
-        descMods: "checkbox_buttons__description--filter_page-margin_top ",
+        descMods: "checkbox_buttons__description--margin-top ",
         description: "checkbox buttons", 
         items:["Можно курить", "Можно с питомцами", "Можно пригласить гостей (до 10 человек)"], 
       },
@@ -73,7 +73,7 @@ block content
 
       input_dropdown_room_quantity_description: {
         containerMods: "",
-        contentMods: "input_description--filter-page_dropdown-room-quantity",
+        contentMods: "input_description--margin-top-for_dropdown-room-quantity",
         description: "Удобства номера"
       },
       input_dropdown_room_quantity: {
@@ -88,12 +88,12 @@ block content
       },
 
       expandable_checkbox_list: {
-        mods: "expandable_checkbox_list--filter-date_padding-top",
+        mods: "expandable_checkbox_list--padding-top-on-filter-page",
         items: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор" , "Шампунь" , "Телевизор", "Шампунь"],
         description: "expandable checkbox list"
       },
       rooms_headline: {
-        mods: "component_headline__text--filter_page",
+        mods: "component_headline__text--vertical-margin component_headline__text--max-width-auto component_headline__text--text-align-center",
         description: "Номера, которые мы для вас подобрали"
       },
       rooms: [
@@ -120,7 +120,7 @@ block content
       mods: "footer--filter_page-padding-top ",
       subscription_text_field: {
         contClassMods: "none",
-        inputClassMods: "subscription_text_field__input--footer",
+        inputClassMods: "subscription_text_field__input--width-correction",
         type: "Email",
         placeholder: "Your email address",
         name: "subscription_text_field",

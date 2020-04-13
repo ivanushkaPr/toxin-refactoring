@@ -2,7 +2,7 @@
   let form_elements_configuration = {
       email_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield",
+      inputClassMods: "text-field__input--pb-for-etf",
       type: "email",
       placeholder: "Email ",
       name: "email",
@@ -16,7 +16,7 @@
       },
       email_text_field_state: {
         containerMods: "",
-        contentMods: "input_description__content--weight-regular",
+        contentMods: "input_description__content--font-weight-normal",
         description: "default"
       },
       email_text_field_hover_effect: {
@@ -28,15 +28,15 @@
         value: "This is pretty awesome",
       },
       email_text_field_hover_effect_container: {
-        mods: "input_description_container--pp-padding-top",
+        mods: "input_description_container--padding-top",
       },
       email_text_field_hover_effect_state: {
         containerMods: "",
-        contentMods: "input_description__content--weight-regular input_description__content--pp-text-field-hover",
+        contentMods: "input_description__content--font-weight-normal input_description__content--margins",
         description: "hover / focus"
       },
       guest_dropdown_container: {
-        mods: "input_description_container--pp-padding-top",
+        mods: "input_description_container--padding-top",
       },
       guest_dropdown_description: {
         containerMods: "",
@@ -45,7 +45,7 @@
       },
       guest_dropdown_state: {
         containerMods: "",
-        contentMods: "input_description__content--weight-regular input_description__content--pp-text-field-hover",
+        contentMods: "input_description__content--font-weight-normal input_description__content--margins",
         description: "default"
       },
       guest_dropdown_default: {
@@ -57,7 +57,7 @@
         value: "",
       },
       masked_text_field_container: {
-        mods: "input_description_container--pp-padding-top",
+        mods: "input_description_container--padding-top",
       },
       masked_text_field_description: {
         containerMods: "",
@@ -66,7 +66,7 @@
       },
       masked_text_field_state: {
         containerMods: "",
-        contentMods: "input_description__content--weight-regular",
+        contentMods: "input_description__content--font-weight-normal",
         description: "default"
       },
       masked_text_field: {
@@ -101,7 +101,7 @@
         value: "19.08.2019",
       },
       input_filter_date_dropdown_description: {
-        containerMods: "input_description--filter_date_dropdown_padding-top",
+        containerMods: "input_description--margin-top-for-filter-date-dropdown",
         contentMods: "",
         description: "filter date dropdown"
       },
@@ -114,7 +114,7 @@
         value: "19 авг - 23 авг",
       },
       subscription_text_field_description: {
-        containerMods: "input_description--subscription_text_field_padding-top",
+        containerMods: "input_description--padding-top-for-subscription-text-field",
         contentMods: "",
         description: "subscription text field"
       },
@@ -127,7 +127,7 @@
         value: "",
       },
       input_dropdown_room_quantity_container: {
-        mods: "input_description_container--pp-dropdown-room-quantity",
+        mods: "input_description_container--paddin-top-for-room-quantity",
       },
       input_dropdown_room_quantity_description: {
         containerMods: "",
@@ -136,7 +136,7 @@
       },
       input_dropdown_room_quantity_state: {
         containerMods: "",
-        contentMods: "input_description__content--weight-regular input_description__content--pp-text-field-hover ",
+        contentMods: "input_description__content--font-weight-normal input_description__content--margins ",
         description: "default"
       },
       input_dropdown_room_quantity: {
@@ -154,7 +154,7 @@
 
 
       input_dropdown_room_quantity_expanded_container: {
-        mods: "input_description_container--pp-dropdown-room-quantity-expanded",
+        mods: "input_description_container--padding-top-for-room-quantity-expanded",
       },
       input_dropdown_room_quantity_expanded_description: {
         containerMods: "",
@@ -163,7 +163,7 @@
       },
       input_dropdown_room_quantity_expanded_state: {
         containerMods: "",
-        contentMods: "input_description__content--weight-regular input_description__content--weight-regular--expanded",
+        contentMods: "input_description__content--font-weight-normal input_description__content--font-weight-normal--expanded",
         description: "expanded"
       },
       input_dropdown_room_quantity_expanded: {
@@ -177,15 +177,15 @@
         value: "2 спальни, 2 кровати...",
       }, 
       expandable_checkbox_list: {
-        mods: "expandable_checkbox_list--pp-form-elements",
+        mods: "expandable_checkbox_list--padding-top",
         items: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор" , "Шампунь" , "Телевизор", "Шампунь", ],
         description: "expandable checkbox list"
       },
       expandable_checkbox_list_opened: {
-        mods: "expandable_checkbox_list--pp-expanded-form-elements",
+        mods: "expandable_checkbox_list--opened_its_padding_top",
         items: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор" , "Шампунь" , "Телевизор", "Шампунь", ],
         description: "expandable checkbox list",
-        buttonMods: "expandable_checkbox_list__button-opened",
+        buttonMods: "expandable_checkbox_list__button-open--clicked",
         listMods: "expandable_checkbox_list__list--opened"
       },
 
@@ -203,7 +203,7 @@
       }, 
 
       rich_checkbox_buttons: {
-        mods: "rich_checkbox_buttons__description--pp-form-elements",
+        mods: "rich_checkbox_buttons__description--padding-top",
         description: "rich checkbox buttons",
         items:[["Широкий коридор", "Ширина коридоров в номере не менее 91 см."], ["Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера."]],
       },
@@ -230,7 +230,7 @@
 
 mixin form-elements(form_elements_configuration)
   div(class="form_elements_container")
-    +grid({mods: "grid--form-elements-first-row"})
+    +grid({mods: "grid--margin-right-for-first-row"})
       +input_description_container(form_elements_configuration.email_text_field_container)
         +input_description(form_elements_configuration.email_text_field_description)
         +input_description(form_elements_configuration.email_text_field_state)
@@ -252,7 +252,7 @@ mixin form-elements(form_elements_configuration)
         +input_description(form_elements_configuration.masked_text_field_state)
       +masked_text_field(form_elements_configuration.masked_text_field)
 
-      +input_date_dropdown_container({mods: "input_date_dropdown_container--pp-padding-top"})
+      +input_date_dropdown_container({mods: "input_date_dropdown_container--padding-top"})
         +input_and_description_wrapper({})
           +input_description(form_elements_configuration.input_date_dropdown_description)
           +input_date_dropdown(form_elements_configuration.input_date_dropdown_default)
@@ -267,13 +267,13 @@ mixin form-elements(form_elements_configuration)
       +input_description(form_elements_configuration.subscription_text_field_description)
       +subscription_text_field(form_elements_configuration.subscription_text_field)
 
-      +input_and_description_wrapper({mods: "input_and_description_wrapper--md"})
+      +input_and_description_wrapper({mods: "input_and_description_wrapper--width-md"})
         +input_description_container(form_elements_configuration.input_dropdown_room_quantity_container)
           +input_description(form_elements_configuration.input_dropdown_room_quantity_description)
           +input_description(form_elements_configuration.input_dropdown_room_quantity_state)
         +input_dropdown_room_quantity(form_elements_configuration.input_dropdown_room_quantity)
 
-      +input_and_description_wrapper({mods: "input_and_description_wrapper--md"})
+      +input_and_description_wrapper({mods: "input_and_description_wrapper--width-md"})
         +input_description_container(form_elements_configuration.input_dropdown_room_quantity_expanded_container)
           +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_description)
           +input_description(form_elements_configuration.input_dropdown_room_quantity_expanded_state)
@@ -283,25 +283,25 @@ mixin form-elements(form_elements_configuration)
       +expandable_checkbox_list(form_elements_configuration.expandable_checkbox_list_opened)
 
       +benefit({contMods: "benefit--pading-top", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"}) 
-      +benefit({contMods: "benefit-pp", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"})
+      +benefit({contMods: "benefit--pading-top", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"})
 
-    +grid({mods: "grid--form-elements-second-row  grid--form-elements--pp-padding-top"})
+    +grid({mods: "grid--margin-right-for-second-row grid--form-elements--pp-padding-top"})
       +checkbox_buttons({description: "checkbox buttons", items:["Можно курить", "Можно с питомцами", "Можно пригласить гостей (до 10 человек)"], })
       
-      +input_description({containerMods: "",contentMods: "input_description__content--pp-radio-button", description: "radio buttons"})
+      +input_description({containerMods: "",contentMods: "input_description__content--vertical-padding-near-radio-buttons", description: "radio buttons"})
       +radio_buttons({options: [["Мужчина", true], ["Женщина", false]]})
 
-      +input_description({containerMods: "",contentMods: "input_description__content--pp-toggle", description: "toggle"})
+      +input_description({containerMods: "",contentMods: "input_description__content--vertical-padding-near-toggle", description: "toggle"})
       +toggle({checked: true, descText: "Получать спецпредложения", labelMods: "toggle__label--divider"})
       +toggle({descText: "Получать спецпредложения"})
 
-      +input_description({containerMods: "",contentMods: "input_description__content--pp-like-button", description: "like button"})
+      +input_description({containerMods: "",contentMods: "input_description__content--vertical-padding-near-like-button", description: "like button"})
 
       +like_button_container({})
         +like_button({count: 2})
         +like_button({buttonMods: "like_button__add--pressed", counterMods: "like_button__counter--button-pressed",count: 12})
 
-      +input_description({containerMods: "",contentMods: "input_description__content--pp-rate-button ", description: "rate button"})
+      +input_description({containerMods: "",contentMods: "input_description__content--vertical-padding-near-rate-button ", description: "rate button"})
 
       div(class="rate_button__container")
         +rate_button({checkboxes: [1,2,3,4,5], rating: 4})
@@ -313,10 +313,10 @@ mixin form-elements(form_elements_configuration)
       +input_dropdown_guests(form_elements_configuration.input_dropdown_guests)
       +rich_checkbox_buttons(form_elements_configuration.rich_checkbox_buttons)
     
-    +grid({mods: "grid--form-elements-third-row"})
+    +grid({mods: "grid--padding-top-for-third-row"})
       +slider(form_elements_configuration.slider)
 
-      +input_description({containerMods: "",contentMods: "input_description__content--pp-buttons", description: "buttons"})
+      +input_description({containerMods: "",contentMods: "input_description__content--vertical-padding-buttons-block", description: "buttons"})
 
       +button_container({buttonContMods: "buttonContainer--md"})
         +button({buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--background_linear_gradient__purple"})
@@ -330,15 +330,15 @@ mixin form-elements(form_elements_configuration)
         +button({buttonText: "click me"})
         +button({buttonText: "click me", buttonMods: "button__body--active"})
 
-      +button_wide({contMods: "button_wide--pp-form-elements", buttonText: "перейти к оплате"})
+      +button_wide({contMods: "button_wide--negative-margin-top", buttonText: "перейти к оплате"})
 
 
-      +input_description({containerMods: "",contentMods: "input_description__content--pp-pagination", description: "pagination"})
+      +input_description({containerMods: "",contentMods: "input_description__content--vertical-margin-pagination", description: "pagination"})
       +pagination({
         list: [[true, 1], [false, 2], [false, 3], [false, "..."], [false, 15]],
         description: "1 – 12 из 100+ вариантов аренды"
       })
-      +input_description({containerMods: "",contentMods: "input_description__content--pp-guest-dropdown-selected", description: "dropdown"})
+      +input_description({containerMods: "",contentMods: "input_description__content--padding-top-guest-dropdown-block", description: "dropdown"})
       +input_dropdown_guests(form_elements_configuration.input_dropdown_guests_selected)
 
       +bulletlist({
@@ -348,7 +348,7 @@ mixin form-elements(form_elements_configuration)
         "Время прибытия — после 13:00, а выезд до 12:00", ]
       })
 
-    +grid({mods: "grid--aside"})
+    +grid({mods: "grid--position-for-appointment"})
       +appointment({
         image: "appointment__photo--background-image_man",
         name: "Мурад Сафронов",

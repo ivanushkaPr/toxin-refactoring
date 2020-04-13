@@ -32,11 +32,11 @@ block content
     registration: {
       registation_conf_headline: {
       description: "Регистрация аккаунта",
-      mods: "component_headline__text--registartion-margin-bottom",
+      mods: "component_headline__text--margin-bottom",
     },
     name_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield text-field_input--first-element-margin-bottom",
+      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
       type: "text",
       placeholder: "Имя",
       name: "firstName",
@@ -44,13 +44,13 @@ block content
     },
     surname_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield text-field_input--second-element-margin-bottom text-field_input--registration-margin-bottom",
+      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-se text-field_input--mb-reg",
       type: "text",
       placeholder: "Фамилия",
       name: "secondName",
       value: "",
     },
-    radio_buttons: {options: [["Мужчина", true], ["Женщина", false]], blockMods: "radio_buttons--registration-margin-bottom"},
+    radio_buttons: {options: [["Мужчина", true], ["Женщина", false]], blockMods: "radio_buttons--margin-bottom"},
     masked_text_field_container: {
 
     },
@@ -61,12 +61,12 @@ block content
     },
     masked_text_field_state: {
       containerMods: "",
-      contentMods: "input_description__content--weight-regular",
+      contentMods: "input_description__content--font-weight-normal",
       description: "default"
     },
     masked_text_field: {
       contClassMods: "none",
-      inputClassMods: "masked_text_field__input--registration-margin-bottom",
+      inputClassMods: "masked_text_field__input--margin-bottom",
       type: "text",
       placeholder: "ДД.ММ.ГГГГ",
       name: "masked_text_field",
@@ -79,7 +79,7 @@ block content
     },
     email_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield text-field_input--first-element-margin-bottom",
+      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
       type: "text",
       placeholder: "Email",
       name: "Email",
@@ -87,7 +87,7 @@ block content
     }, 
     password_text_field: {
       contClassMods: "none",
-      inputClassMods: "text-field__input--emailtextfield text-field_input--first-element-margin-bottom text-field_input--registration-login-data-margin-bottom",
+      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe text-field_input--rmb-reg-ld",
       type: "text",
       placeholder: "Пароль",
       name: "password",
@@ -101,11 +101,11 @@ block content
         buttonText: "перейти к оплате",
       },
       button_submit_cont: {
-        buttonContMods: "buttonContainer--registration-rules",
+        buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
       },
       button_submit_description: {
         containerMods: "",
-        contentMods: "input_description__content--button-description",
+        contentMods: "input_description__content--description-for-buttons",
         description: "Уже есть аккаунт на Toxin"
       },
       button_submit: {
@@ -116,7 +116,7 @@ block content
       mods: "",
       subscription_text_field: {
         contClassMods: "none",
-        inputClassMods: "subscription_text_field__input--footer",
+        inputClassMods: "subscription_text_field__input--width-correction",
         type: "Email",
         placeholder: "Your email address",
         name: "subscription_text_field",

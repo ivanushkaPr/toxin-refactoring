@@ -21,33 +21,25 @@
   line-height: 24px;
 }
 
-// component_headline__text--filter_page
 .component_headline__text--vertical-margin {
   margin-top: 29px;
   margin-bottom: 21px;
 }
 
-// component_headline__text--filter_page
 .component_headline__text--max-width-auto {
   max-width: inherit;
 }
 
 
 @media(max-width: 640px ) {
-  // component_headline__text--filter_page
   .component_headline__text--text-align-center {
     text-align: center;
   }
 }
 
-// Внимательно дубли.
 //component_headline__text--registartion-margin-bottom
-.component_headline__text--margin-bottom {
-  margin-bottom: 20px;
-}
-
 //component_headline__text--auth-form-margin-bottom
-.component_headline__text--margin-bottom  {
+.component_headline__text--margin-bottom {
   margin-bottom: 20px;
 }
 

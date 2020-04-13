@@ -9,7 +9,7 @@ mixin expandable_checkbox_list(object)
 
     ul(class=`expandable_checkbox_list__list ${object.listMods}`)
       each item in object.items
-        label(class=`expandable_checkbox_list_label`)
+        label(class=`expandable_checkbox_list__label`)
           input(class=`expandable_checkbox_list__input` type=`checkbox`) 
           div(class=`expandable_checkbox_list__checkbox`)
           p(class=`expandable_checkbox_list__text`) #{item}
