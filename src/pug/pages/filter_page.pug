@@ -121,7 +121,50 @@ block content
         description: "1 – 12 из 100+ вариантов аренды"
       },
     footer_configuration: {
-      mods: "footer--filter_page-padding-top ",
+      send_to: "https://www.mock-adress/full-stack-development.ru",
+      form_name: "subscribe",
+      mods: "footer--h_f_margin-top",
+      info: [
+        "Lorem ipsum dolor sit amet",
+        "consectetur adipiscing elit aliquam",
+        "eget nullam pellentesque aliquam ",
+        "curabitur cociis`"
+      ],
+      lists: {
+        menu1: {
+          headline: "Navigation",
+          navClass: "footer__navigation",
+          items: [
+            {link: "https://mock-adress/fsd.ru", text: "About Us"},
+            {link: "https://mock-adress/fsd.ru", text: "News"},
+            {link: "https://mock-adress/fsd.ru", text: "Support"},
+            {link: "https://mock-adress/fsd.ru", text: "Products"},
+            ]
+        },
+        menu2: {
+          headline: "About Us",
+          navClass: "footer__aboutus",
+          items: [
+            {link: "https://mock-adress/fsd.ru", text: "Who we are"},
+            {link: "https://mock-adress/fsd.ru", text: "Our team"},
+            {link: "https://mock-adress/fsd.ru", text: "Careers"},
+            {link: "https://mock-adress/fsd.ru", text: "Investors"},
+          ]
+        },
+        menu3: {
+          headline: "Support",
+          navClass: "footer__support",
+          items: [
+            {link: "https://mock-adress/fsd.ru", text: "Documentation"},
+            {link: "https://mock-adress/fsd.ru", text: "Community"},
+            {link: "https://mock-adress/fsd.ru", text: "Get in Touch"},
+          ]
+        }
+      },
+      subscribe: {
+        cta: "Subscribe to our newsletter",
+        descript: "Receive our latest news and promotions in your inbox!"
+      },
       subscription_text_field: {
         contClassMods: "none",
         inputClassMods: "subscription_text_field__input--width-correction",
@@ -130,5 +173,6 @@ block content
         name: "subscription_text_field",
         value: "",
       },
-    }
+      copyright: "Copyright © 2018 Toxin UI Kit. All rights reserved.",
+    },
   })
