@@ -1,4 +1,4 @@
-mixin footer_creative()
+mixin footer_creative(obj)
   footer(class=`footer_creative`)
     div(class=`footer_creative__logo`)
       <svg width="106" height="46" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,8 +25,8 @@ mixin footer_creative()
             </linearGradient>
             </defs>
       </svg>
-      p(class=`footer_creative__description`) Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam
-      p(class=`footer_creative__description`) pellentesque aliquam curabitur cociis.
+        each value in obj.info
+          p(class=`footer_creative__description`) #{value}
 
     div(class=`footer_creative__socials`)
       ul(class=`footer_creative__social`)

@@ -67,7 +67,7 @@ module.exports = {
       inject: true
     }),
   
-
+/*
   
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',
@@ -87,7 +87,7 @@ module.exports = {
       filename: './color_and_types.html',
       inject: true
     }),
-
+*/
     
     new HtmlWebpackPlugin({
       template: './src/pug/pages/presentation.pug',

@@ -27,56 +27,25 @@ mixin footer(obj)
             </linearGradient>
             </defs>
           </svg>
-        p(class=`footer__information`) 
-          | Lorem ipsum dolor sit amet
-          | consectetur adipiscing elit aliquam
-          | eget nullam pellentesque aliquam 
-          | curabitur cociis`.
+        each par in obj.info
+          p(class=`footer__information`)  #{par}
 
       div(class=`footer__navcont`)
-        nav(class=`footer__navigation`)
-          ul(class=`footer__list`)
-            li(class=`footer__list_headline`)  Navigation
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') About Us
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') News
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Support
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Products
-            
-
-        nav(class=`footer__aboutus`)
-          ul(class=`footer__list`)
-            li(class=`footer__list_headline`) ABOUT US
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Who we are
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Our team
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Careers
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Investors
-
-        nav(class=`footer__support`)
-          ul(class=`footer__list`)
-            li(class=`footer__list_headline`) Support
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Documentation
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Community
-            li(class=`footer__item`) 
-              a(class='footer__list_link' href='https://mock-adress/fsd.ru') Get in Touch
+        each val, prov in obj.lists
+          nav(class=`${val.navClass}`)
+            ul(class=`footer__list`)
+              li(class=`footer__list_headline`)  #{val.headline}
+              each item in val.items
+                li(class=`footer__item`) 
+                  a(class='footer__list_link' href='${item.link}') #{item.text}
 
       article(clas=`footer__subscribe`)
-        p(class=`footer__cta`) Subscribe to our newsletter
-        p(class=`footer_descript`)
-          | Receive our latest news and promotions in your inbox!
+        p(class=`footer__cta`) #{obj.subscribe.cta}
+        p(class=`footer_descript`) #{obj.subscribe.descript}
         form(class='footer__form' action=`${obj.send_to}`, method=`post` name=`${obj.form_name}` autocomplete=`false`)
           +subscription_text_field(obj.subscription_text_field)
     div(class=`footer__widgets`)
-      p(class=`footer__copyright`) Copyright © 2018 Toxin UI Kit. All rights reserved.
+      p(class=`footer__copyright`) #{obj.copyright}
       ul(class=`footer__social`)
         li(class=`footer__social_network`)
           a(class='footer__list_link' href='https://mock-adress/social-network.ru')
