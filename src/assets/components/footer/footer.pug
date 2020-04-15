@@ -30,7 +30,7 @@ mixin footer(obj)
         each par in obj.info
           p(class=`footer__information`)  #{par}
 
-      div(class=`footer__navcont`)
+      div(class=`footer__navcont ${obj.navContMods}`)
         each val, prov in obj.lists
           nav(class=`${val.navClass}`)
             ul(class=`footer__list`)
@@ -41,7 +41,8 @@ mixin footer(obj)
 
       article(clas=`footer__subscribe`)
         p(class=`footer__cta`) #{obj.subscribe.cta}
-        p(class=`footer_descript`) #{obj.subscribe.descript}
+        each line in obj.subscribe.descript
+          p(class=`footer__descript`) #{line}
         form(class='footer__form' action=`${obj.send_to}`, method=`post` name=`${obj.form_name}` autocomplete=`false`)
           +subscription_text_field(obj.subscription_text_field)
     div(class=`footer__widgets`)

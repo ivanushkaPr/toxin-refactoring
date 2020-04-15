@@ -3,11 +3,17 @@
   max-width: 266px;
 }
 
+.subscription_text_field--mt {
+  margin-top: 24px;
+}
+
 .subscription_text_field__input {
   width: 100%;
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 12px;
+  font-family: 'montserrat' ,Arial, Helvetica, sans-serif;
+  font-weight: normal;
 
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);

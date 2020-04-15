@@ -67,14 +67,14 @@ module.exports = {
     }),
   
 
-  
+  */
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',
       filename: './cards.html',
       inject: true
     }),
   
-
+/*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/form-elements.pug',
       filename: './form_elements.html',

@@ -73,6 +73,10 @@
   margin-right: 29px;
 }
 
+.header__item--margin-right-pages {
+  margin-right: 20px
+}
+
 // header__item--filter_page_margin-right
 .header__item--mr-fp {
   margin-right: 21px;
@@ -100,7 +104,8 @@
 
 .header__item_button {
   position: relative;
-  left: -2px;
+  left: 2px;
+  top: -1px;
   width: 24px;
   height: 21px;
   background-color: transparent;
@@ -116,6 +121,12 @@
 .header__item:last-child {
   margin-right: 28px;
 }
+
+
+.header__item--margin-right-pages:last-child {
+  margin-right: 24px;
+}
+
 
 .header__enter {
   display: flex;

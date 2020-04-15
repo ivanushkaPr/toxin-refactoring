@@ -9,11 +9,11 @@ block content
     header_register_configuration: {
       mods: "header_register--padding",
       items: [
-        {value: "О нас", active: true, submenu: false, itemMods: "header__item--filter_page_margin-right"},
-        {value: "Услуги", active: false, submenu: true, itemMods: "header__item--filter_page_margin-right"},
-        {value: "Вакансии", active: false, submenu: false, itemMods: "header__item--filter_page_margin-right"},
-        {value: "Новости", active: false, submenu: false, itemMods: "header__item--filter_page_margin-right"},
-        {value: "Соглашения", active: false, submenu: true, itemMods: "header__item--filter_page_margin-right"},
+        {value: "О нас", active: true, submenu: false, itemMods: "header__item--margin-right-pages"},
+        {value: "Услуги", active: false, submenu: true, itemMods: "header__item--margin-right-pages"},
+        {value: "Вакансии", active: false, submenu: false, itemMods: "header__item--margin-right-pages"},
+        {value: "Новости", active: false, submenu: false, itemMods: "header__item--margin-right-pages"},
+        {value: "Соглашения", active: false, submenu: true, itemMods: "header__item--margin-right-pages"},
         ],
         buttonLogin: {
         buttonText: "Войти", 
@@ -130,56 +130,56 @@ block content
     footer_configuration: {
       send_to: "https://www.mock-adress/full-stack-development.ru",
       form_name: "subscribe",
-      mods: "footer--h_f_margin-top",
+      mods: "footer--pt-lp",
       info: [
-        "Lorem ipsum dolor sit amet",
-        "consectetur adipiscing elit aliquam",
-        "eget nullam pellentesque aliquam ",
-        "curabitur cociis`"
+        "Бронирование номеров в лучшем",
+        "отеле 2019 года по версии",
+        "ассоциации «‎Отельные взгляды».",
       ],
+      navContMods: 'footer__navcont--min-width-pages',
       lists: {
         menu1: {
-          headline: "Navigation",
-          navClass: "footer__navigation",
+          headline: "Навигация", 
+          navClass: "footer__navigation ",
           items: [
-            {link: "https://mock-adress/fsd.ru", text: "About Us"},
-            {link: "https://mock-adress/fsd.ru", text: "News"},
-            {link: "https://mock-adress/fsd.ru", text: "Support"},
-            {link: "https://mock-adress/fsd.ru", text: "Products"},
+            {link: "https://mock-adress/fsd.ru", text: "О нас"},
+            {link: "https://mock-adress/fsd.ru", text: "Новости"},
+            {link: "https://mock-adress/fsd.ru", text: "Служба поддержки"},
+            {link: "https://mock-adress/fsd.ru", text: "Услуги"},
             ]
         },
         menu2: {
-          headline: "About Us",
+          headline: "О нас",
           navClass: "footer__aboutus",
           items: [
-            {link: "https://mock-adress/fsd.ru", text: "Who we are"},
-            {link: "https://mock-adress/fsd.ru", text: "Our team"},
-            {link: "https://mock-adress/fsd.ru", text: "Careers"},
-            {link: "https://mock-adress/fsd.ru", text: "Investors"},
+            {link: "https://mock-adress/fsd.ru", text: "О сервисе"},
+            {link: "https://mock-adress/fsd.ru", text: "Наша команда"},
+            {link: "https://mock-adress/fsd.ru", text: "Вакансии"},
+            {link: "https://mock-adress/fsd.ru", text: "Инвесторы"},
           ]
         },
         menu3: {
-          headline: "Support",
+          headline: "Служба поддержки",
           navClass: "footer__support",
           items: [
-            {link: "https://mock-adress/fsd.ru", text: "Documentation"},
-            {link: "https://mock-adress/fsd.ru", text: "Community"},
-            {link: "https://mock-adress/fsd.ru", text: "Get in Touch"},
+            {link: "https://mock-adress/fsd.ru", text: "Соглашения"},
+            {link: "https://mock-adress/fsd.ru", text: "Сообщества"},
+            {link: "https://mock-adress/fsd.ru", text: "Связь с нами"},
           ]
         }
       },
       subscribe: {
-        cta: "Subscribe to our newsletter",
-        descript: "Receive our latest news and promotions in your inbox!"
+        cta: "Подписка",
+        descript: ["Получайте специальные", "предложения и новости сервиса"]
       },
       subscription_text_field: {
-        contClassMods: "none",
+        contClassMods: "subscription_text_field--mt",
         inputClassMods: "subscription_text_field__input--width-correction",
         type: "Email",
-        placeholder: "Your email address",
+        placeholder: "Email",
         name: "subscription_text_field",
         value: "",
       },
-      copyright: "Copyright © 2018 Toxin UI Kit. All rights reserved.",
+      copyright: "Copyright © 2018 Toxin отель. Все права зачищены.",
     },
   })

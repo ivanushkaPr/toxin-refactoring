@@ -11,7 +11,7 @@
 
 // footer--padding-top-landing-page 
 .footer--pt-lp {
-  padding-top: 97px;
+  padding-top: 95px;
 }
 
 // footer--filter_page-padding-top 
@@ -46,7 +46,7 @@
 }
 
 .footer__about {
-  margin-right: 53px;
+  margin-right: 46px;
 }
 
 @media(max-width: 1350px) { 
@@ -77,11 +77,18 @@
 }
 
 
+
 .footer__navcont {
   min-width: 513px;
   display: flex;
   justify-content: space-between;
   margin-right: 87px;
+}
+
+.footer__navcont--min-width-pages {
+  min-width: 548px;
+  justify-content: normal;
+  margin-right: 54px;
 }
 
 
@@ -127,6 +134,13 @@
   }
 }
 
+.footer__navcont--min-width-pages .footer__navigation {
+  margin-right: 59px;
+}
+
+.footer__navcont--min-width-pages .footer__aboutus   {
+  margin-right: 91px;
+}
 
 
 .footer__list {
@@ -166,14 +180,17 @@
 }
 
 
-.footer_descript {
-  max-width: 196px;
-  margin-bottom: 23px;
+.footer__descript {
   font-family: 'montserrat', Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+  margin: 0px; 
+}
+
+.footer__subscribe:nth-child(1){
+  border: 1px solid red;
 }
 
 .footer__widgets {
