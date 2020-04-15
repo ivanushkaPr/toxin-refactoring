@@ -7,7 +7,15 @@ $(document).ready(function() {
     const value = Number($(this).prev().text()) + 1;
     $(this).prev().text(value > 10 ? 10 : value);
 
+    const container =  $(this).parent();
+    if(value > 9) {
+      $(this).addClass('disabled');
+    }
+    $(".js-input_dropdown_guests__substract_button", container).removeClass('disabled');
+
+
     const parent = $(this).parent().parent().parent();
+    
 
     const values = $('.js-input_dropdown_guests__total', parent).each(function(index) {
       const value_of_option = Number(this.innerHTML);
@@ -22,9 +30,16 @@ $(document).ready(function() {
     
     $(this).next().text(value < 0 ? 0 : value);
 
+    const container =  $(this).parent();
+    if(value < 1) {
+      $(this).addClass('disabled');
+    }
+    $(".js-input_dropdown_guests__add_button", container).removeClass('disabled');
 
     const parent = $(this).parent().parent().parent();
     
+    
+
     let values_summary = ''; 
     const values = $('.js-input_dropdown_guests__total', parent).each(function(index) {
       values_summary += this.innerHTML;

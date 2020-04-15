@@ -52,7 +52,7 @@
 
 
 // input_description--filter_date_dropdown_padding-top
-.input_description--margin-top-for-filter-date-dropdown {
+.input_description--margin-top-for-filter-date-dropdown-form-elements {
   margin-top: 41px;
 } 
 
@@ -77,14 +77,14 @@
 
  //input_description__content--pp-like-button 
  .input_description__content--vertical-padding-near-like-button{
-  padding-top: 38px;
+  padding-top: 40px;
   padding-bottom: 11px;
  }
 
 
 // input_description__content--pp-rate-button
 .input_description__content--vertical-padding-near-rate-button  {
-  padding-top: 33px;
+  padding-top: 34px;
   padding-bottom: 15px;
  }
 
@@ -104,8 +104,8 @@
 // input_description__content--pp-pagination 
 // Заменить на padding
 .input_description__content--vertical-margin-pagination {
-  padding-top: 40px;
-  padding-bottom: 16px;
+  padding-top: 37px;
+  padding-bottom: 11px;
  }
 
 // input_description__content--pp-guest-dropdown-selected
@@ -113,6 +113,10 @@
   padding-top: 230px;
  }
 
+
+.input_description__content--margin-top-registration {
+  margin-top: 18px;
+}
  // input_description--filter-page_filter-date-dropdown
  .input_description--margin-top-for-filter-date-dropdown {
   margin-top: 29px;

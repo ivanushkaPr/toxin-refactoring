@@ -5,7 +5,8 @@ $(document).ready(function() {
   $('.masked-text-field-datepicker').datepicker({
     clearButton: true,
     range: false,
-    inline: true,
+    //inline: true,
+    minDate: new Date(),
     navTitles: {
       days: 'MM yyyy',
     },
@@ -14,14 +15,10 @@ $(document).ready(function() {
   $('.masked-text-field-datepicker').focus(function(e) { 
     
   })
-  
-
-  
-  
 })
 
 
-//
+
 
 
 // search_room component datepicker
@@ -35,10 +32,11 @@ $(document).ready(function() {
     days: 'MM yyyy',
   },
   startDate: new Date('august 2019'),  
+    minDate: new Date(),
     range: true,
     clearButton: true,
     doButton: true,
-    inline:true,
+    inline: false,
     onSelect: function (fd, d, picker) { 
       firstData = fd.split(",")[0];
       secondData = fd.split(",")[1];

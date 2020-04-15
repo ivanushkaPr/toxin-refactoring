@@ -3,12 +3,21 @@ $(document).ready(function() {
     $(this).next().toggle('300');
   });
 
-  $('.dropdown_room_quantity__add_button').click(function() {
+  $('.js-dropdown_room_quantity__add_button').click(function() {
     const value = Number($(this).prev().text()) + 1;
     $(this).prev().text(value > 10 ? 10 : value);
 
+    const container =  $(this).parent();
+    if(value > 9) {
+      $(this).addClass('disabled');
+    }
+    $(".js-dropdown_room_quantity__substract_button", container).removeClass('disabled');
+
+
     const parent = $(this).parent().parent().parent();
     const component_root = parent.parent();
+
+
 
     let input_value = '';
     const buttons = $('.js-dropdown_room_quantity__control_buttons', parent).each(function(index) {
@@ -26,10 +35,18 @@ $(document).ready(function() {
     const value = Number($(this).next().text()) - 1;
     
     $(this).next().text(value < 0 ? 0 : value);
+    
+    const container = $(this).parent();
 
-
+    if(value < 1) {
+      $(this).addClass('disabled');
+    }
+    $(".js-dropdown_room_quantity__add_button", container).removeClass('disabled');
+    
     const parent = $(this).parent().parent().parent();
     const component_root = parent.parent();
+
+    
 
     let input_value = '';
     const buttons = $('.js-dropdown_room_quantity__control_buttons', parent).each(function(index) {

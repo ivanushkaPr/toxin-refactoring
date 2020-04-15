@@ -97,9 +97,10 @@
     },
     auth_block_headline: {
       containerMods: "",
-      contentMods: "",
+      contentMods: "input_description__content--margin-top-registration",
       description: "данные для входа в сервис"
     },
+
     email_text_field: {
       contClassMods: "none",
       inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
@@ -118,7 +119,7 @@
     },
       toggle:{
         descText: "Получать спецпредложения",
-        labelMods: "toggle__label--registration-margin-bottom"
+        labelMods: "toggle__label--mb-reg"
       },
       checkout_button: {
         buttonText: "перейти к оплате",
@@ -142,7 +143,7 @@
     auth_form: {
       send_to: "https://www.mock-adress/full-stack-development.ru",
       form_name: "auth_form",
-      mods: "auth_form--cards_margin-top",
+      mods: "auth_form--margin-top ",
       auth_form_headline: {
         description: "Войти",
         mods: "component_headline__text--margin-bottom"
@@ -283,7 +284,7 @@ mixin cards(cards_congiguration)
 
     +grid({mods: "grid--paddings-for-third-row-on-cards-page"})
       +calendar(cards_congiguration.calendar)
-      +room({specialChar: "№", roomNumber: "888", status:"люкс", price: "9 990₽ ", period: "в сутки", ammount: 145})
+      +room({imagesMods: "room__images--cards__margin-top", specialChar: "№", roomNumber: "888", status:"люкс", price: "9 990₽ ", period: "в сутки", ammount: 145})
 
       +room({imagesMods: "room__images--cards__margin-top", specialChar: "№", roomNumber: "888", status:"люкс", price: "9 990₽ ", period: "в сутки", ammount: 145})
 
