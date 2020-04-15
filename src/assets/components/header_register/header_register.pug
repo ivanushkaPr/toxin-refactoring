@@ -25,24 +25,29 @@ mixin header_register(header_register_conf)
         </linearGradient>
         </defs>
       </svg>
-    nav(class=`header__menu`)
-      ul(class=`header__list`)
-        each menu_item in header_register_conf.items
-          if(menu_item.active === true)
-            li(class=`header__item header__item--active ${menu_item.itemMods}`) 
-              a(class=`header__link` href=`href="/mock-address/change-me`) #{menu_item.value}
-          else
-            li(class=`header__item ${menu_item.itemMods}`)
-              a(class=`header__link` href=`href="/mock-address/change-me`) #{menu_item.value}
+      div(class='header__burger_menu')
+        div(class='header__burger_item')
+        div(class='header__burger_item')
+        div(class='header__burger_item')
+    div(class='header__menu-container')
+      nav(class=`header__menu`)
+        ul(class=`header__list`)
+          each menu_item in header_register_conf.items
+            if(menu_item.active === true)
+              li(class=`header__item header__item--active ${menu_item.itemMods}`) 
+                a(class=`header__link` href=`href="/mock-address/change-me`) #{menu_item.value}
+            else
+              li(class=`header__item ${menu_item.itemMods}`)
+                a(class=`header__link` href=`href="/mock-address/change-me`) #{menu_item.value}
 
-              if(menu_item.submenu === true)
-                button(class=`header__item_button`) 
-                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
-                  </svg>
+                if(menu_item.submenu === true)
+                  button(class=`header__item_button`) 
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>
+                    </svg>
 
-      div(class=`header__enter`)
-        +button(header_register_conf.buttonLogin)
-        +button(header_register_conf.buttonRegister)
+        div(class=`header__enter`)
+          +button(header_register_conf.buttonLogin)
+          +button(header_register_conf.buttonRegister)
 
        

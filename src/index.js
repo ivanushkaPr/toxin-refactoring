@@ -13,6 +13,7 @@ import './assets/BEM/input_filter_date_dropdown/input_filter_date_dropdown.js';
 
 import './assets/BEM/pie_chart/pie_chart.js';
 import './assets/components/date/datepicker.js';
+import './assets/components/header_register/header_register.js';
 import './assets/favicons/favicons';
 
 
