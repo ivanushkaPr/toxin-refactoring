@@ -30,7 +30,7 @@
   
 
 mixin registration(registation_conf)
-  section(class=`registration`)
+  section(class=`registration ${registation_conf.containerMods}`)
     form(class='registation_conf__form' 	action=`${registation_conf.send_to}`, method=`post` name=`${registation_conf.form_name}` autocomplete=`false`)
       +component_headline(registation_conf.registation_conf_headline)
       +text-field(registation_conf.name_text_field)

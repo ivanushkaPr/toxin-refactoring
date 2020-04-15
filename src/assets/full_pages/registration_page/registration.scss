@@ -1,8 +1,12 @@
 .registration__layer {
-  min-height: 704px;
+  min-height: 700px;
+  border-top: 0.1px solid transparent;
   background-position: center -68px;
   background-size: cover;
   background-image: url('./../assets/full_pages/registration_page/registration.svg');
   background-repeat: no-repeat;
 }
 
+.registration__layer--signed-in {
+  min-height: 682px;
+}

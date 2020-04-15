@@ -9,6 +9,7 @@
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid transparent;
 }
 
 @media(max-width: 1350px) {
@@ -34,8 +35,8 @@
 
 // .header_register--padding
 .header_register--padding-vertical {
-  padding-top: 12px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 

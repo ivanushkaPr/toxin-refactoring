@@ -7,7 +7,7 @@ block logo
 block content
   +filter_page({
     header_register_configuration: {
-      mods: "header_register--padding",
+      mods: "header_register--padding-vertical",
       items: [
         {value: "О нас", active: true, submenu: false, itemMods: "header__item--filter_page_margin-right"},
         {value: "Услуги", active: false, submenu: true, itemMods: "header__item--filter_page_margin-right"},
@@ -60,7 +60,7 @@ block content
         description: "Диапазон цены",
         rangeSelected: "5 000₽ - 10 000₽",
         slider__range: "",
-        headerMods: "slider--filter-page_padding-top"
+        headerMods: "slider--padding-top"
       },
 
       checkbox_buttons: {
@@ -70,7 +70,7 @@ block content
       },
 
       rich_checkbox_buttons: {
-        mods: "rich_checkbox_buttons__description--filter_page-margin_top",
+        mods: "rich_checkbox_buttons__description--margin_top",
         description: "Доступность",
         items:[["Широкий коридор", "Ширина коридоров в номере не менее 91 см."], ["Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера."]],
       },
@@ -123,7 +123,7 @@ block content
     footer_configuration: {
       send_to: "https://www.mock-adress/full-stack-development.ru",
       form_name: "subscribe",
-      mods: "footer--h_f_margin-top",
+      mods: "footer--mt-rm",
       info: [
         "Lorem ipsum dolor sit amet",
         "consectetur adipiscing elit aliquam",

@@ -7,7 +7,7 @@ block logo
 block content 
   +registration_pagessss({
       header_register_configuration: {
-      mods: "",
+      mods: "header_register--padding-vertical",
       items: [
         {value: "Home", active: true, submenu: false},
         {value: "About Us", active: false, submenu: false},
@@ -34,9 +34,10 @@ block content
           mods: '',
         },
     registration: {
+      containerMods: 'registration--horizontal-margin-auto',
       registation_conf_headline: {
       description: "Регистрация аккаунта",
-      mods: "component_headline__text--margin-bottom",
+      mods: "component_headline__text--margin-bottom ",
     },
     name_text_field: {
       contClassMods: "none",
@@ -99,7 +100,7 @@ block content
     },
       toggle:{
         descText: "Получать спецпредложения",
-        labelMods: "toggle__label--registration-margin-bottom"
+        labelMods: "toggle__label--mb-reg"
       },
       checkout_button: {
         buttonText: "перейти к оплате",
@@ -120,7 +121,7 @@ block content
     footer_configuration: {
       send_to: "https://www.mock-adress/full-stack-development.ru",
       form_name: "subscribe",
-      mods: "footer--h_f_margin-top",
+      mods: "footer--pt-lp",
       info: [
         "Lorem ipsum dolor sit amet",
         "consectetur adipiscing elit aliquam",
