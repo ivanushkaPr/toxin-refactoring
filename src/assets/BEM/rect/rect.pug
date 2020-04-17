@@ -1,3 +1,4 @@
 mixin rect(object)
   div(class='rect')
-    div(class=`rect__body ${object.background_color}`)
+    div(class=`rect__container ${object.containerMods}`)
+      div(class=`rect__body ${object.background_color}`)

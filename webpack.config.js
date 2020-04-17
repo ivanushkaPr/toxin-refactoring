@@ -24,7 +24,7 @@ module.exports = {
       jQuery: "jquery",
 
  }),
-    /*
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/room_details.pug',
       filename: './room_details.html',
@@ -51,7 +51,7 @@ module.exports = {
     }),
   
 
-*/
+
     new HtmlWebpackPlugin({
       template: './src/pug/pages/landing_page.pug',
       filename: './landing_page.html',
@@ -59,13 +59,13 @@ module.exports = {
     }),
 
 
-    
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
       filename: './headers_&_footers.html',
       inject: true
     }),
-  /*
+  
 
     new HtmlWebpackPlugin({
       template: './src/pug/pages/cards.pug',
@@ -79,13 +79,14 @@ module.exports = {
       filename: './form_elements.html',
       inject: true
     }),
-  
+    */
+/*  
     new HtmlWebpackPlugin({
       template: './src/pug/pages/colors&types.pug',
       filename: './color_and_types.html',
       inject: true
     }),
-  */  
+  */
     new HtmlWebpackPlugin({
       template: './src/pug/pages/presentation.pug',
       filename: './index.html',

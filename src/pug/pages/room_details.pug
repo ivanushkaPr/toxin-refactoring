@@ -8,6 +8,7 @@ block content
   +room_details({
     header_register_configuration: {
       mods: "header_register--padding",
+      containerMods: "header_register__container--padding-vertical",
       items: [
         {value: "О нас", active: true, submenu: false, itemMods: "header__item--margin-right-pages"},
         {value: "Услуги", active: false, submenu: true, itemMods: "header__item--margin-right-pages"},
@@ -30,8 +31,15 @@ block content
     },
 
     information: {
-      mods: "component_headline__text--font-size-md component_headline__text--margin-top",
+      containerMods: "component_headline__container--mt-69px",
+      mods: "component_headline__text--font-size-md",
       description: "Сведения о номере"
+    },
+
+    informationPieChart: {
+      containerMods: "component_headline__container--mt-69px component_headline__container--ml",
+      mods: "component_headline__text--font-size-md",
+      description: "Впечатления от номера"
     },
 
     pie_chart: {
@@ -59,6 +67,9 @@ block content
     },
 
     cost_calculator: {
+      mods: "",
+      send_to: "",
+      form_name: "cost_calculator",
       room_info: {
         blockMods: "",
         overallMods: "",
@@ -100,6 +111,7 @@ block content
         value: "",
       },
       input_dropdown_guests: {
+        containerMods: "input_dropdown_guests__input--mb-8px ",
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
         controlsMods: "input_dropdown_guests__controls--closed",
         contClassMods: "input_dropdown_guests--margin-bottom-in-balance-component",
@@ -117,20 +129,21 @@ block content
         contMods: "",
         serviceMods: "",
         tooltipMods: "",
+        contMods: "",
         totalMods: "",
         totalCostText: "Итого",
         sumText: "38 081₽",
       },
       bookButton: {
         buttonText: "Забронировать",
-        type: "submit"
+        type: 'submit'
       }
     },
 
     footer_configuration: {
       send_to: "https://www.mock-adress/full-stack-development.ru",
       form_name: "subscribe",
-      mods: "footer--pt-lp",
+      mods: "",
       info: [
         "Бронирование номеров в лучшем",
         "отеле 2019 года по версии",

@@ -1,3 +1,4 @@
 mixin component_headline(object)
   div(class=`component_headline`)
-    p(class=`component_headline__text ${object.mods}`) #{object.description}
+    div(class=`component_headline__container ${object.containerMods}`)
+      p(class=`component_headline__text ${object.mods}`) #{object.description}

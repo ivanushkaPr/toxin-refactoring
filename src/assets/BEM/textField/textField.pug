@@ -9,5 +9,6 @@
   }
 
 mixin text-field(input)
-  div(class=`text-field ${input.contClassMods}`)
-    input(class=`text-field__input ${input.inputClassMods}` type=`${input.type}` placeholder=`${input.placeholder}` name=`${input.name}` value=`${input.value}`)
+  div(class=`text-field ${input.blockMods}`)
+    div(class=`text-field__container ${input.containerMods}`)
+      input(class=`text-field__input ${input.inputClassMods}` type=`${input.type}` placeholder=`${input.placeholder}` name=`${input.name}` value=`${input.value}`)

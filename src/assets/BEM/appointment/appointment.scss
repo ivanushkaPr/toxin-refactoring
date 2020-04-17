@@ -3,6 +3,10 @@
 }
 
 
+.appointment__container--mt {
+  margin-top: 23px;
+}
+
 // Общий класс картинки
 .appointment__photo {
   width: 48px;
@@ -25,10 +29,6 @@
 
 .appointment__user {
   display: flex;
-}
-
-.appointment__user--with-margin-top {
-  margin-top: 23px;
 }
 
 .appointment__name, .appointment__date {

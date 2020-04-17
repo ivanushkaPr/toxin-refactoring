@@ -1,8 +1,12 @@
 .benefit {
   display: flex;
+  max-width: 280px;
+}
+
+.benefit__container {
+  display: flex;
   padding-bottom: 19px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-  max-width: 280px;
 }
 
 
@@ -13,7 +17,7 @@
 
 // benefit--room_details--pp
 
-.benefit--extra-fields {
+.benefit__container--extra-margin {
   padding-top: 5px;
   margin-bottom: 14px;
 }

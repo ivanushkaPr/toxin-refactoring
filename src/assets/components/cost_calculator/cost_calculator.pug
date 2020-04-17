@@ -19,9 +19,10 @@
 
 mixin cost_calculator(cost_calculator_config)
   div(class=`cost_calculator ${cost_calculator_config.blockMods}`)
+    div(class=`cost_calculator__cont ${cost_calculator_config.containerMods}`)
     +room_info(cost_calculator_config.room_info)
     form(class='cost_calculator__form' 	action=`${cost_calculator.send_to}` method=`post` name=`${cost_calculator.form_name}` autocomplete=`false`)
-      +input_date_dropdown_container({mods: 'input_date_dropdown_container--margin-bottom'})
+      +input_date_dropdown_container({mods: 'input_date_dropdown_container__container--margin-bottom '})
           +input_and_description_wrapper({})
             +input_description(cost_calculator_config.input_date_dropdown_first_description)
             +input_date_dropdown(cost_calculator_config.input_date_dropdown_first)

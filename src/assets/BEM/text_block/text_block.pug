@@ -1,5 +1,5 @@
 mixin text_block(obj)
   div(class=`text_block ${obj.blockMods}`)
-    p(class=`text_block__description ${obj.descMods}`)  #{obj.description}
-
-    p(class=`text_block__content ${obj.contentMods}`) #{obj.content}
+    div(class=`text_block__container ${obj.containerMods}`)
+      p(class=`text_block__description ${obj.descMods}`)  #{obj.description}
+      p(class=`text_block__content ${obj.contentMods}`) #{obj.content}

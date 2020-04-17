@@ -1,20 +1,21 @@
 .auth_form {
+
+}
+
+.auth_form__container {
     width: 100%;
     max-width: 380px;
     box-sizing: border-box;
     padding-left: 29px;
     padding-right: 29px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-  
     background: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
-
-// auth_form--cards_margin-top 
-.auth_form--margin-top {
+.auth_form__container-margin-top {
     margin-top: 39px;
 }
 

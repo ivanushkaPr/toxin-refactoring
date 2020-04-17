@@ -8,6 +8,7 @@ block content
   +registration_page({
       header_register_configuration: {
       mods: "header_register--padding-vertical",
+      containerMods: "header_register__container--padding-vertical",
       items: [
         {value: "О нас", active: true, submenu: false, itemMods: "header__item--margin-right-pages"},
         {value: "Услуги", active: false, submenu: false, itemMods: "header__item--margin-right-pages"},
@@ -16,23 +17,27 @@ block content
         {value: "Соглашения", active: false, submenu: true, itemMods: "header__item--margin-right-pages"},
         ],
         buttonLogin: {
-        buttonText: "login", 
+        buttonText: "Войти", 
         buttonMods: "button__body--button__ellipse button__body--transparent_button_extra_fields button__body--header-size_sm button__body--header-margin_right",
         link: true,
         href: "https://mock-address.ru/login.php"
       },
       buttonRegister: {
-        buttonText: "register",
+        buttonText: "Зарегистрироваться",
         buttonMods: "button__body--button__ellipse button__body--background_linear_gradient__purple button__body--small_vertical_padding button__body--header-size_sm",
         link: true,
         href: "https://mock-address.ru/register.php"
       },
     },
     auth_form: {
-      mods: "auth_form--horizontal-margin-auto",
+      send_to: "https://www.mock-adress/full-stack-development.ru",
+      form_name: "auth_form",
+      mods: "",
+      containerMods: " auth_form--horizontal-margin-auto",
       auth_form_headline: {
         description: "Войти",
-        mods: "component_headline__text--margin-bottom"
+        containerMods: "component_headline__container--margin-bottom ",
+        mods: ""
       },
       name_text_field: {
         contClassMods: "none",
@@ -63,18 +68,19 @@ block content
       },
       checkout_button: {
         buttonText: "войти",
-        type: "sumbit",
+        link: true,
+        href: 'https://www.mock-adress/full-stack-development.ru/createAccount'
       },
       button_submit_cont: {
         buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
       },
       button_submit_description: {
-        containerMods: "",
+        containerMods: "input_description__container--mt-11px",
         contentMods: "input_description__content--description-for-buttons",
         description: "Нет аккаунта на Toxin?"
       },
       button_submit: {
-        buttonText: "создать", buttonMods: "button__body--button__ellipse ", type: "button", link: true, href: "HTTPS://mock-adress.ru"
+        buttonText: "создать", buttonMods: "button__body--button__ellipse ", type: "submit",
       },
     },
     footer_configuration: {

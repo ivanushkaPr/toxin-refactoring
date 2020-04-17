@@ -1,4 +1,8 @@
 .input_date_dropdown_container {
+
+}
+
+.input_date_dropdown_container__container {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -6,7 +10,7 @@
 
 
 // input_date_dropdown_container--cards-margin-bottom
-.input_date_dropdown_container--margin-bottom {
+.input_date_dropdown_container__container--margin-bottom {
   margin-bottom: 20.56px;
 }
 

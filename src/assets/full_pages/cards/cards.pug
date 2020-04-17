@@ -34,9 +34,9 @@
         value: "",
       },
       input_dropdown_guests: {
+        containerMods: "input_dropdown_guests--margin-bottom-on-cards-page",
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
         controlsMods: "input_dropdown_guests__controls--closed",
-        contClassMods: "input_dropdown_guests--margin-bottom-on-cards-page",
         inputClassMods: "input_dropdown_guests__input--controls-closed ",
         type: "text",
         placeholder: "Сколько гостей",
@@ -50,7 +50,7 @@
       },
     },
     registration: {
-      mods: "",
+      blockMods: "registration--horizontal-margin-auto",
       send_to: "https://www.mock-adress/full-stack-development.ru",
       form_name: "registration",
       registation_conf_headline: {
@@ -58,16 +58,18 @@
       mods: "component_headline__text--margin-bottom ",
     },
     name_text_field: {
+      containerMods: "text-field__container--mb-9",
       contClassMods: "none",
-      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
+      inputClassMods: "",
       type: "text",
       placeholder: "Имя",
       name: "firstName",
       value: "",
     },
     surname_text_field: {
+      containerMods: "text-field__container--mb-9",
       contClassMods: "none",
-      inputClassMods: "text-field__input--pb-for-etf text-field_input--second-element-margin-bottom text-field_input--mb-reg",
+      inputClassMods: "",
       type: "text",
       placeholder: "Фамилия",
       name: "secondName",
@@ -78,7 +80,7 @@
 
     },
     masked_text_field_description: {
-      containerMods: "",
+      containerMods: "input_description_container--padding-top-registration",
       contentMods: "",
       description: "дата рождения"
     },
@@ -89,29 +91,31 @@
     },
     masked_text_field: {
       contClassMods: "none",
-      inputClassMods: "",
+      inputClassMods: "masked_text_field__input--vertical-padding-12",
       type: "text",
       placeholder: "ДД.ММ.ГГГГ",
       name: "masked_text_field",
       value: "",
     },
     auth_block_headline: {
-      containerMods: "",
-      contentMods: "input_description__content--margin-top-registration",
+      containerMods: "input_description__container--margin-top-registration",
+      contentMods: "",
       description: "данные для входа в сервис"
     },
 
     email_text_field: {
+      containerMods: "text-field__container--mb-10 ",
       contClassMods: "none",
-      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
+      inputClassMods: "masked_text_field__input--vertical-padding-12",
       type: "text",
       placeholder: "Email",
       name: "Email",
       value: "",
     }, 
     password_text_field: {
+      containerMods: "text-field__container--mb-8 ",
       contClassMods: "none",
-      inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe text-field_input--rmb-reg-ld",
+      inputClassMods: "masked_text_field__input--vertical-padding-12",
       type: "text",
       placeholder: "Пароль",
       name: "password",
@@ -129,7 +133,7 @@
         buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
       },
       button_submit_description: {
-        containerMods: "",
+        containerMods: "input_description__container--mt-11px",
         contentMods: "input_description__content--description-for-buttons",
         description: "Уже есть аккаунт на Toxin"
       },
@@ -143,10 +147,12 @@
     auth_form: {
       send_to: "https://www.mock-adress/full-stack-development.ru",
       form_name: "auth_form",
-      mods: "auth_form--margin-top ",
+      mods: "",
+      containerMods: "auth_form__container-margin-top",
       auth_form_headline: {
         description: "Войти",
-        mods: "component_headline__text--margin-bottom"
+        containerMods: "component_headline__container--margin-bottom ",
+        mods: ""
       },
       name_text_field: {
         contClassMods: "none",
@@ -184,7 +190,7 @@
         buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
       },
       button_submit_description: {
-        containerMods: "",
+        containerMods: "input_description__container--mt-11px",
         contentMods: "input_description__content--description-for-buttons",
         description: "Нет аккаунта на Toxin?"
       },
@@ -237,6 +243,7 @@
         value: "",
       },
       input_dropdown_guests: {
+        containerMods: "input_dropdown_guests__input--mb-8px ",
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
         controlsMods: "input_dropdown_guests__controls--closed",
         contClassMods: "input_dropdown_guests--margin-bottom-in-balance-component",

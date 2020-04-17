@@ -1,3 +1,4 @@
 mixin input_and_description_wrapper(object)
   div(class=`input_and_description_wrapper ${object.mods}`)
-    block
+    div(class=`input_and_description__container ${object.containerMods}`)
+      block

@@ -1,7 +1,8 @@
 -
   let headers_and_footers_configuration = {
     header_register: {
-      mods: "header_register--mt-hf",
+      mods: "",
+      containerMods: "header_register--mt-hf",
       items: [
         {value: "Home", active: true, submenu: false},
         {value: "About Us", active: false, submenu: false},
@@ -84,9 +85,10 @@
       },
       subscribe: {
         cta: "Subscribe to our newsletter",
-        descript: "Receive our latest news and promotions in your inbox!"
+        descript: ["Receive our latest news and", "promotions in your inbox!"]
       },
       subscription_text_field: {
+        containerMods: "subscription_text_field__container",
         contClassMods: "none",
         inputClassMods: "subscription_text_field__input--width-correction",
         type: "Email",

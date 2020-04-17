@@ -1,10 +1,11 @@
 mixin appointment(obj)
   div(class=`appointment`)
-    div(class=`appointment__user ${obj.userMods}`)
-      div(class=`appointment__photo  ${obj.image}`)
-      div(class=`appointment__info`) 
-        p(class=`appointment__name`) #{obj.name}
-        p(class=`appointment__date`) #{obj.date}
-    div(class=`appointment__feedback`)
-      +like_button({buttonMods: 'like_button__add--pressed like_button__appointment', counterMods: 'like_button__counter--button-pressed',count: 12})
-      p(class=`appointment__text`) #{obj.text}
+    div(class=`appointment__container ${obj.containerMods}`)
+      div(class=`appointment__user ${obj.userMods}`)
+        div(class=`appointment__photo  ${obj.image}`)
+        div(class=`appointment__info`) 
+          p(class=`appointment__name`) #{obj.name}
+          p(class=`appointment__date`) #{obj.date}
+      div(class=`appointment__feedback`)
+        +like_button({buttonMods: 'like_button__add--pressed like_button__appointment', counterMods: 'like_button__counter--button-pressed',count: 12})
+        p(class=`appointment__text`) #{obj.text}

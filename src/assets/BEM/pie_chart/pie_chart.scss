@@ -1,11 +1,15 @@
 .pie_chart {
+
+}
+
+.pie_chart__container {
   display: flex;
   justify-content: space-between;
   min-width: 420px;
 }
 
 @media(max-width: 500px) {
-  .pie_chart {
+  .pie_chart__container {
     justify-content: center;
     flex-wrap: wrap;
     min-width: auto;

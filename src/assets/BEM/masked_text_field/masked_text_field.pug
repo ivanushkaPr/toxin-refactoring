@@ -1,4 +1,5 @@
 mixin masked_text_field(input)
-  div(class=`masked_text_field ${input.contClassMods}`)
-    input(class=`masked_text_field__input ${input.inputClassMods}` type=`${input.type}` placeholder=`${input.placeholder}` name=`${input.name}` value=`${input.value}`)
+  div(class=`masked_text_field ${input.blockMods}`)
+    div(class=`masked_text_field ${input.containerMods}`)
+      input(class=`masked_text_field__input ${input.inputClassMods}` type=`${input.type}` placeholder=`${input.placeholder}` name=`${input.name}` value=`${input.value}`)
 

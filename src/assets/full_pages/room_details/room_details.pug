@@ -8,13 +8,16 @@ mixin room_details(object)
       div(class=`room_details__image-sm room_details__image-sm--background-additional-view-two room_details__image--background-rules`)
     section(class=`room_details__content`)
         section(class=`room_details__information`)
-          +component_headline(object.information)
-          div(class=`room_details__wrapper`)
-            div(class=`room_details__benefits`)
-              +benefit({contMods: "benefit--extra-fields", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"}) 
-              +benefit({contMods: "benefit--extra-fields", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"})
-              +benefit({contMods: "benefit--extra-fields", imageMods: "benefit__image--background-bonfire", nameText: "Уют", propText: "Номер оснащен камином"})
+          div(class=`room_details__column`)
+            div(class="room_details__benefitBlock")
+              +component_headline(object.information)
+              div(class=`room_details__wrapper`)
+                div(class=`room_details__benefits`)
+                  +benefit({containerMods:"benefit__container--extra-margin ",  contMods: "", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"}) 
+                  +benefit({containerMods:"benefit__container--extra-margin ", contMods: "", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"})
+                  +benefit({containerMods:"benefit__container--extra-margin ", contMods: "", imageMods: "benefit__image--background-bonfire", nameText: "Уют", propText: "Номер оснащен камином"})
             div(class=`room_details__statistiks`)
+              +component_headline(object.informationPieChart)
               +pie_chart(object.pie_chart)
 
           +component_headline(object.feedback)
@@ -28,13 +31,14 @@ mixin room_details(object)
               не жаловался из соседей.`})
 
             +appointment({
-              userMods: "appointment__user--with-margin-top",
+              containerMods: "appointment__container--mt",
+              userMods: "",
               image: "appointment__photo--background-image_girl",
               name: "Патрисия Стёклышкова",
               date: "Неделю назад",
               text: `Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент`})
 
-          div(class=`room_details__wrapper room_details__wrapper--rules-and-cancelation`)
+          div(class=`room_details__wrapper room_details__wrapper--d-flex_jc-sb room_details__wrapper--max-width`)
             div(class=`room_details__rules`)
               +bulletlist({
                 descMods: "bulletlist__description--font_size-bg bulletlist__description--font_familt_open_sans bulletlist__description--text-transform_none",

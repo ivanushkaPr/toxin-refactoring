@@ -1,3 +1,4 @@
 mixin HTMLstyle(object)
   div(class="HTMLstyle")
-    pre(class=`HTMLstyle__description ${object.modificators}`) #{object.text}
+    div(class=`HTMLstyle__container ${object.containerMods}`)
+      pre(class=`HTMLstyle__description ${object.modificators}`) #{object.text}

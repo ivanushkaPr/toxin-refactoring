@@ -1,6 +1,6 @@
 mixin expandable_checkbox_list(object)
   div(class=`expandable_checkbox_list ${object.mods}`)
-    div(class=`expandable_checkbox_list__wrapper`)
+    div(class=`expandable_checkbox_list__wrapper ${object.containerMods}`)
       p(class=`expandable_checkbox_list__description`) #{object.description}
       button(class=`expandable_checkbox_list__button-open js-expandable_checkbox_list__button-open ${object.buttonMods}` type='button')
         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">

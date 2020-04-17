@@ -1,8 +1,9 @@
 mixin toggle(object)
   div(class=`toggle`)
-    label(class=`toggle__label ${object.labelMods}`)
-      if(object.checked)
-        input(class=`toggle__checkbox` type='checkbox' checked)
-      input(class=`toggle__checkbox` type='checkbox')
-      div(class=`toggle__fake_checkbox`)
-      p(class=`toggle__description`) #{object.descText}
+    div(class=`toggle ${object.containerMods}`)
+      label(class=`toggle__label ${object.labelMods}`)
+        if(object.checked)
+          input(class=`toggle__checkbox` type='checkbox' checked)
+        input(class=`toggle__checkbox` type='checkbox')
+        div(class=`toggle__fake_checkbox`)
+        p(class=`toggle__description`) #{object.descText}

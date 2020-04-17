@@ -45,19 +45,20 @@
 
 mixin search_room(search_room_conf)
   section(class=`search_room ${search_room_conf.mods}`)
-    form(class='search_room__form' action=`${search_room_conf.send_to}`, method=`post` name=`${search_room_conf.form_name}` autocomplete=`false`)
-      +component_headline(search_room_conf.search_room_headline)
+    section(class=`search_room__container ${search_room_conf.containerMods}`)
+      form(class='search_room__form' action=`${search_room_conf.send_to}`, method=`post` name=`${search_room_conf.form_name}` autocomplete=`false`)
+        +component_headline(search_room_conf.search_room_headline)
 
-      +input_date_dropdown_container({mods: 'input_date_dropdown_container--cards-margin-bottom'})
-          +input_and_description_wrapper({})
-            +input_description(search_room_conf.input_date_dropdown_first_description)
-            +input_date_dropdown(search_room_conf.input_date_dropdown_first)
+        +input_date_dropdown_container({mods: 'input_date_dropdown_container--cards-margin-bottom'})
+            +input_and_description_wrapper({})
+              +input_description(search_room_conf.input_date_dropdown_first_description)
+              +input_date_dropdown(search_room_conf.input_date_dropdown_first)
 
-          +input_and_description_wrapper({})
-            +input_description(search_room_conf.input_date_dropdown_second_description)
-            +input_date_dropdown(search_room_conf.input_date_dropdown_second)
+            +input_and_description_wrapper({})
+              +input_description(search_room_conf.input_date_dropdown_second_description)
+              +input_date_dropdown(search_room_conf.input_date_dropdown_second)
 
-      +input_description({containerMods: '',contentMods: '', description: 'гости'})
-      +input_dropdown_guests(search_room_conf.input_dropdown_guests)
+        +input_description({containerMods: '',contentMods: '', description: 'гости'})
+        +input_dropdown_guests(search_room_conf.input_dropdown_guests)
 
-      +button_wide(search_room_conf.button_wide)
+        +button_wide(search_room_conf.button_wide)

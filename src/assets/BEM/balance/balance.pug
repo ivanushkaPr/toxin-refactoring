@@ -1,15 +1,16 @@
 mixin balance(obj)
   div(class=`balance ${obj.blockMods}`)
-    each service in obj.services
-      div(class=`balance__fee ${obj.feeMods}`)
-        div(class=`balance__container ${obj.contMods}`) 
-          p(class=`balance__service ${obj.serviceMods}`) #{service[0]}
-            if(service[1] === true)
-              p(class=`balance__tooltip ${obj.tooltipMods}`) i
-        div(class=`balance__container ${obj.contMods}`)
-          p(class=`balance__total ${obj.totalMods}`) #{service[2]}
-    div(class=`balance__overall`)
-      p(class=`balance__totalcost`) #{obj.totalCostText}
-      p(class=`balance__border`)
-      p(class=`balance__sum`) #{obj.sumText}
+    div(class=`balance__cont ${obj.containerMods}`)
+      each service in obj.services
+        div(class=`balance__fee ${obj.feeMods}`)
+          div(class=`balance__container ${obj.contMods}`) 
+            p(class=`balance__service ${obj.serviceMods}`) #{service[0]}
+              if(service[1] === true)
+                p(class=`balance__tooltip ${obj.tooltipMods}`) i
+          div(class=`balance__container ${obj.contMods}`)
+            p(class=`balance__total ${obj.totalMods}`) #{service[2]}
+      div(class=`balance__overall`)
+        p(class=`balance__totalcost`) #{obj.totalCostText}
+        p(class=`balance__border`)
+        p(class=`balance__sum`) #{obj.sumText}
 

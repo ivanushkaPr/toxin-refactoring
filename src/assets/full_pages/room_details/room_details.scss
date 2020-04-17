@@ -4,6 +4,7 @@
   grid-template-rows: 242px 242px;
 }
 
+
 .room_details__image-bg {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
@@ -31,11 +32,14 @@
   background-image: url('./../assets/full_pages/room_details/image-sm-2.svg');
 }
 
+.room_details__column {
+  display: flex;
+}
 .room_details__content {
   display: flex;
   justify-content: space-between;
   padding: 0px 140px;
-
+  padding-bottom: 52px;
   background-color: white;
 }
 

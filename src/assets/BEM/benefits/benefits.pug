@@ -1,6 +1,6 @@
 mixin benefit(object)
-  div(class=`benefit_wrapper`)
-    div(class=`benefit ${object.contMods}`)
+  div(class=`benefit ${object.contMods}`)
+    div(class=`benefit__container ${object.containerMods}`)
       div(class=`benefit__image ${object.imageMods}`)
       div(class=`benefit__description ${object.descMods}`)
         p(class=`benefit__name ${object.nameMods}`) #{object.nameText}

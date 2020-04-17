@@ -13,9 +13,12 @@
   background-color: $background_color;
 }
 
+.rect__container--margin-bottom {
+  margin-bottom: 1.25rem;
+}
+
 .rect__body {
   @include createRect();
-  margin-bottom: 1.25rem;
 }
 
 .rect__body--dark_shade-100 {
