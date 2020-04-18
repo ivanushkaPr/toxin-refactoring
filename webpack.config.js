@@ -37,6 +37,7 @@ module.exports = {
       inject: true
     }),
     
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/sign_in_page.pug',
       filename: './sign_in_page.html',
@@ -49,16 +50,18 @@ module.exports = {
       filename: './registration.html',
       inject: true
     }),
-  
+  */
 
 
+
+/*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/landing_page.pug',
       filename: './landing_page.html',
       inject: true
     }),
 
-
+*/
     /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',

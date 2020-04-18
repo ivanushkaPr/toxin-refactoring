@@ -1,7 +1,14 @@
+.room_details {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 .room_details__review {
   display: grid;
   grid-template-columns: 68.2% 31.875%;
   grid-template-rows: 242px 242px;
+  flex: 1 0 auto;
 }
 
 

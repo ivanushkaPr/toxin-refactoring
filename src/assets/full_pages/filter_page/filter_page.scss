@@ -1,10 +1,14 @@
 .filter_page {
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .filter_page__content {
   display: flex;
   justify-content: space-between;
+  flex: 1 0 auto;
   padding-left: 140px;
   padding-right: 140px;
 }
