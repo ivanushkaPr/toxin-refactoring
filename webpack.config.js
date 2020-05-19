@@ -24,7 +24,7 @@ module.exports = {
       jQuery: "jquery",
 
  }),
-    
+    /*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/room_details.pug',
       filename: './room_details.html',
@@ -37,7 +37,7 @@ module.exports = {
       inject: true
     }),
     
-    /*
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/sign_in_page.pug',
       filename: './sign_in_page.html',
@@ -50,19 +50,15 @@ module.exports = {
       filename: './registration.html',
       inject: true
     }),
-  */
 
-
-
-/*
     new HtmlWebpackPlugin({
       template: './src/pug/pages/landing_page.pug',
       filename: './landing_page.html',
       inject: true
     }),
-
 */
-    /*
+
+    
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
       filename: './headers_&_footers.html',
@@ -82,7 +78,7 @@ module.exports = {
       filename: './form_elements.html',
       inject: true
     }),
-    */
+    
 /*  
     new HtmlWebpackPlugin({
       template: './src/pug/pages/colors&types.pug',
@@ -116,10 +112,17 @@ module.exports = {
         use: [ 'style-loader', 'css-loader',],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|jpg|gif|json|xml|ico|svg)$/,
         use: [
-          'file-loader',
-        ],
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/',
+              publicPath: '/'
+            }
+          }
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
