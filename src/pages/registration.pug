@@ -1,13 +1,13 @@
-include ../blocks/doctype/doctype.pug
-include ../../assets/utils/mixins.pug
+include ../templates/doctype.pug
+include ../utils/mixins.pug
 
 block title
   title registration
 block logo
 block content 
-  +registration_page({
+  +registration_pagessss({
       header_register_configuration: {
-      mods: "header_register--padding-vertical",
+      mods: "",
       containerMods: "header_register__container--padding-vertical",
       items: [
         {value: "О нас", active: true, submenu: false, itemMods: "header__item--margin-right-pages"},
@@ -29,47 +29,85 @@ block content
         href: "https://mock-address.ru/register.php"
       },
     },
-    auth_form: {
+    registration: {
+      blockMods: "registration--horizontal-margin-auto",
       send_to: "https://www.mock-adress/full-stack-development.ru",
-      form_name: "auth_form",
-      mods: "",
-      containerMods: " auth_form--horizontal-margin-auto",
-      auth_form_headline: {
-        description: "Войти",
-        containerMods: "component_headline__container--margin-bottom ",
-        mods: ""
-      },
-      name_text_field: {
-        contClassMods: "none",
-        inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-fe",
-        type: "text",
-        placeholder: "Имя",
-        name: "firstName",
-        value: "",
-      },
-      surname_text_field: {
-        contClassMods: "none",
-        inputClassMods: "text-field__input--pb-for-etf text-field_input--mb-af-pi ",
-        type: "text",
-        placeholder: "Фамилия",
-        name: "secondName",
-        value: "",
-      },
-      masked_text_field_container: {
+      form_name: "registration",
+      registation_conf_headline: {
+      description: "Регистрация аккаунта",
+      mods: "component_headline__text--margin-bottom ",
+    },
+    name_text_field: {
+      containerMods: "text-field__container--mb-9",
+      contClassMods: "none",
+      inputClassMods: "",
+      type: "text",
+      placeholder: "Имя",
+      name: "firstName",
+      value: "",
+    },
+    surname_text_field: {
+      containerMods: "text-field__container--mb-9",
+      contClassMods: "none",
+      inputClassMods: "",
+      type: "text",
+      placeholder: "Фамилия",
+      name: "secondName",
+      value: "",
+    },
+    radio_buttons: {options: [["Мужчина", true], ["Женщина", false]], blockMods: "radio_buttons--margin-bottom"},
+    masked_text_field_container: {
 
-      },
-      masked_text_field: {
-        contClassMods: "none",
-        inputClassMods: "masked_text_field__input--margin-bottom",
-        type: "text",
-        placeholder: "ДД.ММ.ГГГГ",
-        name: "masked_text_field",
-        value: "",
+    },
+    masked_text_field_description: {
+      containerMods: "input_description_container--padding-top-registration",
+      contentMods: "",
+      description: "дата рождения"
+    },
+    masked_text_field_state: {
+      containerMods: "",
+      contentMods: "input_description__content--font-weight-normal",
+      description: "default"
+    },
+    masked_text_field: {
+      contClassMods: "none",
+      inputClassMods: "masked_text_field__input--vertical-padding-12",
+      type: "text",
+      placeholder: "ДД.ММ.ГГГГ",
+      name: "masked_text_field",
+      value: "",
+    },
+    auth_block_headline: {
+      containerMods: "input_description__container--margin-top-registration",
+      contentMods: "",
+      description: "данные для входа в сервис"
+    },
+
+    email_text_field: {
+      containerMods: "text-field__container--mb-10 ",
+      contClassMods: "none",
+      inputClassMods: "masked_text_field__input--vertical-padding-12",
+      type: "text",
+      placeholder: "Email",
+      name: "Email",
+      value: "",
+    }, 
+    password_text_field: {
+      containerMods: "text-field__container--mb-8 ",
+      contClassMods: "none",
+      inputClassMods: "masked_text_field__input--vertical-padding-12",
+      type: "text",
+      placeholder: "Пароль",
+      name: "password",
+      value: "",
+    },
+      toggle:{
+        descText: "Получать спецпредложения",
+        labelMods: "toggle__label--mb-reg"
       },
       checkout_button: {
-        buttonText: "войти",
-        link: true,
-        href: 'https://www.mock-adress/full-stack-development.ru/createAccount'
+        buttonText: "перейти к оплате",
+        type: "submit"
       },
       button_submit_cont: {
         buttonContMods: "buttonContainer--vertical_padding buttonContainer--align-items-center",
@@ -77,16 +115,19 @@ block content
       button_submit_description: {
         containerMods: "input_description__container--mt-11px",
         contentMods: "input_description__content--description-for-buttons",
-        description: "Нет аккаунта на Toxin?"
+        description: "Уже есть аккаунт на Toxin"
       },
       button_submit: {
-        buttonText: "создать", buttonMods: "button__body--button__ellipse ", type: "submit",
+        buttonText: "Войти", buttonMods: "button__body--button__ellipse button__body--extra-padding",
+        type: "button",
+        link: true,
+        href: "https://www.mock-adress/full-stack-development.ru/submit",
       },
     },
     footer_configuration: {
       send_to: "https://www.mock-adress/full-stack-development.ru",
       form_name: "subscribe",
-      mods: "footer--pt-lp",
+      mods: "",
       info: [
         "Бронирование номеров в лучшем",
         "отеле 2019 года по версии",
