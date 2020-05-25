@@ -1,3 +1,10 @@
+function importAll(resolve) {
+  resolve.keys().forEach(resolve);
+}
+
+importAll(require.context('./', true, /\.js$|\.scss$|\.svg$|\.css$/));
+
+/*
 
 import './icon.jpg';
 import './scss/style.scss';
@@ -16,4 +23,4 @@ import './assets/BEM/pie_chart/pie_chart.js';
 import './assets/components/date/datepicker.js';
 import './assets/components/header_register/header_register.js';
 import './assets/favicons/favicons';
-
+*/

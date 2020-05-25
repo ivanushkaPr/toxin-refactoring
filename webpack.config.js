@@ -24,7 +24,7 @@ module.exports = {
       jQuery: "jquery",
 
  }),
-    /*
+
     new HtmlWebpackPlugin({
       template: './src/pug/pages/room_details.pug',
       filename: './room_details.html',
@@ -56,8 +56,6 @@ module.exports = {
       filename: './landing_page.html',
       inject: true
     }),
-*/
-
     
     new HtmlWebpackPlugin({
       template: './src/pug/pages/Headers&Footers.pug',
@@ -79,13 +77,13 @@ module.exports = {
       inject: true
     }),
     
-/*  
+
     new HtmlWebpackPlugin({
       template: './src/pug/pages/colors&types.pug',
       filename: './color_and_types.html',
       inject: true
     }),
-  */
+  
     new HtmlWebpackPlugin({
       template: './src/pug/pages/presentation.pug',
       filename: './index.html',
@@ -119,7 +117,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'assets/',
-              publicPath: '/'
+              publicPath: 'assets/'
             }
           }
         ]
@@ -139,8 +137,15 @@ module.exports = {
           'css-loader',
           // Compiles Sass to CSS
           'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+                resources: './src/scss/variables.scss'
+            }
+        }
         ],
       },
+
     ],
   },
 };
