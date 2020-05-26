@@ -1,9 +1,3 @@
-
-
-.header_register {
-
-}
-
 .header_register__container {
   padding-left: 140px;
   padding-right: 140px;
@@ -16,7 +10,6 @@
   border-bottom: 1px solid transparent;
 }
 
-// .header_register--padding
 .header_register__container--padding-vertical {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -69,11 +62,9 @@
     width: 100%;
     background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     box-shadow: inset 0 0 3px 4px white;
-   // margin-bottom: 15px;
   }
 }
 
-// header_register--h_f-margin_top
 .header_register--mt-hf {
   margin-top: 65px;
   margin-bottom: 34px;
@@ -135,7 +126,6 @@
   margin-right: 20px
 }
 
-// header__item--filter_page_margin-right
 .header__item--mr-fp {
   margin-right: 21px;
 }

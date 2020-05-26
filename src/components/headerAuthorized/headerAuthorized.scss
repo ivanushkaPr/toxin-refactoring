@@ -1,7 +1,3 @@
-.header_auth {
-
-}
-
 .header_auth__container {
   padding-left: 140px;
   padding-right: 140px;
@@ -66,13 +62,11 @@
   height: 21px;
   background-color: transparent;
   border: none;
-
   display: flex;
   align-items: center;
   text-align: center;
   cursor: pointer;
-} 
-
+}
 
 .header_auth__item:last-child {
   margin-right: 28px;

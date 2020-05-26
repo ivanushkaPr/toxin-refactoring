@@ -11,7 +11,6 @@
   flex: 1 0 auto;
 }
 
-
 .room_details__image-bg {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
@@ -24,17 +23,14 @@
   background-size: cover;
 }
 
-// room_details__image-bg--big 
 .room_details__image-bg--background-main-view  {
   background-image: url('./image-bg.jpg');
 }
 
-// room_details__image-sm--sm-first
 .room_details__image-sm--background-additional-view-one {
   background-image: url('./image-sm-one.jpg');
 }
 
-// room_details__image-sm--sm-second 
 .room_details__image-sm--background-additional-view-two {
   background-image: url('./image-sm-two.jpg');
 }
@@ -103,14 +99,11 @@
   }
 }
 
-
-// room_details__wrapper--rules-and-cancelation
 .room_details__wrapper--d-flex_jc-sb {
   display: flex;
   justify-content: space-between;
 }
 
-// room_details__wrapper--rules-and-cancelation
 .room_details__wrapper--max-width {
   max-width: 686px;
 }

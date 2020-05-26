@@ -7,6 +7,7 @@
 .landing_page__layer {
 	flex: 1 0 auto;
 }
+
 .footer {
 	flex: 0 0 auto;
 }
@@ -22,17 +23,14 @@
   margin-top: 70px;
 }
 
-// footer--padding-top-landing-page 
 .footer--pt-lp {
   padding-top: 170px;
 }
 
-// footer--filter_page-padding-top 
 .footer--pt-fp {
   padding-top: 153px;
 }
 
-// footer--h_f_margin-top
 .footer--mt-hf {
   margin-top: 37px;
   margin-bottom: 18px;
@@ -40,7 +38,7 @@
 
 .footer__container {
   display: flex;
-  padding-left: 9.722222222222222%; // 140px;
+  padding-left: 9.722222222222222%;
   padding-bottom: 81px;
   border-bottom: 0.5px solid grey;
 }

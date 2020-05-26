@@ -1,7 +1,3 @@
-.input_description_container {
-
-}
-
 .input_description_container__container {
   width: 100%;
   display: flex;
@@ -9,26 +5,18 @@
   flex-wrap: wrap;  
 }
 
-
 .input_description_container__container--padding-top {
   padding-top: 17px;
 }
 
-// input_description_container--pp-padding-top 
 .input_description_container--padding-top-registration {
   padding-top: 21px;
 }
 
-
-// input_description_container--pp-dropdown-room-quantity 
-// input_description_container--paddin-top-for-room-quantity
- 
 .input_description_container__container--padding-top-for-room-quantity {
   padding-top: 95px;
 }
 
-// input_description_container--pp-dropdown-room-quantity-expanded
-// input_description_container--padding-top-for-room-quantity-expanded
 .input_description_container__container--padding-top-for-room-quantity-expanded {
   padding-top: 16px;
 }

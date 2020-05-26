@@ -2,30 +2,23 @@
   width: 320px;
 }
 
-
-// grid--md
 .grid--size-md {
   width: 380px;
 }
 
-// grid--form-elements-first-row
 .grid--margin-right-for-first-row {
   margin-right: 9.699769053117783%; //126px;
 }
 
-
-// grid--form-elements-second-row
 .grid--margin-right-for-second-row {
   margin-right: 5.542725173210162%; //72px;
 }
 
 
-// grid--form-elements-third-row 
 .grid--padding-top-for-third-row {
   padding-top: 3px;
 }
 
-// grid--aside
 .grid--position-for-appointment {
   width: auto;
   position: absolute;
@@ -33,27 +26,20 @@
   left: 587px;
 }
 
-// grid--form-elements--pp-padding-top
 .grid--form-elements--pp-padding-top {
   padding-top: 3px;
 }
 
-
-// grid--cards--first-row 
 .grid--paddings-for-first-row-on-cards-page {
   padding-left: 140px;
   padding-top: 68px;
 }
 
-// grid--cards--second-row 
 .grid--paddings-for-second-row-on-cards-page {
   padding-left: 40px;
   padding-top: 68px;
 }
 
-
-// Внимание. Заменить margin на padding и проверить как работает.
-// grid--cards--third-row 
 .grid--paddings-for-third-row-on-cards-page {
   padding-left: 40px;
   padding-top: 68px;

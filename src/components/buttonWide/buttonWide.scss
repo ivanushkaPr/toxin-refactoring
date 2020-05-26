@@ -3,7 +3,6 @@
   width: 100%;
   padding: 0px;
   background-color: transparent;
-  
   font-family: 'montserrat', Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -11,16 +10,13 @@
   text-transform: uppercase;
   color: $purple;
   box-sizing: border-box;
-
   border-radius: 22px;
   padding: 14px 20px 15px 20px;
-
   border: none;
   background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   color: white;
   display: flex;
   justify-content: center;
-
 }
 
 .button_wide--negative-margin-top {
