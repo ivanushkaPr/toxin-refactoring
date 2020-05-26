@@ -1,0 +1,106 @@
+.expandable_checkbox_list {
+  
+}
+
+//expandable_checkbox_list--pp-form-elements
+.expandable_checkbox_list--padding-top {
+  padding-top: 40px;
+}
+
+
+//expandable_checkbox_list--pp-expanded-form-elements
+.expandable_checkbox_list--opened_its_padding_top {
+  padding-top: 21px;
+}
+
+
+// expandable_checkbox_list--filter-date_padding-top
+.expandable_checkbox_list--pt-16px {
+  padding-top: 16px;
+}
+
+.expandable_checkbox_list__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between  ;
+  width: 100%;
+  max-width: 266px;
+  word-break: break-all;
+} 
+
+.expandable_checkbox_list__description {
+  word-break: break-all;
+  font-family: 'montserrat', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: $dark_shade_100;
+  text-transform: uppercase;
+  margin: 14.5px 0px;
+}
+
+.expandable_checkbox_list__button-open {
+  width: 44px;
+  height: 44px;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+// expandable_checkbox_list__button-opened
+.expandable_checkbox_list__button-open--clicked {
+  transform: rotate(180deg);
+}
+
+.expandable_checkbox_list__list {
+  margin: 0px;
+  margin-bottom: 17.44px;
+  padding: 0px;
+  padding-top: 3px;
+  display: none;
+}
+
+.expandable_checkbox_list__list--opened {
+  display: block;
+}
+
+// expandable_checkbox_list_label
+.expandable_checkbox_list__label {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.expandable_checkbox_list__input {
+  display: none;
+}
+
+.expandable_checkbox_list__checkbox {
+  width: 18px;
+  height: 18px;
+  background-color: #FFFFFF;
+  border: 1px solid $dark_shade_25;
+  border-radius: 4px;
+  margin-right: 9px;
+  
+}
+
+.expandable_checkbox_list__input:checked ~ .expandable_checkbox_list__checkbox {
+  border: 1px solid $purple;
+  background-image:  url('./arrowDown.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.expandable_checkbox_list__text {
+  max-width: 240px;
+  word-break: break-all;
+  font-family: 'montserrat', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark_shade_50;
+  text-transform: capitalize;
+  margin: 0px;
+}

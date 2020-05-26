@@ -1,0 +1,127 @@
+.room_details {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.room_details__review {
+  display: grid;
+  grid-template-columns: 68.2% 31.875%;
+  grid-template-rows: 242px 242px;
+  flex: 1 0 auto;
+}
+
+
+.room_details__image-bg {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.room_details__image--background-rules {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// room_details__image-bg--big 
+.room_details__image-bg--background-main-view  {
+  background-image: url('./image-bg.jpg');
+}
+
+// room_details__image-sm--sm-first
+.room_details__image-sm--background-additional-view-one {
+  background-image: url('./image-sm-one.jpg');
+}
+
+// room_details__image-sm--sm-second 
+.room_details__image-sm--background-additional-view-two {
+  background-image: url('./image-sm-two.jpg');
+}
+
+.room_details__column {
+  display: flex;
+}
+.room_details__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 140px;
+  padding-bottom: 52px;
+  background-color: white;
+}
+
+@media(max-width: 1400px) {
+  .room_details__content {
+    padding: 0px 50px;
+  }
+  
+}
+
+@media(max-width: 1170px) {
+  .room_details__content {
+    padding: 0px 25px;
+  }
+  
+}
+
+@media(max-width: 1170px) {
+  .room_details__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }  
+}
+
+.room_details__wrapper {
+  display: flex;
+}
+
+@media(max-width: 670px) {
+  .room_details__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media(max-width: 450px) {
+  .room_details__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.room_details__booking {
+  min-width: 380px;
+  padding-top: 70px;
+}
+
+@media(max-width: 450px) {
+  .room_details__booking {
+    width: auto;
+    min-width: auto;
+    justify-content: center;
+  }
+}
+
+
+// room_details__wrapper--rules-and-cancelation
+.room_details__wrapper--d-flex_jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+// room_details__wrapper--rules-and-cancelation
+.room_details__wrapper--max-width {
+  max-width: 686px;
+}
+
+.room_details__cancelation {
+  margin-top: 14px;
+
+}
+
+
+
+
+
+

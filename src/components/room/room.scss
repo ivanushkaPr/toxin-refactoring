@@ -21,8 +21,6 @@
   margin-top: 39px;
 }
 
-
-
 .room__gallery {
   display: flex;
   list-style-type: none;
@@ -39,9 +37,68 @@
 
 // 
 .room__image--background-1 {
-  background-image: url('./image.svg');
+  background-image: url('./roomOne.jpg');
   background-repeat: no-repeat;
 }
+
+.room__image--background-room-two {
+  background-image: url('./roomTwo.jpg');
+  background-repeat: no-repeat;
+}
+
+.room__image--background-room-three {
+  background-image: url('./roomThree.jpg');
+  background-repeat: no-repeat;
+}
+
+.room__image--background-room-four {
+  background-image: url('./roomFour.jpg');
+  background-repeat: no-repeat;
+}
+
+.room__image--background-room-five {
+  background-image: url('./roomFive.jpg');
+  background-repeat: no-repeat;
+}
+
+.room__image--background-room-six {
+  background-image: url('./roomSix.jpg');
+  background-repeat: no-repeat;
+}
+.room__image--background-room-seven {
+  background-image: url('./roomSeven.jpg');
+  background-repeat: no-repeat;
+}
+.room__image--background-room-eight {
+  background-image: url('./roomEight.jpg');
+  background-repeat: no-repeat;
+}
+
+.room__image--background-room-nine {
+  background-image: url('./roomNine.jpg');
+  background-repeat: no-repeat;
+}
+
+.room__image--background-room-ten {
+  background-image: url('./roomTen.jpg');
+  background-repeat: no-repeat;
+}
+
+
+.room__image--background-room-eleven {
+  background-image: url('./roomEleven.jpg');
+  background-repeat: no-repeat;
+}
+
+.room__image--background-room-twelve {
+  background-image: url('./roomTwelve.jpg');
+  background-repeat: no-repeat;
+}
+
+
+
+
+
 
 .room__button {
   width: 44px;
