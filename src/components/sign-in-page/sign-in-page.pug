@@ -1,0 +1,6 @@
+mixin registration-page(object)
+  div(class=`registration_page`)
+    +header-register(object.header_register_configuration)
+    div(class=`registration__layer registration__layer--signed-in`)
+      +auth-form(object.auth_form)
+    +footer(object.footer_configuration)

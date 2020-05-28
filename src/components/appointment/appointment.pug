@@ -7,5 +7,5 @@ mixin appointment(obj)
           p(class=`appointment__name`) #{obj.name}
           p(class=`appointment__date`) #{obj.date}
       div(class=`appointment__feedback`)
-        +like_button({buttonMods: 'like_button__add--pressed like_button__appointment', counterMods: 'like_button__counter--button-pressed',count: 12})
+        +like-button({buttonMods: 'like_button__add--pressed like_button__appointment', counterMods: 'like_button__counter--button-pressed',count: 12})
         p(class=`appointment__text`) #{obj.text}

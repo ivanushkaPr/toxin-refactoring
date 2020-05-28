@@ -1,5 +1,5 @@
 mixin slider(object)
-  div(class=`slider`)
+  div(class=`slider` id=`${object.id}`)
     div(class=`slider__container ${object.containerMods}`)
       div(class=`slider__header ${object.headerMods}`)
         p(class=`slider__description ${object.descMods}`) #{object.description}

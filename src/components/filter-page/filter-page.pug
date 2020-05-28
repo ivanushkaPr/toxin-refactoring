@@ -1,0 +1,28 @@
+mixin filter-page(object)
+  div(class=`filter_page`)
+    +header-register(object.header_register_configuration)
+    section(class=`filter_page__content`)
+      div(class=`filter_page__controls`)
+        form(class="filter_page__form" 	action=`${object.send_to}`, method=`post` name=`${object.form_name}` autocomplete=`false`)
+          +input-description(object.input_filter_date_dropdown_description)
+          +input-filter-date-dropdown(object.input_filter_date_dropdown)
+          +input-description(object.input_dropdown_guests_description)
+          +input-dropdown-guests(object.input_dropdown_guests)
+          +slider(object.slider)
+          +checkbox-buttons(object.checkbox_buttons)
+
+          +rich-checkbox-buttons(object.rich_checkbox_buttons)
+
+          +input-description(object.input_dropdown_room_quantity_description)
+          +input-dropdown-room-quantity(object.input_dropdown_room_quantity)
+
+          +expandable-checkbox-list(object.expandable_checkbox_list)
+      div(class=`filter_page__rooms`)
+        +component-headline(object.rooms_headline)
+        div(class=`filter_page__container`)
+          each room in object.rooms
+            +room(room)
+          div(class="filter_page__pagination")
+            +pagination(object.pagination)
+  
+    +footer(object.footer_configuration)

@@ -44,7 +44,7 @@ mixin footer(obj)
         each line in obj.subscribe.descript
           p(class=`footer__descript`) #{line}
         form(class='footer__form' action=`${obj.send_to}`, method=`post` name=`${obj.form_name}` autocomplete=`false`)
-          +subscription_text_field(obj.subscription_text_field)
+          +subscription-text-field(obj.subscription_text_field)
     div(class=`footer__widgets`)
       p(class=`footer__copyright`) #{obj.copyright}
       ul(class=`footer__social`)

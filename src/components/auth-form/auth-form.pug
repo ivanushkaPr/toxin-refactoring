@@ -1,0 +1,16 @@
+mixin auth-form(auth_form)
+  section(class=`auth_form ${auth_form.mods}`)
+    section(class=`auth_form__container ${auth_form.containerMods}`)
+      +component-headline(auth_form.auth_form_headline)
+      form(class='auth_form__form' 	action=`${auth_form.send_to}`, method=`post` name=`${auth_form.form_name}` autocomplete=`false`)
+        +text-field(auth_form.name_text_field)
+        +text-field(auth_form.surname_text_field)
+
+        +button-wide(auth_form.checkout_button)
+
+        +button-container(auth_form.button_submit_cont)
+          +input-description(auth_form.button_submit_description)
+          +button(auth_form.button_submit)
+
+    
+

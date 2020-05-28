@@ -1,0 +1,5 @@
+mixin like-button(object)
+  div(class=`like_button`)
+    div(class=`like_button__container ${object.containerMods}`)
+      button(class=`like_button__add ${object.buttonMods}` type='button')
+          p(class=`like_button__counter ${object.counterMods}`) #{object.count}

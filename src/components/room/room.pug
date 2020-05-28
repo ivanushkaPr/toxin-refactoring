@@ -32,6 +32,6 @@ mixin room(obj)
         p(class=`room_price`) #{obj.price}
           span(class=`room__period`) #{obj.period}
       div(class=`room__rating`)
-        +rate_button({checkboxes: [1,2,3,4,5], rating: 5})
+        +rate-button({checkboxes: [1,2,3,4,5], rating: 5})
         p(class=`room__feedbacks`) #{obj.ammount}
           span(class=`room__number-span`) Отзывов

@@ -1,0 +1,5 @@
+mixin masked-text-field(input)
+  div(class=`masked_text_field ${input.blockMods}`)
+    div(class=`masked_text_field ${input.containerMods}`)
+      input(class=`masked_text_field__input ${input.inputClassMods}` type=`${input.type}` placeholder=`${input.placeholder}` name=`${input.name}` value=`${input.value}`)
+

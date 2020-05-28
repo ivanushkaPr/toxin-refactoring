@@ -1,0 +1,35 @@
+.input_filter_date_dropdown {
+  position: relative;
+  max-width: 266px;
+}
+
+.input_filter_date_dropdown__input {
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: 'montserrat-regular', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark_shade_75;
+}
+
+.input_filter_date_dropdown__input::placeholder {
+  color: $dark_shade_75;
+}
+
+.input_filter_date_dropdown__button {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 1px;
+  right: 0px;
+  background-color: transparent;
+  border: none; 
+}
+
+

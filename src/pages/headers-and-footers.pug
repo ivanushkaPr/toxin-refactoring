@@ -1,0 +1,10 @@
+include ../templates/doctype.pug
+include ../utils/mixins.pug
+
+block title
+  title Headers & Footers
+block logo
+  +logo()
+block content 
+  +headers-and-footers(headers_and_footers_configuration)
+

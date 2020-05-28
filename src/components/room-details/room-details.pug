@@ -1,0 +1,52 @@
+mixin room-details(object)
+  section(class=`room_details`)
+    +header-register(object.header_register_configuration)
+    section(class=`room_details__review`)
+      div(class=`room_details__image-bg room_details__image-bg--background-main-view room_details__image--background-rules`) 
+      div(class=`room_details__image-sm room_details__image-sm--background-additional-view-one room_details__image--background-rules`)
+      div(class=`room_details__image-sm room_details__image-sm--background-additional-view-two room_details__image--background-rules`)
+    section(class=`room_details__content`)
+        section(class=`room_details__information`)
+          div(class=`room_details__column`)
+            div(class="room_details__benefitBlock")
+              +component-headline(object.information)
+              div(class=`room_details__wrapper`)
+                div(class=`room_details__benefits`)
+                  +benefit({containerMods:"benefit__container--extra-margin ",  contMods: "", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"}) 
+                  +benefit({containerMods:"benefit__container--extra-margin ", contMods: "", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"})
+                  +benefit({containerMods:"benefit__container--extra-margin ", contMods: "", imageMods: "benefit__image--background-bonfire", nameText: "Уют", propText: "Номер оснащен камином"})
+            div(class=`room_details__statistiks`)
+              +component-headline(object.informationPieChart)
+              +pie-chart(object.pie_chart)
+
+          +component-headline(object.feedback)
+          div(class=`room_details__feedback`)
+            +appointment({
+              image: "appointment__photo--background-image_man",
+              name: "Мурад Сафронов",
+              date: "5 дней назад",
+              text: `Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.
+              И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто
+              не жаловался из соседей.`})
+
+            +appointment({
+              containerMods: "appointment__container--mt",
+              userMods: "",
+              image: "appointment__photo--background-image_girl",
+              name: "Патрисия Стёклышкова",
+              date: "Неделю назад",
+              text: `Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент`})
+
+          div(class=`room_details__wrapper room_details__wrapper--d-flex_jc-sb room_details__wrapper--max-width`)
+            div(class=`room_details__rules`)
+              +bullet-list({
+                descMods: "bulletlist__description--font_size-bg bulletlist__description--font_familt_open_sans bulletlist__description--text-transform_none",
+                description: "Правила",
+                items: ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]
+              })
+
+            div(class=`room_details__cancelation`)
+              +text-block(object.text_block)
+        section(class=`room_details__booking`)
+          +cost-calculator(object.cost_calculator)
+    +footer(object.footer_configuration)

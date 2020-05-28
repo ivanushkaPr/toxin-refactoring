@@ -33,26 +33,26 @@ mixin registration(registation_conf)
   section(class=`registration ${registation_conf.blockMods}`)
     section(class=`registration__container ${registation_conf.containerMods}`)
     form(class='registation_conf__form' 	action=`${registation_conf.send_to}`, method=`post` name=`${registation_conf.form_name}` autocomplete=`false`)
-      +component_headline(registation_conf.registation_conf_headline)
+      +component-headline(registation_conf.registation_conf_headline)
       +text-field(registation_conf.name_text_field)
       +text-field(registation_conf.surname_text_field)
-      +radio_buttons(registation_conf.radio_buttons)
+      +radio-buttons(registation_conf.radio_buttons)
 
 
       
-      +input_description(registation_conf.masked_text_field_description)
-      +masked_text_field(registation_conf.masked_text_field)
+      +input-description(registation_conf.masked_text_field_description)
+      +masked-text-field(registation_conf.masked_text_field)
 
-      +input_description(registation_conf.auth_block_headline)
+      +input-description(registation_conf.auth_block_headline)
       +text-field(registation_conf.email_text_field)
       +text-field(registation_conf.password_text_field)
       +toggle(registation_conf.toggle)
 
 
-      +button_wide(registation_conf.checkout_button)
+      +button-wide(registation_conf.checkout_button)
 
-      +button_container(registation_conf.button_submit_cont)
-        +input_description(registation_conf.button_submit_description)
+      +button-container(registation_conf.button_submit_cont)
+        +input-description(registation_conf.button_submit_description)
         +button(registation_conf.button_submit)
 
     
