@@ -37,6 +37,43 @@ block content
     search_room_headline: {
       description: 'Найдём номера под ваши пожелания',
     },
+
+    double_date_dropdown: {
+      input_date_dropdown_container: {mods: 'input_date_dropdown_container--cards-margin-bottom'},
+      input_date_dropdown_description_first:  {
+        containerMods: "",
+        contentMods: "",
+        description: "Прибытие"
+      } ,
+      input_date_dropdown_first: {
+        contClassMods: "none",
+        inputClassMods: "datepick-start",
+        type: "text",
+        placeholder: "ДД.ММ.ГГГГ",
+        name: "input_date_dropdown_default",
+        value: "",
+        id: 'start',
+        buttonID: 'start-button'
+      },
+      input_date_dropdown_description_second: {
+        containerMods: "",
+        contentMods: "",
+        description: "Выезд"
+      },
+      input_date_dropdown_second: {
+        contClassMods: "none",
+        inputClassMods: "datepick-end",
+        type: "text",
+        placeholder: "ДД.ММ.ГГГГ",
+        name: "input_date_dropdown_default",
+        value: "",
+        id: 'end',
+        buttonID: 'end-button'
+      },
+      calendar: {
+          id: 'calendar-start'
+        }
+    },
     input_date_dropdown_first_description: {
         containerMods: '',
         contentMods: '',

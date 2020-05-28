@@ -49,14 +49,8 @@ mixin search-room(search_room_conf)
       form(class='search_room__form' action=`${search_room_conf.send_to}`, method=`post` name=`${search_room_conf.form_name}` autocomplete=`false`)
         +component-headline(search_room_conf.search_room_headline)
 
-        +input-date-dropdown-container({mods: 'input_date_dropdown_container--cards-margin-bottom'})
-            +input-and-description-wrapper({})
-              +input-description(search_room_conf.input_date_dropdown_first_description)
-              +input-date-dropdown(search_room_conf.input_date_dropdown_first)
 
-            +input-and-description-wrapper({})
-              +input-description(search_room_conf.input_date_dropdown_second_description)
-              +input-date-dropdown(search_room_conf.input_date_dropdown_second)
+        +double-date-dropdown(search_room_conf.double_date_dropdown)
 
         +input-description({containerMods: '',contentMods: '', description: 'гости'})
         +input-dropdown-guests(search_room_conf.input_dropdown_guests)

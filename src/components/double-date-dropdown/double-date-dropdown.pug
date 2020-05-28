@@ -1,0 +1,11 @@
+mixin double-date-dropdown(inputs)
+  div(class='double-date-dropdown' style='position: relative;')
+    +input-date-dropdown-container(inputs.input_date_dropdown_container)
+      +input-and-description-wrapper({})
+        +input-description(inputs.input_date_dropdown_description_first)
+        +input-date-dropdown(inputs.input_date_dropdown_first)
+
+      +input-and-description-wrapper({})
+        +input-description(inputs.input_date_dropdown_description_second)
+        +input-date-dropdown(inputs.input_date_dropdown_second)
+  div(class='input_date_dropdown-calendar' id=`${inputs.calendar.id}`)  

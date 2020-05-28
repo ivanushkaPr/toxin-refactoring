@@ -429,9 +429,34 @@
       -ms-flex-align: center;
           align-items: center;
   height: 32px; }
+
   .datepicker--button:hover {
     color: #4a4a4a;
     background: #f0f0f0; }
+
+  .datepicker--pseudo-button {
+    color: $purple;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px; 
+  }
+
+  .datepicker--pseudo-button:hover {
+    color: $purple;
+    background: #f0f0f0;
+  }
 
 .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
   color: #dedede; }
@@ -453,7 +478,7 @@
     background: none;
     border: none; }
 
-    .datepicker--buttons .datepicker--button {
+    .datepicker--buttons .datepicker--button,  .datepicker--buttons .datepicker--pseudo-button {
       font-family: 'montserrat', Arial, sans-serif;
       font-weight: bold;
       font-size: 12px;

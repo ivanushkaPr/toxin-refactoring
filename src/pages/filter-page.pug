@@ -1,11 +1,8 @@
 include ../templates/doctype.pug
 include ../utils/mixins.pug
 
-block title
-  title registration
-block logo
-block content
-  +filter-page({
+-
+ const filter_page_configuration = {
     header_register_configuration: {
       mods: '',
       containerMods: 'header_register__container--padding-vertical',
@@ -42,6 +39,7 @@ block content
         placeholder: 'ДД.ММ.ГГГГ',
         name: 'input_date_dropdown_default',
         value: '19 авг - 23 авг',
+        calendarID: 'input_filter_date_dropdown--calendar'
       },
 
       input_dropdown_guests_description: {containerMods: 'input_description__container--mt-20px',contentMods: '', description: 'Гости'},
@@ -182,4 +180,10 @@ block content
       },
       copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.',
     },
-  })
+  }
+
+block title
+  title registration
+block logo
+block content
+  +filter-page(filter_page_configuration)

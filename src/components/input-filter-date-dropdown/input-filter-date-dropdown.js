@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $('.input_filter_date_dropdown__input').datepicker({
+  $('#input_filter_date_dropdown--calendar').datepicker({
     clearButton: true,
     range: true,
-    inline: false,
+    inline: true,
     minDate: new Date(),
     multipleDates: true,
     dateFormat: 'd M',
@@ -10,17 +10,34 @@ $(document).ready(function() {
     navTitles: {
       days: 'MM yyyy',
     },
-   });
 
-  var startDate = new Date('August 19');
-  var endDate = new Date('August 23'); 
+    onSelect: function (fd, d, picker) { 
+      const sibling =  $('#input_filter_date_dropdown--calendar').prev();
+      const input = $('.input_filter_date_dropdown__input', sibling);
 
-  if($('.input_filter_date_dropdown__input').length !== 0) {
-  var datepicker = $('.input_filter_date_dropdown__input').datepicker().data('datepicker');
-  datepicker.selectDate(startDate);
-  datepicker.selectDate(endDate);
-  }
+      input.val(fd);
+    }
+  })
 
+  console.log('worked')
+  
+  $('#input_filter_date_dropdown--calendar').hide();
 
-})
+  const parent = $('#input_filter_date_dropdown--calendar');
+  $('.datepicker--buttons', parent).append("<span class='datepicker--pseudo-button'> Применить </span>")
+  $('.datepicker--pseudo-button', parent).click(() => {
+    $('#input_filter_date_dropdown--calendar').hide();
+  })
 
+  const sibling =  $('#input_filter_date_dropdown--calendar').prev();
+
+  $('.input_filter_date_dropdown__button' , sibling).click(() => {
+    console.log('sparta')
+    $('#input_filter_date_dropdown--calendar').show();
+  })
+
+  $('.input_filter_date_dropdown__input', sibling).keydown(() => {
+    return false
+  })
+
+});
