@@ -39,61 +39,61 @@
   background-repeat: no-repeat;
 }
 
-.room__image--background-room-two {
+.room__image--background-2 {
   background-image: url('./roomTwo.jpg');
   background-repeat: no-repeat;
 }
 
-.room__image--background-room-three {
+.room__image--background-3 {
   background-image: url('./roomThree.jpg');
   background-repeat: no-repeat;
 }
 
-.room__image--background-room-four {
+.room__image--background-4 {
   background-image: url('./roomFour.jpg');
   background-repeat: no-repeat;
 }
 
-.room__image--background-room-five {
+.room__image--background-5 {
   background-image: url('./roomFive.jpg');
   background-repeat: no-repeat;
 }
 
-.room__image--background-room-six {
+.room__image--background-6 {
   background-image: url('./roomSix.jpg');
   background-repeat: no-repeat;
 }
-.room__image--background-room-seven {
+.room__image--background-7 {
   background-image: url('./roomSeven.jpg');
   background-repeat: no-repeat;
 }
-.room__image--background-room-eight {
+.room__image--background-8 {
   background-image: url('./roomEight.jpg');
   background-repeat: no-repeat;
 }
 
-.room__image--background-room-nine {
+.room__image--background-9 {
   background-image: url('./roomNine.jpg');
   background-repeat: no-repeat;
 }
 
-.room__image--background-room-ten {
+.room__image--background-10 {
   background-image: url('./roomTen.jpg');
   background-repeat: no-repeat;
 }
 
 
-.room__image--background-room-eleven {
+.room__image--background-11{
   background-image: url('./roomEleven.jpg');
   background-repeat: no-repeat;
 }
 
-.room__image--background-room-twelve {
+.room__image--background-12 {
   background-image: url('./roomTwelve.jpg');
   background-repeat: no-repeat;
 }
 
-.room__button {
+.room__button, .owl-prev, .owl-next {
   width: 44px;
   height: 44px;
   position: absolute;
@@ -102,13 +102,19 @@
   background-color: transparent;
   padding: 0;
   top: 53px;
+  z-index: 100;
+  font-size: 23px;
+  line-height: 0;
+  color: white;
 }
 
-.room__button--right {
+
+.room__button--right, .owl-next {
   right: 0;
 }
 
 .room__dots {
+  z-index: 100;
   position: absolute;
   top: 113px;
   left: 170px;
@@ -128,7 +134,9 @@
   cursor: pointer;
 }
 
-.room__dot--active {
+
+
+.room__dot.active {
   background-color: #FFFFFF;
 }
 
