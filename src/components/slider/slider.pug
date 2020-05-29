@@ -1,10 +1,7 @@
 mixin slider(object)
-  div(class=`slider` id=`${object.id}`)
+  div(class=`slider`)
     div(class=`slider__container ${object.containerMods}`)
       div(class=`slider__header ${object.headerMods}`)
         p(class=`slider__description ${object.descMods}`) #{object.description}
         p(class=`slider__selected_range ${object.selRangeMods}`) #{object.rangeSelected}
-      div(class=`slider__range ${object.rangeMods}`)
-        div(class=`slider__runner slider__runner--first-runner ${object.runMods}`)
-        div(class=`slider__progress ${object.progMods}`)
-        div(class=`slider__runner slider__runner--second-runner ${object.runMods}`)
+      div(class=`slider__range ${object.rangeMods}` id=`${object.id}`)

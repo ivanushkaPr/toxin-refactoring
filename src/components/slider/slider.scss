@@ -61,6 +61,24 @@
   left: 159px;
 }
 
+.slider__container .noUi-handle {
+  width: 13px;
+  height: 13px;
+  right: 0px;
+  top: -5px;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  background-image: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background-color: transparent;
+  box-shadow: none;
+
+}
+
+.slider__container .noUi-handle:before, .slider__container .noUi-handle:after {
+  width: 0px;
+  height: 0px;
+}
+
 .slider__progress {
   position: absolute;
   left: 89px;
@@ -68,7 +86,10 @@
   height: 6px;
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
   border-radius: 3px;
-  
+}
+
+.noUi-connect {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
 
 .slider__container--pt-30px {
