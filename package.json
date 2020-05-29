@@ -34,7 +34,7 @@
     "air-datepicker": "^2.2.3",
     "baggage-loader": "^1.0.0",
     "ion-rangeslider": "^2.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "nouislider": "^14.5.0",
     "owl.carousel": "^2.3.4"
   }
