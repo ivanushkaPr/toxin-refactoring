@@ -1,9 +1,13 @@
-import noUiSlider from 'nouislider';
+//import noUiSlider from 'nouislider';
+
+
 import 'nouislider/distribute/nouislider.css';
 
+
+const noUiSlider = require('nouislider');
+console.log(noUiSlider)
 $(document).ready(() => {
   var slider = document.getElementById('slider');
-  console.log(noUiSlider.cssClasses);
 
   noUiSlider.create(slider, {
       start: [5000, 10000],
