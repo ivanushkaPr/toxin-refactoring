@@ -3,82 +3,83 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-}
 
-.filter_page__content {
-  display: flex;
-  justify-content: space-between;
-  flex: 1 0 auto;
-  padding-left: 140px;
-  padding-right: 140px;
-}
-
-@media(max-width: 1200px ) {
-  .filter_page__content {
-    padding-left: 100px;
-    padding-right: 100px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  
+  @media(max-width: 1200px ) {
+    &__content {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+  
+  @media(max-width: 1065px ) {
+    &__content {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  
+  @media(max-width: 965px ) {
+    &__content {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  
+  @media(max-width: 915px ) {
+    &__content {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  
+  @media(max-width: 640px ) {
+    &__content {
+  
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  &__rooms {
+    margin-left: 59px;
+  }
+  
+  @media(max-width: 640px ) {
+    &__rooms {
+      margin-left: 0px;
+    }
+  }
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  @media(max-width: 915px ) {
+    &__container {
+      justify-content: center;
+    }
+  }
+  
+  &__pagination {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 21px;
+  }
+  
+  @media(max-width: 640px ) {
+    &__controls {
+      max-width:266px;
+    }
   }
 }
 
-@media(max-width: 1065px ) {
-  .filter_page__content {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media(max-width: 965px ) {
-  .filter_page__content {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
-@media(max-width: 915px ) {
-  .filter_page__content {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
-@media(max-width: 640px ) {
-  .filter_page__content {
-
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.filter_page__rooms {
-  margin-left: 59px;
-}
-
-@media(max-width: 640px ) {
-  .filter_page__rooms {
-    margin-left: 0px;
-  }
-}
-
-.filter_page__container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-@media(max-width: 915px ) {
-  .filter_page__container {
-    justify-content: center;
-  }
-}
-
-.filter_page__pagination {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 21px;
-}
-
-@media(max-width: 640px ) {
-  .filter_page__controls {
-    max-width:266px;
-  }
-}

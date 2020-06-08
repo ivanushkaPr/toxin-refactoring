@@ -1,74 +1,83 @@
-.balance__fee {
-  display: flex;
-  justify-content: space-between;
-}
+.balance {
+  &__fee {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.balance__container {
-  display: flex;
-}
 
-.balance__service, .balance__tooltip, .balance__total {
-  margin-top: 10px;
-  margin-bottom: 0px;
+  &__container {
+    display: flex;
+  }
+
+  &__service, &__tooltip, &__total {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark_shade_75;
+  }
+
+  &__total {
+    margin-bottom: 0px;
+  }
+
+  &__fee:nth-child(3) &__service {
+    line-height: 18px;
+  }
+
+  &__fee:nth-child(3) &__container {
+    padding-top: 2px;
+  }
+
+  &__fee:nth-child(3) &__total  {
+    margin-top: 7px;
+  }
+
   
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $dark_shade_75;
-}
-
-.balance__total {
-  margin-bottom: 0px;
-}
-
-.balance__fee:nth-child(3) .balance__service {
-  line-height: 18px;
-}
-
-.balance__fee:nth-child(3) .balance__container {
-  padding-top: 2px;
-}
-.balance__fee:nth-child(3) .balance__total  {
-  margin-top: 7px;
-}
-
-.balance__service {
+  &__service {
   max-width: 214px;
   display: inline-block;
   margin-right: 5px;
+  }
+
+  &__tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $dark_shade_25;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+
+  &__overall {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__totalcost, &__sum, &__border{
+    font-family: 'opensans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+  
+    color: #1F2041;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  
+  &__border {
+    width: 182px;
+    border-bottom: 1px dotted $dark_shade_25;
+    box-sizing: border-box;
+  }
 }
 
-.balance__tooltip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  border: 1px solid $dark_shade_25;
-  box-sizing: border-box;
-  border-radius: 20px;
-}
 
-.balance__overall {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
 
-.balance__totalcost, .balance__sum, .balance__border{
-  font-family: 'opensans', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
 
-  color: #1F2041;
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-
-.balance__border {
-  width: 182px;
-  border-bottom: 1px dotted $dark_shade_25;
-  box-sizing: border-box;
-}

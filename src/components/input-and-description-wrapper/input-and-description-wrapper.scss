@@ -1,8 +1,9 @@
 .input_and_description_wrapper {
   width: 100%;
   max-width: 150px;
+
+  &--width-md {
+    max-width: 266px;
+  }
 }
 
-.input_and_description_wrapper--width-md {
-  max-width: 266px;
-}

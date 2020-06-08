@@ -1,55 +1,58 @@
-.HTMLstyle__container--margin {
-  margin-left: 29px;
-  margin-bottom: 34px;
-}
+.HTMLstyle  {
+    
+  &__container--margin {
+    margin-left: 29px;
+    margin-bottom: 34px;
+  }
 
-.HTMLstyle__description {
-  font-family: 'quicksand', Arial, sans-serif;
-  font-weight: bold;
-  color: $dark_shade_100;
-}
+  &__description {
+    font-family: 'quicksand', Arial, sans-serif;
+    font-weight: bold;
+    color: $dark_shade_100;
+  }
 
-.HTMLstyle__description--font-size-lg {
-  font-size: 24px;
-  line-height: 30px;
-  letter-spacing: -0.018em;
-}
+  &__description--font-size-lg {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.018em;
+  }
 
-.HTMLstyle__description--negative-letter-spacing {
-  letter-spacing: -0.018em;
-}
+  &__description--negative-letter-spacing {
+    letter-spacing: -0.018em;
+  }
 
-.HTMLstyle__description--font-size-md {
-  font-size: 19px;
-  line-height: 24px;
-}
+  &__description--font-size-md {
+    font-size: 19px;
+    line-height: 24px;
+  }
 
-.HTMLstyle__description--margin-top-and-left {
-  margin-top: 16px;
-  margin-bottom: 38px;
-}
+  &__description--margin-top-and-left {
+    margin-top: 16px;
+    margin-bottom: 38px;
+  }
 
-.HTMLstyle__description--font-size-xs {
-  font-size: 12px;
-  line-height: 15px;
-} 
+  &__description--font-size-xs {
+    font-size: 12px;
+    line-height: 15px;
+  } 
 
-.HTMLstyle__description--font-family-montserrat-bold {
-  font-family: 'montserrat-bold', Arial, sans-serif;
-  font-weight: bold;
-}
+  &__description--font-family-montserrat-bold {
+    font-family: 'montserrat-bold', Arial, sans-serif;
+    font-weight: bold;
+  }
 
-.HTMLstyle__description--font-size-sm {
-  font-size: 14px;
-  line-height: 24px;
-}
+  &__description--font-size-sm {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
 
-.HTMLstyle__description--color-dark-shade-75 {
-  color: $dark_shade_75;
-}
+  &__description--color-dark-shade-75 {
+    color: $dark_shade_75;
+  }
 
-.HTMLstyle__description--font-family-montserrat {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
+  &__description--font-family-montserrat {
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+  }
 }

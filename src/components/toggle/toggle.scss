@@ -1,66 +1,68 @@
-.toggle__label {
-  display: flex;
-  align-items: center;
-}
+.toggle {
+  &__label {
+    display: flex;
+    align-items: center;
+  }
 
-.toggle__label--mb-reg {
-  margin-bottom: 22px;
-}
+  &__label--mb-reg {
+    margin-bottom: 22px;
+  }
 
-.toggle__label--mb {
-  margin-bottom: 11px;
-}
+  &__label--mb {
+    margin-bottom: 11px;
+  }
 
-.toggle__checkbox {
-  display: none;
-}
+  &__checkbox {
+    display: none;
+  }
 
-.toggle__fake_checkbox {
-  position: relative;
-  width: 40px;
-  height: 20px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 4px;
-  padding-right: 4px;
-  border: 1px solid $dark_shade_25;
-  box-sizing: border-box;
-  border-radius: 10px;
-  background: #FFF;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
+  &__fake_checkbox {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 1px solid $dark_shade_25;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 
-.toggle__fake_checkbox:after  {
-  content: '';
-  position: absolute;
-  padding: 6px;
-  left: 6px;
-  background-color: $dark_shade_25;
-  border-radius: 10px;
-  transition-property: background-image, left;
-  transition-duration: 0.5s;
-}
+  &__fake_checkbox:after  {
+    content: '';
+    position: absolute;
+    padding: 6px;
+    left: 6px;
+    background-color: $dark_shade_25;
+    border-radius: 10px;
+    transition-property: background-image, left;
+    transition-duration: 0.5s;
+  }
 
-.toggle__checkbox:checked ~ .toggle__fake_checkbox:after {
-  background-color: none;
-  left: 22px;
-  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-}
+  &__checkbox:checked ~ &__fake_checkbox:after {
+    background-color: none;
+    left: 22px;
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
 
-.toggle__checkbox:checked ~ .toggle__fake_checkbox {
-  border-color: $purple;
-}
+  &__checkbox:checked ~ &__fake_checkbox {
+    border-color: $purple;
+  }
 
-.toggle__description {
-  margin: 0px;
-  margin-left: 10px;
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $dark_shade_75;
-  word-break: break-all;
-  max-width: 80%;
+  &__description {
+    margin: 0px;
+    margin-left: 10px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark_shade_75;
+    word-break: break-all;
+    max-width: 80%;
+  }
 }

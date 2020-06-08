@@ -1,63 +1,63 @@
 .checkbox_buttons {
   width: 100%;
   max-width: 266px;
-}
 
-.checkbox_buttons__description {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: $dark_shade_100;
-  text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 16.56px;
-}
+    &__description {
+      font-family: 'montserrat', Arial, sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      color: $dark_shade_100;
+      text-transform: uppercase;
+      margin: 0px;
+      margin-bottom: 16.56px;
+    }
 
-.checkbox_buttons__container--mt-56px {
-  margin-top: 56px;
-}
+    &__container--mt-56px {
+      margin-top: 56px;
+    }
 
-.checkbox_buttons__list {
-  margin: 0px;
-  margin-bottom: 17.44px;
-  padding: 0px;
-}
+    &__list {
+      margin: 0px;
+      margin-bottom: 17.44px;
+      padding: 0px;
+    }
 
-.checkbox_buttons__label {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 12px;
-}
+  &__label {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
 
-.checkbox_buttons__input {
-  display: none;
-}
+  &__input {
+    display: none;
+  }
 
-.checkbox_buttons__checkbox {
-  width: 17px;
-  height: 17px;
-  background-color: #FFFFFF;
-  border: 1px solid $dark_shade_25;
-  border-radius: 4px;
-  margin-right: 10px;
-  cursor: pointer;
-}
+  &__checkbox {
+    width: 17px;
+    height: 17px;
+    background-color: #FFFFFF;
+    border: 1px solid $dark_shade_25;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
 
-.checkbox_buttons__input:checked ~ .checkbox_buttons__checkbox {
-  border: 1px solid $purple;
-  background-image:  url('./checked.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
+  &__input:checked ~ &__checkbox {
+    border: 1px solid $purple;
+    background-image:  url('./checked.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 
-.checkbox_buttons__text {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $dark_shade_50;
-  text-transform: capitalize;
-  margin: 0px;
-  max-width: 220px;
+  &__text {
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark_shade_50;
+    text-transform: capitalize;
+    margin: 0px;
+    max-width: 220px;
+  }
 }

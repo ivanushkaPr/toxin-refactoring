@@ -1,69 +1,71 @@
-.room_info__container {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-}
+.room_info {
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.room_info__overall {
- display: flex;
- align-items: baseline;
- padding-top: 5px;
-}
+  &__overall {
+    display: flex;
+    align-items: baseline;
+    padding-top: 5px;
+  }
 
-.room_info__number {
-  font-family: 'opensans';
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: $dark_shade_100;
-  margin: 0px;
-}
+  &__number {
+    font-family: 'opensans';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark_shade_100;
+    margin: 0px;
+  }
 
-.room_info__symbol {
-  display: inline-block;
-  font-size: 13px;
-  margin-right: 9px;
-}
+  &__symbol {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 9px;
+  }
 
-.room_info__room_number {
-  font-size: 24px;
-  margin-right: 5px;
-}
+  &__room_number {
+    font-size: 24px;
+    margin-right: 5px;
+  }
 
-.room_info__type {
-  font-family:'montserrat';
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $purple;
-  margin: 0px;
-}
+  &__type {
+    font-family:'montserrat';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    margin: 0px;
+  }
 
-.room_info__price {
-  display: flex;
-  padding-top: 9px;
-}
+  &__price {
+    display: flex;
+    padding-top: 9px;
+  }
 
-.room_info__cost{
-  display: inline-block;
-  margin-right: 1px;
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: $dark_shade_50;
-  margin: 0px;
-}
+  &__cost{
+    display: inline-block;
+    margin-right: 1px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark_shade_50;
+    margin: 0px;
+  }
 
-.room_info__period {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
-  color: $dark_shade_50;
-  margin: 0px;
+  &__period {
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: $dark_shade_50;
+    margin: 0px;
+  }
 }

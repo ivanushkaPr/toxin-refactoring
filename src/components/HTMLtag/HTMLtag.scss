@@ -1,27 +1,29 @@
-.HTMLtag__character {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  color: $dark_shade_25;
-  text-align: right;
-  min-width: 37px;
-}
+.HTMLtag {
+  &__character {
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    color: $dark_shade_25;
+    text-align: right;
+    min-width: 37px;
+  }
 
-.HTMLtag__character--font-size-lg {
-  font-size: 24px;
-  line-height: 29px;
-}
+  &__character--font-size-lg {
+    font-size: 24px;
+    line-height: 29px;
+  }
 
-.HTMLtag__character--font-size-md {
-  font-size: 19px;
-  line-height: 23px;
-}
+  &__character--font-size-md {
+    font-size: 19px;
+    line-height: 23px;
+  }
 
-.HTMLtag__character--font-size-sm {
-  font-size: 14px;
-  line-height: 24px;
-}
+  &__character--font-size-sm {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
-.HTMLtag__character--font-size-xs {
-  font-size: 12px;
-  line-height: 15px;
+  &__character--font-size-xs {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

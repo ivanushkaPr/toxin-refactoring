@@ -1,25 +1,28 @@
-.masked_text_field__input {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $dark_shade_75;
+.masked_text_field {
+  &__input {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark_shade_75;
+  }
+  
+  &__input--vertical-padding-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  &__input--margin-bottom {
+    margin-bottom: 15px;
+  }
 }
 
-.masked_text_field__input--vertical-padding-12 {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.masked_text_field__input--margin-bottom {
-  margin-bottom: 15px;
-}

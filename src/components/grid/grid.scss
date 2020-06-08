@@ -1,46 +1,46 @@
 .grid {
   width: 320px;
+  &--size-md {
+    width: 380px;
+  }
+  
+  &--margin-right-for-first-row {
+    margin-right: 9.699769053117783%; //126px;
+  }
+  
+  &--margin-right-for-second-row {
+    margin-right: 5.542725173210162%; //72px;
+  }
+  
+  
+  &--padding-top-for-third-row {
+    padding-top: 3px;
+  }
+  
+  &--position-for-appointment {
+    width: auto;
+    position: absolute;
+    top: 1573px;
+    left: 587px;
+  }
+  
+  &--form-elements--pp-padding-top {
+    padding-top: 3px;
+  }
+  
+  &--paddings-for-first-row-on-cards-page {
+    padding-left: 140px;
+    padding-top: 68px;
+  }
+  
+  &--paddings-for-second-row-on-cards-page {
+    padding-left: 40px;
+    padding-top: 68px;
+  }
+  
+  &--paddings-for-third-row-on-cards-page {
+    padding-left: 40px;
+    padding-top: 68px;
+  }
 }
 
-.grid--size-md {
-  width: 380px;
-}
-
-.grid--margin-right-for-first-row {
-  margin-right: 9.699769053117783%; //126px;
-}
-
-.grid--margin-right-for-second-row {
-  margin-right: 5.542725173210162%; //72px;
-}
-
-
-.grid--padding-top-for-third-row {
-  padding-top: 3px;
-}
-
-.grid--position-for-appointment {
-  width: auto;
-  position: absolute;
-  top: 1573px;
-  left: 587px;
-}
-
-.grid--form-elements--pp-padding-top {
-  padding-top: 3px;
-}
-
-.grid--paddings-for-first-row-on-cards-page {
-  padding-left: 140px;
-  padding-top: 68px;
-}
-
-.grid--paddings-for-second-row-on-cards-page {
-  padding-left: 40px;
-  padding-top: 68px;
-}
-
-.grid--paddings-for-third-row-on-cards-page {
-  padding-left: 40px;
-  padding-top: 68px;
-}

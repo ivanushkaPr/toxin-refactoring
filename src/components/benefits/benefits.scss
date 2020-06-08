@@ -1,66 +1,67 @@
 .benefit {
   display: flex;
   max-width: 280px;
-}
 
-.benefit__container {
-  display: flex;
-  padding-bottom: 19px;
-  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-}
-
-.benefit--pading-top {
-  padding-top: 21.5px;
-}
-
-.benefit__container--extra-margin {
-  padding-top: 5px;
-  margin-bottom: 14px;
-}
-
-.benefit__image{
-  width: 48px;
-  height: 48px;
-  margin-right: 8px;
-
-  border: none;
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.benefit__image--background-smile {
-  background-image: url('./smile.jpg');
-}
-
-.benefit__image--background-building {
-  background-image: url('./location.jpg');
-}
-
-.benefit__image--background-bonfire {
-  background-image: url('./whatshot.jpg');
-}
-.benefit__description {
-  padding-top: 1px;
-}
-
-.benefit__name, .benefit__property {
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0px;
-}
-
-.benefit__name {
-  max-width: 200px;
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: bold;
-  color: $dark_shade_75;
+  &--pading-top {
+    padding-top: 21.5px;
+  }
   
-} 
 
-.benefit__property {
-  max-width: 225px;
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  color: $dark_shade_50;
+  &__container {
+    display: flex;
+    padding-bottom: 19px;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  }
+
+  &__container--extra-margin {
+    padding-top: 5px;
+    margin-bottom: 14px;
+  }
+
+  &__image{
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+  
+    border: none;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__image--background-smile {
+    background-image: url('./smile.jpg');
+  }
+
+  &__image--background-building {
+    background-image: url('./location.jpg');
+  }
+  
+  &__image--background-bonfire {
+    background-image: url('./whatshot.jpg');
+  }
+
+  &__description {
+    padding-top: 1px;
+  }
+  
+  &__name, &__property {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0px;
+  }
+
+  &__name {
+    max-width: 200px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: bold;
+    color: $dark_shade_75;
+  }
+
+  &__property {
+    max-width: 225px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    color: $dark_shade_50;
+  }
 }

@@ -1,23 +1,25 @@
-.buttonContainer__container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-bottom: 30px;
-}
+.buttonContainer {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 30px;
+  }
 
-.buttonContainer--md {
-  max-width: 218px;
-}
+  &--md {
+    max-width: 218px;
+  }
 
-.buttonContainer--sm {
-  max-width: 144px;
-}
+  &--sm {
+    max-width: 144px;
+  }
+  
+  &--vertical_padding {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
 
-.buttonContainer--vertical_padding {
-  padding-top: 30px;
-  padding-bottom: 0px;
-}
-
-.buttonContainer--align-items-center {
-  align-items: center;
+  &--align-items-center {
+    align-items: center;
+  }
 }

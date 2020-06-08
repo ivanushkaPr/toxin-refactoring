@@ -1,57 +1,60 @@
-.appointment__container--mt {
-  margin-top: 23px;
-}
+.appointment {
 
-.appointment__photo {
-  width: 48px;
-  height: 48px;
-  background-position: center -10px;
-  margin-right: 10px;
-}
+  &__container--mt {
+    margin-top: 23px;
+  }
 
-.appointment__photo--background-image_man {
-  background-image: url('./theDude.png');
-}
+  &__photo {
+    width: 48px;
+    height: 48px;
+    background-position: center -10px;
+    margin-right: 10px;
+  }
+  
+  &__photo--background-image_man {
+    background-image: url('./theDude.png');
+  }
 
-.appointment__photo--background-image_girl {
-  background-image: url('./theTransDude.png');
-}
+  &__photo--background-image_girl {
+    background-image: url('./theTransDude.png');
+  }
 
-.appointment__user {
-  display: flex;
-}
+  &__user {
+    display: flex;
+  }
 
-.appointment__name, .appointment__date {
-  max-width: 655px;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0px;
-}
+  &__name, &__date {
+    max-width: 655px;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0px;
+  }
 
-.appointment__name {
-font-family: 'montserrat', Arial, sans-serif;
-font-weight: bold;
-color: $dark_shade_75;
-letter-spacing: 0.025em;
-}
+  &__name {
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: bold;
+    color: $dark_shade_75;
+    letter-spacing: 0.025em;
+  }
 
-.appointment__date {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  color: $dark_shade_50;
-}
+  &__date {
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    color: $dark_shade_50;
+  }
 
-.appointment__feedback {
-  display: flex;
-  margin-top: 10px;
-}
+  &__feedback {
+    display: flex;
+    margin-top: 10px;
+  }
 
-.appointment__text {
-  max-width: 655px;
-  margin: 0px;
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  &__text {
+    max-width: 655px;
+    margin: 0px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
 }

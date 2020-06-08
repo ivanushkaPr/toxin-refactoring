@@ -1,6 +1,9 @@
-.like_button_container__container  {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 90px;
+.like_button_container {
+  &__container  {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90px;
+  }
 }
+

@@ -1,56 +1,57 @@
-.radio_buttons__container {
-  display: flex;
-}
+.radio_buttons {
+  &__container {
+    display: flex;
+  }
 
-.radio_buttons__container--margin-bottom  {
-  padding-bottom: 20.56px;
-}
+  &__container--margin-bottom  {
+    padding-bottom: 20.56px;
+  }
 
-.radio_buttons__label {
-  display: flex;
-}
+  &__label {
+    display: flex;
+  }
 
-.radio_buttons__label:first-child {
-  margin-right: 20px;
-}
+  &__label:first-child {
+    margin-right: 20px;
+  }
 
-.radio_buttons__input {
-  display: none;
-}
-.radio_buttons__fake_radio {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-  border: 1px solid $dark_shade_25;
-  border-radius: 50%;
-  box-sizing: border-box;
-  cursor: pointer;
-}
+  &__input {
+    display: none;
+  }
 
-.radio_buttons__input:checked ~ .radio_buttons__fake_radio {
-  border: 1px solid $purple;
-  position: relative;
+  &__fake_radio {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid $dark_shade_25;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &__input:checked ~ &__fake_radio {
+    border: 1px solid $purple;
+    position: relative;
+  }
+
+  &__input:checked ~ &__fake_radio:after {
+    content: '';
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    padding: 6px;
+    border-radius: 50%;
+  }
+
+  &__option {
+    max-width: 100px;
+    margin: 0px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $dark_shade_75;
+    word-break: break-all;
+  }
 }
-
-.radio_buttons__input:checked ~ .radio_buttons__fake_radio:after {
-  content: '';
-  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  padding: 6px;
-  border-radius: 50%;
-}
-
-.radio_buttons__option {
-  max-width: 100px;
-  margin: 0px;
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: $dark_shade_75;
-  word-break: break-all;
-}
-
-

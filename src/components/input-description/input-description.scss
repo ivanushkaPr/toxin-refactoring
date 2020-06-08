@@ -1,112 +1,109 @@
+.input_description {
+  &--pading-top {
+    padding-top: 38px;
+  }
 
+  &--margin-top-for-filter-date-dropdown-form-elements {
+    margin-top: 41px;
+  } 
 
-.input_description__container--margin-top-registration {
-  margin-top: 19px;
+  &--padding-top-for-subscription-text-field  {
+    padding-top: 39px;
+  } 
+
+  &__container--margin-top-registration {
+    margin-top: 19px;
+  }
+
+  &__container--mt-11px {
+    margin-top: 11px
+  }
+
+  &__container--margin-top-29px {
+    margin-top: 29px;
+  }
+
+  &__container--mt-30px {
+    margin-top: 30px;
+  }
+
+  &__container--vertical-padding-near-radio-buttons {
+    padding-top: 20px;
+    padding-bottom: 11px;
+  }
+
+  &__contatiner--vertical-padding-near-toggle {
+    padding-top: 37px;
+    padding-bottom: 8px;
+  }
+
+  &__container--vertical-padding-near-like-button {
+    padding-top: 40px;
+    padding-bottom: 11px;
+  }
+
+  &__container--vertical-padding-near-rate-button  {
+    padding-top: 34px;
+    padding-bottom: 15px;
+  }
+
+  &__container--pp-guest-dropdown  {
+    padding-top: 190px;
+  }
+
+  &__container--vertical-padding-buttons-block {
+    padding-top: 39px;
+    padding-bottom: 11px;
+  }
+
+  &__container--vertical-margin-pagination {
+    padding-top: 37px;
+    padding-bottom: 11px;
+  }
+
+  &__container--padding-top-guest-dropdown-block {
+    padding-top: 230px;
+  }
+
+  &__container--mt-20px {
+    margin-top: 20px;
+  }
+
+  &__content {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-family: 'montserrat', Arial, sans-serif;;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark_shade_100;
+    word-break: break-all;
+  }
+
+  &__content--font-weight-normal {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-weight: normal;
+    color: $dark_shade_50;
+  }
+
+  &__content--weight-regular--expanded{
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+
+  &__content--description-for-buttons {
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: none;
+  }
+
+  &__content--margins {
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
 }
-
-.input_description__container--mt-11px {
-  margin-top: 11px
-}
-
-.input_description__container--margin-top-29px {
-  margin-top: 29px;
- }
-
-
- .input_description__container--mt-30px {
-  margin-top: 30px;
- }
-
-
-.input_description__content {
-  margin-top: 3px;
-  margin-bottom: 5px;
-  font-family: 'montserrat', Arial, sans-serif;;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $dark_shade_100;
-  word-break: break-all;
-}
-
-.input_description__content--font-weight-normal {
-  margin-top: 0px;
-  margin-bottom: 8px;
-  font-weight: normal;
-  color: $dark_shade_50;
-}
-
-.input_description__content--weight-regular--expanded{
-  margin-top: 3px;
-  margin-bottom: 5px;
-}
-
-.input_description__content--description-for-buttons {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  text-transform: none;
-}
-
-.input_description__content--margins {
-  margin-top: 3px;
-  margin-bottom: 5px;
-}
-
-.input_description--pading-top {
-  padding-top: 38px;
-}
-
-.input_description--margin-top-for-filter-date-dropdown-form-elements {
-  margin-top: 41px;
-} 
-
-.input_description--padding-top-for-subscription-text-field  {
-  padding-top: 39px;
-} 
-
-.input_description__container--vertical-padding-near-radio-buttons {
-  padding-top: 20px;
-  padding-bottom: 11px;
- }
-
-.input_description__contatiner--vertical-padding-near-toggle {
-  padding-top: 37px;
-  padding-bottom: 8px;
- }
-
- .input_description__container--vertical-padding-near-like-button {
-  padding-top: 40px;
-  padding-bottom: 11px;
- }
-
-.input_description__container--vertical-padding-near-rate-button  {
-  padding-top: 34px;
-  padding-bottom: 15px;
- }
-
-.input_description__container--pp-guest-dropdown  {
-  padding-top: 190px;
- }
-
-.input_description__container--vertical-padding-buttons-block {
-  padding-top: 39px;
-  padding-bottom: 11px;
- }
-
-.input_description__container--vertical-margin-pagination {
-  padding-top: 37px;
-  padding-bottom: 11px;
- }
-
-.input_description__container--padding-top-guest-dropdown-block {
-  padding-top: 230px;
- }
-
- .input_description__container--mt-20px {
-  margin-top: 20px;
- }
-

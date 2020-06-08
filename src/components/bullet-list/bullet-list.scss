@@ -1,48 +1,53 @@
-.bulletlist__description {
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $dark_shade_100;
+.bulletlist {
+  &__description {
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark_shade_100;
+  }
+
+  &__container--padding-top {
+    padding-top: 87px;
+  }
+  
+  &__description--font_size-bg {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  &__description--font_family_open_sans {
+    font-family: 'opensans', Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  
+  &__description--text-transform_none {
+    text-transform: none;
+    margin-top: 34px;
+    margin-left: 19px;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    padding-left: 17px;
+    list-style-image: url("./ellipse.png");
+    margin-top: 1px;
+  }
+
+  &__item {
+    max-width: 240px;
+    padding-left: 3.56px;
+    margin-bottom: 11px;
+    font-family: 'montserrat', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark_shade_75;
+    word-wrap: break-word;
+  }
 }
 
-.bulletlist__container--padding-top {
-  padding-top: 87px;
-}
 
-.bulletlist__description--font_size-bg {
-  font-size: 19px;
-  line-height: 24px;
-}
-
-.bulletlist__description--font_family_open_sans {
-  font-family: 'opensans', Arial, sans-serif;
-  font-weight: bold;
-}
-
-.bulletlist__description--text-transform_none {
-  text-transform: none;
-  margin-top: 34px;
-  margin-left: 19px;
-  margin-bottom: 15px;
-}
-
-.bulletlist__list {
-  padding-left: 17px;
-  list-style-image: url("./ellipse.png");
-  margin-top: 1px;
-}
-
-.bulletlist__item {
-  max-width: 240px;
-  padding-left: 3.56px;
-  margin-bottom: 11px;
-  font-family: 'montserrat', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $dark_shade_75;
-  word-wrap: break-word;
-}
 

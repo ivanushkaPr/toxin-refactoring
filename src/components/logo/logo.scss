@@ -1,8 +1,10 @@
-.logo__image {
-  padding-left: 30px;
-  padding-top: 30px;
-}
+.logo {
+  &--background-color_white {
+    background-color: white;
+  }
 
-.logo--background-color_white {
-  background-color: white;
+  &__image {
+    padding-left: 30px;
+    padding-top: 30px;
+  }
 }

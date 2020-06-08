@@ -1,50 +1,50 @@
 .rect {
-  width: 70px //25.64685020041182%;
+  width: 70px; //25.64685020041182%;
+
+  @mixin createRect($width: 70px, $height: 70px, $border_radius: 0.375rem) {
+    width: $width;
+    height: $height;
+    border-radius: $border_radius;
+  }
+  
+  @mixin fillRect($background_color) {
+    background-color: $background_color;
+  }
+  
+  &__container--margin-bottom {
+    margin-bottom: 1.25rem;
+  }
+  
+  &__body {
+    @include createRect();
+  }
+  
+  &__body--dark_shade-100 {
+    @include fillRect($dark_shade_100)
+  }
+  
+  &__body--dark_shade-75 {
+    @include fillRect($dark_shade_75)
+  }
+  
+  &__body--dark_shade-50 {
+    @include fillRect($dark_shade_50)
+  }
+  
+  &__body--dark_shade-25 {
+    @include fillRect($dark_shade_25)
+  }
+  
+  &__body--dark_shade-5 {
+    @include fillRect($dark_shade_75)
+  }
+  
+  &__body--green {
+    @include fillRect($green)
+  }
+  
+  &__body--purple {
+    @include fillRect($purple)
+  }
 }
 
-@mixin createRect($width: 70px, $height: 70px, $border_radius: 0.375rem) {
-  width: $width;
-  height: $height;
-  border-radius: $border_radius;
-
-}
-
-@mixin fillRect($background_color) {
-  background-color: $background_color;
-}
-
-.rect__container--margin-bottom {
-  margin-bottom: 1.25rem;
-}
-
-.rect__body {
-  @include createRect();
-}
-
-.rect__body--dark_shade-100 {
-  @include fillRect($dark_shade_100)
-}
-
-.rect__body--dark_shade-75 {
-  @include fillRect($dark_shade_75)
-}
-
-.rect__body--dark_shade-50 {
-  @include fillRect($dark_shade_50)
-}
-
-.rect__body--dark_shade-25 {
-  @include fillRect($dark_shade_25)
-}
-
-.rect__body--dark_shade-5 {
-  @include fillRect($dark_shade_75)
-}
-
-.rect__body--green {
-  @include fillRect($green)
-}
-
-.rect__body--purple {
-  @include fillRect($purple)
-}

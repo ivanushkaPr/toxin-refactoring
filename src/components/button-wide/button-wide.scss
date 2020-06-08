@@ -17,28 +17,29 @@
   color: white;
   display: flex;
   justify-content: center;
+
+  &--negative-margin-top {
+    margin-top: -2px;
+  }
+
+  &__text {
+    margin: 0px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__button--margin-botoom {
+    margin-bottom: 30px;
+  }
 }
 
-.button_wide--negative-margin-top {
-  margin-top: -2px;
-}
-
-.button_wide__text {
-  margin: 0px;
-}
-
-.button_wide__button {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  min-width: 44px;
-  min-height: 44px;
-  padding: 0px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.button_wide__button--margin-botoom {
-  margin-bottom: 30px;
-}

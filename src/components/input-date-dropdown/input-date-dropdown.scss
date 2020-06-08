@@ -1,42 +1,38 @@
 .input_date_dropdown {
   position: relative;
   max-width: 150px;
-}
+  
+  &__input {
+    width: 100%;
+    max-width: 150px;
+    padding-left: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
-.input_date_dropdown__input {
-  width: 100%;
-  max-width: 150px;
-  padding-left: 13px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
 
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
+    font-family: 'montserrat';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $dark_shade_75;
+  }
 
-  font-family: 'montserrat';
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $dark_shade_75;
-}
+  &__input::placeholder {
+    color: $dark_shade_75;
+  }
 
-.input_date_dropdown__input::placeholder {
-  color: $dark_shade_75;
-}
-
-.input_date_dropdown__button {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  top: 1px;
-  right: 0px;
-  background-color: transparent;
-  border: none; 
-  cursor: pointer;
-}
-
-.input_date_dropdown_container--cards-margin-bottom {
-  padding-bottom: 18px;
+  &__button {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 1px;
+    right: 0px;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+  }
 }
