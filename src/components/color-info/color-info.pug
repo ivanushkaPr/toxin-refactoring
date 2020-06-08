@@ -1,0 +1,5 @@
+mixin color-info({containerMods, name, code} = color)
+  div(class="color")
+    div(class=`color__container ${containerMods}`)
+      p(class="color__name") #{name}
+      p(class="color__code") #{code}

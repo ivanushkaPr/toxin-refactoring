@@ -1,0 +1,11 @@
+mixin review(obj)
+  div(class=`review`)
+    div(class=`review__container ${obj.containerMods}`)
+      div(class=`review__user ${obj.userMods}`)
+        div(class=`review__photo  ${obj.image}`)
+        div(class=`review__info`) 
+          p(class=`review__name`) #{obj.name}
+          p(class=`review__date`) #{obj.date}
+      div(class=`review__feedback`)
+        +like-button({buttonMods: 'like_button__add--pressed like_button__review', counterMods: 'like_button__counter--button-pressed',count: 12})
+        p(class=`review__text`) #{obj.text}
