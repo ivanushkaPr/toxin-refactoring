@@ -1,14 +1,14 @@
-mixin expandable-checkbox-list(object)
-  div(class=`expandable_checkbox_list ${object.mods}`)
-    div(class=`expandable_checkbox_list__wrapper ${object.containerMods}`)
-      p(class=`expandable_checkbox_list__description`) #{object.description}
-      button(class=`expandable_checkbox_list__button-open js-expandable_checkbox_list__button-open ${object.buttonMods}` type='button')
+mixin expandable-checkbox-list({mods, containerMods, description, buttonMods, listMods, items})
+  div(class=`expandable_checkbox_list ${mods}`)
+    div(class=`expandable_checkbox_list__wrapper ${containerMods}`)
+      p(class=`expandable_checkbox_list__description`) #{description}
+      button(class=`expandable_checkbox_list__button-open js-expandable_checkbox_list__button-open ${buttonMods}` type='button')
         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M10.5938 0.57812L12 1.98437L6 7.98437L3.49418e-06 1.98437L1.40625 0.578122L6 5.17187L10.5938 0.57812Z" fill="#1F2041" fill-opacity="0.5"/>
         </svg>
 
-    ul(class=`expandable_checkbox_list__list js-expandable_checkbox_list__list ${object.listMods}`)
-      each item in object.items
+    ul(class=`expandable_checkbox_list__list js-expandable_checkbox_list__list ${listMods}`)
+      each item in items
         label(class=`expandable_checkbox_list__label`)
           input(class=`expandable_checkbox_list__input` type=`checkbox`) 
           div(class=`expandable_checkbox_list__checkbox`)
