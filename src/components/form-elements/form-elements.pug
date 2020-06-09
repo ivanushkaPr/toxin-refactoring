@@ -1,26 +1,16 @@
 mixin form-elements(form_elements_configuration)
   div(class="form_elements_container")
     +grid(form_elements_configuration.grid_one)
-      +input-description-container(form_elements_configuration.email_text_field_container)
-        +input-description(form_elements_configuration.email_text_field_description)
-        +input-description(form_elements_configuration.email_text_field_state)
-      +text-field(form_elements_configuration.email_text_field)
 
-      +input-description-container(form_elements_configuration.email_text_field_hover_effect_container)
-        +input-description(form_elements_configuration.email_text_field_description)
-        +input-description(form_elements_configuration.email_text_field_hover_effect_state)
-      +text-field(form_elements_configuration.email_text_field_hover_effect)
+      +UI-text-field(form_elements_configuration.UITextField)
+      +UI-text-field-hovered(form_elements_configuration.UITextFieldHovered)
 
 
-      +input-description-container(form_elements_configuration.guest_dropdown_container)
-        +input-description(form_elements_configuration.guest_dropdown_description)
-        +input-description(form_elements_configuration.guest_dropdown_state)
-      +guest-dropdown(form_elements_configuration.guest_dropdown_default)
 
-      +input-description-container(form_elements_configuration.masked_text_field_container)
-        +input-description(form_elements_configuration.masked_text_field_description)
-        +input-description(form_elements_configuration.masked_text_field_state)
-      +masked-text-field(form_elements_configuration.masked_text_field)
+      +UIGuestDropdownClosed(form_elements_configuration.UIGuestDropdownClosed)
+
+      +UIMaskedTextField(form_elements_configuration.UIMaskedTextField)
+      
 
 
       +double-date-dropdown(form_elements_configuration.double_date_dropdown)

@@ -1,12 +1,9 @@
 include ../templates/doctype.pug
 include ../utils/mixins.pug
 
-block title
-  title registration
-block logo
-block content 
-  +registration-page({
-      header_register_configuration: {
+-
+  const registrationPageConfiguration = {
+      headerRegisterConfiguration: {
       mods: 'header_register--padding-vertical',
       containerMods: 'header_register__container--padding-vertical',
       items: [
@@ -29,7 +26,7 @@ block content
         href: 'https://mock-address.ru/register.php'
       },
     },
-    auth_form: {
+    authForm: {
       sendTo: 'https://www.mock-adress/full-stack-development.ru',
       formName: 'auth_form',
       mods: '',
@@ -83,7 +80,7 @@ block content
         buttonText: 'создать', buttonMods: 'button__body--button__ellipse ', type: 'submit',
       },
     },
-    footer_configuration: {
+    footerConfiguration: {
       sendTo: 'https://www.mock-adress/full-stack-development.ru',
       formName: 'subscribe',
       mods: 'footer--pt-lp',
@@ -138,7 +135,13 @@ block content
       },
       copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.',
     },
-  })
+  }
+
+block title
+  title registration
+block logo
+block content 
+  +registration-page(registrationPageConfiguration)
 
 
   

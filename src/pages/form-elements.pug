@@ -2,92 +2,110 @@ include ../templates/doctype.pug
 include ../utils/mixins.pug
 
 -
-  let form_elements_configuration = {
+  let formElementsConfiguration = {
       grid_one: {mods: "grid--margin-right-for-first-row"},
 
-      email_text_field: {
-      contClassMods: "none",
-      inputClassMods: "text-field__input--pb-for-etf",
-      type: "email",
-      placeholder: "Email ",
-      name: "email",
-      value: "",
-    },
-      email_text_field_container: {
-        blockMods: ''
-      },
-      email_text_field_description: {
-        containerMods: "",
-        contentMods: "",
-        description: "text field "
-      },
-      email_text_field_state: {
-        containerMods: "",
-        contentMods: "input_description__content--font-weight-normal",
-        description: "default"
-      },
-      email_text_field_hover_effect: {
-        contClassMods: "none",
-        inputClassMods: "text-field__input--hovered",
-        type: "email",
-        placeholder: "Email",
-        name: "email-hovered",
-        value: "This is pretty awesome",
-      },
-      email_text_field_hover_effect_container: {
-        mods: "",
-        containerMods: "input_description_container__container--padding-top"
-      },
-      email_text_field_hover_effect_state: {
-        containerMods: "",
-        contentMods: "input_description__content--font-weight-normal input_description__content--margins",
-        description: "hover / focus"
-      },
-      guest_dropdown_container: {
-        mods: "",
-        containerMods: "input_description_container__container--padding-top"
-      },
-      guest_dropdown_description: {
-        containerMods: "",
-        contentMods: "",
-        description: "dropdown"
-      },
-      guest_dropdown_state: {
-        containerMods: "",
-        contentMods: "input_description__content--font-weight-normal input_description__content--margins",
-        description: "default"
-      },
-      guest_dropdown_default: {
-        contClassMods: "none",
-        inputClassMods: "",
-        type: "text",
-        placeholder: "Сколько гостей",
-        name: "guest_dropdown_default",
-        value: "",
-      },
-      masked_text_field_container: {
-        mods: "input_description_container--padding-top",
-        containerMods: "input_description_container__container--padding-top"
-      },
-      masked_text_field_description: {
-        containerMods: "",
-        contentMods: "",
-        description: "masked text field"
-      },
-      masked_text_field_state: {
-        containerMods: "",
-        contentMods: "input_description__content--font-weight-normal",
-        description: "default"
-      },
-      masked_text_field: {
-        contClassMods: "none",
-        inputClassMods: "masked-text-field-datepicker",
-        type: "text",
-        placeholder: "ДД.ММ.ГГГГ",
-        name: "masked_text_field",
-        value: "",
+      UITextField: {
+        emailTextFieldContainer: {
+          blockMods: ''
+        },
+        emailTextFieldDescription: {
+          containerMods: "",
+          contentMods: "",
+          description: "text field "
+        },
+        emailTextFieldState: {
+          containerMods: "",
+          contentMods: "input_description__content--font-weight-normal",
+          description: "default"
+        },
+        emailTextField: {
+          contClassMods: "none",
+          inputClassMods: "text-field__input--pb-for-etf",
+          type: "email",
+          placeholder: "Email ",
+          name: "email",
+          value: "",
+        },
       },
 
+      UITextFieldHovered: {
+        emailTextFieldContainer: {
+          mods: "",
+          containerMods: "input_description_container__container--padding-top"
+        },
+        emailTextFieldDescription: {
+            containerMods: "",
+            contentMods: "",
+            description: "text field "
+          },
+        emailTextFieldState: {
+          containerMods: "",
+          contentMods: "input_description__content--font-weight-normal input_description__content--margins",
+          description: "hover / focus"
+        },
+        emailTextField: {
+          contClassMods: "none",
+          inputClassMods: "text-field__input--hovered",
+          type: "email",
+          placeholder: "Email",
+          name: "email-hovered",
+          value: "This is pretty awesome",
+        },
+      },
+      
+
+      UIGuestDropdownClosed: {
+        guestDropdownContainer: {
+          mods: "",
+          containerMods: "input_description_container__container--padding-top"
+        },
+        guestDropdownDescription: {
+          containerMods: "",
+          contentMods: "",
+          description: "dropdown"
+        },
+        guestDropdownState: {
+          containerMods: "",
+          contentMods: "input_description__content--font-weight-normal input_description__content--margins",
+          description: "default"
+        },
+        guestDropdownDefault: {
+          contClassMods: "none",
+          inputClassMods: "",
+          type: "text",
+          placeholder: "Сколько гостей",
+          name: "guest_dropdown_default",
+          value: "",
+        },
+      },
+
+      UIMaskedTextField: {
+        maskedTextFieldContainer: {
+          mods: "input_description_container--padding-top",
+          containerMods: "input_description_container__container--padding-top"
+        },
+        maskedTextFieldDescription: {
+          containerMods: "",
+          contentMods: "",
+          description: "masked text field"
+        },
+        maskedTextFieldState: {
+          containerMods: "",
+          contentMods: "input_description__content--font-weight-normal",
+          description: "default"
+        },
+        maskedTextField: {
+          contClassMods: "none",
+          inputClassMods: "masked-text-field-datepicker",
+          type: "text",
+          placeholder: "ДД.ММ.ГГГГ",
+          name: "masked_text_field",
+          value: "",
+        },
+      },
+     
+      
       double_date_dropdown: {
         inputDateDropdownContainer: {mods: "", containerMods: "input_date_dropdown_container--padding-top"},
         inputDateDropdownDescriptionFirst: {
@@ -337,4 +355,4 @@ block title
 block logo
   +logo('logo--background-color_white')
 block content 
-  +form-elements(form_elements_configuration)
+  +form-elements(formElementsConfiguration)

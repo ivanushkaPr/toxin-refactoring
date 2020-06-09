@@ -1,12 +1,9 @@
 include ../templates/doctype.pug
 include ../utils/mixins.pug
 
-block title
-  title room details
-block logo
-block content
-  +room-details({
-    header_register_configuration: {
+-
+  const roomDetailsConfiguration = {
+    headerRegisterConfiguration: {
       mods: 'header_register--padding',
       containerMods: 'header_register__container--padding-vertical',
       items: [
@@ -42,7 +39,7 @@ block content
       description: 'Впечатления от номера'
     },
 
-    pie_chart: {
+    pieChart: {
       canvasName: 'room_stats js-room_stats',
       width: 130,
       height: 130,
@@ -61,12 +58,12 @@ block content
       description: 'Отзывы посетителей номера'
     },
 
-    text_block: {
+    textBlock: {
       description: 'Отмена',
       content: 'Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.',
     },
 
-    cost_calculator: {
+    costCalculator: {
       mods: '',
       sendTo: '',
       formName: 'cost_calculator',
@@ -120,33 +117,6 @@ block content
           id: 'calendar-start'
         }
       },
-
-      input_date_dropdown_first_description: {
-        containerMods: '',
-        contentMods: '',
-        description: 'Прибытие'
-      },
-    input_date_dropdown_first: {
-        contClassMods: 'none',
-        inputClassMods: '',
-        type: 'text',
-        placeholder: '19.08.2019',
-        name: 'input_date_dropdown_default',
-        value: '',
-      },
-      input_date_dropdown_second_description: {
-        containerMods: '',
-        contentMods: '',
-        description: 'Выезд'
-      },
-      input_date_dropdown_second: {
-        contClassMods: 'none',
-        inputClassMods: '',
-        type: 'text',
-        placeholder: '23.08.2019',
-        name: 'input_date_dropdown_default',
-        value: '',
-      },
       inputDropdownGuests: {
         containerMods: 'input_dropdown_guests__input--mb-8px ',
         properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
@@ -177,7 +147,7 @@ block content
       }
     },
 
-    footer_configuration: {
+    footerConfiguration: {
       sendTo: 'https://www.mock-adress/full-stack-development.ru',
       formName: 'subscribe',
       mods: '',
@@ -232,4 +202,10 @@ block content
       },
       copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.',
     },
-  })
+  }
+
+block title
+  title room details
+block logo
+block content
+  +room-details(roomDetailsConfiguration)
