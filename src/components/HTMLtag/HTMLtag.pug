@@ -1,5 +1,5 @@
-mixin HTMLtag(object)
+mixin HTMLtag({containerMods, modificators, tagName})
   div(class="HTMLtag")
-    div(class=`HTMLtag__container ${object.containerMods}`)
-      p(class=`HTMLtag__character ${object.modificators}`) #{object.tagName}
+    div(class=`HTMLtag__container ${containerMods}`)
+      p(class=`HTMLtag__character ${modificators}`) #{tagName}
 
