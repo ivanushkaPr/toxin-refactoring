@@ -1,4 +1,4 @@
-mixin HTMLstyle(object)
+mixin HTMLstyle({containerMods, modificators, text})
   div(class="HTMLstyle")
-    div(class=`HTMLstyle__container ${object.containerMods}`)
-      pre(class=`HTMLstyle__description ${object.modificators}`) #{object.text}
+    div(class=`HTMLstyle__container ${containerMods}`)
+      pre(class=`HTMLstyle__description ${modificators}`) #{text}
