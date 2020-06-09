@@ -1,22 +1,3 @@
--
-  let cost_calculator = {
-    sendTo: '',
-    formName: '',
-    roomInfo: {
-      blockMods: '',
-      overallMods: '',
-      numberMods: '',
-      numberText: '№ 888 ',
-      typeMods: '',
-      typeText: 'люкс',
-      priceMods: '',
-      costMods:'',
-      costText: '9 990₽ ',
-      periodMods: '',
-      periodText: 'в сутки',
-    }
-  }
-
 mixin cost-calculator({blockMods, containerMods, roomInfo, sendTo, formName, doubleDateDropdown, inputDropdownGuests, balance, bookButton})
   div(class=`cost_calculator ${blockMods}`)
     div(class=`cost_calculator__cont ${containerMods}`)
