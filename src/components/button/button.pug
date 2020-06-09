@@ -1,8 +1,8 @@
-mixin button(object)
-  div(class=`button ${object.contMods}`)
-    div(class=`button__container ${object.containerMods}`)
-      if(object.link === true)
-        button(class=`button__body ${object.buttonMods}` type=`${object.type}`)
-          a(class=`button__link` href=`${object.href}`) #{object.buttonText}
+mixin button({contMods, containerMods, link, buttonMods, type, href, buttonText})
+  div(class=`button ${contMods}`)
+    div(class=`button__container ${containerMods}`)
+      if(link === true)
+        button(class=`button__body ${buttonMods}` type=`${type}`)
+          a(class=`button__link` href=`${href}`) #{buttonText}
       else 
-        button(class=`button__body ${object.buttonMods}` type=`${object.type}`) #{object.buttonText}
+        button(class=`button__body ${buttonMods}` type=`${type}`) #{buttonText}
