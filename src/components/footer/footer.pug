@@ -1,6 +1,6 @@
-mixin footer(obj)
-  footer(class=`footer ${obj.mods}`)
-    div(class=`footer__container ${obj.containerMods}`)
+mixin footer({mods, containerMods, info, navContMods, lists, subscribe, sendTo, formName, subscriptionTextField, copyright})
+  footer(class=`footer ${mods}`)
+    div(class=`footer__container ${containerMods}`)
       div(class=`footer__about`)
         div(class=`footer__logo`)
           <svg width="106" height="46" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,11 +27,11 @@ mixin footer(obj)
             </linearGradient>
             </defs>
           </svg>
-        each par in obj.info
+        each par in info
           p(class=`footer__information`)  #{par}
 
-      div(class=`footer__navcont ${obj.navContMods}`)
-        each val, prov in obj.lists
+      div(class=`footer__navcont ${navContMods}`)
+        each val, prov in lists
           nav(class=`${val.navClass}`)
             ul(class=`footer__list`)
               li(class=`footer__list_headline`)  #{val.headline}
@@ -40,13 +40,13 @@ mixin footer(obj)
                   a(class='footer__list_link' href='${item.link}') #{item.text}
 
       article(clas=`footer__subscribe`)
-        p(class=`footer__cta`) #{obj.subscribe.cta}
-        each line in obj.subscribe.descript
+        p(class=`footer__cta`) #{subscribe.cta}
+        each line in subscribe.descript
           p(class=`footer__descript`) #{line}
-        form(class='footer__form' action=`${obj.send_to}`, method=`post` name=`${obj.form_name}` autocomplete=`false`)
-          +subscription-text-field(obj.subscription_text_field)
+        form(class='footer__form' action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
+          +subscription-text-field(subscriptionTextField)
     div(class=`footer__widgets`)
-      p(class=`footer__copyright`) #{obj.copyright}
+      p(class=`footer__copyright`) #{copyright}
       ul(class=`footer__social`)
         li(class=`footer__social_network`)
           a(class='footer__list_link' href='https://mock-adress/social-network.ru')
