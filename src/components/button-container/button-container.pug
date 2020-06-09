@@ -1,4 +1,4 @@
-mixin button-container(obj)
-  div(class=`buttonContainer ${obj.buttonContMods}`)
-    div(class=`buttonContainer__container ${obj.containerMods}`)
+mixin button-container({buttonContMods, containerMods})
+  div(class=`buttonContainer ${buttonContMods}`)
+    div(class=`buttonContainer__container ${containerMods}`)
       block
