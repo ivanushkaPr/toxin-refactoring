@@ -1,16 +1,16 @@
-mixin balance(obj)
-  div(class=`balance ${obj.blockMods}`)
-    div(class=`balance__cont ${obj.containerMods}`)
-      each service in obj.services
-        div(class=`balance__fee ${obj.feeMods}`)
-          div(class=`balance__container ${obj.contMods}`) 
-            p(class=`balance__service ${obj.serviceMods}`) #{service[0]}
+mixin balance({blockMods, containerMods, services, feeMods, contMods, serviceMods, tooltipMods, totalMods, totalCostText, sumText})
+  div(class=`balance ${blockMods}`)
+    div(class=`balance__cont ${containerMods}`)
+      each service in services
+        div(class=`balance__fee ${feeMods}`)
+          div(class=`balance__container ${contMods}`) 
+            p(class=`balance__service ${serviceMods}`) #{service[0]}
               if(service[1] === true)
-                p(class=`balance__tooltip ${obj.tooltipMods}`) i
-          div(class=`balance__container ${obj.contMods}`)
-            p(class=`balance__total ${obj.totalMods}`) #{service[2]}
+                p(class=`balance__tooltip ${tooltipMods}`) i
+          div(class=`balance__container ${contMods}`)
+            p(class=`balance__total ${totalMods}`) #{service[2]}
       div(class=`balance__overall`)
-        p(class=`balance__totalcost`) #{obj.totalCostText}
+        p(class=`balance__totalcost`) #{totalCostText}
         p(class=`balance__border`)
-        p(class=`balance__sum`) #{obj.sumText}
+        p(class=`balance__sum`) #{sumText}
 
