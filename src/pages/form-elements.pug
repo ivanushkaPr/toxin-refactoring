@@ -112,8 +112,8 @@ include ../utils/mixins.pug
           containerMods: "",
           contentMods: "",
           description: "date dropdown"
-        },
-
+      },
+    
 
         inputDateDropdownFirst: {
           contClassMods: "none",
@@ -147,85 +147,95 @@ include ../utils/mixins.pug
         }
       },
 
-      input_filter_date_dropdown_description: {
-        containerMods: "input_description--margin-top-for-filter-date-dropdown-form-elements",
-        contentMods: "",
-        description: "filter date dropdown"
+      UIFilterDateDropdown: {
+        inputFilterDateDropdownDescription: {
+          containerMods: "input_description--margin-top-for-filter-date-dropdown-form-elements",
+          contentMods: "",
+          description: "filter date dropdown"
+        },
+        inputFilterDateDropdown: {
+          contClassMods: "none",
+          inputClassMods: "",
+          type: "text",
+          placeholder: "ДД.ММ.ГГГГ",
+          name: "input_date_dropdown_default",
+          value: "19 авг - 23 авг",
+          calendarID: 'input_filter_date_dropdown--calendar'
+        },
       },
-      input_filter_date_dropdown: {
-        contClassMods: "none",
-        inputClassMods: "",
-        type: "text",
-        placeholder: "ДД.ММ.ГГГГ",
-        name: "input_date_dropdown_default",
-        value: "19 авг - 23 авг",
-        calendarID: 'input_filter_date_dropdown--calendar'
+
+      UISubscriptionTextField: {
+        subscriptionTextFieldDescription: {
+          containerMods: "input_description--padding-top-for-subscription-text-field",
+          contentMods: "",
+          description: "subscription text field"
+        },
+        subscriptionTextField: {
+          contClassMods: "none",
+          inputClassMods: "",
+          type: "text",
+          placeholder: "Email",
+          name: "subscription_text_field",
+          value: "",
+        },
       },
-      subscription_text_field_description: {
-        containerMods: "input_description--padding-top-for-subscription-text-field",
-        contentMods: "",
-        description: "subscription text field"
+
+      UIRoomQuantityDropdownClosed: {
+        inputAndDescriptionWrapperRq: {mods: "input_and_description_wrapper--width-md"},
+        inputDropdownRoomQuantityContainer: {
+          mods: "input_description_container__container--padding-top-for-room-quantity",
+        },
+        inputDropdownRoomQuantityDescription: {
+          containerMods: "",
+          contentMods: "",
+          description: "dropdown"
+        },
+        inputDropdownRoomQuantityState: {
+          containerMods: "",
+          contentMods: "input_description__content--font-weight-normal input_description__content--margins ",
+          description: "default"
+        },
+        inputDropdownRoomQuantity: {
+          properties: [["спальни", 2], ["кровати",2], ["ванные комнаты", 0], ],
+          controlsMods: "dropdown_room_quantity__controls--closed",
+          contClassMods: "",
+          inputClassMods: "",
+          type: "text",
+          placeholder: "Выберите удобства",
+          name: "input_dropdown_room_quantity",
+          value: "2 спальни, 2 кровати...",
+        },
       },
-      subscription_text_field: {
-        contClassMods: "none",
-        inputClassMods: "",
-        type: "text",
-        placeholder: "Email",
-        name: "subscription_text_field",
-        value: "",
-      },
-      input_and_description_wrapper_rq: {mods: "input_and_description_wrapper--width-md"},
-      input_dropdown_room_quantity_container: {
-        mods: "input_description_container__container--padding-top-for-room-quantity",
-      },
-      input_dropdown_room_quantity_description: {
-        containerMods: "",
-        contentMods: "",
-        description: "dropdown"
-      },
-      input_dropdown_room_quantity_state: {
-        containerMods: "",
-        contentMods: "input_description__content--font-weight-normal input_description__content--margins ",
-        description: "default"
-      },
-      input_dropdown_room_quantity: {
-        properties: [["спальни", 2], ["кровати",2], ["ванные комнаты", 0], ],
-        controlsMods: "dropdown_room_quantity__controls--closed",
-        contClassMods: "",
-        inputClassMods: "",
-        type: "text",
-        placeholder: "Выберите удобства",
-        name: "input_dropdown_room_quantity",
-        value: "2 спальни, 2 кровати...",
+
+      UIRoomQuantityDropdownOpened: {
+        inputAndDescriptionWrapperRq: {mods: "input_and_description_wrapper--width-md"},
+        inputDropdownRoomQuantityContainer: {
+          mods: "",
+          containerMods: "input_description_container__container--padding-top-for-room-quantity-expanded"
+        },
+        inputDropdownRoomQuantityDescription: {
+          containerMods: "",
+          contentMods: "",
+          description: "dropdown"
+        },
+        inputDropdownRoomQuantityState: {
+          containerMods: "",
+          contentMods: "input_description__content--font-weight-normal input_description__content--font-weight-normal--expanded",
+          description: "expanded"
+        },
+        inputDropdownRoomQuantity: {
+          properties: [["спальни", 2], ["кровати",2], ["ванные комнаты", 0], ],
+          controlsMods: "",
+          contClassMods: "",
+          inputClassMods: "dropdown_room_quantity__input--controls-opened ",
+          type: "text",
+          placeholder: "Выберите удобства",
+          name: "input_dropdown_room_quantity",
+          value: "2 спальни, 2 кровати...",
+        }, 
       },
 
 
-
-
-      input_dropdown_room_quantity_expanded_container: {
-        mods: "",
-        containerMods: "input_description_container__container--padding-top-for-room-quantity-expanded"
-      },
-      input_dropdown_room_quantity_expanded_description: {
-        containerMods: "",
-        contentMods: "",
-        description: "dropdown"
-      },
-      input_dropdown_room_quantity_expanded_state: {
-        containerMods: "",
-        contentMods: "input_description__content--font-weight-normal input_description__content--font-weight-normal--expanded",
-        description: "expanded"
-      },
-      input_dropdown_room_quantity_expanded: {
-        properties: [["спальни", 2], ["кровати",2], ["ванные комнаты", 0], ],
-        controlsMods: "",
-        contClassMods: "",
-        inputClassMods: "dropdown_room_quantity__input--controls-opened ",
-        type: "text",
-        placeholder: "Выберите удобства",
-        name: "input_dropdown_room_quantity",
-        value: "2 спальни, 2 кровати...",
-      }, 
       expandable_checkbox_list: {
         mods: "expandable_checkbox_list--padding-top",
         items: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор" , "Шампунь" , "Телевизор", "Шампунь", ],

@@ -16,23 +16,15 @@ mixin form-elements(form_elements_configuration)
       +double-date-dropdown(form_elements_configuration.double_date_dropdown)
       
 
-      +input-description(form_elements_configuration.input_filter_date_dropdown_description)
-      +input-filter-date-dropdown(form_elements_configuration.input_filter_date_dropdown)
+      +UIFilterDateDropdown(form_elements_configuration.UIFilterDateDropdown)
 
-      +input-description(form_elements_configuration.subscription_text_field_description)
-      +subscription-text-field(form_elements_configuration.subscription_text_field)
+      +UISubscriptionTextField(form_elements_configuration.UISubscriptionTextField)
 
-      +input-and-description-wrapper(form_elements_configuration.input_and_description_wrapper_rq)
-        +input-description-container(form_elements_configuration.input_dropdown_room_quantity_container)
-          +input-description(form_elements_configuration.input_dropdown_room_quantity_description)
-          +input-description(form_elements_configuration.input_dropdown_room_quantity_state)
-        +input-dropdown-room-quantity(form_elements_configuration.input_dropdown_room_quantity)
 
-      +input-and-description-wrapper(form_elements_configuration.input_and_description_wrapper_rq)
-        +input-description-container(form_elements_configuration.input_dropdown_room_quantity_expanded_container)
-          +input-description(form_elements_configuration.input_dropdown_room_quantity_expanded_description)
-          +input-description(form_elements_configuration.input_dropdown_room_quantity_expanded_state)
-        +input-dropdown-room-quantity(form_elements_configuration.input_dropdown_room_quantity_expanded)
+      +UIRoomQuantityDropdown(form_elements_configuration.UIRoomQuantityDropdownClosed)
+      +UIRoomQuantityDropdown(form_elements_configuration.UIRoomQuantityDropdownOpened)
+
+
 
       +expandable-checkbox-list(form_elements_configuration.expandable_checkbox_list)
       +expandable-checkbox-list(form_elements_configuration.expandable_checkbox_list_opened)
