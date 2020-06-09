@@ -24,7 +24,7 @@ module.exports = {
       jQuery: "jquery",
 
  }),
-/*
+
     new HtmlWebpackPlugin({
       template: './src/pages/room-details.pug',
       filename: './room-details.html',
@@ -66,20 +66,20 @@ module.exports = {
       filename: './cards.html',
       inject: true
     }),
-*/
+
     new HtmlWebpackPlugin({
       template: './src/pages/form-elements.pug',
       filename: './form-elements.html',
       inject: true
     }),
     
-
+    
     new HtmlWebpackPlugin({
       template: './src/pages/colors-and-types.pug',
       filename: './color-and-types.html',
       inject: true
     }),
-    
+
   
     new HtmlWebpackPlugin({
       template: './src/pages/presentation.pug',
