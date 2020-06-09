@@ -2,8 +2,8 @@ include ../templates/doctype.pug
 include ../utils/mixins.pug
 
 -
- const filter_page_configuration = {
-    header_register_configuration: {
+ const filterPageConfiguration = {
+    headerRegisterConfiguration: {
       mods: '',
       containerMods: 'header_register__container--padding-vertical',
       items: [
@@ -26,13 +26,13 @@ include ../utils/mixins.pug
         href: 'https://mock-address.ru/register.php'
       },
     },
-    input_filter_date_dropdown_description: {
+    inputFilterDateDropdownDescription: {
         containerMods: 'input_description__container--margin-top-29px',
         contentMods: '',
         description: 'Даты пребывания в отеле'
       },
       
-      input_filter_date_dropdown: {
+      inputFilterDateDropdown: {
         contClassMods: 'none',
         inputClassMods: '',
         type: 'text',
@@ -42,8 +42,8 @@ include ../utils/mixins.pug
         calendarID: 'input_filter_date_dropdown--calendar'
       },
 
-      input_dropdown_guests_description: {containerMods: 'input_description__container--mt-20px',contentMods: '', description: 'Гости'},
-      input_dropdown_guests: {
+      inputDropdownGuestsDescription: {containerMods: 'input_description__container--mt-20px',contentMods: '', description: 'Гости'},
+      inputDropdownGuests: {
         properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
         controlsMods: 'input_dropdown_guests__controls--closed ',
         contClassMods: '',
@@ -64,26 +64,26 @@ include ../utils/mixins.pug
         headerMods: ''
       },
 
-      checkbox_buttons: {
+      checkboxButtons: {
         containerMods: 'checkbox_buttons__container--mt-56px',
         descMods: '',
         description: 'checkbox buttons', 
         items:['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'], 
       },
 
-      rich_checkbox_buttons: {
+      richCheckboxButtons: {
         mods: '',
         containerMods: 'rich_checkbox_buttons__container-mt-29px',
         description: 'Доступность',
         items:[['Широкий коридор', 'Ширина коридоров в номере не менее 91 см.'], ['Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.']],
       },
 
-      input_dropdown_room_quantity_description: {
+      inputDropdownRoomQuantityDescription: {
         containerMods: 'input_description__container--mt-30px',
         contentMods: '',
         description: 'Удобства номера'
       },
-      input_dropdown_room_quantity: {
+      inputDropdownRoomQuantity: {
         properties: [['спальни', 2], ['кровати',2], ['ванные комнаты', 0]],
         controlsMods: 'dropdown_room_quantity__controls--closed',
         contClassMods: '',
@@ -94,13 +94,13 @@ include ../utils/mixins.pug
         value: '2 спальни, 2 кровати...',
       },
 
-      expandable_checkbox_list: {
+      expandableCheckboxList: {
         mods: '',
         containerMods: 'expandable_checkbox_list--pt-16px',
         items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор' , 'Шампунь' , 'Телевизор', 'Шампунь'],
         description: 'expandable checkbox list'
       },
-      rooms_headline: {
+      roomsHeadline: {
         containerMods: '',
         mods: 'component_headline__text--vertical-margin component_headline__text--max-width-auto component_headline__text--text-align-center',
         description: 'Номера, которые мы для вас подобрали'
@@ -126,7 +126,7 @@ include ../utils/mixins.pug
         list: [[true, 1], [false, 2], [false, 3], [false, '...'], [false, 15]],
         description: '1 – 12 из 100+ вариантов аренды'
       },
-    footer_configuration: {
+    footerConfiguration: {
       sendTo: 'https://www.mock-adress/full-stack-development.ru',
       formName: 'subscribe',
       mods: 'footer--pt-lp',
@@ -187,4 +187,4 @@ block title
   title registration
 block logo
 block content
-  +filter-page(filter_page_configuration)
+  +filter-page(filterPageConfiguration)
