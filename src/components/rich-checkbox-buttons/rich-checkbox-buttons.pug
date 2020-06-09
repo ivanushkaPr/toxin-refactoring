@@ -1,11 +1,11 @@
-mixin rich-checkbox-buttons(object)
+mixin rich-checkbox-buttons({containerMods, mods, description, listMods, items})
   div(class=`rich_checkbox_buttons`)
-    div(class=`rich_checkbox_buttons__container ${object.containerMods}`)
-      p(class=`rich_checkbox_buttons__description ${object.mods}`) #{object.description}
+    div(class=`rich_checkbox_buttons__container ${containerMods}`)
+      p(class=`rich_checkbox_buttons__description ${mods}`) #{description}
     
 
-      ul(class=`rich_checkbox_buttons__list ${object.listMods}`)
-        each item in object.items
+      ul(class=`rich_checkbox_buttons__list ${listMods}`)
+        each item in items
           label(class=`rich_checkbox_buttons__label`)
             input(class=`rich_checkbox_buttons__input` type=`checkbox`) 
             div(class=`rich_checkbox_buttons__checkbox`)

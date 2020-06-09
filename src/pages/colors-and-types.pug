@@ -2,76 +2,75 @@ include ../templates/doctype.pug
 include ../utils/mixins.pug
 
 -
-  let colors_and_type_configuration = {
-      rect_dark_shade_100:
+  let colorsAndTypeConfiguration = {
+      rectDarkShade100:
       {
-        background_color: "rect__body--dark_shade-100",
+        backgroundColor: "rect__body--dark_shade-100",
         containerMods: "rect__container--margin-bottom",
       },
-      dark_shade_100_info: {
+      darkShade100Info: {
         name: "Dark Shade 100%",
         code: "#1F2041",
       },
 
-
-      rect_dark_shade_75:
+      rectDarkShade75:
       {
-        background_color:"rect__body--dark_shade-75",
+        backgroundColor:"rect__body--dark_shade-75",
         containerMods: "rect__container--margin-bottom",
       },
 
-      dark_shade_75_info: {
+      darkShade75Info: {
         name: "Dark Shade 75%",
         code: "#1F2041",
       },
 
-      rect_dark_shade_50:
+      rectDarkShade50:
       {
-        background_color:"rect__body--dark_shade-50",
+        backgroundColor:"rect__body--dark_shade-50",
         containerMods: "rect__container--margin-bottom",
       },
 
-      dark_shade_50_info: {
+      darkShade50Info: {
         name: "Dark Shade 50%",
         code: "#1F2041",
       },
 
-      rect_dark_shade_25:
+      rectDarkShade25:
       {
-        background_color:"rect__body--dark_shade-25",
+        backgroundColor:"rect__body--dark_shade-25",
         containerMods: "rect__container--margin-bottom",
       },
-      dark_shade_25_info: {
+      darkShade25Info: {
         name: "Dark Shade 25%",
         code: "#1F2041",
       },
 
-      rect_dark_shade_5:
+      rectDarkShade5:
       {
-        background_color: "rect__body--dark_shade-5",
+        backgroundColor: "rect__body--dark_shade-5",
         containerMods: "rect__container--margin-bottom",
       },
-      dark_shade_5_info: {
+      darkShade5Info: {
         name: "Dark Shade 5%",
         code: "#1F2041",
       },
 
-      rect_purple:
+      rectPurple:
       {
-        background_color:"rect__body--purple",
+        backgroundColor:"rect__body--purple",
         containerMods: "rect__container--margin-bottom",
       },
-      purple_info: {
+      purpleInfo: {
         name: "Purple",
         code: "#BC9CFF",
       },
 
-      rect_green:
+      rectGreen:
       {
-        background_color:"rect__body--green",
+        backgroundColor:"rect__body--green",
         containerMods: "rect__container--margin-bottom",
       },
-      green_info: {
+      greenInfo: {
         name: "Green",
         code: "#6FCF97",
       },
@@ -101,4 +100,4 @@ block title
 block logo
   +logo('logo--background-color_white')
 block content
-  +colors-and-types(colors_and_type_configuration)
+  +colors-and-types(colorsAndTypeConfiguration)

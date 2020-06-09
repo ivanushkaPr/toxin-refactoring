@@ -1,50 +1,48 @@
-
-
-mixin colors-and-types(colors_and_type_configuration)
+mixin colors-and-types({rectDarkShade100, darkShade100Info, rectDarkShade75,  darkShade75Info, rectDarkShade50, darkShade50Info, rectDarkShade25, darkShade25Info, rectDarkShade5, darkShade5Info, rectPurple, purpleInfo, rectGreen, greenInfo, HTMLTagH1, HTMLStyleH1, HTMLTagH2, HTMLStyleH2, HTMLTagH3, HTMLStyleH3, HTMLTagBody, HTMLStyleBody})
   div(class="app")
     div(class="app__container app__container--palette")
       
       div(class="app__shade")
-        +rect(colors_and_type_configuration.rect_dark_shade_100)
-        +color-info(colors_and_type_configuration.dark_shade_100_info)
+        +rect(rectDarkShade100)
+        +color-info(darkShade100Info)
 
       div(class="app__shade")
-        +rect(colors_and_type_configuration.rect_dark_shade_75)
-        +color-info(colors_and_type_configuration.dark_shade_75_info)
+        +rect(rectDarkShade75) 
+        +color-info(darkShade75Info)
 
       div(class="app__shade")
-        +rect(colors_and_type_configuration.rect_dark_shade_50)
-        +color-info(colors_and_type_configuration.dark_shade_50_info)
-        
+        +rect(rectDarkShade50)
+        +color-info(darkShade50Info)
+
       div(class="app__shade")
-        +rect(colors_and_type_configuration.rect_dark_shade_25)
-        +color-info(colors_and_type_configuration.dark_shade_25_info)
+        +rect(rectDarkShade25)
+        +color-info(darkShade25Info)
       
       div(class="app__shade")
-        +rect(colors_and_type_configuration.rect_dark_shade_5)
-        +color-info(colors_and_type_configuration.dark_shade_5_info)
+        +rect(rectDarkShade5)
+        +color-info(darkShade5Info)
       
       div(class="app__shade")
-        +rect(colors_and_type_configuration.rect_purple)
-        +color-info(colors_and_type_configuration.purple_info)
+        +rect(rectPurple)
+        +color-info(purpleInfo)
       
       div(class="app__shade")
-        +rect(colors_and_type_configuration.rect_green)
-        +color-info(colors_and_type_configuration.green_info)
+        +rect(rectGreen)
+        +color-info(greenInfo)
 
     div(class="app__container app__container--fonts")
       div(class="app__font")
-        +HTMLtag(colors_and_type_configuration.HTMLTagH1)
-        +HTMLstyle(colors_and_type_configuration.HTMLStyleH1)
+        +HTMLtag(HTMLTagH1)
+        +HTMLstyle(HTMLStyleH1)
       div(class="app__font")
-        +HTMLtag(colors_and_type_configuration.HTMLTagH2)
-        +HTMLstyle(colors_and_type_configuration.HTMLStyleH2)
+        +HTMLtag(HTMLTagH2)
+        +HTMLstyle(HTMLStyleH2)
       div(class="app__font")
-        +HTMLtag(colors_and_type_configuration.HTMLTagH3)
-        +HTMLstyle(colors_and_type_configuration.HTMLStyleH3)
+        +HTMLtag(HTMLTagH3)
+        +HTMLstyle(HTMLStyleH3)
       div(class="app__font")
-        +HTMLtag(colors_and_type_configuration.HTMLTagBody)
-        +HTMLstyle(colors_and_type_configuration.HTMLStyleBody)
+        +HTMLtag(HTMLTagBody)
+        +HTMLstyle(HTMLStyleBody)
       
 
 

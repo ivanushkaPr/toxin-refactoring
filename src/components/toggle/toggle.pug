@@ -1,9 +1,9 @@
-mixin toggle(object)
+mixin toggle({containerMods, labelMods, checked, descText})
   div(class=`toggle`)
-    div(class=`toggle ${object.containerMods}`)
-      label(class=`toggle__label ${object.labelMods}`)
-        if(object.checked)
+    div(class=`toggle ${containerMods}`)
+      label(class=`toggle__label ${labelMods}`)
+        if(checked)
           input(class=`toggle__checkbox` type='checkbox' checked)
         input(class=`toggle__checkbox` type='checkbox')
         div(class=`toggle__fake_checkbox`)
-        p(class=`toggle__description`) #{object.descText}
+        p(class=`toggle__description`) #{descText}

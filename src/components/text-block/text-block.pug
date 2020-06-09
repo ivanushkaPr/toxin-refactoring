@@ -1,5 +1,5 @@
-mixin text-block(obj)
-  div(class=`text_block ${obj.blockMods}`)
-    div(class=`text_block__container ${obj.containerMods}`)
-      p(class=`text_block__description ${obj.descMods}`)  #{obj.description}
-      p(class=`text_block__content ${obj.contentMods}`) #{obj.content}
+mixin text-block({blockMods, containerMods, descMods, description, contentMods, content})
+  div(class=`text_block ${blockMods}`)
+    div(class=`text_block__container ${containerMods}`)
+      p(class=`text_block__description ${descMods}`)  #{description}
+      p(class=`text_block__content ${contentMods}`) #{content}

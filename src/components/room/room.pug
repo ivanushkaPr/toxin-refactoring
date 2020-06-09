@@ -1,38 +1,28 @@
-mixin room(obj)
-  div(class=`room ${obj.blockMods}`)
-    div(class=`room ${obj.containerMods}`)
-      div(class=`room__images ${obj.imagesMods}`)
-        ul(class=`room__gallery owl-carousel owl-theme` id=`${obj.carouselID}`)
-          li(class=`room__image ${obj.imageOne}`)
-          li(class=`room__image ${obj.imageTwo}`)
-          li(class=`room__image ${obj.imageThree}`)
-          li(class=`room__image ${obj.imageFour}`)
+mixin room({blockMods, containerMods, imagesMods, carouselID, imageOne, imageTwo, imageThree, imageFour, controlsID, dotsID, specialChar, roomNumber,  status, price, period, rating, ammount})
+  div(class=`room ${blockMods}`)
+    div(class=`room ${containerMods}`)
+      div(class=`room__images ${imagesMods}`)
+        ul(class=`room__gallery owl-carousel owl-theme` id=`${carouselID}`)
+          li(class=`room__image ${imageOne}`)
+          li(class=`room__image ${imageTwo}`)
+          li(class=`room__image ${imageThree}`)
+          li(class=`room__image ${imageFour}`)
         
-        div(class=`room__controls` id=`${obj.controlsID}`)
-        //
-          button(class=`room__button room__button--left`)
-            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.42188 11.0928L6.01563 12.499L0.0156253 6.49902L6.01563 0.499024L7.42188 1.90527L2.82813 6.49902L7.42188 11.0928Z" fill="white"/>
-            </svg>
+        div(class=`room__controls` id=`${controlsID}`)
 
-          button(class=`room__button room__button--right`)
-            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.578125 1.90527L1.98438 0.499024L7.98438 6.49902L1.98438 12.499L0.578125 11.0928L5.17188 6.49902L0.578125 1.90527Z" fill="white"/>
-            </svg>
-
-        ul(class=`room__dots` id=`${obj.dotsID}`)
+        ul(class=`room__dots` id=`${dotsID}`)
           li(class=`room__dot room__dot--active `)
           li(class=`room__dot`)
           li(class=`room__dot`)
           li(class=`room__dot`)
       div(class=`room__overall`)
         p(class=`room__number`)
-          spane(class=`room__special_char`) #{obj.specialChar}
-          span(class=`room__special_number`) #{obj.roomNumber}
-          span(class=`room__status`) #{obj.status}
-        p(class=`room_price`) #{obj.price}
-          span(class=`room__period`) #{obj.period}
+          spane(class=`room__special_char`) #{specialChar}
+          span(class=`room__special_number`) #{roomNumber}
+          span(class=`room__status`) #{status}
+        p(class=`room_price`) #{price}
+          span(class=`room__period`) #{period}
       div(class=`room__rating`)
-        +rate-button({checkboxes: [1,2,3,4,5], rating: obj.rating})
-        p(class=`room__feedbacks`) #{obj.ammount}
+        +rate-button({checkboxes: [1,2,3,4,5], rating: rating})
+        p(class=`room__feedbacks`) #{ammount}
           span(class=`room__number-span`) Отзывов

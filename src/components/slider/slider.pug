@@ -1,7 +1,7 @@
-mixin slider(object)
+mixin slider({containerMods, headerMods, descMods, description, selRangeMods, rangeSelected, rangeMods, id})
   div(class=`slider`)
-    div(class=`slider__container ${object.containerMods}`)
-      div(class=`slider__header ${object.headerMods}`)
-        p(class=`slider__description ${object.descMods}`) #{object.description}
-        p(class=`slider__selected_range ${object.selRangeMods}`) #{object.rangeSelected}
-      div(class=`slider__range ${object.rangeMods}` id=`${object.id}`)
+    div(class=`slider__container ${containerMods}`)
+      div(class=`slider__header ${headerMods}`)
+        p(class=`slider__description ${descMods}`) #{description}
+        p(class=`slider__selected_range ${selRangeMods}`) #{rangeSelected}
+      div(class=`slider__range ${rangeMods}` id=`${id}`)

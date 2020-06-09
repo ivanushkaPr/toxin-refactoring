@@ -1,10 +1,10 @@
-mixin rate-button(obj) 
+mixin rate-button({checkboxes, rating}) 
   div(class=`rate_button`)
     div(class=`rate_button__container`)
       input(class=`rate_button__counter js-rate_button__counter` type=`number` value=`0`)
 
-      each val in obj.checkboxes
-        - let rated = val <= obj.rating;
+      each val in checkboxes
+        - let rated = val <= rating;
         label(class=`rate_button__label`)
           input(class=`rate_button__checkbox js-rate_button__checkbox` type=`checkbox` name=`${val}`)
           div(class=`rate_button__fake_input`)

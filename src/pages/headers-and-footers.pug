@@ -1,5 +1,113 @@
 include ../templates/doctype.pug
 include ../utils/mixins.pug
+-
+  let headers_and_footers_configuration = {
+    header_register: {
+      mods: "",
+      containerMods: "header_register--mt-hf",
+      items: [
+        {value: "Home", active: true, submenu: false},
+        {value: "About Us", active: false, submenu: false},
+        {value: "Services", active: false, submenu: true},
+        {value: "Careers", active: false, submenu: false},
+        {value: "News", active: false, submenu: false},
+        {value: "Documentation", active: false, submenu: false},
+        
+        ],
+      buttonLogin: {
+        buttonText: "login", 
+        buttonMods: "button__body--button__ellipse button__body--transparent_button_extra_fields button__body--header-size_sm button__body--header-margin_right",
+        link: true,
+        href: "https://mock-adress.ru/login.php"
+      },
+      buttonRegister: {
+        buttonText: "register",
+        buttonMods: "button__body--button__ellipse button__body--background_linear_gradient__purple button__body--small_vertical_padding button__body--header-size_sm",
+        link: true,
+        href: "https://mock-adress.ru/submit.php"
+      },
+    },
+
+    
+      
+
+    header_authorized: {
+      items: [
+        {value: "Home", active: true, submenu: false},
+        {value: "About Us", active: false, submenu: false},
+        {value: "Services", active: false, submenu: true},
+        {value: "Careers", active: false, submenu: false},
+        {value: "News", active: false, submenu: false},
+        {value: "documentation", active: false, submenu: false},
+        
+      ],
+      userName: "Cosmin Negoita",
+    },
+
+    footer: {
+      sendTo: "https://www.mock-adress/full-stack-development.ru",
+      formName: "subscribe",
+      mods: "footer--mt-hf",
+      info: [
+        "Lorem ipsum dolor sit amet",
+        "consectetur adipiscing elit aliquam",
+        "eget nullam pellentesque aliquam ",
+        "curabitur cociis`"
+      ],
+      lists: {
+        menu1: {
+          headline: "Navigation",
+          navClass: "footer__navigation",
+          items: [
+            {link: "https://mock-adress/fsd.ru", text: "About Us"},
+            {link: "https://mock-adress/fsd.ru", text: "News"},
+            {link: "https://mock-adress/fsd.ru", text: "Support"},
+            {link: "https://mock-adress/fsd.ru", text: "Products"},
+            ]
+        },
+        menu2: {
+          headline: "About Us",
+          navClass: "footer__aboutus",
+          items: [
+            {link: "https://mock-adress/fsd.ru", text: "Who we are"},
+            {link: "https://mock-adress/fsd.ru", text: "Our team"},
+            {link: "https://mock-adress/fsd.ru", text: "Careers"},
+            {link: "https://mock-adress/fsd.ru", text: "Investors"},
+          ]
+        },
+        menu3: {
+          headline: "Support",
+          navClass: "footer__support",
+          items: [
+            {link: "https://mock-adress/fsd.ru", text: "Documentation"},
+            {link: "https://mock-adress/fsd.ru", text: "Community"},
+            {link: "https://mock-adress/fsd.ru", text: "Get in Touch"},
+          ]
+        }
+      },
+      subscribe: {
+        cta: "Subscribe to our newsletter",
+        descript: ["Receive our latest news and", "promotions in your inbox!"]
+      },
+      subscriptionTextField: {
+        containerMods: "subscription_text_field__container",
+        contClassMods: "none",
+        inputClassMods: "subscription_text_field__input--width-correction",
+        type: "Email",
+        placeholder: "Your email address",
+        name: "subscription_text_field",
+        value: "",
+      },
+      copyright: "Copyright © 2018 Toxin UI Kit. All rights reserved.",
+    },
+    footer_creative: {
+        info: [
+          "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam", 
+          "pellentesque aliquam curabitur cociis."
+        ],
+      }
+  }
+
 
 block title
   title Headers & Footers

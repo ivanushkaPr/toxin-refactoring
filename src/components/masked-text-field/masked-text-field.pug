@@ -1,5 +1,5 @@
-mixin masked-text-field(input)
-  div(class=`masked_text_field ${input.blockMods}`)
-    div(class=`masked_text_field ${input.containerMods}`)
-      input(class=`masked_text_field__input ${input.inputClassMods}` type=`${input.type}` placeholder=`${input.placeholder}` name=`${input.name}` value=`${input.value}`)
+mixin masked-text-field({blockMods, containerMods, inputClassMods, type, placeholder, name, value})
+  div(class=`masked_text_field ${blockMods}`)
+    div(class=`masked_text_field ${containerMods}`)
+      input(class=`masked_text_field__input ${inputClassMods}` type=`${type}` placeholder=`${placeholder}` name=`${name}` value=`${value}`)
 
