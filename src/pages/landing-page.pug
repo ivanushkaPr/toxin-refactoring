@@ -1,12 +1,9 @@
 include ../templates/doctype.pug
 include ../utils/mixins.pug
 
-block title
-  title Landing page
-block logo
-block content 
-  +landing-page({
-    header_register_configuration: {
+-
+  const landingPageConfiguration = {
+    headerRegisterConfiguration: {
       mods: '',
       containerMods: 'header_register__container--padding-vertical',
       items: [
@@ -29,7 +26,7 @@ block content
         href: 'https://mock-address.ru/register.php'
       },
     },
-    search_room_configuration: {
+    searchRoomConfiguration: {
       mods: 'search_room--position-absolute-lp',
       containerMods: '',
       send_to: 'https://www.mock-adress/full-stack-development.ru',
@@ -116,7 +113,7 @@ block content
         type: 'submit'
       },
     },
-    footer_configuration: {
+    footerConfiguration: {
       sendTo: 'https://www.mock-adress/full-stack-development.ru',
       formName: 'subscribe',
       mods: 'footer--pt-lp',
@@ -172,4 +169,10 @@ block content
       copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.',
     },
   }
-  )
+
+
+block title
+  title Landing page
+block logo
+block content 
+  +landing-page(landingPageConfiguration)

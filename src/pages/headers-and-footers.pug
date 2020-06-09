@@ -1,8 +1,8 @@
 include ../templates/doctype.pug
 include ../utils/mixins.pug
 -
-  let headers_and_footers_configuration = {
-    header_register: {
+  let headersAndFootersConfiguration = {
+    headerRegister: {
       mods: "",
       containerMods: "header_register--mt-hf",
       items: [
@@ -31,7 +31,7 @@ include ../utils/mixins.pug
     
       
 
-    header_authorized: {
+    headerAuthorized: {
       items: [
         {value: "Home", active: true, submenu: false},
         {value: "About Us", active: false, submenu: false},
@@ -100,7 +100,7 @@ include ../utils/mixins.pug
       },
       copyright: "Copyright © 2018 Toxin UI Kit. All rights reserved.",
     },
-    footer_creative: {
+    footerCreative: {
         info: [
           "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam", 
           "pellentesque aliquam curabitur cociis."
@@ -114,5 +114,5 @@ block title
 block logo
   +logo()
 block content 
-  +headers-and-footers(headers_and_footers_configuration)
+  +headers-and-footers(headersAndFootersConfiguration)
 
