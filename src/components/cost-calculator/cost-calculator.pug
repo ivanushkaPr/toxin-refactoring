@@ -1,8 +1,8 @@
 -
   let cost_calculator = {
-    send_to: '',
-    form_name: '',
-    room_info: {
+    sendTo: '',
+    formName: '',
+    roomInfo: {
       blockMods: '',
       overallMods: '',
       numberMods: '',
@@ -17,17 +17,17 @@
     }
   }
 
-mixin cost-calculator(cost_calculator_config)
-  div(class=`cost_calculator ${cost_calculator_config.blockMods}`)
-    div(class=`cost_calculator__cont ${cost_calculator_config.containerMods}`)
-    +room-info(cost_calculator_config.room_info)
-    form(class='cost_calculator__form' 	action=`${cost_calculator.send_to}` method=`post` name=`${cost_calculator.form_name}` autocomplete=`false`)
-      +double-date-dropdown(cost_calculator_config.double_date_dropdown)
+mixin cost-calculator({blockMods, containerMods, roomInfo, sendTo, formName, doubleDateDropdown, inputDropdownGuests, balance, bookButton})
+  div(class=`cost_calculator ${blockMods}`)
+    div(class=`cost_calculator__cont ${containerMods}`)
+    +room-info(roomInfo)
+    form(class='cost_calculator__form' 	action=`${sendTo}` method=`post` name=`${formName}` autocomplete=`false`)
+      +double-date-dropdown(doubleDateDropdown)
 
       +input-description({containerMods: '',contentMods: '', description: 'гости'})
-      +input-dropdown-guests(cost_calculator_config.input_dropdown_guests)
+      +input-dropdown-guests(inputDropdownGuests)
 
-      +balance(cost_calculator_config.balance)
-      +button-wide(cost_calculator_config.bookButton)
+      +balance(balance)
+      +button-wide(bookButton)
 
     
