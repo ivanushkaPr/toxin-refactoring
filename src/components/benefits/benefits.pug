@@ -1,7 +1,7 @@
-mixin benefit(object)
-  div(class=`benefit ${object.contMods}`)
-    div(class=`benefit__container ${object.containerMods}`)
-      div(class=`benefit__image ${object.imageMods}`)
-      div(class=`benefit__description ${object.descMods}`)
-        p(class=`benefit__name ${object.nameMods}`) #{object.nameText}
-        p(class=`benefit__property ${object.propMods}`) #{object.propText}
+mixin benefit({contMods, containerMods, imageMods, descMods, nameMods, nameText, propMods, propText})
+  div(class=`benefit ${contMods}`)
+    div(class=`benefit__container ${containerMods}`)
+      div(class=`benefit__image ${imageMods}`)
+      div(class=`benefit__description ${descMods}`)
+        p(class=`benefit__name ${nameMods}`) #{nameText}
+        p(class=`benefit__property ${propMods}`) #{propText}
