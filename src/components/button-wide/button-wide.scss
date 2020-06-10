@@ -36,10 +36,12 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    &--margin-botoom {
+      margin-bottom: 30px;
+    }
   }
 
-  &__button--margin-botoom {
-    margin-bottom: 30px;
-  }
+
 }
 

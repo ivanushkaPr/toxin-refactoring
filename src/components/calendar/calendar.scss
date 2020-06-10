@@ -57,14 +57,16 @@
     font-size: 12px;
     line-height: 15px;
     color: $dark_shade_50;
+
+    &--color-purple {
+      font-family: 'montserrat', Arial, sans-serif;
+      font-weight: bold;
+      color: $purple;
+      text-transform: capitalize;
+    }
   }
   
-  &__data--color-purple {
-    font-family: 'montserrat', Arial, sans-serif;
-    font-weight: bold;
-    color: $purple;
-    text-transform: capitalize;
-  }
+ 
   
   &__footer{
     display: flex;

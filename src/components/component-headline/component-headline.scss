@@ -1,14 +1,17 @@
 .component_headline {
+  &__container {
+    &--margin-bottom {
+      margin-bottom: 20px;
+    }
   
-
-  &__container--mt-69px {
-    margin-top: 68px;
+    &--mt-69px {
+      margin-top: 68px;
+    }
+  
+    &--ml {
+      margin-left: 108px;
+    }
   }
-
-  &__container--ml {
-    margin-left: 108px;
-  }
-
 
   &__text {
     font-family: 'opensans', Arial, sans-serif;
@@ -19,40 +22,36 @@
     margin-bottom: 16px;
     max-width: 320px;
     color: #1F2041;
-  }
 
-  &__text--font-size-md {
-    font-size: 19px;
-    line-height: 24px;
-  }
+
+    &--font-size-md {
+      font-size: 19px;
+      line-height: 24px;
+    }
+    
+    &--vertical-margin {
+      margin-top: 29px;
+      margin-bottom: 20px;
+    }
   
-  &__text--vertical-margin {
-    margin-top: 29px;
-    margin-bottom: 20px;
-  }
+    &--max-width-auto {
+      max-width: inherit;
+    }
 
-  &__text--max-width-auto {
-    max-width: inherit;
-  }
+    &--margin-top-zero {
+      margin-top: 0px;
+    }
+    
+    &--margin-bottom  {
+      margin-bottom: 20px;
+    } 
 
-  @media(max-width: 640px ) {
-    &__text--text-align-center {
-      text-align: center;
+    @media(max-width: 640px ) {
+      &--text-align-center {
+        text-align: center;
+      }
     }
   }
-  
-  &__container--margin-bottom {
-    margin-bottom: 20px;
-  }
-  
-  &__text--margin-top-zero {
-    margin-top: 0px;
-  }
-  
-  &__text--margin-bottom  {
-    margin-bottom: 20px;
-  } 
-
 }
 
 

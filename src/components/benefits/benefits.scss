@@ -11,34 +11,32 @@
     display: flex;
     padding-bottom: 19px;
     border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-  }
 
-  &__container--extra-margin {
-    padding-top: 5px;
-    margin-bottom: 14px;
+    &--extra-margin {
+      padding-top: 5px;
+      margin-bottom: 14px;
+    }
   }
 
   &__image{
     width: 48px;
     height: 48px;
     margin-right: 8px;
-  
     border: none;
-  
     background-repeat: no-repeat;
     background-position: center;
-  }
 
-  &__image--background-smile {
-    background-image: url('./smile.jpg');
-  }
+    &--background-smile {
+      background-image: url('./smile.jpg');
+    }
 
-  &__image--background-building {
-    background-image: url('./location.jpg');
-  }
-  
-  &__image--background-bonfire {
-    background-image: url('./whatshot.jpg');
+    &--background-building {
+      background-image: url('./location.jpg');
+    }
+    
+    &--background-bonfire {
+      background-image: url('./whatshot.jpg');
+    }
   }
 
   &__description {

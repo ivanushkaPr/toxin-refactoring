@@ -6,30 +6,30 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $dark_shade_100;
+
+    &--font_size-bg {
+      font-size: 19px;
+      line-height: 24px;
+    }
+  
+    &--font_family_open_sans {
+      font-family: 'opensans', Arial, sans-serif;
+      font-weight: bold;
+    }
+  
+    
+    &--text-transform_none {
+      text-transform: none;
+      margin-top: 34px;
+      margin-left: 19px;
+      margin-bottom: 15px;
+    }
   }
 
   &__container--padding-top {
     padding-top: 87px;
   }
   
-  &__description--font_size-bg {
-    font-size: 19px;
-    line-height: 24px;
-  }
-
-  &__description--font_family_open_sans {
-    font-family: 'opensans', Arial, sans-serif;
-    font-weight: bold;
-  }
-
-  
-  &__description--text-transform_none {
-    text-transform: none;
-    margin-top: 34px;
-    margin-left: 19px;
-    margin-bottom: 15px;
-  }
-
   &__list {
     padding-left: 17px;
     list-style-image: url("./ellipse.png");

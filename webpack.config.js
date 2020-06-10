@@ -25,13 +25,13 @@ module.exports = {
 
  }),
 
- /*
+ 
     new HtmlWebpackPlugin({
       template: './src/pages/room-details.pug',
       filename: './room-details.html',
       inject: true
     }),
-
+/*
     new HtmlWebpackPlugin({
       template: './src/pages/filter-page.pug',
       filename: './filter-page.html',
@@ -62,25 +62,26 @@ module.exports = {
       inject: true
     }),
 */
+
     new HtmlWebpackPlugin({
       template: './src/pages/cards.pug',
       filename: './cards.html',
       inject: true
     }),
-/*
+
     new HtmlWebpackPlugin({
       template: './src/pages/form-elements.pug',
       filename: './form-elements.html',
       inject: true
     }),
-    */
-  
+    
+  /*
     new HtmlWebpackPlugin({
       template: './src/pages/colors-and-types.pug',
       filename: './color-and-types.html',
       inject: true
     }),
-
+*/
   
     new HtmlWebpackPlugin({
       template: './src/pages/presentation.pug',
