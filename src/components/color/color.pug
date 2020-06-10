@@ -1,4 +1,5 @@
-mixin color-info({containerMods, name, code})
+mixin color-info(obj)
+  - const { containerMods, name, code } = obj;
   div(class="color")
     div(class=`color__container ${containerMods}`)
       p(class="color__name") #{name}

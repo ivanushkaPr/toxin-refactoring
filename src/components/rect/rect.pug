@@ -1,4 +1,5 @@
-mixin rect({containerMods, backgroundColor})
+mixin rect(obj)
+  - const { containerMods, backgroundColor } = obj;
   div(class='rect')
     div(class=`rect__container ${containerMods}`)
       div(class=`rect__body ${backgroundColor}`)

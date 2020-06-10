@@ -3,18 +3,19 @@
   min-height: calc(100vh - 83px);
   background-color: white;
 
-  &__container--palette {
-    padding-left: 150px;
-    padding-top: 63px;
+  &__container {
+    &--palette {
+      padding-left: 150px;
+      padding-top: 63px;
+    }
+    &--fonts {
+      padding-left: 423px;
+      padding-top: 39px;
+    }
   }
-
+  
   &__shade {
     display: flex;
-  }
-
-  &__container--fonts {
-    padding-left: 423px;
-    padding-top: 39px;
   }
 
   &__font {
