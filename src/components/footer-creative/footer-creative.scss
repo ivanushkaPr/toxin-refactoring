@@ -13,10 +13,10 @@
     display: flex;
     flex-direction: column;
     align-items: center ;
-  }
 
-  &__logo svg {
-    margin-bottom: 15px;
+    & svg {
+      margin-bottom: 15px;
+    }
   }
 
   &__description{
@@ -33,11 +33,11 @@
     margin-top: 29px;
     padding: 0px;
     list-style-type: none;
-  }
 
-  &__social_network {
-    margin-left: 10px;
-    margin-right: 12px;
+    &__social {
+      margin-left: 10px;
+      margin-right: 12px;
+    }
   }
 
   &__list_link {

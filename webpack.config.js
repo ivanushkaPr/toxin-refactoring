@@ -55,14 +55,14 @@ module.exports = {
       filename: './landing-page.html',
       inject: true
     }),
-    
+*/    
     new HtmlWebpackPlugin({
       template: './src/pages/headers-and-footers.pug',
       filename: './headers-and-footers.html',
       inject: true
     }),
-*/
 
+/*
     new HtmlWebpackPlugin({
       template: './src/pages/cards.pug',
       filename: './cards.html',
