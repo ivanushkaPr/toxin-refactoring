@@ -1,7 +1,7 @@
 // Изменить именование элеменов.
 
 .header_register {
-  &--mt-hf {
+  &_mt-hf {
     margin-top: 65px;
     margin-bottom: 34px;
   }
@@ -17,7 +17,7 @@
     justify-content: space-between;
     border-bottom: 1px solid transparent;
 
-    &--padding-vertical {
+    &_padding-vertical {
       padding-top: 8px;
       padding-bottom: 8px;
     }
@@ -55,11 +55,11 @@
   
   
   @media(max-width: 468px) {
-    &__burger_menu {
+    &__burger-menu {
       display: flex;
       flex-direction: column;
     }
-    &__burger_item{
+    &__burger-item{
       width: 50px;
       height: 5px;
       margin-top: 5px;
@@ -126,15 +126,15 @@
     display: flex;
     margin-right: 29px;
 
-    &--margin-right-pages {
+    &_margin-right-pages {
       margin-right: 20px
     }
     
-    &--mr-fp {
+    &_mr-fp {
       margin-right: 21px;
     }
 
-    &--active {
+    &_active {
       font-family: 'montserrat', Arial, sans-serif;
       font-weight: bold;
       color: $dark_shade_75;
@@ -149,7 +149,7 @@
       margin-right: 28px;
     }
     
-    &--margin-right-pages:last-child {
+    &_margin-right-pages:last-child {
       margin-right: 24px;
     }
   }

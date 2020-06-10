@@ -15,19 +15,19 @@
   flex: 0 0 auto;
 
     
-  &--mt-rm {
+  &_mt_rm {
     margin-top: 70px;
   }
 
-  &--pt-lp {
+  &_pt_lp {
     padding-top: 170px;
   }
 
-  &--pt-fp {
+  &_pt_fp {
     padding-top: 153px;
   }
 
-  &--mt-hf {
+  &_mt_hf {
     margin-top: 37px;
     margin-bottom: 18px;
   }
@@ -141,11 +141,11 @@
   }
 
 
-  &__navcont--min-width-pages &__navigation {
+  &__navcont_min-width_pages &__navigation {
     margin-right: 59px;
   }
 
-  &__navcont--min-width-pages &__aboutus   {
+  &__navcont_min-width_pages &__aboutus   {
     margin-right: 91px;
   }
 
@@ -155,17 +155,17 @@
     list-style-type: none;
     padding-left: 0;
 
-    &_headline {
+    &-headline {
       margin-bottom: 24px;
     }
 
-    &_link {
+    &-link {
       color: $dark_shade_50;
       text-decoration: none;
     }
   }
 
-  &__list_headline, &__cta {
+  &__list-headline, &__cta {
     margin-top: 7px;
     margin-bottom: 18px;
 

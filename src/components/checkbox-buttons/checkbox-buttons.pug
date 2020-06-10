@@ -1,11 +1,11 @@
 mixin checkbox-buttons({containerMods, descMods, description, listMods, items})
-  div(class=`checkbox_buttons`)
-    div(class=`checkbox_buttons__container ${containerMods}`)
-      p(class=`checkbox_buttons__description ${descMods}`) #{description}
-      ul(class=`checkbox_buttons__list ${listMods}`)
+  div(class=`checkbox-buttons`)
+    div(class=`checkbox-buttons__container ${containerMods}`)
+      p(class=`checkbox-buttons__description ${descMods}`) #{description}
+      ul(class=`checkbox-buttons__list ${listMods}`)
         each item in items
-          label(class=`checkbox_buttons__label`)
-            input(class=`checkbox_buttons__input` type=`checkbox`) 
-            div(class=`checkbox_buttons__checkbox`)
-            p(class=`checkbox_buttons__text`) #{item}
+          label(class=`checkbox-buttons__label`)
+            input(class=`checkbox-buttons__input` type=`checkbox`) 
+            div(class=`checkbox-buttons__checkbox`)
+            p(class=`checkbox-buttons__text`) #{item}
       

@@ -58,15 +58,13 @@
     line-height: 15px;
     color: $dark_shade_50;
 
-    &--color-purple {
+    &_color_purple {
       font-family: 'montserrat', Arial, sans-serif;
       font-weight: bold;
       color: $purple;
       text-transform: capitalize;
     }
   }
-  
- 
   
   &__footer{
     display: flex;
@@ -78,7 +76,7 @@
     margin-top: 7px;
   }
   
-  &__button_reset, &__button_apply { 
+  &__button-reset, &__button-apply { 
     background-color: transparent;
     border: none;
     padding: 0px;
@@ -90,11 +88,11 @@
     cursor: pointer;
   }
   
-  &__button_reset {
+  &__button-reset {
     color:  $dark_shade_50;
   }
   
-  &__button_apply {
+  &__button-apply {
     color: $purple;
   }
 }

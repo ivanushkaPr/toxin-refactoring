@@ -1,8 +1,8 @@
 mixin auth-form({mods, containerMods, authFormHeadline, sendTo, formName, nameTextField, surnameTextField, checkoutButton, buttonSubmitCont, buttonSubmitDescription,  buttonSubmit})
-  section(class=`auth_form ${mods}`)
-    section(class=`auth_form__container ${containerMods}`)
+  section(class=`auth-form ${mods}`)
+    section(class=`auth-form__container ${containerMods}`)
       +component-headline(authFormHeadline)
-      form(class='auth_form__form' 	action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
+      form(class='auth-form__form' 	action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
         +text-field(nameTextField)
         +text-field(surnameTextField)
 

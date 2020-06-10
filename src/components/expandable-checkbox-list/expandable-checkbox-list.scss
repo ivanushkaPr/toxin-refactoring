@@ -1,13 +1,13 @@
 .expandable_checkbox_list {
-  &--padding-top {
+  &_padding-top {
     padding-top: 40px;
   }
 
-  &--opened_its_padding_top {
+  &_opened_its_padding_top {
     padding-top: 21px;
   }
 
-  &--pt-16px {
+  &_pt-16px {
     padding-top: 16px;
   }
 
@@ -40,7 +40,7 @@
     border: none;
     cursor: pointer;    
 
-    &--opened {
+    &_opened {
       transform: rotate(180deg);
     }
   }

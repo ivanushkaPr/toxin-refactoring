@@ -1,4 +1,4 @@
-.button_wide {
+.button-wide {
   position: relative;
   width: 100%;
   padding: 0px;
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
 
-  &--negative-margin-top {
+  &_negative-margin-top {
     margin-top: -2px;
   }
 
@@ -37,7 +37,7 @@
     border: none;
     cursor: pointer;
 
-    &--margin-botoom {
+    &_margin-botoom {
       margin-bottom: 30px;
     }
   }

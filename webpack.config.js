@@ -31,7 +31,7 @@ module.exports = {
       filename: './room-details.html',
       inject: true
     }),
-/*
+
     new HtmlWebpackPlugin({
       template: './src/pages/filter-page.pug',
       filename: './filter-page.html',
@@ -55,20 +55,20 @@ module.exports = {
       filename: './landing-page.html',
       inject: true
     }),
-*/    
+ 
     new HtmlWebpackPlugin({
       template: './src/pages/headers-and-footers.pug',
       filename: './headers-and-footers.html',
       inject: true
     }),
 
-/*
+
     new HtmlWebpackPlugin({
       template: './src/pages/cards.pug',
       filename: './cards.html',
       inject: true
     }),
-    */
+    
 
     new HtmlWebpackPlugin({
       template: './src/pages/form-elements.pug',
@@ -76,14 +76,14 @@ module.exports = {
       inject: true
     }),
     
-  /*
+  
     new HtmlWebpackPlugin({
       template: './src/pages/colors-and-types.pug',
       filename: './color-and-types.html',
       inject: true
     }),
 
-*/
+
     new HtmlWebpackPlugin({
       template: './src/pages/presentation.pug',
       filename: './index.html',

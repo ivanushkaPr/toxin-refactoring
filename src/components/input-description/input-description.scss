@@ -1,13 +1,13 @@
-.input_description {
-  &--pading-top {
+.input-description {
+  &_pading-top {
     padding-top: 38px;
   }
 
-  &--margin-top-for-filter-date-dropdown-form-elements {
+  &_margin-top-for-filter-date-dropdown-form-elements {
     margin-top: 41px;
   } 
 
-  &--padding-top-for-subscription-text-field  {
+  &_padding-top-for-subscription-text-field  {
     padding-top: 39px;
   } 
 
@@ -16,57 +16,57 @@
       margin-top: 19px;
     }
   
-    &--mt-11px {
+    &_mt_11px {
       margin-top: 11px
     }
   
-    &--margin-top-29px {
+    &_margin-top_29px {
       margin-top: 29px;
     }
   
-    &--mt-30px {
+    &_mt_30px {
       margin-top: 30px;
     }
   
-    &--vertical-padding-near-radio-buttons {
+    &_vertical-padding-near-radio-buttons {
       padding-top: 20px;
       padding-bottom: 11px;
     }
   
-    &--vertical-padding-near-toggle {
+    &_vertical-padding-near-toggle {
       padding-top: 37px;
       padding-bottom: 8px;
     }
   
-    &--vertical-padding-near-like-button {
+    &_vertical-padding-near-like-button {
       padding-top: 40px;
       padding-bottom: 11px;
     }
   
-    &--vertical-padding-near-rate-button  {
+    &_vertical-padding-near-rate-button  {
       padding-top: 34px;
       padding-bottom: 15px;
     }
   
-    &--pp-guest-dropdown  {
+    &_pp-guest-dropdown  {
       padding-top: 190px;
     }
   
-    &--vertical-padding-buttons-block {
+    &_vertical-padding-buttons-block {
       padding-top: 39px;
       padding-bottom: 11px;
     }
   
-    &--vertical-margin-pagination {
+    &_vertical-margin-pagination {
       padding-top: 37px;
       padding-bottom: 11px;
     }
   
-    &--padding-top-guest-dropdown-block {
+    &_padding-top-guest-dropdown-block {
       padding-top: 230px;
     }
   
-    &--mt-20px {
+    &_mt_20px {
       margin-top: 20px;
     }
   }
@@ -82,19 +82,19 @@
     color: $dark_shade_100;
     word-break: break-all;
     
-    &--font-weight-normal {
+    &_font-weight_normal {
       margin-top: 0px;
       margin-bottom: 8px;
       font-weight: normal;
       color: $dark_shade_50;
     }
   
-    &--weight-regular--expanded{
+    &_weight-regular-expanded{
       margin-top: 3px;
       margin-bottom: 5px;
     }
   
-    &--description-for-buttons {
+    &_description-for-buttons {
       font-family: 'montserrat', Arial, sans-serif;
       font-weight: normal;
       font-size: 14px;
@@ -103,7 +103,7 @@
       text-transform: none;
     }
   
-    &--margins {
+    &_margins {
       margin-top: 3px;
       margin-bottom: 5px;
     }

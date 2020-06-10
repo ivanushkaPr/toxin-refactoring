@@ -1,7 +1,7 @@
 mixin bullet-list({containerMods, descMods, description, items, item})
-  div(class=`bulletlist`)
-    div(class=`bulletlist__container ${containerMods}`)
-      p(class=`bulletlist__description ${descMods}`) #{description}
-      ul(class=`bulletlist__list`)
+  div(class=`bullet-list`)
+    div(class=`bullet-list__container ${containerMods}`)
+      p(class=`bullet-list__description ${descMods}`) #{description}
+      ul(class=`bullet-list__list`)
         each item in items
-          li(class=`bulletlist__item`) #{item}
+          li(class=`bullet-list__item`) #{item}

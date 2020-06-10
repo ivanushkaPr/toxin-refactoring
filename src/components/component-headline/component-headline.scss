@@ -1,14 +1,14 @@
 .component_headline {
   &__container {
-    &--margin-bottom {
+    &_margin-bottom {
       margin-bottom: 20px;
     }
   
-    &--mt-69px {
+    &_mt_69px {
       margin-top: 68px;
     }
   
-    &--ml {
+    &_ml {
       margin-left: 108px;
     }
   }
@@ -24,30 +24,30 @@
     color: #1F2041;
 
 
-    &--font-size-md {
+    &_font-size_md {
       font-size: 19px;
       line-height: 24px;
     }
     
-    &--vertical-margin {
+    &_vertical-margin {
       margin-top: 29px;
       margin-bottom: 20px;
     }
   
-    &--max-width-auto {
+    &_max-width_auto {
       max-width: inherit;
     }
 
-    &--margin-top-zero {
+    &_margin-top_zero {
       margin-top: 0px;
     }
     
-    &--margin-bottom  {
+    &_margin-bottom  {
       margin-bottom: 20px;
     } 
 
     @media(max-width: 640px ) {
-      &--text-align-center {
+      &_text-align_center {
         text-align: center;
       }
     }

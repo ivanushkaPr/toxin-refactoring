@@ -1,5 +1,5 @@
-.input_description_container {
-  &--padding-top-registration {
+.input-description-container {
+  &_padding-top-registration {
     padding-top: 21px;
   }
   
@@ -9,15 +9,15 @@
     justify-content: space-between;
     flex-wrap: wrap;  
 
-    &--padding-top {
+    &_padding-top {
       padding-top: 17px;
     }
     
-    &--padding-top-for-room-quantity {
+    &_padding-top-for-room-quantity {
       padding-top: 95px;
     }
     
-    &--padding-top-for-room-quantity-expanded {
+    &_padding-top-for-room-quantity-expanded {
       padding-top: 16px;
     }
   }

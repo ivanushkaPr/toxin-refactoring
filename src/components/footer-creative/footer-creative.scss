@@ -1,4 +1,4 @@
-.footer_creative {
+.footer-creative {
   &__container {
     display: flex;
     flex-direction: column; 
@@ -40,7 +40,7 @@
     }
   }
 
-  &__list_link {
+  &__list-link {
     color: $dark_shade_50;
     text-decoration: none;
   }

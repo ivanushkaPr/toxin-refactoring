@@ -1,8 +1,8 @@
 mixin cost-calculator({blockMods, containerMods, roomInfo, sendTo, formName, doubleDateDropdown, inputDropdownGuests, balance, bookButton})
-  div(class=`cost_calculator ${blockMods}`)
-    div(class=`cost_calculator__cont ${containerMods}`)
+  div(class=`cost-calculator ${blockMods}`)
+    div(class=`cost-calculator__cont ${containerMods}`)
     +room-info(roomInfo)
-    form(class='cost_calculator__form' 	action=`${sendTo}` method=`post` name=`${formName}` autocomplete=`false`)
+    form(class='cost-calculator__form' 	action=`${sendTo}` method=`post` name=`${formName}` autocomplete=`false`)
       +double-date-dropdown(doubleDateDropdown)
 
       +input-description({containerMods: '',contentMods: '', description: 'гости'})

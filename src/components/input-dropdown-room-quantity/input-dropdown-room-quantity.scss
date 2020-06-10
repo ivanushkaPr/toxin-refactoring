@@ -1,4 +1,4 @@
-.dropdown_room_quantity {
+.dropdown-room-quantity {
   position: relative;
   max-width: 266px;
 
@@ -18,7 +18,7 @@
     line-height: 24px;
     color: $dark_shade_75;
 
-    &--controls-opened {
+    &_controls-opened {
       border: 1px solid rgba(31, 32, 65, 0.5);
     }
   }
@@ -44,13 +44,13 @@
     padding-top: 5px;
     padding-bottom: 1px;
 
-    &--closed {
+    &_closed {
       display: none;
     }
   }
 
 
-  &__control_buttons {
+  &__control-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@
     display: flex;
   }
 
-  &__substract_button, &__add_button {
+  &__substract-button, &__add-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +94,7 @@
     cursor: pointer;
   }
 
-  &__substract_button.disabled ,&__add_button.disabled  {
+  &__substract-button.disabled ,&__add-button.disabled  {
     border-color: $dark_shade_5;
   }
 

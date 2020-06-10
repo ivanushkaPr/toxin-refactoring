@@ -1,4 +1,4 @@
-.buttonContainer {
+.button-container {
   &__container {
     display: flex;
     justify-content: space-between;
@@ -6,20 +6,20 @@
     padding-bottom: 30px;
   }
 
-  &--md {
+  &_md {
     max-width: 218px;
   }
 
-  &--sm {
+  &_sm {
     max-width: 144px;
   }
   
-  &--vertical_padding {
+  &_vertical_padding {
     padding-top: 30px;
     padding-bottom: 0px;
   }
 
-  &--align-items-center {
+  &_align-items_center {
     align-items: center;
   }
 }

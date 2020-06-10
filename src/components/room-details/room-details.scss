@@ -18,15 +18,14 @@
       grid-row: 1 / 3;
       background-repeat: no-repeat;
       background-size: cover;
+        &--background-main-view  {
+          background-image: url('./image-bg.jpg');
+        }
     }
 
     &--background-rules {
       background-repeat: no-repeat;
       background-size: cover;
-    }
-
-    &--background-main-view  {
-      background-image: url('./image-bg.jpg');
     }
 
     &-sm {

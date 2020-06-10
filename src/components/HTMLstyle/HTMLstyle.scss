@@ -1,6 +1,6 @@
 .HTMLstyle  {
     
-  &__container--margin {
+  &__container_margin {
     margin-left: 29px;
     margin-bottom: 34px;
   }
@@ -11,47 +11,47 @@
     color: $dark_shade_100;
 
     
-    &--font-size-lg {
+    &_font-size_lg {
       font-size: 24px;
       line-height: 30px;
       letter-spacing: -0.018em;
     }
 
-    &--negative-letter-spacing {
+    &_negative-letter-spacing {
       letter-spacing: -0.018em;
     }
 
-    &--font-size-md {
+    &_font-size_md {
       font-size: 19px;
       line-height: 24px;
     }
 
-    &--margin-top-and-left {
+    &_margin-top-and-left {
       margin-top: 16px;
       margin-bottom: 38px;
     }
 
-    &--font-size-xs {
+    &_font-size_xs {
       font-size: 12px;
       line-height: 15px;
     } 
 
-    &--font-family-montserrat-bold {
+    &_font-family_montserrat-bold {
       font-family: 'montserrat-bold', Arial, sans-serif;
       font-weight: bold;
     }
 
-    &--font-size-sm {
+    &_font-size_sm {
       font-size: 14px;
       line-height: 24px;
     }
 
 
-    &--color-dark-shade-75 {
+    &_color_dark-shade-75 {
       color: $dark_shade_75;
     }
 
-    &--font-family-montserrat {
+    &_font-family_montserrat {
       font-family: 'montserrat', Arial, sans-serif;
       font-weight: normal;
     }

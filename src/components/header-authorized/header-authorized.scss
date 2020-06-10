@@ -34,7 +34,7 @@
   &__item {
     margin-right: 30px;
 
-    &--active {
+    &_active {
       font-family: 'montserrat';
       font-weight: bold;
       color: $dark_shade_75;
@@ -45,7 +45,7 @@
       display: flex;
     }
     
-    &_button {
+    &-button {
       position: relative;
       left: -2px;
       top: -2.5px;
@@ -78,13 +78,13 @@
     align-items: center;
   }
   
-  &__vertical_line {
+  &__vertical-line {
     border-left: 1px solid rgba(31, 32, 65, 0.1);
     height: 30px;
     margin-right: 32px;
   }
   
-  &__user_name{
+  &__user-name{
     margin-top: 11px;
     margin-bottom: 18px;
     font-family: 'montserrat', Arial, sans-serif;

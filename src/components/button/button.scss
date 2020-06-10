@@ -19,66 +19,66 @@
       color: $dark_shade_50;
     }
   
-    &--active {
+    &_active {
       color: $dark_shade_50;
     }
   
-    &--button__ellipse {
+    &_button_ellipse {
       border: 1px solid $purple;
       border-radius: 22px;
       padding: 13px 18px 14px 18px;
     }
   
-    &--extra-padding {
+    &_extra-padding {
       padding: 13px 26px 14px 26px;
     }
 
     
-    &--transparent_button_extra_fields {
+    &_transparent-button_extra-fields {
       padding-top: 7px;
       padding-bottom: 9px;
       padding-left: 18px;
       margin-top: -5px;
     }
 
-    &--extra-fields {
+    &_extra-fields {
       padding-top: 8px;
       padding-bottom: 9px;
       margin-top: -5px;
       margin-left: 18px;
     }
 
-    &--button__ellipse:active {
+    &_button__ellipse:active {
       border-color: rgba(	188,	156,	255, 0.5);
       color: $purple;
     }
 
-    &--button__ellipse__active {
+    &_button__ellipse_active {
       border-color: rgba(	188,	156,	255, 0.5);
     }
 
-    &--background_linear_gradient__purple {
+    &_background-linear-gradient_purple {
       border: none;
       background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       color: white;
       padding: 14px 19px 15px 19px;
     }
   
-    &--background_linear_gradient__purple_active {
+    &_background-linear-gradient_purple-active {
       background-image: linear-gradient(180deg, rgba(	188,	156,	255, 0.5) 0%,  rgba(139,	164,	249, 0.5) 100%);
     }
   
-    &--background_linear_gradient__purple:active {
+    &_background-linear-gradient_purple:active {
       background-image: linear-gradient(180deg, rgba(	188,	156,	255, 0.5) 0%,  rgba(139,	164,	249, 0.5) 100%);
       color: white; 
     }
   
-    &--header-size_sm {
+    &_header-size_sm {
       margin-top: 0px;
       padding: 9px 19px 9px 19px;
     }
   
-    &--header-margin_right {
+    &_header-margin-right {
       margin-right: 20px;
     }
   }

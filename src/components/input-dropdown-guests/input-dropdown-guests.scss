@@ -1,16 +1,16 @@
-.input_dropdown_guests {
+.input-dropdown-guests {
   position: relative;
   max-width: 320px;
 
-  &--margin-bottom-on-cards-page {
+  &_margin-bottom-on-cards-page {
     margin-bottom: 31px;
   }
 
-  &--margin-bottom-in-balance-component {
+  &_margin-bottom-in-balance-component {
     margin-bottom: 7.56px;
   }
 
-  &__container--margin-bottom-search-room {
+  &__container_margin-bottom-search-room {
     margin-bottom: 31px;
   }
 
@@ -32,16 +32,16 @@
       color: $dark_shade_75;
 
       
-    &--mb-8px {
+    &_mb_8px {
       margin-bottom: 8px;
     }
 
 
-    &--controls-opened {
+    &_controls_opened {
       border-color: $dark_shade_50;
     }
 
-    &--controls-closed {
+    &_controls_closed {
       border-radius: 2px;
     }
   }
@@ -72,7 +72,7 @@
     }
   }
 
-  &__control_buttons {
+  &__control-buttons {
     display: flex;
     justify-content: space-between;
     padding-bottom: 7px;
@@ -96,7 +96,7 @@
     display: flex;
   }
 
-  &__substract_button, &__add_button {
+  &__substract-button, &__add-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +117,7 @@
     cursor: pointer;
   }
 
-  &__substract_button.disabled, &__add_button.disabled {
+  &__substract-button.disabled, &__add-button.disabled {
     border-color: $dark_shade_5;
   }
 
@@ -142,7 +142,7 @@
     padding-bottom: 13px;
   }
 
-  &__button_reset, &__button_apply {
+  &__button-reset, &__button-apply {
     background-color: transparent;
     border: none;
     padding: 0px;
@@ -154,15 +154,15 @@
     cursor: pointer;
   }
 
-  &__button_reset {
+  &__button-reset {
     color:  $dark_shade_50;
 
-    &--hidden {
+    &_hidden {
       visibility: hidden;
     }
   }
 
-  &__button_apply {
+  &__button-apply {
     color: $purple;
   }
 }

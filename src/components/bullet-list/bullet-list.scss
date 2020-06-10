@@ -1,4 +1,4 @@
-.bulletlist {
+.bullet-list {
   &__description {
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: bold;
@@ -7,18 +7,18 @@
     text-transform: uppercase;
     color: $dark_shade_100;
 
-    &--font_size-bg {
+    &_font-size_bg {
       font-size: 19px;
       line-height: 24px;
     }
   
-    &--font_family_open_sans {
+    &_font-family_open-sans {
       font-family: 'opensans', Arial, sans-serif;
       font-weight: bold;
     }
   
     
-    &--text-transform_none {
+    &_text-transform_none {
       text-transform: none;
       margin-top: 34px;
       margin-left: 19px;
@@ -26,7 +26,7 @@
     }
   }
 
-  &__container--padding-top {
+  &__container_padding-top {
     padding-top: 87px;
   }
   
