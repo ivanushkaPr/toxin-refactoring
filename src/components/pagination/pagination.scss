@@ -32,11 +32,11 @@
     line-height: 15px;
     color: $dark_shade_50;
     
-    &--active {
+    &_active {
       background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     }
 
-    &--background-gradient-next-button {
+    &_background-gradient_next-button {
       background-image: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
       cursor: pointer;
     }
@@ -47,7 +47,7 @@
     text-decoration: none;
     cursor: pointer;
     
-    &--active {
+    &_active {
       color: white;
     }
   }
@@ -63,7 +63,7 @@
     color: $dark_shade_75;
   }
 
-  &--negative-margin {
+  &_negative-margin {
     position: relative;
     left: -14px;
 

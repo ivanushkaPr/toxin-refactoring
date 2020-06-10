@@ -1,4 +1,4 @@
-.masked_text_field {
+.masked-text-field {
   &__input {
     width: 100%;
     padding-left: 15px;
@@ -16,12 +16,12 @@
     color: $dark_shade_75;
   
     
-    &--vertical-padding-12 {
+    &_vertical-padding_12 {
       padding-top: 12px;
       padding-bottom: 12px;
     }
     
-    &--margin-bottom {
+    &_margin-bottom {
       margin-bottom: 15px;
     }
   }

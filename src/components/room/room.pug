@@ -11,14 +11,14 @@ mixin room({blockMods, containerMods, imagesMods, carouselID, imageOne, imageTwo
         div(class=`room__controls` id=`${controlsID}`)
 
         ul(class=`room__dots` id=`${dotsID}`)
-          li(class=`room__dot room__dot--active `)
+          li(class=`room__dot room__dot_active `)
           li(class=`room__dot`)
           li(class=`room__dot`)
           li(class=`room__dot`)
       div(class=`room__overall`)
         p(class=`room__number`)
-          spane(class=`room__special_char`) #{specialChar}
-          span(class=`room__special_number`) #{roomNumber}
+          spane(class=`room__special-char`) #{specialChar}
+          span(class=`room__special-number`) #{roomNumber}
           span(class=`room__status`) #{status}
         p(class=`room_price`) #{price}
           span(class=`room__period`) #{period}

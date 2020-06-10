@@ -1,4 +1,4 @@
-.rate_button {
+.rate-button {
   display: flex;
 
   
@@ -16,7 +16,7 @@
     display: none;
   }
 
-  &__fake_input {
+  &__fake-input {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
   }
 
 
-  &_fake_input svg {
+  &_fake-input svg {
     flex-shrink: 0;
     width: 24px;
     height: 24px;

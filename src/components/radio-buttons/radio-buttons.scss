@@ -2,7 +2,7 @@
   &__container {
     display: flex;
   
-    &--margin-bottom  {
+    &_margin-bottom  {
       padding-bottom: 20.56px;
     }
   }
@@ -18,12 +18,12 @@
   &__input {
     display: none;
 
-    &:checked ~ &__fake_radio {
+    &:checked ~ &__fake-radio {
       border: 1px solid $purple;
       position: relative;
     }
   
-    &:checked ~ &__fake_radio:after {
+    &:checked ~ &__fake-radio:after {
       content: '';
       background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       padding: 6px;
@@ -31,7 +31,7 @@
     }
   }
 
-  &__fake_radio {
+  &__fake-radio {
     width: 20px;
     height: 20px;
     display: flex;

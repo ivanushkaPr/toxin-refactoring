@@ -1,4 +1,4 @@
-.pie_chart {
+.pie-chart {
   &__container {
     display: flex;
     justify-content: space-between;
@@ -80,19 +80,19 @@
     margin-right: 5px;
 
     
-    &--grade-great {
+    &_grade-great {
       background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
     }
 
-    &--grade-good {
+    &_grade-good {
       background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     }
 
-    &--grade-bad {
+    &_grade-bad {
       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     }
 
-    &--grade-very-bad {
+    &_grade-very-bad {
       background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
     }
   }

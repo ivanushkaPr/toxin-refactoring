@@ -21,7 +21,7 @@
     color: $dark_shade_100;
   }
   
-  &__selected_range {
+  &__selected-range {
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: normal;
     font-size: 12px;
@@ -50,19 +50,11 @@
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     cursor: pointer;
-    
-      &--first-runner {
-        left: 74px;
-      }
-      
-      &--second-runner { 
-        left: 159px;
-      }
   }
 
   &__container {
 
-    &--pt-30px {
+    &_pt_30px {
       padding-top: 30px;
     }
      

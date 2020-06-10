@@ -1,15 +1,15 @@
 mixin rich-checkbox-buttons({containerMods, mods, description, listMods, items})
-  div(class=`rich_checkbox_buttons`)
-    div(class=`rich_checkbox_buttons__container ${containerMods}`)
-      p(class=`rich_checkbox_buttons__description ${mods}`) #{description}
+  div(class=`rich-checkbox-buttons`)
+    div(class=`rich-checkbox-buttons__container ${containerMods}`)
+      p(class=`rich-checkbox-buttons__description ${mods}`) #{description}
     
 
-      ul(class=`rich_checkbox_buttons__list ${listMods}`)
+      ul(class=`rich-checkbox-buttons__list ${listMods}`)
         each item in items
-          label(class=`rich_checkbox_buttons__label`)
-            input(class=`rich_checkbox_buttons__input` type=`checkbox`) 
-            div(class=`rich_checkbox_buttons__checkbox`)
-            div(class=`rich_checkbox_buttons__wrapper`)
-              p(class=`rich_checkbox_buttons__headline`) #{item[0]}
-              p(class=`rich_checkbox_buttons__text`) #{item[1]}
+          label(class=`rich-checkbox-buttons__label`)
+            input(class=`rich-checkbox-buttons__input` type=`checkbox`) 
+            div(class=`rich-checkbox-buttons__checkbox`)
+            div(class=`rich-checkbox-buttons__wrapper`)
+              p(class=`rich-checkbox-buttons__headline`) #{item[0]}
+              p(class=`rich-checkbox-buttons__text`) #{item[1]}
         

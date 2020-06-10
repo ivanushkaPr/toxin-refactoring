@@ -1,13 +1,13 @@
 mixin pie-chart({containerMods, canvasName, width, height, summary, units, leg})
-  div(class=`pie_chart `)
-    div(class=`pie_chart__container ${containerMods}`)
-      div(class=`pie_chart__graphic`)
-        canvas(class=`pie_chart__canvas ${canvasName}` width=`${width}` height=`${height}`)
-        div(class=`pie_chart__overall`)
-          p(class=`pie_chart__summary`) #{summary}
-          p(class=`pie_chart__units`) #{units}
-      div(class=`pie_chart__legend`)
+  div(class=`pie-chart `)
+    div(class=`pie-chart__container ${containerMods}`)
+      div(class=`pie-chart__graphic`)
+        canvas(class=`pie-chart__canvas ${canvasName}` width=`${width}` height=`${height}`)
+        div(class=`pie-chart__overall`)
+          p(class=`pie-chart__summary`) #{summary}
+          p(class=`pie-chart__units`) #{units}
+      div(class=`pie-chart__legend`)
         each desc in leg
-          p(class=`pie_chart__categories`) 
-            span(class=`pie_chart__indicator ${desc.mod} `)
-            span(class=`pie_chart__category`) #{desc.text}
+          p(class=`pie-chart__categories`) 
+            span(class=`pie-chart__indicator ${desc.mod} `)
+            span(class=`pie-chart__category`) #{desc.text}

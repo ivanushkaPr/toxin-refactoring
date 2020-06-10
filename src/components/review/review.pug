@@ -7,5 +7,5 @@ mixin review({containerMods, userMods, image, name, date, text})
           p(class=`review__name`) #{name}
           p(class=`review__date`) #{date}
       div(class=`review__feedback`)
-        +like-button({buttonMods: 'like_button__add--pressed like_button__add--margin-in-review-block', counterMods: 'like_button__counter--button-pressed',count: 12})
+        +like-button({buttonMods: 'like-button__add_pressed like-button__add_margin-in-review-block', counterMods: 'like_button__counter_button-pressed',count: 12})
         p(class=`review__text`) #{text}

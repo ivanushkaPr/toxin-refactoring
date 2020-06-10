@@ -18,22 +18,22 @@
       grid-row: 1 / 3;
       background-repeat: no-repeat;
       background-size: cover;
-        &--background-main-view  {
+        &_background-main-view  {
           background-image: url('./image-bg.jpg');
         }
     }
 
-    &--background-rules {
+    &_background-rules {
       background-repeat: no-repeat;
       background-size: cover;
     }
 
     &-sm {
-      &--background-additional-view-one {
+      &_background-additional-view-one {
         background-image: url('./image-sm-one.jpg');
       }
   
-      &--background-additional-view-two {
+      &_background-additional-view-two {
         background-image: url('./image-sm-two.jpg');
       }
     }
@@ -105,12 +105,12 @@
   }
 
   &__wrapper {
-    &--d-flex_jc-sb {
+    &_d-flex_jc-sb {
       display: flex;
       justify-content: space-between;
     }
   
-    &--max-width {
+    &_max-width {
       max-width: 686px;
     }
   }

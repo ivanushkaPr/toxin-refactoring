@@ -1,4 +1,4 @@
-.like_button {
+.like-button {
   &--margin-in-review-block {
     margin-right: 14.31px;
     margin-top: 2px;
@@ -45,7 +45,7 @@
     line-height: 12px;
     color: $dark_shade_25;
   
-    &--button-pressed {
+    &_button-pressed {
       color: $purple;
     }
   }

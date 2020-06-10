@@ -1,8 +1,8 @@
-.subscription_text_field {
+.subscription-text-field {
   position: relative;
   max-width: 266px;
 
-  &--mt {
+  &_mt {
     margin-top: 24px;
   }
 
@@ -25,7 +25,7 @@
       color: $dark_shade_75;
     }
   
-    &--width-correction {
+    &_width-correction {
       min-width: 260px;
       padding-left: 14px;
       padding-top: 11px;

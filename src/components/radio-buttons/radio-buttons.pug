@@ -1,11 +1,11 @@
 mixin radio-buttons({blockMods, containerMods, options, labelMods, inputMods})
-  div(class=`radio_buttons ${blockMods}`)
-    div(class=`radio_buttons__container ${containerMods}`)
+  div(class=`radio-buttons ${blockMods}`)
+    div(class=`radio-buttons__container ${containerMods}`)
       each option in options
-        label(class=`radio_buttons__label ${labelMods}`)
+        label(class=`radio-buttons__label ${labelMods}`)
           if(option[1] === true)
-            input(class=`radio_buttons__input ${inputMods}` type='radio' name='sex' checked)
+            input(class=`radio-buttons__input ${inputMods}` type='radio' name='sex' checked)
           else
-            input(class=`radio_buttons__input ${inputMods}` type='radio' name='sex')
-          div(class=`radio_buttons__fake_radio`)
-          p(class=`radio_buttons__option`) #{option[0]}
+            input(class=`radio-buttons__input ${inputMods}` type='radio' name='sex')
+          div(class=`radio-buttons__fake-radio`)
+          p(class=`radio-buttons__option`) #{option[0]}

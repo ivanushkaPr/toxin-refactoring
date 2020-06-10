@@ -5,7 +5,7 @@
   border-radius: 4px;
   padding-bottom: 8px;
 
-  &--mb-27px {
+  &_mb_27px {
     padding-bottom: 28px;
   }
   
@@ -15,7 +15,7 @@
     overflow: hidden;
     position: relative;
   
-    &--cards__margin-top {
+    &_cards-margin-top {
       margin-top: 39px;
     }
   }
@@ -32,7 +32,7 @@
     height: 250px;
     flex-shrink: 0;
 
-    &--background {
+    &_background {
 
       &-1 {
         background-image: url('./roomOne.jpg');
@@ -112,7 +112,7 @@
     color: white;
   }
   
-  &__button--right, .owl-next {
+  &__button_right, .owl-next {
     right: 0;
   }
   
@@ -159,12 +159,12 @@
     color: #1F2041;
   }
   
-  &__special_char {
+  &__special-char {
     display: inline-block;
     margin-right: 7px;
   }
   
-  &__special_number {
+  &__special-number {
     font-size: 19px;  
   }
   

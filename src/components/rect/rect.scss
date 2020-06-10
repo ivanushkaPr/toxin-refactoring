@@ -11,7 +11,7 @@
     background-color: $background_color;
   }
   
-  &__container--margin-bottom {
+  &__container_margin-bottom {
     margin-bottom: 1.25rem;
   }
   
@@ -19,23 +19,23 @@
     @include createRect();
   
     
-    &--dark_shade-100 {
+    &--dark-shade_100 {
       @include fillRect($dark_shade_100)
     }
     
-    &--dark_shade-75 {
+    &--dark-shade_75 {
       @include fillRect($dark_shade_75)
     }
     
-    &--dark_shade-50 {
+    &--dark-shade_50 {
       @include fillRect($dark_shade_50)
     }
     
-    &--dark_shade-25 {
+    &--dark-shade_25 {
       @include fillRect($dark_shade_25)
     }
     
-    &--dark_shade-5 {
+    &--dark-shade_5 {
       @include fillRect($dark_shade_75)
     }
     

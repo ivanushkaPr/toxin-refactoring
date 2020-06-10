@@ -1,11 +1,11 @@
 mixin room-info({blockMods, containerMods, overallMods, numberMods, numberSymbol, numberText, typeText, priceMods, costMods, costText, periodMods, periodText})
-  div(class=`room_info ${blockMods}`)
-    div(class=`room_info__container ${containerMods}`)
-      div(class=`room_info__overall ${overallMods}`)
-        p(class=`room_info__number ${numberMods}`)
-          span(class=`room_info__symbol`) #{numberSymbol}
-          span(class=`room_info__room_number`) !{numberText}
-        p(class=`room_info__type ${typeMods}`) #{typeText}
-      div(class=`room_info__price ${priceMods}`)
-        p(class=`room_info__cost ${costMods}`) #{costText}
-        p(class=`room_info__period ${periodMods}`)  !{periodText}
+  div(class=`room-info ${blockMods}`)
+    div(class=`room-info__container ${containerMods}`)
+      div(class=`room-info__overall ${overallMods}`)
+        p(class=`room-info__number ${numberMods}`)
+          span(class=`room-info__symbol`) #{numberSymbol}
+          span(class=`room-info__room-number`) !{numberText}
+        p(class=`room-info__type ${typeMods}`) #{typeText}
+      div(class=`room-info__price ${priceMods}`)
+        p(class=`room-info__cost ${costMods}`) #{costText}
+        p(class=`room-info__period ${periodMods}`)  !{periodText}

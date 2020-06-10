@@ -38,11 +38,11 @@
       margin-bottom: 8px;
     }
 
-    &--mb-9 {
+    &_mb-9 {
       margin-bottom: 9px;
     }
 
-    &--mb-10 {
+    &_mb-10 {
       margin-bottom: 10px;
     }
   }
@@ -50,27 +50,27 @@
 
   // Fix bem naming
 
-  &__input--pb-for-etf {
+  &__input_pb-for-etf {
     padding-bottom: 11px;
   }
 
-  &_input--mb-fe {
+  &_input_mb-fe {
     margin-bottom: 10px;
   }
 
-  &_input--mb-se {
+  &_input_mb-se {
     margin-bottom: 14.4px;
   }
 
-  &_input--mb-reg {
+  &_input_mb-reg {
     margin-bottom: 10px;
   }
 
-  &_input--rmb-reg-ld {
+  &_input_rmb-reg-ld {
     margin-bottom: 8px;
   }
 
-  &_input--mb-af-pi {
+  &_input_mb-af-pi {
     margin-bottom: 20px;
   }
 }
