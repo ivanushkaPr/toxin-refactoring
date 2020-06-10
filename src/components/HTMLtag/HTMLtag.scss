@@ -5,25 +5,25 @@
     color: $dark_shade_25;
     text-align: right;
     min-width: 37px;
-  }
-
-  &__character--font-size-lg {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  &__character--font-size-md {
-    font-size: 19px;
-    line-height: 23px;
-  }
-
-  &__character--font-size-sm {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  &__character--font-size-xs {
-    font-size: 12px;
-    line-height: 15px;
+    
+    &--font-size-lg {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  
+    &--font-size-md {
+      font-size: 19px;
+      line-height: 23px;
+    }
+  
+    &--font-size-sm {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    &--font-size-xs {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }

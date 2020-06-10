@@ -30,20 +30,20 @@
       font-size: 14px;
       line-height: 24px;
       color: $dark_shade_75;
-  }
+
+      
+    &--mb-8px {
+      margin-bottom: 8px;
+    }
 
 
-  &__input--mb-8px {
-    margin-bottom: 8px;
-  }
+    &--controls-opened {
+      border-color: $dark_shade_50;
+    }
 
-
-  &__input--controls-opened {
-    border-color: $dark_shade_50;
-  }
-
-  &__input--controls-closed {
-    border-radius: 2px;
+    &--controls-closed {
+      border-radius: 2px;
+    }
   }
 
   &__button {
@@ -66,10 +66,10 @@
     padding-left: 15px;
     padding-right: 7px;
     padding-top: 4px;
-  }
 
-  &__controls--closed {
-    display: none;
+    &--closed {
+      display: none;
+    }
   }
 
   &__control_buttons {
@@ -154,12 +154,12 @@
     cursor: pointer;
   }
 
-  &__button_reset--hidden {
-    visibility: hidden;
-  }
-
   &__button_reset {
     color:  $dark_shade_50;
+
+    &--hidden {
+      visibility: hidden;
+    }
   }
 
   &__button_apply {

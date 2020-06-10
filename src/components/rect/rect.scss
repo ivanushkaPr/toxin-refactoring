@@ -17,34 +17,35 @@
   
   &__body {
     @include createRect();
-  }
   
-  &__body--dark_shade-100 {
-    @include fillRect($dark_shade_100)
-  }
-  
-  &__body--dark_shade-75 {
-    @include fillRect($dark_shade_75)
-  }
-  
-  &__body--dark_shade-50 {
-    @include fillRect($dark_shade_50)
-  }
-  
-  &__body--dark_shade-25 {
-    @include fillRect($dark_shade_25)
-  }
-  
-  &__body--dark_shade-5 {
-    @include fillRect($dark_shade_75)
-  }
-  
-  &__body--green {
-    @include fillRect($green)
-  }
-  
-  &__body--purple {
-    @include fillRect($purple)
+    
+    &--dark_shade-100 {
+      @include fillRect($dark_shade_100)
+    }
+    
+    &--dark_shade-75 {
+      @include fillRect($dark_shade_75)
+    }
+    
+    &--dark_shade-50 {
+      @include fillRect($dark_shade_50)
+    }
+    
+    &--dark_shade-25 {
+      @include fillRect($dark_shade_25)
+    }
+    
+    &--dark_shade-5 {
+      @include fillRect($dark_shade_75)
+    }
+    
+    &--green {
+      @include fillRect($green)
+    }
+    
+    &--purple {
+      @include fillRect($purple)
+    }
   }
 }
 

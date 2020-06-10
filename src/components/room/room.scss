@@ -14,10 +14,10 @@
     height: 152px;
     overflow: hidden;
     position: relative;
-  }
   
-  &__images--cards__margin-top {
-    margin-top: 39px;
+    &--cards__margin-top {
+      margin-top: 39px;
+    }
   }
   
   &__gallery {
@@ -31,67 +31,71 @@
     width: 270px;
     height: 250px;
     flex-shrink: 0;
-  }
-  
-  &__image--background-1 {
-    background-image: url('./roomOne.jpg');
-    background-repeat: no-repeat;
-  }
-  
-  &__image--background-2 {
-    background-image: url('./roomTwo.jpg');
-    background-repeat: no-repeat;
-  }
-  
-  &__image--background-3 {
-    background-image: url('./roomThree.jpg');
-    background-repeat: no-repeat;
-  }
-  
-  &__image--background-4 {
-    background-image: url('./roomFour.jpg');
-    background-repeat: no-repeat;
-  }
-  
-  &__image--background-5 {
-    background-image: url('./roomFive.jpg');
-    background-repeat: no-repeat;
-  }
-  
-  &__image--background-6 {
-    background-image: url('./roomSix.jpg');
-    background-repeat: no-repeat;
-  }
 
-  &__image--background-7 {
-    background-image: url('./roomSeven.jpg');
-    background-repeat: no-repeat;
-  }
+    &--background {
 
-  &__image--background-8 {
-    background-image: url('./roomEight.jpg');
-    background-repeat: no-repeat;
+      &-1 {
+        background-image: url('./roomOne.jpg');
+        background-repeat: no-repeat;
+      }
+
+      &-2 {
+        background-image: url('./roomTwo.jpg');
+        background-repeat: no-repeat;
+      }
+      
+      &-3 {
+        background-image: url('./roomThree.jpg');
+        background-repeat: no-repeat;
+      }
+      
+      &-4 {
+        background-image: url('./roomFour.jpg');
+        background-repeat: no-repeat;
+      }
+      
+      &-5 {
+        background-image: url('./roomFive.jpg');
+        background-repeat: no-repeat;
+      }
+      
+      &-6 {
+        background-image: url('./roomSix.jpg');
+        background-repeat: no-repeat;
+      }
+    
+      &-7 {
+        background-image: url('./roomSeven.jpg');
+        background-repeat: no-repeat;
+      }
+    
+      &-8 {
+        background-image: url('./roomEight.jpg');
+        background-repeat: no-repeat;
+      }
+      
+      &-9 {
+        background-image: url('./roomNine.jpg');
+        background-repeat: no-repeat;
+      }
+      
+      &-10 {
+        background-image: url('./roomTen.jpg');
+        background-repeat: no-repeat;
+      }
+      
+      &-11{
+        background-image: url('./roomEleven.jpg');
+        background-repeat: no-repeat;
+      }
+      
+      &-12 {
+        background-image: url('./roomTwelve.jpg');
+        background-repeat: no-repeat;
+      }
+    }
   }
   
-  &__image--background-9 {
-    background-image: url('./roomNine.jpg');
-    background-repeat: no-repeat;
-  }
-  
-  &__image--background-10 {
-    background-image: url('./roomTen.jpg');
-    background-repeat: no-repeat;
-  }
-  
-  &__image--background-11{
-    background-image: url('./roomEleven.jpg');
-    background-repeat: no-repeat;
-  }
-  
-  &__image--background-12 {
-    background-image: url('./roomTwelve.jpg');
-    background-repeat: no-repeat;
-  }
   
   &__button, .owl-prev, .owl-next {
     width: 44px;
@@ -133,13 +137,11 @@
     cursor: pointer;
   }
   
-  
-  
   .room__dot.active {
     background-color: #FFFFFF;
   }
   
-  .room__overall {
+  &__overall {
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
@@ -148,7 +150,7 @@
     padding-top: 9px;
   }
   
-  .room__number {
+  &__number {
     margin-bottom: 12px;
     font-family: 'opensans', Arial, sans-serif;
     font-weight: normal;
@@ -157,16 +159,16 @@
     color: #1F2041;
   }
   
-  .room__special_char {
+  &__special_char {
     display: inline-block;
     margin-right: 7px;
   }
   
-  .room__special_number {
+  &__special_number {
     font-size: 19px;  
   }
   
-  .room__status {
+  &__status {
     display: inline-block;
     margin-left: 5px;
     font-family: 'montserrat', Arial, sans-serif;
@@ -177,7 +179,7 @@
     color: #BC9CFF;
   }
   
-  .room_price {
+  &_price {
     margin-bottom: 12px;
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: bold;
@@ -186,7 +188,7 @@
     color: rgba(31, 32, 65, 0.5);
   }
   
-  .room__period {
+  &__period {
     display: inline-block;
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: normal;
@@ -196,7 +198,7 @@
     color: rgba(31, 32, 65, 0.5);
   }
   
-  .room__rating {
+  &__rating {
     display: flex;
     justify-content: space-between;
     margin-left: 22px;
@@ -204,7 +206,7 @@
     padding-top: 11.56px;
   }
   
-  .room__feedbacks {
+  &__feedbacks {
     margin: 0px;
     font-family: 'montserrat', Arial, sans-serif;
     font-weight: bold;
@@ -213,7 +215,7 @@
     color: rgba(31, 32, 65, 0.5);
   }
   
-  .room__number-span {
+  &__number-span {
     display: inline-block;
     margin-left: 5px;
     font-family: 'montserrat', Arial, sans-serif;

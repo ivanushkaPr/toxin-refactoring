@@ -68,6 +68,7 @@ module.exports = {
       filename: './cards.html',
       inject: true
     }),
+    */
 
     new HtmlWebpackPlugin({
       template: './src/pages/form-elements.pug',
@@ -81,8 +82,8 @@ module.exports = {
       filename: './color-and-types.html',
       inject: true
     }),
+
 */
-  
     new HtmlWebpackPlugin({
       template: './src/pages/presentation.pug',
       filename: './index.html',

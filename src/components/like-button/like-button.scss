@@ -1,4 +1,10 @@
 .like_button {
+  &--margin-in-review-block {
+    margin-right: 14.31px;
+    margin-top: 2px;
+    margin-left: 4px;
+  }
+
   &__add {
     position: relative;
     width: 40px;
@@ -12,16 +18,16 @@
     background-color: #fff;
     padding: 0px;
     cursor: pointer;
-  }
 
-  &__add:active {
-    border-color: $purple;
-    background-image: url('./heartPurple.png');
-  }
-
-  &__add--pressed {
-    border-color: $purple;
-    background-image: url('./heartPurple.png');
+    &:active {
+      border-color: $purple;
+      background-image: url('./heartPurple.png');
+    }
+  
+    &--pressed {
+      border-color: $purple;
+      background-image: url('./heartPurple.png');
+    }
   }
 
   &__add:active &__counter {
@@ -38,15 +44,9 @@
     font-size: 10px;
     line-height: 12px;
     color: $dark_shade_25;
-  }
-
-  &__counter--button-pressed {
-    color: $purple;
-  }
-
-  &--margin-in-review-block {
-    margin-right: 14.31px;
-    margin-top: 2px;
-    margin-left: 4px;
+  
+    &--button-pressed {
+      color: $purple;
+    }
   }
 }

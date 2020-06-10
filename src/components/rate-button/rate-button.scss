@@ -8,8 +8,6 @@
     max-width: 260px;
   }
 
-
-
   &__counter {
     display: none;
   }
@@ -30,11 +28,12 @@
 
   &__sprite {
     position: relative;
+    
+    &--checkbox-checked {
+      top: -24px;
+    }
   }
 
-  &__sprite--checkbox-checked {
-    top: -24px;
-  }
 
   &_fake_input svg {
     flex-shrink: 0;

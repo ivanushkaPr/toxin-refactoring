@@ -17,10 +17,10 @@
     font-size: 14px;
     line-height: 24px;
     color: $dark_shade_75;
-  }
 
-  &__input--controls-opened {
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    &--controls-opened {
+      border: 1px solid rgba(31, 32, 65, 0.5);
+    }
   }
 
   &__button {
@@ -43,11 +43,12 @@
     padding-right: 8px;
     padding-top: 5px;
     padding-bottom: 1px;
+
+    &--closed {
+      display: none;
+    }
   }
 
-  &__controls--closed {
-    display: none;
-  }
 
   &__control_buttons {
     display: flex;

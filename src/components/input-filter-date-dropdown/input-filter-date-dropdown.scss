@@ -16,10 +16,10 @@
     font-size: 14px;
     line-height: 18px;
     color: $dark_shade_75;
-  }
-
-  &__input::placeholder {
-    color: $dark_shade_75;
+  
+    &::placeholder {
+      color: $dark_shade_75;
+    }
   }
 
   &__button {

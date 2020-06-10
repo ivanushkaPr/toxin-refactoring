@@ -14,15 +14,16 @@
     font-size: 14px;
     line-height: 18px;
     color: $dark_shade_75;
-  }
   
-  &__input--vertical-padding-12 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-  
-  &__input--margin-bottom {
-    margin-bottom: 15px;
+    
+    &--vertical-padding-12 {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    
+    &--margin-bottom {
+      margin-bottom: 15px;
+    }
   }
 }
 

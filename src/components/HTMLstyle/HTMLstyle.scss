@@ -9,50 +9,51 @@
     font-family: 'quicksand', Arial, sans-serif;
     font-weight: bold;
     color: $dark_shade_100;
-  }
 
-  &__description--font-size-lg {
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: -0.018em;
-  }
+    
+    &--font-size-lg {
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: -0.018em;
+    }
 
-  &__description--negative-letter-spacing {
-    letter-spacing: -0.018em;
-  }
+    &--negative-letter-spacing {
+      letter-spacing: -0.018em;
+    }
 
-  &__description--font-size-md {
-    font-size: 19px;
-    line-height: 24px;
-  }
+    &--font-size-md {
+      font-size: 19px;
+      line-height: 24px;
+    }
 
-  &__description--margin-top-and-left {
-    margin-top: 16px;
-    margin-bottom: 38px;
-  }
+    &--margin-top-and-left {
+      margin-top: 16px;
+      margin-bottom: 38px;
+    }
 
-  &__description--font-size-xs {
-    font-size: 12px;
-    line-height: 15px;
-  } 
+    &--font-size-xs {
+      font-size: 12px;
+      line-height: 15px;
+    } 
 
-  &__description--font-family-montserrat-bold {
-    font-family: 'montserrat-bold', Arial, sans-serif;
-    font-weight: bold;
-  }
+    &--font-family-montserrat-bold {
+      font-family: 'montserrat-bold', Arial, sans-serif;
+      font-weight: bold;
+    }
 
-  &__description--font-size-sm {
-    font-size: 14px;
-    line-height: 24px;
-  }
+    &--font-size-sm {
+      font-size: 14px;
+      line-height: 24px;
+    }
 
 
-  &__description--color-dark-shade-75 {
-    color: $dark_shade_75;
-  }
+    &--color-dark-shade-75 {
+      color: $dark_shade_75;
+    }
 
-  &__description--font-family-montserrat {
-    font-family: 'montserrat', Arial, sans-serif;
-    font-weight: normal;
+    &--font-family-montserrat {
+      font-family: 'montserrat', Arial, sans-serif;
+      font-weight: normal;
+    }
   }
 }

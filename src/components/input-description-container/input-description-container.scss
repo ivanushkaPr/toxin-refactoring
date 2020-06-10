@@ -8,18 +8,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;  
-  }
-  
-  &__container--padding-top {
-    padding-top: 17px;
-  }
-  
-  &__container--padding-top-for-room-quantity {
-    padding-top: 95px;
-  }
-  
-  &__container--padding-top-for-room-quantity-expanded {
-    padding-top: 16px;
+
+    &--padding-top {
+      padding-top: 17px;
+    }
+    
+    &--padding-top-for-room-quantity {
+      padding-top: 95px;
+    }
+    
+    &--padding-top-for-room-quantity-expanded {
+      padding-top: 16px;
+    }
   }
 }
 
