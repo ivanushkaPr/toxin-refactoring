@@ -19,31 +19,31 @@
     @include createRect();
   
     
-    &--dark-shade_100 {
+    &_dark-shade_100 {
       @include fillRect($dark_shade_100)
     }
     
-    &--dark-shade_75 {
+    &_dark-shade_75 {
       @include fillRect($dark_shade_75)
     }
     
-    &--dark-shade_50 {
+    &_dark-shade_50 {
       @include fillRect($dark_shade_50)
     }
     
-    &--dark-shade_25 {
+    &_dark-shade_25 {
       @include fillRect($dark_shade_25)
     }
     
-    &--dark-shade_5 {
+    &_dark-shade_5 {
       @include fillRect($dark_shade_75)
     }
     
-    &--green {
+    &_bgColor_green {
       @include fillRect($green)
     }
     
-    &--purple {
+    &_bgColor_purple {
       @include fillRect($purple)
     }
   }

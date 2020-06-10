@@ -5,8 +5,8 @@ include ../utils/mixins.pug
   let colorsAndTypeConfiguration = {
       rectDarkShade100:
       {
-        backgroundColor: "rect__body--dark_shade-100",
-        containerMods: "rect__container--margin-bottom",
+        backgroundColor: "rect__body_dark-shade_100",
+        containerMods: "rect__container_margin-bottom",
       },
       darkShade100Info: {
         name: "Dark Shade 100%",
@@ -15,8 +15,8 @@ include ../utils/mixins.pug
 
       rectDarkShade75:
       {
-        backgroundColor:"rect__body--dark_shade-75",
-        containerMods: "rect__container--margin-bottom",
+        backgroundColor:"rect__body_dark-shade_75",
+        containerMods: "rect__container_margin-bottom",
       },
 
       darkShade75Info: {
@@ -26,8 +26,8 @@ include ../utils/mixins.pug
 
       rectDarkShade50:
       {
-        backgroundColor:"rect__body--dark_shade-50",
-        containerMods: "rect__container--margin-bottom",
+        backgroundColor:"rect__body_dark-shade_50",
+        containerMods: "rect__container_margin-bottom",
       },
 
       darkShade50Info: {
@@ -37,8 +37,8 @@ include ../utils/mixins.pug
 
       rectDarkShade25:
       {
-        backgroundColor:"rect__body--dark_shade-25",
-        containerMods: "rect__container--margin-bottom",
+        backgroundColor:"rect__body_dark-shade_25",
+        containerMods: "rect__container_margin-bottom",
       },
       darkShade25Info: {
         name: "Dark Shade 25%",
@@ -47,8 +47,8 @@ include ../utils/mixins.pug
 
       rectDarkShade5:
       {
-        backgroundColor: "rect__body--dark_shade-5",
-        containerMods: "rect__container--margin-bottom",
+        backgroundColor: "rect__body_dark-shade_5",
+        containerMods: "rect__container_margin-bottom",
       },
       darkShade5Info: {
         name: "Dark Shade 5%",
@@ -57,8 +57,8 @@ include ../utils/mixins.pug
 
       rectPurple:
       {
-        backgroundColor:"rect__body--purple",
-        containerMods: "rect__container--margin-bottom",
+        backgroundColor:"rect__body_bgColor_purple",
+        containerMods: "rect__container_margin-bottom",
       },
       purpleInfo: {
         name: "Purple",
@@ -67,37 +67,37 @@ include ../utils/mixins.pug
 
       rectGreen:
       {
-        backgroundColor:"rect__body--green",
-        containerMods: "rect__container--margin-bottom",
+        backgroundColor:"rect__body_bgColor_green",
+        containerMods: "rect__container_margin-bottom",
       },
       greenInfo: {
         name: "Green",
         code: "#6FCF97",
       },
 
-      HTMLTagH1: {modificators: "HTMLtag__character--font-size-lg", tagName: "H1"},
+      HTMLTagH1: {modificators: "HTMLtag__character_font-size_lg", tagName: "H1"},
       HTMLStyleH1: {
-        containerMods: 'HTMLstyle__container--margin',
-        modificators: "HTMLstyle__description--font-size-lg HTMLstyle__description--negative-letter-spacing", 
+        containerMods: 'HTMLstyle__container_margin',
+        modificators: "HTMLstyle__description_font-size_lg HTMLstyle__description_negative-letter-spacing", 
         text: `This one is the sub-section or 
   widget title`
       },
       
-      HTMLTagH2: {modificators: "HTMLtag__character--font-size-md", tagName: "H2"},
-      HTMLStyleH2: {containerMods: 'HTMLstyle__container--margin',modificators: "HTMLstyle__description--font-size-md HTMLstyle__description--margin-top-and-left HTMLstyle__description--negative-letter-spacing HTMLstyle__description--md-margin", text: `Next one is the item title inside
+      HTMLTagH2: {modificators: "HTMLtag__character_font-size_md", tagName: "H2"},
+      HTMLStyleH2: {containerMods: 'HTMLstyle__container_margin', modificators: "HTMLstyle__description_font-size_md HTMLstyle__description_margin-top-and-left HTMLstyle__description_negative-letter-spacing", text: `Next one is the item title inside
   widgets`},
       
-      HTMLTagH3: {modificators: "HTMLtag__character--font-size-xs", tagName: "H3"},
-      HTMLStyleH3: {containerMods: 'HTMLstyle__container--margin', modificators: "HTMLstyle__description--font-size-xs HTMLstyle__description--font-family-montserrat-bold", text: "THIS IS A LABEL OR CTA TEXT"},
+      HTMLTagH3: {modificators: "HTMLtag__character_font-size_xs", tagName: "H3"},
+      HTMLStyleH3: {containerMods: 'HTMLstyle__container_margin', modificators: "HTMLstyle__description_font-size_xs HTMLstyle__description_font-family_montserrat-bold", text: "THIS IS A LABEL OR CTA TEXT"},
 
-      HTMLTagBody: {modificators: "HTMLtag__character--font-size-sm", tagName: "Body"},
-      HTMLStyleBody: {containerMods: 'HTMLstyle__container--margin', modificators: "HTMLstyle__description--font-size-sm HTMLstyle__description--color-dark-shade-75 HTMLstyle__description--font-family-montserrat", text: `This is the body text which is used for most 
+      HTMLTagBody: {modificators: "HTMLtag__character_font-size_sm", tagName: "Body"},
+      HTMLStyleBody: {containerMods: 'HTMLstyle__container_margin', modificators: "HTMLstyle__description_font-size_sm HTMLstyle__description_color-dark-shade_75 HTMLstyle__description_font-family_montserrat", text: `This is the body text which is used for most 
   of the design, like paragraphs, lists, etc.`},
   }
 
 block title
   title colors and types
 block logo
-  +logo('logo--background-color_white')
+  +logo('logo_background-color_white')
 block content
   +colors-and-types(colorsAndTypeConfiguration)

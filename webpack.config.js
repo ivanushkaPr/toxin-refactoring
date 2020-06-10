@@ -25,7 +25,7 @@ module.exports = {
 
  }),
 
- 
+ /*
     new HtmlWebpackPlugin({
       template: './src/pages/room-details.pug',
       filename: './room-details.html',
@@ -76,7 +76,7 @@ module.exports = {
       inject: true
     }),
     
-  
+  */
     new HtmlWebpackPlugin({
       template: './src/pages/colors-and-types.pug',
       filename: './color-and-types.html',

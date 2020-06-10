@@ -1,6 +1,6 @@
 mixin colors-and-types({rectDarkShade100, darkShade100Info, rectDarkShade75,  darkShade75Info, rectDarkShade50, darkShade50Info, rectDarkShade25, darkShade25Info, rectDarkShade5, darkShade5Info, rectPurple, purpleInfo, rectGreen, greenInfo, HTMLTagH1, HTMLStyleH1, HTMLTagH2, HTMLStyleH2, HTMLTagH3, HTMLStyleH3, HTMLTagBody, HTMLStyleBody})
   div(class="app")
-    div(class="app__container app__container--palette")
+    div(class="app__container app__container_palette")
       
       div(class="app__shade")
         +rect(rectDarkShade100)
@@ -30,7 +30,7 @@ mixin colors-and-types({rectDarkShade100, darkShade100Info, rectDarkShade75,  da
         +rect(rectGreen)
         +color-info(greenInfo)
 
-    div(class="app__container app__container--fonts")
+    div(class="app__container app__container_fonts")
       div(class="app__font")
         +HTMLtag(HTMLTagH1)
         +HTMLstyle(HTMLStyleH1)
