@@ -2,14 +2,14 @@
   &__label {
     display: flex;
     align-items: center;
-  }
-
-  &__label--mb-reg {
-    margin-bottom: 22px;
-  }
-
-  &__label--mb {
-    margin-bottom: 11px;
+  
+    &--mb-reg {
+      margin-bottom: 22px;
+    }
+  
+    &--mb {
+      margin-bottom: 11px;
+    }
   }
 
   &__checkbox {
@@ -31,17 +31,17 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-  }
 
-  &__fake_checkbox:after  {
-    content: '';
-    position: absolute;
-    padding: 6px;
-    left: 6px;
-    background-color: $dark_shade_25;
-    border-radius: 10px;
-    transition-property: background-image, left;
-    transition-duration: 0.5s;
+    &:after  {
+      content: '';
+      position: absolute;
+      padding: 6px;
+      left: 6px;
+      background-color: $dark_shade_25;
+      border-radius: 10px;
+      transition-property: background-image, left;
+      transition-duration: 0.5s;
+    }
   }
 
   &__checkbox:checked ~ &__fake_checkbox:after {

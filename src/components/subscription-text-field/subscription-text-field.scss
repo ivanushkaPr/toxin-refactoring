@@ -20,16 +20,16 @@
     font-size: 14px;
     line-height: 18px;
     color: $dark_shade_75;
-  }
-
-  &__input::placeholder {
-    color: $dark_shade_75;
-  }
-
-  &__input--width-correction {
-    min-width: 260px;
-    padding-left: 14px;
-    padding-top: 11px;
+    
+    &::placeholder {
+      color: $dark_shade_75;
+    }
+  
+    &--width-correction {
+      min-width: 260px;
+      padding-left: 14px;
+      padding-top: 11px;
+    }
   }
 
   &__button {

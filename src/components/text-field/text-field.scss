@@ -14,34 +14,41 @@
     font-size: 14px;
     line-height: 18px;
     color: $dark_shade_75;
+  
+      
+    &::placeholder {
+      font-size: 14px;
+      line-height: 18px;
+      color: $dark_shade_25;
+    }
+
+    &--hovered {
+      font-size: 14px;
+      line-height: 24px;
+      padding-top: 9px;
+      padding-bottom: 10px;
+      padding-left: 13px;
+      letter-spacing: -0.01em;
+    }
   }
 
-  &__input::placeholder {
-    font-size: 14px;
-    line-height: 18px;
-    color: $dark_shade_25;
+
+  &__container {
+    &--mb-8 {
+      margin-bottom: 8px;
+    }
+
+    &--mb-9 {
+      margin-bottom: 9px;
+    }
+
+    &--mb-10 {
+      margin-bottom: 10px;
+    }
   }
 
-  &__input--hovered {
-    font-size: 14px;
-    line-height: 24px;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 13px;
-    letter-spacing: -0.01em;
-  }
 
-  &__container--mb-8 {
-    margin-bottom: 8px;
-  }
-
-  &__container--mb-9 {
-    margin-bottom: 9px;
-  }
-
-  &__container--mb-10 {
-    margin-bottom: 10px;
-  }
+  // Fix bem naming
 
   &__input--pb-for-etf {
     padding-bottom: 11px;
