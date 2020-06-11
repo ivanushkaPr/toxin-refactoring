@@ -18,7 +18,7 @@
     line-height: 24px;
     color: $dark_shade_75;
 
-    &_controls-opened {
+    &_border-color_dark-shade-50 {
       border: 1px solid rgba(31, 32, 65, 0.5);
     }
   }
@@ -43,9 +43,10 @@
     padding-right: 8px;
     padding-top: 5px;
     padding-bottom: 1px;
+    display: none;
 
-    &_closed {
-      display: none;
+    &_opened {
+      display: block;
     }
   }
 

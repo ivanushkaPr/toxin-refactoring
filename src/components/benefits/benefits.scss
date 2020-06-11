@@ -1,10 +1,6 @@
 .benefit {
   display: flex;
   max-width: 280px;
-
-  &_pading-top {
-    padding-top: 21.5px;
-  }
   
 
   &__container {
@@ -12,10 +8,22 @@
     padding-bottom: 19px;
     border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 
-    &_extra-margin {
+    &_pt_22 {
+      padding-top: 21.5px;
+    }
+
+    // Two following classes are previous extra-margin class    
+    &_pt_5 {
       padding-top: 5px;
+    }
+
+    &_mb_14 {
       margin-bottom: 14px;
     }
+
+
+
+
   }
 
   &__image{
@@ -26,15 +34,15 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    &_background_smile {
+    &_background-image_smile {
       background-image: url('./smile.jpg');
     }
 
-    &_background_building {
+    &_background-image_building {
       background-image: url('./location.jpg');
     }
     
-    &_background_bonfire {
+    &_background-image_bonfire {
       background-image: url('./whatshot.jpg');
     }
   }

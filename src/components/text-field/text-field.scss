@@ -21,15 +21,6 @@
       line-height: 18px;
       color: $dark_shade_25;
     }
-
-    &--hovered {
-      font-size: 14px;
-      line-height: 24px;
-      padding-top: 9px;
-      padding-bottom: 10px;
-      padding-left: 13px;
-      letter-spacing: -0.01em;
-    }
   }
 
 
@@ -49,8 +40,8 @@
 
 
   // Fix bem naming
-
-  &__input_pb-for-etf {
+  //&__input_pb-for-etf
+  &__input_pb_11 {
     padding-bottom: 11px;
   }
 

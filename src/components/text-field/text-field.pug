@@ -1,14 +1,20 @@
--
-  let text_field_config = {
-    contClassMods: 'none',
-    inputClassMods: 'none',
-    type: 'text',
-    blockquote: 'Email',
-    name: 'email',
-    value: '',
-  }
+mixin text-field({inputMarginBottom, hovered, type, placeholder, name, value})
+  -
+    const marginSize = [0, 8, 9, 10, 11, 14.4, 20];
 
-mixin text-field({blockMods, containerMods, inputClassMods, type, placeholder, name, value})
+    let sizeOfInputPaddingBottom;
+    if(marginSize.indexOf(inputMarginBottom)) {
+      sizeOfInputPaddingBottom = `text-field__input_pb_${marginSize[marginSize.indexOf(inputMarginBottom)]}`;
+    }
+
+    let hoverClass;
+    if(hovered) {
+      hoverClass = 'text-field__input_hover';
+    }
+
+    let inputClasses = `text-field__input ${ sizeOfInputPaddingBottom} ${hoverClass}`;
+    
+    
   div(class=`text-field ${blockMods}`)
-    div(class=`text-field__container ${containerMods}`)
-      input(class=`text-field__input ${inputClassMods}` type=`${type}` placeholder=`${placeholder}` name=`${name}` value=`${value}`)
+    div(class=`text-field__container`)
+      input(class=`${inputClasses}` type=`${type}` placeholder=`${placeholder}` name=`${name}` value=`${value}`)

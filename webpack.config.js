@@ -69,9 +69,9 @@ module.exports = {
       filename: './cards.html',
       inject: true
     }),
-    
+*/    
 
-/*
+
     new HtmlWebpackPlugin({
       template: './src/pages/form-elements.pug',
       filename: './form-elements.html',

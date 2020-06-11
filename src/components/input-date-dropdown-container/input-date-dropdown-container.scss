@@ -1,7 +1,4 @@
 .input-date-dropdown-container {
-  &_padding-top {
-    padding-top: 35px
-  }
   
   &_cards-margin-bottom {
     padding-bottom: 18px;
@@ -14,6 +11,10 @@
 
     &_margin-bottom {
       margin-bottom: 20.56px;
+    }
+
+    &_mt_35 {
+      padding-top: 35px
     }
   }
 }

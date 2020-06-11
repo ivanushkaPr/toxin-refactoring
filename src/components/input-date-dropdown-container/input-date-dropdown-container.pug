@@ -1,4 +1,9 @@
-mixin input-date-dropdown-container({mods, containerMods})
-  div(class=`input-date-dropdown-container ${mods}`)
-    div(class=`input-date-dropdown-container__container ${containerMods}`)
+mixin input-date-dropdown-container({marginTop})
+  -
+    let marginTopClass;
+    if(marginTop) {
+      marginTopClass = `input-date-dropdown-container__container_mt_${marginTop}`;
+    }
+  div(class=`input-date-dropdown-container`)
+    div(class=`input-date-dropdown-container__container ${marginTopClass}`)
       block

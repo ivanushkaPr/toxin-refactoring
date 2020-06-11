@@ -1,5 +1,17 @@
-mixin masked-text-field({blockMods, containerMods, inputClassMods, type, placeholder, name, value})
-  div(class=`masked-text-field ${blockMods}`)
-    div(class=`masked-text-field ${containerMods}`)
-      input(class=`masked-text-field__input ${inputClassMods}` type=`${type}` placeholder=`${placeholder}` name=`${name}` value=`${value}`)
+mixin masked-text-field({padding, margin, inputClassMods, type, placeholder, name, value})
+  -
+    let verticalPadding;
+    if(padding) {
+      verticalPadding = `masked-text-field__input_vertical-padding_12px`;
+    }
+
+    let marginBottom;
+    if(margin) {
+      marginBottom = `masked-text-field__input_margin-bottom_15px`;
+    }
+
+    const classes = `masked-text-field__input ${verticalPadding} ${marginBottom}`;
+  div(class=`masked-text-field`)
+    div(class=`masked-text-field`)
+      input(class=`${classes}` type=`${type}` placeholder=`${placeholder}` name=`${name}` value=`${value}`)
 

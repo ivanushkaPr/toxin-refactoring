@@ -1,7 +1,23 @@
-mixin benefit({contMods, containerMods, imageMods, descMods, nameMods, nameText, propMods, propText})
-  div(class=`benefit ${contMods}`)
-    div(class=`benefit__container ${containerMods}`)
-      div(class=`benefit__image ${imageMods}`)
+mixin benefit({paddings, margins, backgroundImage, nameText, propText})
+  -
+    let paddingMods;
+    if(paddings) {
+      paddingMods = `benefit__container_pt_${paddings}`;
+    }
+
+    let marginMods;
+    if(margins) {
+      marginMods = `benefit__container_mt_${margins}`;
+    }
+
+    let backgroundImageMod;
+    if(backgroundImage) {
+      backgroundImageMod = `benefit__image_background-image_${backgroundImage}`;
+    }
+  
+  div(class=`benefit`)
+    div(class=`benefit__container ${paddingMods} ${marginMods}`)
+      div(class=`benefit__image ${backgroundImageMod}`)
       div(class=`benefit__description ${descMods}`)
         p(class=`benefit__name ${nameMods}`) #{nameText}
         p(class=`benefit__property ${propMods}`) #{propText}

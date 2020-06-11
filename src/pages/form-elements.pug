@@ -7,6 +7,11 @@ include ../utils/mixins.pug
     UIColumnOne: {
       gridOne: {mods: "grid_margin-right-for-first-row"},
 
+
+      UIGuestDropdown: {
+        
+      },
+
       UITextField: {
         emailTextFieldContainer: {
           blockMods: ''
@@ -22,65 +27,18 @@ include ../utils/mixins.pug
           description: "default"
         },
         emailTextField: {
-          contClassMods: "none",
-          inputClassMods: "text-field__input--pb-for-etf",
+          inputMarginBottom: 11,
+          hovered: true,
           type: "email",
           placeholder: "Email ",
           name: "email",
           value: "",
         },
       },
-
-      UITextFieldHovered: {
-        emailTextFieldContainer: {
-          mods: "",
-          containerMods: "input_description_container__container--padding-top"
-        },
-        emailTextFieldDescription: {
-            containerMods: "",
-            contentMods: "",
-            description: "text field "
-          },
-        emailTextFieldState: {
-          containerMods: "",
-          contentMods: "input_description__content--font-weight-normal input_description__content--margins",
-          description: "hover / focus"
-        },
-        emailTextField: {
-          contClassMods: "none",
-          inputClassMods: "text-field__input--hovered",
-          type: "email",
-          placeholder: "Email",
-          name: "email-hovered",
-          value: "This is pretty awesome",
-        },
-      },
       
 
-      UIGuestDropdownClosed: {
-        guestDropdownContainer: {
-          mods: "",
-          containerMods: "input_description_container__container--padding-top"
-        },
-        guestDropdownDescription: {
-          containerMods: "",
-          contentMods: "",
-          description: "dropdown"
-        },
-        guestDropdownState: {
-          containerMods: "",
-          contentMods: "input_description__content--font-weight-normal input_description__content--margins",
-          description: "default"
-        },
-        guestDropdownDefault: {
-          contClassMods: "none",
-          inputClassMods: "",
-          type: "text",
-          placeholder: "Сколько гостей",
-          name: "guest_dropdown_default",
-          value: "",
-        },
-      },
+      
+
 
       UIMaskedTextField: {
         maskedTextFieldContainer: {
@@ -98,8 +56,8 @@ include ../utils/mixins.pug
           description: "default"
         },
         maskedTextField: {
-          contClassMods: "none",
-          inputClassMods: "masked-text-field-datepicker",
+          padding: false,
+          margin: false,
           type: "text",
           placeholder: "ДД.ММ.ГГГГ",
           name: "masked_text_field",
@@ -109,17 +67,17 @@ include ../utils/mixins.pug
      
       
       doubleDateDropdown: {
-        inputDateDropdownContainer: {mods: "", containerMods: "input-date-dropdown-container_padding-top"},
+        padding_top: 35,
+        inputDateDropdownContainer: {
+          marginTop: 35,
+        },
         inputDateDropdownDescriptionFirst: {
           containerMods: "",
           contentMods: "",
           description: "date dropdown"
       },
-    
 
         inputDateDropdownFirst: {
-          contClassMods: "none",
-          inputClassMods: "",
           type: "text",
           placeholder: "ДД.ММ.ГГГГ",
           name: "input_date_dropdown_default",
@@ -135,8 +93,6 @@ include ../utils/mixins.pug
         },
 
         inputDateDropdownSecond: {
-          contClassMods: "none",
-          inputClassMods: "",
           type: "text",
           placeholder: "ДД.ММ.ГГГГ",
           name: "input_date_dropdown_default",
@@ -169,8 +125,6 @@ include ../utils/mixins.pug
 
       UISubscriptionTextField: {
         subscriptionTextFieldDescription: {
-          containerMods: "input-description_padding-top-for-subscription-text-field",
-          contentMods: "",
           description: "subscription text field"
         },
         subscriptionTextField: {
@@ -183,7 +137,7 @@ include ../utils/mixins.pug
         },
       },
 
-      UIRoomQuantityDropdownClosed: {
+      UIRoomQuantityDropdown: {
         inputAndDescriptionWrapperRq: {mods: "input-and-description-wrapper_width_md "},
         inputDropdownRoomQuantityContainer: {
           mods: "input-description-container__container_padding-top-for-room-quantity",
@@ -200,60 +154,23 @@ include ../utils/mixins.pug
         },
         inputDropdownRoomQuantity: {
           properties: [["спальни", 2], ["кровати",2], ["ванные комнаты", 0], ],
-          controlsMods: "dropdown-room-quantity__controls_closed",
-          contClassMods: "",
-          inputClassMods: "",
+          showControls: false,
           type: "text",
           placeholder: "Выберите удобства",
           name: "input_dropdown_room_quantity",
           value: "2 спальни, 2 кровати...",
         },
-      },
-
-      UIRoomQuantityDropdownOpened: {
-        inputAndDescriptionWrapperRq: {mods: "input-and-description-wrapper_width_md"},
-        inputDropdownRoomQuantityContainer: {
-          mods: "",
-          containerMods: "input-description-container__container_padding-top-for-room-quantity-expanded"
-        },
-        inputDropdownRoomQuantityDescription: {
-          containerMods: "",
-          contentMods: "",
-          description: "dropdown"
-        },
-        inputDropdownRoomQuantityState: {
-          containerMods: "",
-          contentMods: "input-description__content_font-weight_normal input_description__content--_weight-regular-expanded",
-          description: "expanded"
-        },
-        inputDropdownRoomQuantity: {
-          properties: [["спальни", 2], ["кровати",2], ["ванные комнаты", 0], ],
-          controlsMods: "",
-          contClassMods: "",
-          inputClassMods: "dropdown_room_quantity__input--controls-opened ",
-          type: "text",
-          placeholder: "Выберите удобства",
-          name: "input_dropdown_room_quantity",
-          value: "2 спальни, 2 кровати...",
-        }, 
       },
 
 
       expandableCheckboxList: {
-        mods: "expandable-checkbox-list_padding-top",
+        paddingTopSize: 40,
         items: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор" , "Шампунь" , "Телевизор", "Шампунь", ],
         description: "expandable checkbox list"
       },
 
-      expandableCheckboxListOpened: {
-        mods: "expandable-checkbox-list_opened-its-padding-top",
-        items: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор" , "Шампунь" , "Телевизор", "Шампунь", ],
-        description: "expandable checkbox list",
-        buttonMods: "expandable-checkbox-list__button-open_opened",
-        listMods: "expandable-checkbox-list__list_opened"
-      },
-      benefitSmile: {contMods: "benefit_pading-top", imageMods: "benefit__image_background_smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"},
-      benefitBulding:  {contMods: "benefit_pading-top", imageMods: "benefit__image_background_building", nameText: "Удобство", propText: "Окно в каждой из спален"},
+      benefitSmile: {paddings: 22, backgroundImage: "smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"},
+      benefitBulding:  {paddings: 22, backgroundImage: "building", nameText: "Удобство", propText: "Окно в каждой из спален"},
     },
 
     UIColumnTwo: {

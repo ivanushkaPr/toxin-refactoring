@@ -1,17 +1,4 @@
 .expandable-checkbox-list {
-  &_padding-top {
-    padding-top: 40px;
-  }
-
-  &_opened-its-padding-top {
-    padding-top: 21px;
-  }
-
-  &_pt_16px {
-    padding-top: 16px;
-  }
-
-
   &__wrapper {
     position: relative;
     display: flex;
@@ -20,6 +7,18 @@
     width: 100%;
     max-width: 266px;
     word-break: break-all;
+
+    &_pt_40 {
+      padding-top: 40px;
+    }
+  
+    &_pt_21 {
+      padding-top: 21px;
+    }
+  
+    &_pt_16 {
+      padding-top: 16px;
+    }
   } 
 
   &__description {

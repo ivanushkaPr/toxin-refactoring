@@ -2,8 +2,10 @@
   position: relative;
   max-width: 266px;
 
-  &_mt {
-    margin-top: 24px;
+  &__container {
+    &_mt_24 {
+      margin-top: 24px;
+    }
   }
 
   &__input {
@@ -25,7 +27,7 @@
       color: $dark_shade_75;
     }
   
-    &_width-correction {
+    &_min-width_260 {
       min-width: 260px;
       padding-left: 14px;
       padding-top: 11px;
