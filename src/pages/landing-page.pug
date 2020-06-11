@@ -5,7 +5,7 @@ include ../utils/mixins.pug
   const landingPageConfiguration = {
     headerRegisterConfiguration: {
       mods: '',
-      containerMods: 'header_register__container--padding-vertical',
+      containerMods: 'header-register__container_padding-vertical',
       items: [
         {value: 'О нас', active: true, submenu: false, itemMods: 'header__item--margin-right-pages'},
         {value: 'Услуги', active: false, submenu: true, itemMods: 'header__item--margin-right-pages'},
@@ -15,19 +15,19 @@ include ../utils/mixins.pug
         ],
         buttonLogin: {
         buttonText: 'Войти', 
-        buttonMods: 'button__body--button__ellipse button__body--transparent_button_extra_fields button__body--header-size_sm button__body--header-margin_right',
+        buttonMods: 'button__body_button_ellipse button__body_transparent-button_extra-fields button__body_header-margin-right  button__body_header-size_sm',
         link: true,
         href: 'https://mock-address.ru/login.php'
       },
       buttonRegister: {
         buttonText: 'Зарегистрироваться',
-        buttonMods: 'button__body--button__ellipse button__body--background_linear_gradient__purple button__body--small_vertical_padding button__body--header-size_sm',
+        buttonMods: 'button__body_button_ellipse button__body_background-linear-gradient_purple button__body_small-vertical-padding button__body_header-size_sm',
         link: true,
         href: 'https://mock-address.ru/register.php'
       },
     },
     searchRoomConfiguration: {
-      mods: 'search_room--position-absolute-lp',
+      mods: 'search-room_position-absolute-lp',
       containerMods: '',
       send_to: 'https://www.mock-adress/full-stack-development.ru',
       form_name: 'search_room',
@@ -36,7 +36,7 @@ include ../utils/mixins.pug
     },
 
     double_date_dropdown: {
-      inputDateDropdownContainer: {mods: 'input_date_dropdown_container--cards-margin-bottom'},
+      inputDateDropdownContainer: {mods: 'input-date-dropdown-container_cards-margin-bottom'},
       inputDateDropdownDescriptionFirst:  {
         containerMods: "",
         contentMods: "",
@@ -98,15 +98,15 @@ include ../utils/mixins.pug
         value: '',
       },
       input_dropdown_guests: {
-        containerMods: 'input_dropdown_guests--margin-bottom-on-cards-page',
+        containerMods: 'input-dropdown-guests_margin-bottom-on-cards-page',
         properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
-        controlsMods: 'input_dropdown_guests__controls--closed',
-        inputClassMods: 'input_dropdown_guests__input--controls-closed ',
+        controlsMods: 'input-dropdown-guests__controls_closed',
+        inputClassMods: 'input-dropdown-guests__input_controls-closed ',
         type: 'text',
         placeholder: 'Сколько гостей',
         name: 'input_dropdown_guests__input',
         value: '',
-        resetMods: 'input_dropdown_guests__button_reset--hidden'
+        resetMods: 'input-dropdown-guests__button-reset--hidden'
       }, 
       button_wide: {
         buttonText: 'подобрать номер',
@@ -116,13 +116,13 @@ include ../utils/mixins.pug
     footerConfiguration: {
       sendTo: 'https://www.mock-adress/full-stack-development.ru',
       formName: 'subscribe',
-      mods: 'footer--pt-lp',
+      mods: 'footer_pt-lp',
       info: [
         'Бронирование номеров в лучшем',
         'отеле 2019 года по версии',
         'ассоциации «‎Отельные взгляды».',
       ],
-      navContMods: 'footer__navcont--min-width-pages',
+      navContMods: 'footer__navcont_min-width-pages',
       lists: {
         menu1: {
           headline: 'Навигация', 
@@ -159,8 +159,8 @@ include ../utils/mixins.pug
         descript: ['Получайте специальные', 'предложения и новости сервиса']
       },
       subscriptionTextField: {
-        contClassMods: 'subscription_text_field--mt',
-        inputClassMods: 'subscription_text_field__input--width-correction',
+        containerMods: 'subscription-text-field_mt',
+        inputClassMods: 'subscription-text-field__input_width-correction',
         type: 'Email',
         placeholder: 'Email',
         name: 'subscription_text_field',

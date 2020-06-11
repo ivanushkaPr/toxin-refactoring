@@ -5,29 +5,29 @@ include ../utils/mixins.pug
  const filterPageConfiguration = {
     headerRegisterConfiguration: {
       mods: '',
-      containerMods: 'header_register__container--padding-vertical',
+      containerMods: 'header-register__container_padding-vertical',
       items: [
-        {value: 'О нас', active: true, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Услуги', active: false, submenu: true, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Вакансии', active: false, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Новости', active: false, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Соглашения', active: false, submenu: true, itemMods: 'header__item--margin-right-pages'},
+        {value: 'О нас', active: true, submenu: false, itemMods: 'header-register__item_margin-right-pages'},
+        {value: 'Услуги', active: false, submenu: true, itemMods: 'header-register__item_margin-right-pages'},
+        {value: 'Вакансии', active: false, submenu: false, itemMods: 'header-register__item_margin-right-pages'},
+        {value: 'Новости', active: false, submenu: false, itemMods: 'header-register__item_margin-right-pages'},
+        {value: 'Соглашения', active: false, submenu: true, itemMods: 'header-register__item_margin-right-pages'},
         ],
         buttonLogin: {
         buttonText: 'Войти', 
-        buttonMods: 'button__body--button__ellipse button__body--small_vertical_padding_transparent button__body--header-size_sm button__body--header-margin_right',
+        buttonMods: 'button__body_button_ellipse button__body_header-size_sm button__body_header-margin-right',
         link: true,
         href: 'https://mock-address.ru/login.php'
       },
       buttonRegister: {
         buttonText: 'Зарегистрироваться',
-        buttonMods: 'button__body--button__ellipse button__body--background_linear_gradient__purple button__body--small_vertical_padding button__body--header-size_sm',
+        buttonMods: 'button__body_button_ellipse button__body_background-linear-gradient_purple button__body_header-size_sm',
         link: true,
         href: 'https://mock-address.ru/register.php'
       },
     },
     inputFilterDateDropdownDescription: {
-        containerMods: 'input_description__container--margin-top-29px',
+        containerMods: 'input-description__container_margin-top_29px',
         contentMods: '',
         description: 'Даты пребывания в отеле'
       },
@@ -39,13 +39,13 @@ include ../utils/mixins.pug
         placeholder: 'ДД.ММ.ГГГГ',
         name: 'input_date_dropdown_default',
         value: '19 авг - 23 авг',
-        calendarID: 'input_filter_date_dropdown--calendar'
+        calendarID: 'input-filter-date-dropdown__calendar'
       },
 
-      inputDropdownGuestsDescription: {containerMods: 'input_description__container--mt-20px',contentMods: '', description: 'Гости'},
+      inputDropdownGuestsDescription: {containerMods: 'input-description__container_mt_20px',contentMods: '', description: 'Гости'},
       inputDropdownGuests: {
         properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
-        controlsMods: 'input_dropdown_guests__controls--closed ',
+        controlsMods: 'input-dropdown-guests__controls_closed ',
         contClassMods: '',
         inputClassMods: '',
         type: 'text',
@@ -57,7 +57,7 @@ include ../utils/mixins.pug
 
       slider: {
         id: 'slider',
-        containerMods: 'slider__container--pt-30px',
+        containerMods: 'slider__container_pt_30px',
         description: 'Диапазон цены',
         rangeSelected: '5 000₽ - 10 000₽',
         slider__range: '',
@@ -65,7 +65,7 @@ include ../utils/mixins.pug
       },
 
       checkboxButtons: {
-        containerMods: 'checkbox_buttons__container--mt-56px',
+        containerMods: 'checkbox-buttons__container_mt_56px',
         descMods: '',
         description: 'checkbox buttons', 
         items:['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'], 
@@ -73,19 +73,19 @@ include ../utils/mixins.pug
 
       richCheckboxButtons: {
         mods: '',
-        containerMods: 'rich_checkbox_buttons__container-mt-29px',
+        containerMods: 'rich-checkbox-buttons__container_mt_29px',
         description: 'Доступность',
         items:[['Широкий коридор', 'Ширина коридоров в номере не менее 91 см.'], ['Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.']],
       },
 
       inputDropdownRoomQuantityDescription: {
-        containerMods: 'input_description__container--mt-30px',
+        containerMods: 'input-description__container_mt_30px',
         contentMods: '',
         description: 'Удобства номера'
       },
       inputDropdownRoomQuantity: {
         properties: [['спальни', 2], ['кровати',2], ['ванные комнаты', 0]],
-        controlsMods: 'dropdown_room_quantity__controls--closed',
+        controlsMods: 'dropdown-room-quantity__controls_closed',
         contClassMods: '',
         inputClassMods: '',
         type: 'text',
@@ -96,46 +96,46 @@ include ../utils/mixins.pug
 
       expandableCheckboxList: {
         mods: '',
-        containerMods: 'expandable_checkbox_list--pt-16px',
+        containerMods: 'expandable-checkbox-list_pt_16px',
         items: ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор' , 'Шампунь' , 'Телевизор', 'Шампунь'],
         description: 'expandable checkbox list'
       },
       roomsHeadline: {
         containerMods: '',
-        mods: 'component_headline__text--vertical-margin component_headline__text--max-width-auto component_headline__text--text-align-center',
+        mods: 'component-headline__text_vertical-margin component-headline__text_max-width_auto component-headline__text_text-align_center',
         description: 'Номера, которые мы для вас подобрали'
       },
       rooms: [
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 5, imagesMods: '', carouselID: 'carousel-1', controlsID: 'controls-1', dotsID: 'dots-1', imageOne: 'room__image--background-1',  imageTwo: 'room__image--background-2', imageThree: 'room__image--background-3', imageFour: 'room__image--background-4', specialChar: '№', roomNumber: '888', status:'люкс', price: '9 990₽ ', period: 'в сутки', ammount: 145},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 4, imagesMods: '', carouselID: 'carousel-2', controlsID: 'controls-2', dotsID: 'dots-2', imageOne: 'room__image--background-2', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '840', status:'', price: '9 990₽ ', period: 'в сутки', ammount: 65},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-3', controlsID: 'controls-3', dotsID: 'dots-3', imageOne: 'room__image--background-3', imageTwo: 'room__image--background-4', imageThree: 'room__image--background-5', imageFour: 'room__image--background-6', specialChar: '№', roomNumber: '980', status:'люкс', price: '8 500₽ ', period: 'в сутки', ammount: 35},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 5, imagesMods: '', carouselID: 'carousel-4', controlsID: 'controls-4', dotsID: 'dots-4', imageOne: 'room__image--background-4', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '856', status:'', price: '7 300₽ ', period: 'в сутки', ammount: 19},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 4, imagesMods: '', carouselID: 'carousel-5', controlsID: 'controls-5', dotsID: 'dots-5', imageOne: 'room__image--background-5', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '740', status:'', price: '6 000₽ ', period: 'в сутки', ammount: 44},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-6', controlsID: 'controls-6', dotsID: 'dots-6', imageOne: 'room__image--background-6', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '982', status:'', price: '5 800₽ ', period: 'в сутки', ammount: 56},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 5, imagesMods: '', carouselID: 'carousel-7', controlsID: 'controls-7', dotsID: 'dots-7', imageOne: 'room__image--background-7', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '678', status:'', price: '5 500₽ ', period: 'в сутки', ammount: 45},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 4, imagesMods: '', carouselID: 'carousel-8', controlsID: 'controls-8', dotsID: 'dots-8', imageOne: 'room__image--background-8', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '450', status:'', price: '5 300₽ ', period: 'в сутки', ammount: 39},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-9', controlsID: 'controls-9', dotsID: 'dots-9', imageOne: 'room__image--background-9', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '350', status:'', price: '5 000₽ ', period: 'в сутки', ammount: 77},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 5, imagesMods: '', carouselID: 'carousel-10', controlsID: 'controls-10', dotsID: 'dots-10', imageOne: 'room__image--background-10', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '666', status:'', price: '5 000₽ ', period: 'в сутки', ammount: 25},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-11', controlsID: 'controls-11', dotsID: 'dots-11', imageOne: 'room__image--background-11', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '444', status:'', price: '5 000₽ ', period: 'в сутки', ammount: 15},
-        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-12', controlsID: 'controls-12', dotsID: 'dots-12', imageOne: 'room__image--background-12', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '352', status:'', price: '5 000₽ ', period: 'в сутки', ammount: 55},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 5, imagesMods: '', carouselID: 'carousel-1', controlsID: 'controls-1', dotsID: 'dots-1', imageOne: 'room__image_background-1',  imageTwo: 'room__image--background-2', imageThree: 'room__image--background-3', imageFour: 'room__image--background-4', specialChar: '№', roomNumber: '888', status:'люкс', price: '9 990₽ ', period: 'в сутки', ammount: 145},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 4, imagesMods: '', carouselID: 'carousel-2', controlsID: 'controls-2', dotsID: 'dots-2', imageOne: 'room__image_background-2', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '840', status:'', price: '9 990₽ ', period: 'в сутки', ammount: 65},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-3', controlsID: 'controls-3', dotsID: 'dots-3', imageOne: 'room__image_background-3', imageTwo: 'room__image--background-4', imageThree: 'room__image--background-5', imageFour: 'room__image--background-6', specialChar: '№', roomNumber: '980', status:'люкс', price: '8 500₽ ', period: 'в сутки', ammount: 35},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 5, imagesMods: '', carouselID: 'carousel-4', controlsID: 'controls-4', dotsID: 'dots-4', imageOne: 'room__image_background-4', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '856', status:'', price: '7 300₽ ', period: 'в сутки', ammount: 19},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 4, imagesMods: '', carouselID: 'carousel-5', controlsID: 'controls-5', dotsID: 'dots-5', imageOne: 'room__image_background-5', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '740', status:'', price: '6 000₽ ', period: 'в сутки', ammount: 44},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-6', controlsID: 'controls-6', dotsID: 'dots-6', imageOne: 'room__image_background-6', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '982', status:'', price: '5 800₽ ', period: 'в сутки', ammount: 56},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 5, imagesMods: '', carouselID: 'carousel-7', controlsID: 'controls-7', dotsID: 'dots-7', imageOne: 'room__image_background-7', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '678', status:'', price: '5 500₽ ', period: 'в сутки', ammount: 45},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 4, imagesMods: '', carouselID: 'carousel-8', controlsID: 'controls-8', dotsID: 'dots-8', imageOne: 'room__image_background-8', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '450', status:'', price: '5 300₽ ', period: 'в сутки', ammount: 39},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-9', controlsID: 'controls-9', dotsID: 'dots-9', imageOne: 'room__image_background-9', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '350', status:'', price: '5 000₽ ', period: 'в сутки', ammount: 77},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 5, imagesMods: '', carouselID: 'carousel-10', controlsID: 'controls-10', dotsID: 'dots-10', imageOne: 'room__image_background-10', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '666', status:'', price: '5 000₽ ', period: 'в сутки', ammount: 25},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-11', controlsID: 'controls-11', dotsID: 'dots-11', imageOne: 'room__image_background-11', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '444', status:'', price: '5 000₽ ', period: 'в сутки', ammount: 15},
+        {blockMods: '', containerMods: 'room--mb-27px', rating: 3, imagesMods: '', carouselID: 'carousel-12', controlsID: 'controls-12', dotsID: 'dots-12', imageOne: 'room__image_background-12', imageTwo: 'room__image--background-3', imageThree: 'room__image--background-4', imageFour: 'room__image--background-5', specialChar: '№', roomNumber: '352', status:'', price: '5 000₽ ', period: 'в сутки', ammount: 55},
       ],
 
       pagination: {
-        blockMods: 'pagination--negative-margin ',
-        containerMods: 'pagination__container--align-center',
+        blockMods: 'pagination_negative-margin ',
+        containerMods: '',
         list: [[true, 1], [false, 2], [false, 3], [false, '...'], [false, 15]],
         description: '1 – 12 из 100+ вариантов аренды'
       },
     footerConfiguration: {
       sendTo: 'https://www.mock-adress/full-stack-development.ru',
       formName: 'subscribe',
-      mods: 'footer--pt-lp',
+      mods: 'footer_pt-lp',
       info: [
         'Бронирование номеров в лучшем',
         'отеле 2019 года по версии',
         'ассоциации «‎Отельные взгляды».',
       ],
-      navContMods: 'footer__navcont--min-width-pages',
+      navContMods: 'footer__navcont_min-width-pages',
       lists: {
         menu1: {
           headline: 'Навигация', 
