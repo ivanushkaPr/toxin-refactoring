@@ -1,23 +1,19 @@
-mixin UIColumnTwo({gridTwo, checkboxButtons, inputDescriptionRadioButtons, radioButtons, inputDescriptionToggle, toggleChecked,toggle, inputDescriptionLikeButton, likeButtonContainer, likeButtonOne, likeButtonTwo, inputDescriptionRateButton, rateButtonOne, rateButtonTwo, inputDescriptionIdp, inputDropdownGuests, richCheckboxButtons})
+mixin UIColumnTwo({gridTwo, checkboxButtons, inputDescriptionRadioButtons, radioButtons, inputDescriptionToggle, toggle, inputDescriptionLikeButton, likeButtonContainer, likeButtonOne, inputDescriptionRateButton, rateButtonOne, inputDescriptionIdp, inputDropdownGuests, richCheckboxButtons})
   +grid(gridTwo)
     +checkbox-buttons(checkboxButtons)
     +input-description(inputDescriptionRadioButtons)
     +radio-buttons(radioButtons)
 
     +input-description(inputDescriptionToggle)
-    +toggle(toggleChecked)
     +toggle(toggle)
 
     +input-description(inputDescriptionLikeButton)
     +like-button-container(likeButtonContainer)
       +like-button(likeButtonOne)
-      +like-button(likeButtonTwo)
 
     +input-description(inputDescriptionRateButton)
     div(class="rate-button__container")
       +rate-button(rateButtonOne)
-      +rate-button(rateButtonTwo)
-
 
     +input-description(inputDescriptionIdp)
     +input-dropdown-guests(inputDropdownGuests)

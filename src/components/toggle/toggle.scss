@@ -1,16 +1,22 @@
 .toggle {
-  &__label {
-    display: flex;
-    align-items: center;
-  
+
+  &__container {
     &_mb_22 {
       margin-bottom: 22px;
     }
   
-    &_mb {
+    &_mb_11 {
       margin-bottom: 11px;
     }
   }
+
+  &__label {
+    display: flex;
+    align-items: center;
+
+  }
+
+
 
   &__checkbox {
     display: none;

@@ -2,16 +2,17 @@
   position: relative;
   max-width: 320px;
 
-  &_margin-bottom-on-cards-page {
-    margin-bottom: 31px;
-  }
 
-  &_margin-bottom-in-balance-component {
-    margin-bottom: 7.56px;
-  }
+  &__cont { 
+//  &_margin-bottom-on-cards-page,  &__container_margin-bottom-search-room
+    &_mb_31 {
+      margin-bottom: 31px;
+    }
 
-  &__container_margin-bottom-search-room {
-    margin-bottom: 31px;
+//&_margin-bottom-in-balance-component 
+    &_mb_8 {
+      margin-bottom: 7.56px;
+    }
   }
 
   &__input {
@@ -24,7 +25,7 @@
       background: #FFFFFF;
       border: 1px solid rgba(31, 32, 65, 0.25);
       box-sizing: border-box;
-      border-radius: 2px 2px 0px 0px;
+      border-radius: 2px 2px 2px 2px;
       font-family: 'montserrat', Arial, sans-serif;
       font-weight: normal;
       font-size: 14px;
@@ -32,17 +33,16 @@
       color: $dark_shade_75;
 
       
-    &_mb_8px {
+    &_mb_8 {
       margin-bottom: 8px;
     }
 
-
-    &_controls_opened {
+    &_border-color_dark-shade-50 {
       border-color: $dark_shade_50;
     }
 
-    &_controls_closed {
-      border-radius: 2px;
+    &_border-bottom-radius-0 {
+      border-radius: 2px 2px 0px 0px;
     }
   }
 
@@ -67,7 +67,7 @@
     padding-right: 7px;
     padding-top: 4px;
 
-    &_closed {
+    &_hidden {
       display: none;
     }
   }
@@ -121,6 +121,10 @@
     border-color: $dark_shade_5;
   }
 
+  &__substract-button.disabled svg, &__add-button.disabled svg {
+    fill:  $dark_shade_5;
+  }
+
 
   &__total {
     display: flex;
@@ -156,10 +160,6 @@
 
   &__button-reset {
     color:  $dark_shade_50;
-
-    &_hidden {
-      visibility: hidden;
-    }
   }
 
   &__button-apply {

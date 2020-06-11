@@ -169,8 +169,8 @@ include ../utils/mixins.pug
         description: "expandable checkbox list"
       },
 
-      benefitSmile: {paddings: 22, backgroundImage: "smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"},
-      benefitBulding:  {paddings: 22, backgroundImage: "building", nameText: "Удобство", propText: "Окно в каждой из спален"},
+      benefitSmile: {paddingTopPx: 22, backgroundImage: "smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"},
+      benefitBulding:  {paddingTopPx: 22, backgroundImage: "building", nameText: "Удобство", propText: "Окно в каждой из спален"},
     },
 
     UIColumnTwo: {
@@ -180,8 +180,7 @@ include ../utils/mixins.pug
       radioButtons: {options: [["Мужчина", true], ["Женщина", false]]},
 
       inputDescriptionToggle: {containerMods: "input_description__contatiner--vertical-padding-near-toggle",contentMods: "", description: "toggle"},
-      toggleChecked: {checked: true, descText: "Получать спецпредложения", labelMods: "toggle__label--mb"},
-      toggle: {descText: "Получать спецпредложения"},
+      toggle: { containerMarginBottom: 22, descText: "Получать спецпредложения" },
 
 
 
@@ -189,33 +188,27 @@ include ../utils/mixins.pug
       inputDescriptionLikeButton: {containerMods: "input_description__container--vertical-padding-near-like-button",contentMods: "", description: "like button"},
       likeButtonContainer: {},
       likeButtonOne: {count: 2},
-      likeButtonTwo: {buttonMods: "like-button__add_pressed", counterMods: "like-button__counter_button-pressed",count: 12},
 
 
       inputDescriptionRateButton: {containerMods: "input-description__container_vertical-padding-near-rate-button",contentMods: "", description: "rate button"},
 
       
       rateButtonOne: {checkboxes: [1,2,3,4,5], rating: 4},
-      rateButtonTwo: {checkboxes: [1,2,3,4,5], rating: 5},
+      
 
       inputDescriptionIdp: {containerMods: "input-description__container_pp-guest-dropdown",contentMods: "", description: "dropdown"},
 
 
       inputDropdownGuests: {
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
-        controlsMods: "",
-        contClassMods: "",
-        inputClassMods: "input_dropdown_guests__input--controls-opened",
         type: "text",
         placeholder: "Сколько гостей",
         name: "input_dropdown_guests__input",
         value: "",
-        resetMods: "input-dropdown-guests__button-reset_hidden"
+        controlsOpened: true,
       }, 
 
       richCheckboxButtons: {
-        containerMods: "rich-checkbox-buttons__container_padding-top",
-        mods: "",
         description: "rich checkbox buttons",
         items:[["Широкий коридор", "Ширина коридоров в номере не менее 91 см."], ["Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера."]],
       },
@@ -252,20 +245,7 @@ include ../utils/mixins.pug
         description: "1 – 12 из 100+ вариантов аренды"
       },
 
-      inputDescriptionIdgSelected: {containerMods: "input_description__container--padding-top-guest-dropdown-block",contentMods: "", description: "dropdown"},
 
-
-      inputDropdownGuestsSelected: {
-        properties: [["взрослые", 2], ["дети", 1], ["младенцы", 0],],
-        controlsMods: "",
-        contClassMods: "",
-        inputClassMods: "input-dropdown-guests__input_controls_opened",
-        type: "text",
-        placeholder: "3 гостя",
-        name: "input_dropdown_guests__input",
-        value: "",
-        resetMods: ""
-      },
       bulletList: {
         containerMods: "bullet-list__container_padding-top",
         descMods: "",

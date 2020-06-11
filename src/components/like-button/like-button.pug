@@ -1,5 +1,12 @@
-mixin like-button({containerMods, buttonMods, counterMods, count})
+mixin like-button({containerOuterFields, count})
+  -
+    let containerMarginMod = '';
+
+    if(containerOuterFields) {
+      containerMarginMod = `like-button__container_margin_${containerOuterFields}`
+    }
+
   div(class=`like-button`)
-    div(class=`like-button__container ${containerMods}`)
-      button(class=`like-button__add ${buttonMods}` type='button')
-          p(class=`like-button__counter ${counterMods}`) #{count}
+    div(class=`like-button__container ${containerMarginMod}`)
+      button(class=`like-button__add ` type='button')
+          p(class=`like-button__counter`) #{count}

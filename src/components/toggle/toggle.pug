@@ -1,9 +1,15 @@
-mixin toggle({containerMods, labelMods, checked, descText})
+mixin toggle({containerMarginBottom, checked, descText})
+  -
+    let containerMarginBottomMod = '';
+    if(containerMarginBottom) {
+      containerMarginBottomMod = `toggle__container_mb_${containerMarginBottom}`;
+    }
   div(class=`toggle`)
-    div(class=`toggle ${containerMods}`)
-      label(class=`toggle__label ${labelMods}`)
+    div(class=`toggle__container ${containerMarginBottomMod}`)
+      label(class=`toggle__label`)
         if(checked)
           input(class=`toggle__checkbox` type='checkbox' checked)
-        input(class=`toggle__checkbox` type='checkbox')
+        else
+          input(class=`toggle__checkbox` type='checkbox')
         div(class=`toggle__fake-checkbox`)
         p(class=`toggle__description`) #{descText}

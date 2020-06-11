@@ -1,8 +1,14 @@
-mixin checkbox-buttons({containerMods, descMods, description, listMods, items})
+mixin checkbox-buttons({containerMarginTop, description, items})
+  -
+    let containerMarginTopMod = '';
+    if(containerMarginTop) {
+      containerMarginTopMod = `checkbox-buttons__container_mt_${containerMarginTop}`;
+    }
+
   div(class=`checkbox-buttons`)
-    div(class=`checkbox-buttons__container ${containerMods}`)
-      p(class=`checkbox-buttons__description ${descMods}`) #{description}
-      ul(class=`checkbox-buttons__list ${listMods}`)
+    div(class=`checkbox-buttons__container ${containerMarginTopMod}`)
+      p(class=`checkbox-buttons__description`) #{description}
+      ul(class=`checkbox-buttons__list`)
         each item in items
           label(class=`checkbox-buttons__label`)
             input(class=`checkbox-buttons__input` type=`checkbox`) 

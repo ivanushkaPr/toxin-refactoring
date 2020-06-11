@@ -1,13 +1,13 @@
-mixin benefit({paddings, margins, backgroundImage, nameText, propText})
+mixin benefit({paddingTopPx, marginBottomPx, backgroundImage, nameText, propText})
   -
     let paddingMods;
-    if(paddings) {
-      paddingMods = `benefit__container_pt_${paddings}`;
+    if(paddingTopPx) {
+      paddingMods = `benefit__container_pt_${paddingTopPx}`;
     }
 
     let marginMods;
-    if(margins) {
-      marginMods = `benefit__container_mt_${margins}`;
+    if(marginBottomPx) {
+      marginMods = `benefit__container_mt_${marginBottomPx}`;
     }
 
     let backgroundImageMod;

@@ -1,10 +1,15 @@
 .like-button {
 
-
-  &_margin-in-review-block {
-    margin-right: 14.31px;
-    margin-top: 2px;
-    margin-left: 4px;
+//&_margin-in-review-block {
+//  margin-right: 14.31px;
+//  margin-top: 2px;
+//  margin-left: 4px;
+  &__container {
+    &_margin_15-2-4 {
+      margin-right: 14.31px;
+      margin-top: 2px;
+      margin-left: 4px;
+    }
   }
 
   &__add {
@@ -25,11 +30,6 @@
       border-color: $purple;
       background-image: url('./heartPurple.png');
     }
-  
-    &_pressed {
-      border-color: $purple;
-      background-image: url('./heartPurple.png');
-    }
   }
 
   &__add:active &__counter {
@@ -46,9 +46,5 @@
     font-size: 10px;
     line-height: 12px;
     color: $dark_shade_25;
-  
-    &_button-pressed {
-      color: $purple;
-    }
   }
 }
