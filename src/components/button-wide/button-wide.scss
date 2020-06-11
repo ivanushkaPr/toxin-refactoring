@@ -18,10 +18,6 @@
   display: flex;
   justify-content: center;
 
-  &_negative-margin-top {
-    margin-top: -2px;
-  }
-
   &__text {
     margin: 0px;
   }
@@ -37,7 +33,7 @@
     border: none;
     cursor: pointer;
 
-    &_margin-botoom {
+    &_mb_30 {
       margin-bottom: 30px;
     }
   }

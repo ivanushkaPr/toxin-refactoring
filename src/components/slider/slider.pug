@@ -1,7 +1,13 @@
-mixin slider({containerMods, headerMods, descMods, description, selRangeMods, rangeSelected, rangeMods, id})
+mixin slider({containerPaddingTop,  description, rangeSelected,id})
+  -
+    let containerPaddingTopMod = '';
+    if(containerPaddingTop) {
+      containerPaddingTopMod = `slider__container_pt_${containerPaddingTop}`;
+    }
+
   div(class=`slider`)
-    div(class=`slider__container ${containerMods}`)
-      div(class=`slider__header ${headerMods}`)
-        p(class=`slider__description ${descMods}`) #{description}
-        p(class=`slider__selected-range ${selRangeMods}`) #{rangeSelected}
-      div(class=`slider__range ${rangeMods}` id=`${id}`)
+    div(class=`slider__container ${containerPaddingTopMod}`)
+      div(class=`slider__header`)
+        p(class=`slider__description`) #{description}
+        p(class=`slider__selected-range`) #{rangeSelected}
+      div(class=`slider__range` id=`${id}`)

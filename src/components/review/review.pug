@@ -1,11 +1,24 @@
-mixin review({containerMods, userMods, image, name, date, text})
+mixin review({containerMarginTop, imageName, name, date, text})
+  -
+    let containerMarginTopMod = ''
+    if(containerMarginTop) {
+      containerMarginTopMod = 'review__container_mt_23';
+    }
+
+    let imageBackgroundMod = '';
+    if(imageName === 'man') {
+      imageBackgroundMod = 'review__photo_background-image_man';
+    } else if(imageName = 'girl') {
+      imageBackgroundMod = 'review__photo_background-image_girl';
+    }
+
   div(class=`review`)
-    div(class=`review__container ${containerMods}`)
-      div(class=`review__user ${userMods}`)
-        div(class=`review__photo  ${image}`)
+    div(class=`review__container ${containerMarginTopMod}`)
+      div(class=`review__user`)
+        div(class=`review__photo  ${imageBackgroundMod}`)
         div(class=`review__info`) 
           p(class=`review__name`) #{name}
           p(class=`review__date`) #{date}
       div(class=`review__feedback`)
-        +like-button({buttonMods: 'like-button__add_pressed like-button_margin-in-review-block', counterMods: 'like_button__counter_button-pressed',count: 12})
+        +like-button({containerOuterFields: '15-2-4', count: 12})
         p(class=`review__text`) #{text}

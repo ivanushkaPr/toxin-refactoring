@@ -1,7 +1,29 @@
-mixin bullet-list({containerMods, descMods, description, items, item})
+mixin bullet-list({containerPaddingTop, fontSizeBg, openSans, textTransformNone, description, items, item})
+  -
+    let containerPaddingTopMod = '';
+    if(containerPaddingTop) {
+      containerPaddingTopMod = 'bullet-list__container_pt_87';
+    }
+
+    let descriptionFontSize = '';
+    if(fontSizeBg) {
+      descriptionFontSize = 'bullet-list__description_font-size_bg'; 
+    }
+
+    let fontfamilyOpenSans = '';
+    if(openSans) {
+      fontfamilyOpenSans = 'bullet-list__description_font-family_open-sans';
+    }
+
+    let textTransformCancel = '';
+    if(textTransformNone) {
+      textTransformCancel = 'bullet-list__description_text-transform_none';
+    }
+
+    textTransformNone
   div(class=`bullet-list`)
-    div(class=`bullet-list__container ${containerMods}`)
-      p(class=`bullet-list__description ${descMods}`) #{description}
+    div(class=`bullet-list__container ${containerPaddingTopMod}`)
+      p(class=`bullet-list__description ${descriptionFontSize} ${fontfamilyOpenSans} ${textTransformCancel}`) #{description}
       ul(class=`bullet-list__list`)
         each item in items
           li(class=`bullet-list__item`) #{item}

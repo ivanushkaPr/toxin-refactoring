@@ -32,7 +32,6 @@
     &_extra-padding {
       padding: 13px 26px 14px 26px;
     }
-
     
     &_transparent-button_extra-fields {
       padding-top: 7px;
@@ -53,10 +52,6 @@
       color: $purple;
     }
 
-    &_button-ellipse-active {
-      border-color: rgba(	188,	156,	255, 0.5);
-    }
-
     &_background-linear-gradient_purple {
       border: none;
       background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -64,14 +59,12 @@
       padding: 14px 19px 15px 19px;
     }
   
-    &_background-linear-gradient_purple-active {
-      background-image: linear-gradient(180deg, rgba(	188,	156,	255, 0.5) 0%,  rgba(139,	164,	249, 0.5) 100%);
-    }
-  
     &_background-linear-gradient_purple:active {
       background-image: linear-gradient(180deg, rgba(	188,	156,	255, 0.5) 0%,  rgba(139,	164,	249, 0.5) 100%);
       color: white; 
     }
+
+    // Стиля для кнопок в хедере.
   
     &_header-size_sm {
       margin-top: 0px;

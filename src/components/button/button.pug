@@ -1,6 +1,15 @@
-mixin button({contMods, containerMods, link, buttonMods, type, href, buttonText})
-  div(class=`button ${contMods}`)
-    div(class=`button__container ${containerMods}`)
+mixin button({buttonType, link, type, href, buttonText})
+  -
+    let buttonMods = '';
+    if(buttonType === 'transparent') {
+      buttonMods = `button__body_button_ellipse`;
+    } else if(buttonType === 'gradient') {
+      buttonMods = `button__body_button_ellipse button__body_background-linear-gradient_purple`;
+    } else {
+      buttonMods = ``;
+    }
+  div(class=`button`)
+    div(class=`button__container`)
       if(link === true)
         button(class=`button__body ${buttonMods}` type=`${type}`)
           a(class=`button__link` href=`${href}`) #{buttonText}

@@ -1,6 +1,6 @@
-mixin pagination({blockMods, containerMods, list, description})
-  div(class=`pagination ${blockMods}`)
-    div(class=`pagination ${containerMods}`)
+mixin pagination({list, description})
+  div(class=`pagination`)
+    div(class=`pagination`)
       ul(class=`pagination__list`)
         each item in list
           if(item[0] === true)

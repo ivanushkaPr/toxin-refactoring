@@ -220,26 +220,25 @@ include ../utils/mixins.pug
         id: 'slider',
         description: "Range Slider",
         rangeSelected: "5 000₽ - 10 000₽",
-        slider__range: "",
       },
 
       inputDescriptionButtons: {containerMods: "input_description__container_vertical-padding-buttons-block",contentMods: "", description: "buttons"},
       buttonContainerOne: {buttonContMods: "button-container_md"},
-      buttonGradient: {buttonText: "click me", buttonMods: "button__body_button_ellipse button__body_background-linear-gradient_purple", type: "button"},
-      buttonGradientChecked: {buttonText: "click me", buttonMods: "button__body_button_ellipse button__body_button-ellipse-active button__body_background-linear-gradient_purple  button__body_background-linear-gradient_purple-active", type: "button"},
+      buttonGradient: {buttonText: "click me", buttonType: 'gradient', type: "button"},
+ 
 
       buttonContainerTwo: {buttonContMods: "button-container_md"},
-      buttonTransparent: {buttonText: "click me", buttonMods: "button__body_button_ellipse", type: "button"},
-      buttonTransarentChecked: {buttonText: "click me", buttonMods: "button__body_button_ellipse button__body_button-ellipse-active", type: "button"},
+      buttonTransparent: {buttonText: "click me", buttonType: 'transparent', type: "button"},
+  
         
       buttonContainerThree: {buttonContMods: "button-container_sm"},
       buttonText: {buttonText: "click me", type: "button"},
-      buttonTextChecked: {buttonText: "click me", buttonMods: "button__body_active", type: "button"},
 
-      buttonWide: {contMods: "button_wide_negative-margin-top", buttonText: "перейти к оплате", type: "button"},
+      buttonWide: { buttonText: "перейти к оплате", type: "button" },
 
 
       inputDescriptionPagination: {containerMods: "input-description__container_vertical-margin-pagination",contentMods: "", description: "pagination"},
+
       pagination: {
         list: [[true, 1], [false, 2], [false, 3], [false, "..."], [false, 15]],
         description: "1 – 12 из 100+ вариантов аренды"
@@ -247,8 +246,7 @@ include ../utils/mixins.pug
 
 
       bulletList: {
-        containerMods: "bullet-list__container_padding-top",
-        descMods: "",
+        containerPaddingTop: true, 
         description: "bullet list",
         items: ["Нельзя с питомцами", "Без вечеринок и мероприятий",
         "Время прибытия — после 13:00, а выезд до 12:00", ]
@@ -258,7 +256,7 @@ include ../utils/mixins.pug
     UIColumnFour: {
       gridFour: { mods: "grid_position-for-review" },
       review: {
-        image: "review__photo_background-image_man",
+        imageName: 'man',
         name: "Мурад Сафронов",
         date: "5 дней назад",
         text: `Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.
