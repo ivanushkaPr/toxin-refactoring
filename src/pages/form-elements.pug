@@ -5,7 +5,7 @@ include ../utils/mixins.pug
   let formElementsConfiguration = {
 
     UIColumnOne: {
-      gridOne: {mods: "grid--margin-right-for-first-row"},
+      gridOne: {mods: "grid_margin-right-for-first-row"},
 
       UITextField: {
         emailTextFieldContainer: {
@@ -109,7 +109,7 @@ include ../utils/mixins.pug
      
       
       doubleDateDropdown: {
-        inputDateDropdownContainer: {mods: "", containerMods: "input_date_dropdown_container--padding-top"},
+        inputDateDropdownContainer: {mods: "", containerMods: "input-date-dropdown-container_padding-top"},
         inputDateDropdownDescriptionFirst: {
           containerMods: "",
           contentMods: "",
@@ -151,10 +151,11 @@ include ../utils/mixins.pug
 
       UIFilterDateDropdown: {
         inputFilterDateDropdownDescription: {
-          containerMods: "input_description--margin-top-for-filter-date-dropdown-form-elements",
+          containerMods: "input-description_margin-top-for-filter-date-dropdown-form-elements",
           contentMods: "",
           description: "filter date dropdown"
         },
+
         inputFilterDateDropdown: {
           contClassMods: "none",
           inputClassMods: "",
@@ -162,13 +163,13 @@ include ../utils/mixins.pug
           placeholder: "ДД.ММ.ГГГГ",
           name: "input_date_dropdown_default",
           value: "19 авг - 23 авг",
-          calendarID: 'input_filter_date_dropdown--calendar'
+          calendarID: 'input-filter-date-dropdown-calendar'
         },
       },
 
       UISubscriptionTextField: {
         subscriptionTextFieldDescription: {
-          containerMods: "input_description--padding-top-for-subscription-text-field",
+          containerMods: "input-description_padding-top-for-subscription-text-field",
           contentMods: "",
           description: "subscription text field"
         },
@@ -183,9 +184,9 @@ include ../utils/mixins.pug
       },
 
       UIRoomQuantityDropdownClosed: {
-        inputAndDescriptionWrapperRq: {mods: "input_and_description_wrapper--width-md"},
+        inputAndDescriptionWrapperRq: {mods: "input-and-description-wrapper_width_md "},
         inputDropdownRoomQuantityContainer: {
-          mods: "input_description_container__container--padding-top-for-room-quantity",
+          mods: "input-description-container__container_padding-top-for-room-quantity",
         },
         inputDropdownRoomQuantityDescription: {
           containerMods: "",
@@ -194,12 +195,12 @@ include ../utils/mixins.pug
         },
         inputDropdownRoomQuantityState: {
           containerMods: "",
-          contentMods: "input_description__content--font-weight-normal input_description__content--margins ",
+          contentMods: "input-description__content_font-weight_normal input_description__content_margins ",
           description: "default"
         },
         inputDropdownRoomQuantity: {
           properties: [["спальни", 2], ["кровати",2], ["ванные комнаты", 0], ],
-          controlsMods: "dropdown_room_quantity__controls--closed",
+          controlsMods: "dropdown-room-quantity__controls_closed",
           contClassMods: "",
           inputClassMods: "",
           type: "text",
@@ -210,10 +211,10 @@ include ../utils/mixins.pug
       },
 
       UIRoomQuantityDropdownOpened: {
-        inputAndDescriptionWrapperRq: {mods: "input_and_description_wrapper--width-md"},
+        inputAndDescriptionWrapperRq: {mods: "input-and-description-wrapper_width_md"},
         inputDropdownRoomQuantityContainer: {
           mods: "",
-          containerMods: "input_description_container__container--padding-top-for-room-quantity-expanded"
+          containerMods: "input-description-container__container_padding-top-for-room-quantity-expanded"
         },
         inputDropdownRoomQuantityDescription: {
           containerMods: "",
@@ -222,7 +223,7 @@ include ../utils/mixins.pug
         },
         inputDropdownRoomQuantityState: {
           containerMods: "",
-          contentMods: "input_description__content--font-weight-normal input_description__content--font-weight-normal--expanded",
+          contentMods: "input-description__content_font-weight_normal input_description__content--_weight-regular-expanded",
           description: "expanded"
         },
         inputDropdownRoomQuantity: {
@@ -239,23 +240,24 @@ include ../utils/mixins.pug
 
 
       expandableCheckboxList: {
-        mods: "expandable_checkbox_list--padding-top",
+        mods: "expandable-checkbox-list_padding-top",
         items: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор" , "Шампунь" , "Телевизор", "Шампунь", ],
         description: "expandable checkbox list"
       },
+
       expandableCheckboxListOpened: {
-        mods: "expandable_checkbox_list--opened_its_padding_top",
+        mods: "expandable-checkbox-list_opened-its-padding-top",
         items: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор" , "Шампунь" , "Телевизор", "Шампунь", ],
         description: "expandable checkbox list",
-        buttonMods: "expandable_checkbox_list__button-open--clicked",
-        listMods: "expandable_checkbox_list__list--opened"
+        buttonMods: "expandable-checkbox-list__button-open_opened",
+        listMods: "expandable-checkbox-list__list_opened"
       },
-      benefitSmile: {contMods: "benefit--pading-top", imageMods: "benefit__image--background-smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"},
-      benefitBulding:  {contMods: "benefit--pading-top", imageMods: "benefit__image--background-building", nameText: "Удобство", propText: "Окно в каждой из спален"},
+      benefitSmile: {contMods: "benefit_pading-top", imageMods: "benefit__image_background_smile", nameText: "Комфорт", propText: "Шумопоглощающие стены"},
+      benefitBulding:  {contMods: "benefit_pading-top", imageMods: "benefit__image_background_building", nameText: "Удобство", propText: "Окно в каждой из спален"},
     },
 
     UIColumnTwo: {
-      gridTwo: {mods: "grid--margin-right-for-second-row grid--form-elements--pp-padding-top"},
+      gridTwo: {mods: "grid_margin-right-for-second-row grid_form-elements-pp-padding-top"},
       checkboxButtons: {description: "checkbox buttons", items:["Можно курить", "Можно с питомцами", "Можно пригласить гостей (до 10 человек)"]},
       inputDescriptionRadioButtons: {containerMods: "input_description__container--vertical-padding-near-radio-buttons",contentMods: "", description: "radio buttons"},
       radioButtons: {options: [["Мужчина", true], ["Женщина", false]]},
@@ -270,16 +272,16 @@ include ../utils/mixins.pug
       inputDescriptionLikeButton: {containerMods: "input_description__container--vertical-padding-near-like-button",contentMods: "", description: "like button"},
       likeButtonContainer: {},
       likeButtonOne: {count: 2},
-      likeButtonTwo: {buttonMods: "like_button__add--pressed", counterMods: "like_button__counter--button-pressed",count: 12},
+      likeButtonTwo: {buttonMods: "like-button__add_pressed", counterMods: "like-button__counter_button-pressed",count: 12},
 
 
-      inputDescriptionRateButton: {containerMods: "input_description__container--vertical-padding-near-rate-button",contentMods: "", description: "rate button"},
+      inputDescriptionRateButton: {containerMods: "input-description__container_vertical-padding-near-rate-button",contentMods: "", description: "rate button"},
 
       
       rateButtonOne: {checkboxes: [1,2,3,4,5], rating: 4},
       rateButtonTwo: {checkboxes: [1,2,3,4,5], rating: 5},
 
-      inputDescriptionIdp: {containerMods: "input_description__container--pp-guest-dropdown",contentMods: "", description: "dropdown"},
+      inputDescriptionIdp: {containerMods: "input-description__container_pp-guest-dropdown",contentMods: "", description: "dropdown"},
 
 
       inputDropdownGuests: {
@@ -291,11 +293,11 @@ include ../utils/mixins.pug
         placeholder: "Сколько гостей",
         name: "input_dropdown_guests__input",
         value: "",
-        resetMods: "input_dropdown_guests__button_reset--hidden"
+        resetMods: "input-dropdown-guests__button-reset_hidden"
       }, 
 
       richCheckboxButtons: {
-        containerMods: "rich_checkbox_buttons__container--padding_top",
+        containerMods: "rich-checkbox-buttons__container_padding-top",
         mods: "",
         description: "rich checkbox buttons",
         items:[["Широкий коридор", "Ширина коридоров в номере не менее 91 см."], ["Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера."]],
@@ -303,7 +305,7 @@ include ../utils/mixins.pug
     },
 
     UIColumnThree: {
-      gridThree:{mods: "grid--padding-top-for-third-row"},
+      gridThree:{mods: "grid_padding-top-for-third-row"},
       slider: {
         id: 'slider',
         description: "Range Slider",
@@ -311,23 +313,23 @@ include ../utils/mixins.pug
         slider__range: "",
       },
 
-      inputDescriptionButtons: {containerMods: "input_description__container--vertical-padding-buttons-block",contentMods: "", description: "buttons"},
-      buttonContainerOne: {buttonContMods: "buttonContainer--md"},
-      buttonGradient: {buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--background_linear_gradient__purple", type: "button"},
-      buttonGradientChecked: {buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--button__ellipse__active button__body--background_linear_gradient__purple  button__body--background_linear_gradient__purple_active", type: "button"},
+      inputDescriptionButtons: {containerMods: "input_description__container_vertical-padding-buttons-block",contentMods: "", description: "buttons"},
+      buttonContainerOne: {buttonContMods: "button-container_md"},
+      buttonGradient: {buttonText: "click me", buttonMods: "button__body_button_ellipse button__body_background-linear-gradient_purple", type: "button"},
+      buttonGradientChecked: {buttonText: "click me", buttonMods: "button__body_button_ellipse button__body_button-ellipse-active button__body_background-linear-gradient_purple  button__body_background-linear-gradient_purple-active", type: "button"},
 
-      buttonContainerTwo: {buttonContMods: "buttonContainer--md"},
-      buttonTransparent: {buttonText: "click me", buttonMods: "button__body--button__ellipse", type: "button"},
-      buttonTransarentChecked: {buttonText: "click me", buttonMods: "button__body--button__ellipse button__body--button__ellipse__active", type: "button"},
+      buttonContainerTwo: {buttonContMods: "button-container_md"},
+      buttonTransparent: {buttonText: "click me", buttonMods: "button__body_button_ellipse", type: "button"},
+      buttonTransarentChecked: {buttonText: "click me", buttonMods: "button__body_button_ellipse button__body_button-ellipse-active", type: "button"},
         
-      buttonContainerThree: {buttonContMods: "buttonContainer--sm"},
+      buttonContainerThree: {buttonContMods: "button-container_sm"},
       buttonText: {buttonText: "click me", type: "button"},
-      buttonTextChecked: {buttonText: "click me", buttonMods: "button__body--active", type: "button"},
+      buttonTextChecked: {buttonText: "click me", buttonMods: "button__body_active", type: "button"},
 
-      buttonWide: {contMods: "button_wide--negative-margin-top", buttonText: "перейти к оплате", type: "button"},
+      buttonWide: {contMods: "button_wide_negative-margin-top", buttonText: "перейти к оплате", type: "button"},
 
 
-      inputDescriptionPagination: {containerMods: "input_description__container--vertical-margin-pagination",contentMods: "", description: "pagination"},
+      inputDescriptionPagination: {containerMods: "input-description__container_vertical-margin-pagination",contentMods: "", description: "pagination"},
       pagination: {
         list: [[true, 1], [false, 2], [false, 3], [false, "..."], [false, 15]],
         description: "1 – 12 из 100+ вариантов аренды"
@@ -340,7 +342,7 @@ include ../utils/mixins.pug
         properties: [["взрослые", 2], ["дети", 1], ["младенцы", 0],],
         controlsMods: "",
         contClassMods: "",
-        inputClassMods: "input_dropdown_guests__input--controls-opened",
+        inputClassMods: "input-dropdown-guests__input_controls_opened",
         type: "text",
         placeholder: "3 гостя",
         name: "input_dropdown_guests__input",
@@ -348,7 +350,7 @@ include ../utils/mixins.pug
         resetMods: ""
       },
       bulletList: {
-        containerMods: "bulletlist__container--padding-top",
+        containerMods: "bullet-list__container_padding-top",
         descMods: "",
         description: "bullet list",
         items: ["Нельзя с питомцами", "Без вечеринок и мероприятий",
@@ -357,9 +359,9 @@ include ../utils/mixins.pug
     },
 
     UIColumnFour: {
-      gridFour:{mods: "grid--position-for-review" },
+      gridFour: { mods: "grid_position-for-review" },
       review: {
-        image: "review__photo--background-image_man",
+        image: "review__photo_background-image_man",
         name: "Мурад Сафронов",
         date: "5 дней назад",
         text: `Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.

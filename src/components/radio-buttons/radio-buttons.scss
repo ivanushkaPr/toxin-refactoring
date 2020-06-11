@@ -1,4 +1,4 @@
-.radio_buttons {
+.radio-buttons {
   &__container {
     display: flex;
   
@@ -18,12 +18,12 @@
   &__input {
     display: none;
 
-    &:checked ~ &__fake-radio {
+    &:checked ~ .radio-buttons__fake-radio {
       border: 1px solid $purple;
       position: relative;
     }
   
-    &:checked ~ &__fake-radio:after {
+    &:checked ~ .radio-buttons__fake-radio:after {
       content: '';
       background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
       padding: 6px;

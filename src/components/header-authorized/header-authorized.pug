@@ -35,7 +35,7 @@ mixin header-authorized({container, items, userName})
                 a(class=`header-auth__link` href=`href="/mock-address/change-me`) #{menuItem.value}
             else
               li(class=`header-auth__item`) 
-                  a(class=`header_auth__link` href=`href="/mock-address/change-me`) #{menuItem.value}
+                  a(class=`header-auth__link` href=`href="/mock-address/change-me`) #{menuItem.value}
 
                   if(menuItem.submenu === true)
                     button(class=`header-auth__item-button`) 

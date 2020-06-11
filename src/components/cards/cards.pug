@@ -1,19 +1,19 @@
 mixin cards({searchRoom, registration, costCalculator, authForm, calendar})
   div(class=`cards`)
-    +grid({mods: "grid--paddings-for-first-row-on-cards-page grid--size-md"})
+    +grid({mods: "grid_paddings-for-first-row-on-cards-page grid_size_md"})
       +search-room(searchRoom)
       +registration(registration)
 
-    +grid({mods: "grid--paddings-for-second-row-on-cards-page grid--size-md"})
+    +grid({mods: "grid_paddings-for-second-row-on-cards-page grid_size_md"})
       +cost-calculator(costCalculator)
       +auth-form(authForm)
  
 
-    +grid({mods: "grid--paddings-for-third-row-on-cards-page"})
+    +grid({mods: "grid_paddings-for-third-row-on-cards-page"})
       +calendar(calendar)
-      +room({imagesMods: "room__images--cards__margin-top", specialChar: "№", roomNumber: "888", status:"люкс", price: "9 990₽ ", period: "в сутки", ammount: 145})
+      +room({imagesMods: "room__images_cards-margin-top", specialChar: "№", roomNumber: "888", status:"люкс", price: "9 990₽ ", period: "в сутки", ammount: 145})
 
-      +room({imagesMods: "room__images--cards__margin-top", specialChar: "№", roomNumber: "888", status:"люкс", price: "9 990₽ ", period: "в сутки", ammount: 145})
+      +room({imagesMods: "room__images_cards-margin-top", specialChar: "№", roomNumber: "888", status:"люкс", price: "9 990₽ ", period: "в сутки", ammount: 145})
 
 
   

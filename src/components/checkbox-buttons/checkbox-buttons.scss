@@ -1,4 +1,4 @@
-.checkbox_buttons {
+.checkbox-buttons {
   width: 100%;
   max-width: 266px;
 
@@ -32,7 +32,7 @@
   &__input {
     display: none;
 
-    &:checked ~ &__checkbox {
+    &:checked ~ .checkbox-buttons__checkbox {
       border: 1px solid $purple;
       background-image:  url('./checked.jpg');
       background-repeat: no-repeat;
