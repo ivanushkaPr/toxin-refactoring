@@ -1,25 +1,31 @@
 .input-description-container {
-  &_padding-top-registration {
-    padding-top: 21px;
-  }
-  
+
   &__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;  
 
-    &_padding-top {
-      padding-top: 17px;
-    }
-    
-    &_padding-top-for-room-quantity {
-      padding-top: 95px;
-    }
-    
-    &_padding-top-for-room-quantity-expanded {
+     // _padding-top-for-room-quantity-expanded
+     &_pt_16 {
       padding-top: 16px;
     }
+
+    // _padding-top 
+    &_pt_17 {
+      padding-top: 17px;
+    }
+
+     // _padding-top-registration 
+     &_pt-21 {
+      padding-top: 21px;
+    }
+    
+    //_padding-top-for-room-quantity
+    &_pt_95 {
+      padding-top: 95px;
+    }
+   
   }
 }
 

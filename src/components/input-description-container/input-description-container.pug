@@ -1,4 +1,9 @@
-mixin input-description-container({mods, containerMods})
-  div(class=`input-description-container ${mods}`)
-    div(class=`input-description-container__container ${containerMods}`)
+mixin input-description-container({ containerPaddingTop})
+  -
+    let containerPaddingTopMod = '';
+    if(containerPaddingTop) {
+      containerPaddingTopMod = `input-description-container__container_mt_${containerPaddingTop}`;
+    }
+  div(class=`input-description-container`)
+    div(class=`input-description-container__container ${containerPaddingTopMod}`)
       block

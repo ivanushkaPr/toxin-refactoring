@@ -1,4 +1,33 @@
-mixin input-description({blockMods, containerMods, contentMods, description})
-  div(class=`input-description ${oblockMods}`)
+mixin input-description({contPT, contPB, contMT, fontWeightNormal, descriptionBg, description})
+  -
+    let containerPaddingTop = '';
+    if(contPT) {
+      containerPaddingTop = `input-description__container_pt_${contPT}`;
+    }
+    let containerPaddingbottom;
+    if(contPB) {
+      containerPaddingBottom = `input-description__container_pb_${contPB}`;
+    }
+
+    let containerMarginTop;
+    if(contMT) {
+      containerMarginTop = `input-description__container_mt_${contMT}`;
+    }
+
+    const containerMods = `${ontainerPaddingTop} ${containerPaddingBottom} ${containerMarginTop}`;
+
+    let fontWeightNormalMod = '';
+    if(fontWeightNormal) {
+      fontWeightNormalMod = `input-description__content_font-weight_normal`;
+    }
+
+    let descriptionBgMod = '';
+    if(descriptionBg) {
+      descriptionBgMod = `input-description__content_description_bg`;
+    }
+
+    const contentMods = `${ fontWeightNormalMod} ${descriptionBgMod}`;
+
+  div(class=`input-description ${blockMods}`)
     div(class=`input-description__container ${containerMods}`)
       p(class=`input-description__content ${contentMods}`) #{description}

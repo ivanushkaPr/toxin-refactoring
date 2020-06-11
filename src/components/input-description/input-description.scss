@@ -1,73 +1,119 @@
 .input-description {
-  &_pading-top {
-    padding-top: 38px;
-  }
-
-  &_margin-top-for-filter-date-dropdown-form-elements {
-    margin-top: 41px;
-  } 
-
-  &_padding-top-for-subscription-text-field  {
-    padding-top: 39px;
-  } 
 
   &__container {
-    &_margin-top-registration {
+
+    // &_pading-top 
+    &_pt_38 {
+      padding-top: 38px;
+    }
+
+    //_padding-top-for-subscription-text-field 
+
+    &_pt_39  {
+      padding-top: 39px;
+    } 
+
+     //     &_padding-top-guest-dropdown-block 
+     &_pt_230 {
+      padding-top: 230px;
+    }
+
+    
+    //&_mt_11px {
+      &_mt_11 {
+        margin-top: 11px
+      }
+
+    // &_margin-top-registration
+    &_mt_19 {
       margin-top: 19px;
     }
-  
-    &_mt_11px {
-      margin-top: 11px
+
+     //&_mt_20px
+    &_mt_20 {
+      margin-top: 20px;
     }
-  
-    &_margin-top_29px {
+
+  // &_margin-top_29px
+    &_mt_29 {
       margin-top: 29px;
     }
   
-    &_mt_30px {
+    //     &_mt_30px {
+    &_mt_30 {
       margin-top: 30px;
     }
+
+    //     &_margin-top-for-filter-date-dropdown-form-elements
+    &_mt_41 {
+      margin-top: 41px;
+    } 
   
-    &_vertical-padding-near-radio-buttons {
+
+    // &_vertical-padding-near-radio-buttons 
+    &_pt_20 {
       padding-top: 20px;
+    } 
+    // &_vertical-padding-near-radio-buttons 
+    &_pb_11 {
       padding-bottom: 11px;
     }
-  
-    &_vertical-padding-near-toggle {
+
+    // &_vertical-padding-near-toggle 
+    &_pt_37 {
       padding-top: 37px;
+    }
+    // &_vertical-padding-near-toggle 
+    &_pb_8 {
       padding-bottom: 8px;
     }
+    
   
-    &_vertical-padding-near-like-button {
+      //_vertical-padding-near-like-button 
+    &_pt_40 {
       padding-top: 40px;
+    }
+      //_vertical-padding-near-like-button 
+
+    &_pb_11 {
       padding-bottom: 11px;
     }
-  
-    &_vertical-padding-near-rate-button  {
+
+    //&_vertical-padding-near-rate-button 
+    &_pt_34 {
       padding-top: 34px;
+    }
+
+    //&_vertical-padding-near-rate-button 
+
+    &_pb_15 {
       padding-bottom: 15px;
     }
-  
-    &_pp-guest-dropdown  {
+
+    //&_pp-guest-dropdown 
+    &_pt_190  {
       padding-top: 190px;
     }
-  
-    &_vertical-padding-buttons-block {
+    
+    //&_vertical-padding-buttons-block 
+    &_pt_39 {
       padding-top: 39px;
+    }
+
+    //&_vertical-padding-buttons-block 
+    
+    &_pb_11 {
       padding-bottom: 11px;
     }
-  
-    &_vertical-margin-pagination {
+
+     //&_vertical-margin-pagination
+    &_pt_37 {
       padding-top: 37px;
+    }
+
+    //&_vertical-margin-pagination
+    &_pb_11 {
       padding-bottom: 11px;
-    }
-  
-    &_padding-top-guest-dropdown-block {
-      padding-top: 230px;
-    }
-  
-    &_mt_20px {
-      margin-top: 20px;
     }
   }
 
@@ -88,13 +134,10 @@
       font-weight: normal;
       color: $dark_shade_50;
     }
+
+    //&_description-for-buttons
   
-    &_weight-regular-expanded {
-      margin-top: 3px;
-      margin-bottom: 5px;
-    }
-  
-    &_description-for-buttons {
+    &_description_bg {
       font-family: 'montserrat', Arial, sans-serif;
       font-weight: normal;
       font-size: 14px;
@@ -102,10 +145,13 @@
       color: #000000;
       text-transform: none;
     }
-  
-    &_margins {
+
+    //_margins
+    //&_weight-regular-expanded
+    &_mt_vertical {
       margin-top: 3px;
       margin-bottom: 5px;
     }
+
   }
 }
