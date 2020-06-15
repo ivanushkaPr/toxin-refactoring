@@ -9,5 +9,5 @@ mixin pie-chart({containerMods, canvasName, width, height, summary, units, leg})
       div(class=`pie-chart__legend`)
         each desc in leg
           p(class=`pie-chart__categories`) 
-            span(class=`pie-chart__indicator ${desc.mod} `)
+            span(class=`pie-chart__indicator pie-chart__indicator_grade-${desc.mod}`)
             span(class=`pie-chart__category`) #{desc.text}

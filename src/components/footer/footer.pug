@@ -1,4 +1,4 @@
-mixin footer({contMarginTop, contMarginBottom, containerPaddingTop, containerPaddingBottom, info, navContMods, lists, subscribe, sendTo, formName, subscriptionTextField, copyright})
+mixin footer({contMarginTop, contMarginBottom, containerPaddingTop, containerPaddingBottom, info, navContMr, lists, subscribe, sendTo, formName, subscriptionTextField, copyright})
   -
     let contMarginTopMod = '';
     if(contMarginTop) {
@@ -20,6 +20,13 @@ mixin footer({contMarginTop, contMarginBottom, containerPaddingTop, containerPad
     if(containerPaddingBottom) {
       contPaddingBottomMod = `footer__container_pt_${containerPaddingBottom}`;
     }
+
+    let navContMod = '';
+    if(navContMr) {
+      navContMod = `footer__navcont_mr`;
+    }
+
+
     const containerMods = `${contMarginTopMod} ${contMarginBottomMod} ${contPaddingTopMod}`;
 
   footer(class=`footer ${mods}`)
@@ -53,7 +60,7 @@ mixin footer({contMarginTop, contMarginBottom, containerPaddingTop, containerPad
         each par in info
           p(class=`footer__information`)  #{par}
 
-      div(class=`footer__navcont ${navContMods}`)
+      div(class=`footer__navcont ${navContMod}`)
         each val, prov in lists
           nav(class=`${val.navClass}`)
             ul(class=`footer__list`)

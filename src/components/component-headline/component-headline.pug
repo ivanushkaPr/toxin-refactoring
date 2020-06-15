@@ -1,4 +1,19 @@
-mixin component-headline({containerMods, mods, description})
+mixin component-headline({marginTop, marginLeft, fontSize, containerMods, mods, description})
+  -
+    let marginTopMod = '';
+    if(marginTop) {
+      marginTopMod = `component-headline__container_mt_${marginTop}`;
+    }
+
+    let marginLeftMod = '';
+    if(marginLeft) {
+      marginLeftMod = `component-headline__container_ml_${marginLeft}`;
+    }
+
+    let fontSizeMod = '';
+    if(fontSize) {
+      fontSizeMod = `component-headline__text_font-size_${fontSize}`;
+    }
   div(class=`component-headline`)
-    div(class=`component-headline__container ${containerMods}`)
-      p(class=`component-headline__text ${mods}`) #{description}
+    div(class=`component-headline__container ${marginTopMod} ${marginLeftMod}`)
+      p(class=`component-headline__text ${fontSizeMod}`) #{description}

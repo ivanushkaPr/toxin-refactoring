@@ -15,46 +15,49 @@ include ../utils/mixins.pug
         ],
         buttonLogin: {
         buttonText: 'Войти', 
-        buttonMods: 'button__body--button__ellipse button__body--transparent_button_extra_fields button__body--header-size_sm button__body--header-margin_right',
+        buttonType: 'transparent',
         link: true,
         href: 'https://mock-address.ru/login.php'
       },
       buttonRegister: {
         buttonText: 'Зарегистрироваться',
-        buttonMods: 'button__body--button__ellipse button__body--background_linear_gradient__purple button__body--small_vertical_padding button__body--header-size_sm',
+        buttonType: 'gradient',
         link: true,
         href: 'https://mock-address.ru/register.php'
       },
     },
 
     information: {
-      containerMods: 'component_headline__container--mt-69px',
-      mods: 'component_headline__text--font-size-md',
+      marginTop: 69, 
+      fontSize: 'md',
       description: 'Сведения о номере'
     },
 
     informationPieChart: {
-      containerMods: 'component_headline__container--mt-69px component_headline__container--ml',
-      mods: 'component_headline__text--font-size-md',
+      marginTop: 69, 
+      marginLeft: 108,
+      fontSize: 'md',
       description: 'Впечатления от номера'
     },
 
     pieChart: {
-      canvasName: 'room_stats js-room_stats',
+      canvasName: 'room-stats js-room-stats',
       width: 130,
       height: 130,
       summary: 260,
       units: 'голосов',
       leg: [
-        {mod:'pie_chart__indicator--grade-great', text: 'Великолепно' },
-        {mod:'pie_chart__indicator--grade-good', text: 'Хорошо' },
-        {mod:'pie_chart__indicator--grade-bad', text: 'Удовлетворительно' },
-        {mod:'pie_chart__indicator--grade-very-bad', text: 'Разочарован' },
+        {mod:'great', text: 'Великолепно' },
+        {mod:'good', text: 'Хорошо' },
+        {mod:'bad', text: 'Удовлетворительно' },
+        {mod:'very-bad', text: 'Разочарован' },
       ]
     },
 
     feedback: {
-      mods: 'component_headline__text--font-size-md component_headline__text--margin-top-zero component_headline__text--margin-bottom',
+      fontSize: 'md',
+      marginTop: 0,
+      marginBottom: 20,
       description: 'Отзывы посетителей номера'
     },
 
@@ -67,84 +70,6 @@ include ../utils/mixins.pug
       mods: '',
       sendTo: '',
       formName: 'cost_calculator',
-      roomInfo: {
-        blockMods: '',
-        overallMods: '',
-        numberMods: '',
-        numberSymbol: '№ ',
-        numberText: '888',
-        typeMods: '',
-        typeText: 'люкс',
-        priceMods: '',
-        costMods:'',
-        costText: '9 990₽ ',
-        periodMods: '',
-        periodText: '&nbsp; в сутки',
-      },
-      doubleDateDropdown: {
-      inputDateDropdownContainer: {mods: 'input_date_dropdown_container--cards-margin-bottom'},
-      inputDateDropdownDescriptionFirst:  {
-        containerMods: "",
-        contentMods: "",
-        description: "Прибытие"
-      } ,
-      inputDateDropdownFirst: {
-        contClassMods: "none",
-        inputClassMods: "datepick-start",
-        type: "text",
-        placeholder: "ДД.ММ.ГГГГ",
-        name: "input_date_dropdown_default",
-        value: "",
-        id: 'start',
-        buttonID: 'start-button'
-      },
-      inputDateDropdownDescriptionSecond: {
-        containerMods: "",
-        contentMods: "",
-        description: "Выезд"
-      },
-      inputDateDropdownSecond: {
-        contClassMods: "none",
-        inputClassMods: "datepick-end",
-        type: "text",
-        placeholder: "ДД.ММ.ГГГГ",
-        name: "input_date_dropdown_default",
-        value: "",
-        id: 'end',
-        buttonID: 'end-button'
-      },
-      calendar: {
-          id: 'calendar-start'
-        }
-      },
-      inputDropdownGuests: {
-        containerMods: 'input_dropdown_guests__input--mb-8px ',
-        properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
-        controlsMods: 'input_dropdown_guests__controls--closed',
-        contClassMods: 'input_dropdown_guests--margin-bottom-in-balance-component',
-        inputClassMods: 'input_dropdown_guests__input--controls-closed ',
-        type: 'text',
-        placeholder: 'Сколько гостей',
-        name: 'input_dropdown_guests__input',
-        value: '3 гостя',
-        resetMods: 'input_dropdown_guests__button_reset--hidden'
-      },
-      balance: {
-        blockMods: '',
-        services: [['9 990₽ х 4 суток', false, '39 960₽'], ['Сбор за услуги: скидка 2 179₽', true, '0₽'], ['Сбор за дополнительные услуги', true, '300₽']],
-        feeMods: '',
-        contMods: '',
-        serviceMods: '',
-        tooltipMods: '',
-        contMods: '',
-        totalMods: '',
-        totalCostText: 'Итого',
-        sumText: '38 081₽',
-      },
-      bookButton: {
-        buttonText: 'Забронировать',
-        type: 'submit'
-      }
     },
 
     footerConfiguration: {
@@ -156,7 +81,7 @@ include ../utils/mixins.pug
         'отеле 2019 года по версии',
         'ассоциации «‎Отельные взгляды».',
       ],
-      navContMods: 'footer__navcont--min-width-pages',
+      navContMr: true,
       lists: {
         menu1: {
           headline: 'Навигация', 
@@ -193,8 +118,8 @@ include ../utils/mixins.pug
         descript: ['Получайте специальные', 'предложения и новости сервиса']
       },
       subscriptionTextField: {
-        contClassMods: 'subscription_text_field--mt',
-        inputClassMods: 'subscription_text_field__input--width-correction',
+        containerMarginTop: 24,
+        inputWidth: 260,
         type: 'Email',
         placeholder: 'Email',
         name: 'subscription_text_field',
