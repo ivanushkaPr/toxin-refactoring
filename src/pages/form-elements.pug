@@ -5,7 +5,7 @@ include ../utils/mixins.pug
   let formElementsConfiguration = {
 
     UIColumnOne: {
-      gridOne: {mods: "grid_margin-right-for-first-row"},
+      gridOne: {marginRight: 126},
 
 
       UIGuestDropdown: {
@@ -174,7 +174,7 @@ include ../utils/mixins.pug
     },
 
     UIColumnTwo: {
-      gridTwo: {mods: "grid_margin-right-for-second-row grid_form-elements-pp-padding-top"},
+      gridTwo: {marginRight: 72, paddingTop: 3},
       checkboxButtons: {description: "checkbox buttons", items:["Можно курить", "Можно с питомцами", "Можно пригласить гостей (до 10 человек)"]},
       inputDescriptionRadioButtons: {containerMods: "input_description__container--vertical-padding-near-radio-buttons",contentMods: "", description: "radio buttons"},
       radioButtons: {options: [["Мужчина", true], ["Женщина", false]]},
@@ -215,7 +215,7 @@ include ../utils/mixins.pug
     },
 
     UIColumnThree: {
-      gridThree:{mods: "grid_padding-top-for-third-row"},
+      gridThree:{paddingTop: 3,},
       slider: {
         id: 'slider',
         description: "Range Slider",
@@ -254,7 +254,7 @@ include ../utils/mixins.pug
     },
 
     UIColumnFour: {
-      gridFour: { mods: "grid_position-for-review" },
+      gridFour: { position: true},
       review: {
         imageName: 'man',
         name: "Мурад Сафронов",

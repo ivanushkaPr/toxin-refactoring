@@ -1,4 +1,31 @@
-mixin grid({mods, containerMods})
-  div(class=`grid ${mods}`)
-    div(class=`grid__container ${containerMods}`)
+mixin grid({size, marginRight, marginTop, paddingTop, paddingLeft, position, containerMods})
+  -
+    let gridSizeMod = '';
+    if(size) {
+      gridSizeMod = `grid_size_${size}`;
+    }
+
+    let marginRightMod = '';
+    if(marginRight) {
+      marginRightMod = `grid_mr_${marginRight}`;
+    }
+
+    let paddingTopMod = '';
+    if(paddingTop) {
+      paddingTopMod = `grid_pt_${paddingTop}`
+    }
+
+    let paddingLeftMod = '';
+    if(paddingLeft) {
+      paddingLeftMod = `grid_pl_${paddingLeft}`
+    }
+
+
+    let positionMod = '';
+    if(position) {
+      positionMod = 'grid_position_absolute';
+    }
+
+  div(class=`grid ${gridSizeMod} ${marginRightMod} ${paddingTopMod} ${paddingLeftMod} ${positionMod}`)
+    div(class=`grid__container }`)
     block

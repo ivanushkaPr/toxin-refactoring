@@ -3,39 +3,41 @@
   &_size_md {
     width: 380px;
   }
-  
-  &_margin-right-for-first-row {
+
+  // &_margin-right-for-first-row
+  &_mr_126 {
     margin-right: 9.699769053117783%; //126px;
   }
-  
-  &_margin-right-for-second-row {
+
+  // &_margin-right-for-second-row 
+  &_mr_72 {
     margin-right: 5.542725173210162%; //72px;
   }
   
-  
-  &_padding-top-for-third-row {
+  //  &_form-elements-pp-padding-top
+  &_pt_3 {
     padding-top: 3px;
   }
   
-  &_position-for-review {
+  &_position_absolute {
     width: auto;
     position: absolute;
     top: 1573px;
     left: 587px;
   }
-  
-  &_form-elements-pp-padding-top {
-    padding-top: 3px;
-  }
-  
-  &_paddings-for-first-row-on-cards-page {
+
+  //  &_paddings-for-first-row-on-cards-page
+
+  &_pl_140 {
     padding-left: 140px;
+  }
+
+  &_pt_68 {
     padding-top: 68px;
   }
-  
-  &_paddings-for-second-row-on-cards-page {
+
+  &_pl_40 {
     padding-left: 40px;
-    padding-top: 68px;
   }
   
   &_paddings-for-third-row-on-cards-page {
