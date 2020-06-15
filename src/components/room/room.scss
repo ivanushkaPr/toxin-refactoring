@@ -5,17 +5,23 @@
   border-radius: 4px;
   padding-bottom: 8px;
 
-  &_mb_27px {
-    padding-bottom: 28px;
+  &__container {
+      // &_mb_27px
+    &_pb_27 {
+      margin-bottom: 28px;
+    }
   }
+
+
   
   &__images {
     width: 270px;
     height: 152px;
     overflow: hidden;
     position: relative;
-  
-    &_cards-margin-top {
+    
+    // &_cards-margin-top 
+    &_mt_39 {
       margin-top: 39px;
     }
   }

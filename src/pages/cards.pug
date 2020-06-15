@@ -5,14 +5,14 @@ include ../utils/mixins.pug
   const cards_congiguration = {
     searchRoom: {
       mods: "",
-      send_to: "https://www.mock-adress/full-stack-development.ru",
-      form_name: "search_room",
-    search_room_headline: {
+      sendTo: "https://www.mock-adress/full-stack-development.ru",
+      formName: "search_room",
+    searchRoomHeadline: {
       description: "Найдём номера под ваши пожелания",
     },
 
 
-    double_date_dropdown: {
+    doubleDateDropdown: {
       inputDateDropdownContainer: {mods: 'input-date-dropdown-container_cards-margin-bottom'},
       inputDateDropdownDescriptionFirst:  {
         containerMods: "",
@@ -50,7 +50,7 @@ include ../utils/mixins.pug
     },
     
 
-      input_dropdown_guests: {
+      inputDropdownGuests: {
         containerMods: "input-dropdown-guests_margin-bottom-on-cards-page",
         properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
         controlsMods: "input-dropdown-guests__controls_closed",
@@ -61,20 +61,20 @@ include ../utils/mixins.pug
         value: "",
         resetMods: "input-dropdown-guests__button_reset_hidden"
       }, 
-      button_wide: {
+      buttonWide: {
         buttonText: "подобрать номер",
         type: "submit"
       },
     },
     registration: {
       blockMods: "registration_horizontal-margin-auto",
-      send_to: "https://www.mock-adress/full-stack-development.ru",
-      form_name: "registration",
-      registation_conf_headline: {
+      sendTo: "https://www.mock-adress/full-stack-development.ru",
+      formName: "registration",
+      registationConfHeadline: {
       description: "Регистрация аккаунта",
       mods: "component-headline__text_margin-bottom ",
     },
-    name_text_field: {
+    nameTextField: {
       containerMods: "text-field__container_mb_9",
       contClassMods: "none",
       inputClassMods: "",
@@ -83,7 +83,7 @@ include ../utils/mixins.pug
       name: "firstName",
       value: "",
     },
-    surname_text_field: {
+    surnameTextField: {
       containerMods: "text-field__container_mb_9",
       contClassMods: "none",
       inputClassMods: "",
@@ -92,23 +92,23 @@ include ../utils/mixins.pug
       name: "secondName",
       value: "",
     },
-    radio_buttons: {options: [["Мужчина", true], ["Женщина", false]], containerMods: "radio-buttons__container_margin-bottom"},
-    masked_text_field_container: {
+    radioButtons: {options: [["Мужчина", true], ["Женщина", false]], containerMods: "radio-buttons__container_margin-bottom"},
+    maskedTextFieldContainer: {
 
     },
 
     // Остановились здесь.
-    masked_text_field_description: {
+    maskedTextFieldDescription: {
       containerMods: "input_description_container--padding-top-registration",
       contentMods: "",
       description: "дата рождения"
     },
-    masked_text_field_state: {
+    maskedTextFieldState: {
       containerMods: "",
       contentMods: "input-description__content_font-weight_normal",
       description: "default"
     },
-    masked_text_field: {
+    maskedTextField: {
       contClassMods: "none",
       inputClassMods: "masked-text-field__input_vertical-padding_12",
       type: "text",
@@ -116,13 +116,13 @@ include ../utils/mixins.pug
       name: "masked_text_field",
       value: "",
     },
-    auth_block_headline: {
+    authBlockHeadline: {
       containerMods: "input-description__container_margin-top-registration",
       contentMods: "",
       description: "данные для входа в сервис"
     },
 
-    email_text_field: {
+    emailTextField: {
       containerMods: "text-field__container_mb_10 ",
       contClassMods: "none",
       inputClassMods: "masked-text-field__input_vertical-padding_12",
@@ -131,7 +131,7 @@ include ../utils/mixins.pug
       name: "Email",
       value: "",
     }, 
-    password_text_field: {
+    passwordTextField: {
       containerMods: "text-field__container_mb_8 ",
       contClassMods: "none",
       inputClassMods: "masked_text_field__input_vertical-padding_12",
@@ -144,19 +144,19 @@ include ../utils/mixins.pug
         descText: "Получать спецпредложения",
         labelMods: "toggle__label_mb_22"
       },
-      checkout_button: {
+      checkoutButton: {
         buttonText: "перейти к оплате",
         type: "submit"
       },
-      button_submit_cont: {
+      buttonSubmitCont: {
         buttonContMods: "button-container_vertical-padding button-container_align-items_center",
       },
-      button_submit_description: {
+      buttonSubmitDescription: {
         containerMods: "input-description__container_mt_11px",
         contentMods: "input-description__content_description-for-buttons",
         description: "Уже есть аккаунт на Toxin"
       },
-      button_submit: {
+      buttonSubmit: {
         buttonText: "Войти", buttonMods: "button__body_button_ellipse button__body_extra-padding",
         type: "button",
         link: true,

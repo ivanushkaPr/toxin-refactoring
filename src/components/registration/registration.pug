@@ -1,59 +1,28 @@
--
-  let registation_conf = {
-    registation_conf_headline: {
-      description: 'Регистрация аккаунта',
-    },
-    name_text_field: {
-      contClassMods: 'none',
-      inputClassMods: 'text-field__input--pb-for-etf text-field_input--mb-fe',
-      type: 'text',
-      placeholder: 'Имя',
-      name: 'email',
-      value: '',
-    },
-    surname_text_field: {
-      contClassMods: 'none',
-      inputClassMods: 'text-field__input--pb-for-etf text-field_input--mb-se',
-      type: 'text',
-      placeholder: 'Фамилия',
-      name: 'email',
-      value: '',
-    },
-    radio_buttons: {
-      options: [['Мужчина', true], ['Женщина', false]]
-    },
-    auth_block_headline: {
-      contentMods: 'input_description__content--margin-top-registration',
-    }
-  }
-
-  
-
-mixin registration(registation_conf)
-  section(class=`registration ${registation_conf.blockMods}`)
-    section(class=`registration__container ${registation_conf.containerMods}`)
-    form(class='registation_conf__form' 	action=`${registation_conf.send_to}`, method=`post` name=`${registation_conf.form_name}` autocomplete=`false`)
-      +component-headline(registation_conf.registation_conf_headline)
-      +text-field(registation_conf.name_text_field)
-      +text-field(registation_conf.surname_text_field)
-      +radio-buttons(registation_conf.radio_buttons)
+mixin registration({sendTo, formName, registationConfHeadline, nameTextField,  surnameTextField, radioButtons, maskedTextFieldDescription, maskedTextField, authBlockHeadline, emailTextField, passwordTextField, toggle, checkoutButton, buttonSubmitCont, buttonSubmitDescription, buttonSubmit})
+  section(class=`registration`)
+    section(class=`registration__container`)
+    form(class='registation_conf__form' 	action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
+      +component-headline(registationConfHeadline)
+      +text-field(nameTextField)
+      +text-field(surnameTextField)
+      +radio-buttons(radioButtons)
 
 
       
-      +input-description(registation_conf.masked_text_field_description)
-      +masked-text-field(registation_conf.masked_text_field)
+      +input-description(maskedTextFieldDescription)
+      +masked-text-field(maskedTextField)
 
-      +input-description(registation_conf.auth_block_headline)
-      +text-field(registation_conf.email_text_field)
-      +text-field(registation_conf.password_text_field)
-      +toggle(registation_conf.toggle)
+      +input-description(authBlockHeadline)
+      +text-field(emailTextField)
+      +text-field(passwordTextField)
+      +toggle(toggle)
 
 
-      +button-wide(registation_conf.checkout_button)
+      +button-wide(checkoutButton)
 
-      +button-container(registation_conf.button_submit_cont)
-        +input-description(registation_conf.button_submit_description)
-        +button(registation_conf.button_submit)
+      +button-container(buttonSubmitCont)
+        +input-description(buttonSubmitDescription)
+        +button(buttonSubmit)
 
     
 

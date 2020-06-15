@@ -1,6 +1,6 @@
-mixin calendar({ containerMods, resetMods, applyMods })
+mixin calendar({  })
   div(class=`calendar`)
-    div(class=`calendar__container ${containerMods}`)
+    div(class=`calendar__container`)
       div(class=`calendar__header`)
         button(class=`calendar__button`)
           <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +68,6 @@ mixin calendar({ containerMods, resetMods, applyMods })
             td(class=`calendar__data`) 31
             td(class=`calendar__data calendar__data--disabled `) 1
 
-          
-          
       div(class=`calendar__footer`)
-        button(class=`calendar__button-reset ${resetMods}` type=`button`) Очистить
-        button(class=`calendar__button-apply ${applyMods}` type=`button`) Применить
+        button(class=`calendar__button-reset` type=`button`) Очистить
+        button(class=`calendar__button-apply` type=`button`) Применить

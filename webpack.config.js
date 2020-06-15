@@ -32,6 +32,8 @@ module.exports = {
       inject: true
     }),
  */
+
+ /*
     new HtmlWebpackPlugin({
       template: './src/pages/filter-page.pug',
       filename: './filter-page.html',
@@ -62,7 +64,7 @@ module.exports = {
       inject: true
     }),
     */
-/*
+
 
     new HtmlWebpackPlugin({
       template: './src/pages/cards.pug',
@@ -70,14 +72,14 @@ module.exports = {
       inject: true
     }),
 
-   */  
-
+   
+/*
     new HtmlWebpackPlugin({
       template: './src/pages/form-elements.pug',
       filename: './form-elements.html',
       inject: true
     }),
-     
+     */
   /*
     new HtmlWebpackPlugin({
       template: './src/pages/colors-and-types.pug',
