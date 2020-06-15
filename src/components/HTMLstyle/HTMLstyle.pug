@@ -1,4 +1,35 @@
-mixin HTMLstyle({containerMods, modificators, text})
+mixin HTMLstyle({ containerMargin, descriptionMargin, fontSize, montserratBold, darkShade75, negativeLetterSpacing, modificators, text})
+  -
+    containerMarginMod = '';
+    if(containerMargin) {
+      containerMarginMod = 'HTMLstyle__container_margin';
+    }
+
+    descMarginMod = '';
+    if(descriptionMargin) {
+      descMarginMod = 'HTMLstyle__description_mt-16-and-mb38';
+    }
+
+    let fontSizeMod = '';
+    if(fontSize) {
+      fontSizeMod = `HTMLstyle__description_font-size_${fontSize}`;
+    }
+
+    let fontFamilyMod = '';
+    if(fontFamily) {
+      fontFamilyMod = `HTMLstyle__description_font-family_montserrat-bold`;
+    }
+
+
+    let darkShade75Mod = '';
+    if(darkShade75) {
+      darkShade75Mod = `HTMLstyle__description_color_dark-shade-75`;
+    }
+    let letterSpacingMod = '';
+    if(negativeLetterSpacing) {
+       letterSpacingMod = "HTMLstyle__description_negative-letter-spacing";
+    }
+
   div(class="HTMLstyle")
-    div(class=`HTMLstyle__container ${containerMods}`)
-      pre(class=`HTMLstyle__description ${modificators}`) #{text}
+    div(class=`HTMLstyle__container ${containerMarginMod}`)
+      pre(class=`HTMLstyle__description ${modificators} ${fontSizeMod} ${letterSpacingMod} ${fontFamilyMod} ${darkShade75Mod} ${descMarginMod}`) #{text}

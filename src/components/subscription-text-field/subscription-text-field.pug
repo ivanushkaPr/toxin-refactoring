@@ -1,8 +1,8 @@
 mixin subscription-text-field({containerMarginTop, inputWidth, type, placeholder, name, value})
   -
     let marginTopClass;
-    if(marginTop) {
-      marginTopMod = `subscription-text-field__container_mt_${marginTopSize}`;
+    if(containerMarginTop) {
+      marginTopMod = `subscription-text-field__container_mt_${containerMarginTop}`;
     }
 
     let widthClass;

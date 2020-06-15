@@ -1,5 +1,10 @@
-mixin HTMLtag({containerMods, modificators, tagName})
+mixin HTMLtag({fontSize, tagName})
+  -
+    let fontSizeMod = '';
+    if(fontSize) {
+      fontSizeMod = `HTMLtag__character_font-size_${fontSize}`;
+    }
   div(class="HTMLtag")
-    div(class=`HTMLtag__container ${containerMods}`)
-      p(class=`HTMLtag__character ${modificators}`) #{tagName}
+    div(class=`HTMLtag__container`)
+      p(class=`HTMLtag__character ${fontSizeMod}`) #{tagName}
 

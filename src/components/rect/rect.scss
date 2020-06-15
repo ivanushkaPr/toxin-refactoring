@@ -11,7 +11,7 @@
     background-color: $background_color;
   }
   
-  &__container_margin-bottom {
+  &__container_mb {
     margin-bottom: 1.25rem;
   }
   
@@ -19,31 +19,31 @@
     @include createRect();
   
     
-    &_dark-shade_100 {
+    &_dark-shade-100 {
       @include fillRect($dark_shade_100)
     }
     
-    &_dark-shade_75 {
+    &_dark-shade-75 {
       @include fillRect($dark_shade_75)
     }
     
-    &_dark-shade_50 {
+    &_dark-shade-50 {
       @include fillRect($dark_shade_50)
     }
     
-    &_dark-shade_25 {
+    &_dark-shade-25 {
       @include fillRect($dark_shade_25)
     }
     
-    &_dark-shade_5 {
+    &_dark-shade-5 {
       @include fillRect($dark_shade_75)
     }
     
-    &_bgColor_green {
+    &_green {
       @include fillRect($green)
     }
     
-    &_bgColor_purple {
+    &_purple {
       @include fillRect($purple)
     }
   }

@@ -58,6 +58,8 @@ module.exports = {
       inject: true
     }),
  */
+
+ /*
     new HtmlWebpackPlugin({
       template: './src/pages/headers-and-footers.pug',
       filename: './headers-and-footers.html',
@@ -71,21 +73,21 @@ module.exports = {
       inject: true
     }),
 
-  
-/*
+    */
+
+
+
     new HtmlWebpackPlugin({
       template: './src/pages/form-elements.pug',
       filename: './form-elements.html',
       inject: true
     }),
-     */
-  /*
+  
     new HtmlWebpackPlugin({
       template: './src/pages/colors-and-types.pug',
       filename: './color-and-types.html',
       inject: true
     }),
-    */
 
     new HtmlWebpackPlugin({
       template: './src/pages/presentation.pug',

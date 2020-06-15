@@ -5,8 +5,8 @@ include ../utils/mixins.pug
   let colorsAndTypeConfiguration = {
       rectDarkShade100:
       {
-        backgroundColor: "rect__body_dark-shade_100",
-        containerMods: "rect__container_margin-bottom",
+        backgroundColor: "dark-shade-100",
+        marginBottom: true,
       },
       darkShade100Info: {
         name: "Dark Shade 100%",
@@ -15,8 +15,8 @@ include ../utils/mixins.pug
 
       rectDarkShade75:
       {
-        backgroundColor:"rect__body_dark-shade_75",
-        containerMods: "rect__container_margin-bottom",
+        backgroundColor:"dark-shade-75",
+        marginBottom: true,
       },
 
       darkShade75Info: {
@@ -26,8 +26,8 @@ include ../utils/mixins.pug
 
       rectDarkShade50:
       {
-        backgroundColor:"rect__body_dark-shade_50",
-        containerMods: "rect__container_margin-bottom",
+        backgroundColor:"dark-shade-50",
+        marginBottom: true,
       },
 
       darkShade50Info: {
@@ -37,8 +37,8 @@ include ../utils/mixins.pug
 
       rectDarkShade25:
       {
-        backgroundColor:"rect__body_dark-shade_25",
-        containerMods: "rect__container_margin-bottom",
+        backgroundColor:"dark-shade-25",
+        marginBottom: true,
       },
       darkShade25Info: {
         name: "Dark Shade 25%",
@@ -47,8 +47,8 @@ include ../utils/mixins.pug
 
       rectDarkShade5:
       {
-        backgroundColor: "rect__body_dark-shade_5",
-        containerMods: "rect__container_margin-bottom",
+        backgroundColor: "dark-shade-5",
+        marginBottom: true,
       },
       darkShade5Info: {
         name: "Dark Shade 5%",
@@ -57,8 +57,8 @@ include ../utils/mixins.pug
 
       rectPurple:
       {
-        backgroundColor:"rect__body_bgColor_purple",
-        containerMods: "rect__container_margin-bottom",
+        backgroundColor:"purple",
+        marginBottom: true,
       },
       purpleInfo: {
         name: "Purple",
@@ -67,31 +67,32 @@ include ../utils/mixins.pug
 
       rectGreen:
       {
-        backgroundColor:"rect__body_bgColor_green",
-        containerMods: "rect__container_margin-bottom",
+        backgroundColor:"green",
+        marginBottom: true,
       },
       greenInfo: {
         name: "Green",
         code: "#6FCF97",
       },
 
-      HTMLTagH1: {modificators: "HTMLtag__character_font-size_lg", tagName: "H1"},
+      HTMLTagH1: {fontSize: "lg", tagName: "H1"},
       HTMLStyleH1: {
-        containerMods: 'HTMLstyle__container_margin',
-        modificators: "HTMLstyle__description_font-size_lg HTMLstyle__description_negative-letter-spacing", 
+        containerMargin: true,
+        fontSize: 'lg',
+        negativeLetterSpacing: true,
         text: `This one is the sub-section or 
   widget title`
       },
       
-      HTMLTagH2: {modificators: "HTMLtag__character_font-size_md", tagName: "H2"},
-      HTMLStyleH2: {containerMods: 'HTMLstyle__container_margin', modificators: "HTMLstyle__description_font-size_md HTMLstyle__description_margin-top-and-left HTMLstyle__description_negative-letter-spacing", text: `Next one is the item title inside
+      HTMLTagH2: {fontSize: "md", tagName: "H2"},
+      HTMLStyleH2: {containerMargin: true, descriptionMargin: true, fontSize: "md", negativeLetterSpacing: true, text: `Next one is the item title inside
   widgets`},
       
-      HTMLTagH3: {modificators: "HTMLtag__character_font-size_xs", tagName: "H3"},
-      HTMLStyleH3: {containerMods: 'HTMLstyle__container_margin', modificators: "HTMLstyle__description_font-size_xs HTMLstyle__description_font-family_montserrat-bold", text: "THIS IS A LABEL OR CTA TEXT"},
+      HTMLTagH3: {fontSize: "xs", tagName: "H3"},
+      HTMLStyleH3: {containerMargin: true, fontSize: "xs", montserratBold: true, text: "THIS IS A LABEL OR CTA TEXT"},
 
-      HTMLTagBody: {modificators: "HTMLtag__character_font-size_sm", tagName: "Body"},
-      HTMLStyleBody: {containerMods: 'HTMLstyle__container_margin', modificators: "HTMLstyle__description_font-size_sm HTMLstyle__description_color-dark-shade_75 HTMLstyle__description_font-family_montserrat", text: `This is the body text which is used for most 
+      HTMLTagBody: {modificators: "sm", tagName: "Body"},
+      HTMLStyleBody: {containerMargin: true, fontSize: "sm", montserratBold: true, darkShade75: true, text: `This is the body text which is used for most 
   of the design, like paragraphs, lists, etc.`},
   }
 

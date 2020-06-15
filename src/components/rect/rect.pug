@@ -1,5 +1,15 @@
-mixin rect(obj)
-  - const { containerMods, backgroundColor } = obj;
+mixin rect({ marginBottom, backgroundColor })
+  -
+    let marginBottomMod = '';
+    if(marginBottom) {
+      marginBottomMod = "rect__container_mb";
+    }
+
+    let backgroundColorMod = '';
+    if(backgroundColor) {
+      backgroundColorMod = `rect__body_${backgroundColor}`
+    }
+
   div(class='rect')
-    div(class=`rect__container ${containerMods}`)
-      div(class=`rect__body ${backgroundColor}`)
+    div(class=`rect__container ${marginBottomMod}`)
+      div(class=`rect__body ${backgroundColorMod}`)
