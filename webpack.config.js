@@ -63,8 +63,7 @@ module.exports = {
       filename: './headers-and-footers.html',
       inject: true
     }),
-    
-/*
+
 
     new HtmlWebpackPlugin({
       template: './src/pages/cards.pug',
@@ -72,7 +71,7 @@ module.exports = {
       inject: true
     }),
 
-   */
+  
 /*
     new HtmlWebpackPlugin({
       template: './src/pages/form-elements.pug',

@@ -1,49 +1,4 @@
--
-  let search_room_conf = {
-    search_room_headline: {
-      description: 'Найдём номера под ваши пожелания',
-    },
-    input_date_dropdown_first_description: {
-        containerMods: '',
-        contentMods: '',
-        description: 'Прибытие'
-      },
-    input_date_dropdown_first: {
-        contClassMods: 'none',
-        inputClassMods: '',
-        type: 'text',
-        placeholder: 'ДД.ММ.ГГГГ',
-        name: 'input_date_dropdown_default',
-        value: '',
-      },
-      input_date_dropdown_second_description: {
-        containerMods: '',
-        contentMods: '',
-        description: 'Выезд'
-      },
-      input_date_dropdown_second: {
-        contClassMods: 'none',
-        inputClassMods: '',
-        type: 'text',
-        placeholder: 'ДД.ММ.ГГГГ',
-        name: 'input_date_dropdown_default',
-        value: '',
-      },
-      input_dropdown_guests: {
-        properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
-        controlsMods: 'input_dropdown_guests__controls--closed',
-        contClassMods: 'input_dropdown_guests--margin-bottom-on-cards-page',
-        inputClassMods: 'input_dropdown_guests__input--controls-closed ',
-        type: 'text',
-        placeholder: 'Сколько гостей',
-        name: 'input_dropdown_guests__input',
-        value: '',
-        resetMods: 'input-dropdown-guests__button-reset_hidden'
-      }, 
-  }
-  
-
-mixin search-room({position, top, left, sendTo, formName, searchRoomHeadline, doubleDateDropdown, inputDropdownGuests, buttonWide})
+mixin search-room({position, top, left, sendTo, formName, buttonWide})
   -
     let positionMod = '';
     if(position === 'absolute' || position === 'static') {
@@ -65,11 +20,57 @@ mixin search-room({position, top, left, sendTo, formName, searchRoomHeadline, do
   section(class=`search-room`)
     section(class=`search-room__container ${containerMods}`)
       form(class='search-room__form' action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
-        +component-headline(searchRoomHeadline)
+        +component-headline({description: "Найдём номера под ваши пожелания"})
 
-        +double-date-dropdown(doubleDateDropdown)
+        +double-date-dropdown({
+      inputDateDropdownContainer: {marginBottom: 21},
+      inputDateDropdownDescriptionFirst:  {
+        description: "Прибытие"
+      } ,
+      inputDateDropdownFirst: {
+        contClassMods: "none",
+        inputClassMods: "datepick-start",
+        type: "text",
+        placeholder: "ДД.ММ.ГГГГ",
+        name: "input_date_dropdown_default",
+        value: "",
+        id: 'start',
+        buttonID: 'start-button'
+      },
+      inputDateDropdownDescriptionSecond: {
+        containerMods: "",
+        contentMods: "",
+        description: "Выезд"
+      },
+      inputDateDropdownSecond: {
+        contClassMods: "none",
+        inputClassMods: "datepick-end",
+        type: "text",
+        placeholder: "ДД.ММ.ГГГГ",
+        name: "input_date_dropdown_default",
+        value: "",
+        id: 'end',
+        buttonID: 'end-button'
+      },
+      calendar: {
+          id: 'calendar-start'
+        }
+    })
 
         +input-description({containerMods: '',contentMods: '', description: 'гости'})
-        +input-dropdown-guests(inputDropdownGuests)
+        +input-dropdown-guests({
+          contMarginBottom: 31, 
+          properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
+          controlsMods: "input-dropdown-guests__controls_closed",
+          inputClassMods: "input-dropdown-guests__input--controls-closed ",
+          type: "text",
+          placeholder: "Сколько гостей",
+          name: "input_dropdown_guests__input",
+          value: "",
+          resetMods: "input-dropdown-guests__button_reset_hidden"
+          })
 
-        +button-wide(buttonWide)
+        +button-wide({buttonText: "подобрать номер", type: "submit"})
+
+
+

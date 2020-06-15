@@ -1,6 +1,12 @@
-mixin radio-buttons({ options })
+mixin radio-buttons({marginBottom, options })
+  -
+    let marginBottomMod = '';
+    if(marginBottom) {
+      marginBottomMod = 'radio-buttons__container_mb_21';
+    }
+
   div(class=`radio-buttons`)
-    div(class=`radio-buttons__container`)
+    div(class=`radio-buttons__container ${marginBottomMod}`)
       each option in options
         label(class=`radio-buttons__label`)
           if(option[1] === true)

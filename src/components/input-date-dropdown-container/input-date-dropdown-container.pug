@@ -1,9 +1,14 @@
-mixin input-date-dropdown-container({marginTop})
+mixin input-date-dropdown-container({marginTop, marginBottom})
   -
-    let marginTopClass;
+    let marginTopClass = '';
     if(marginTop) {
       marginTopClass = `input-date-dropdown-container__container_mt_${marginTop}`;
     }
+
+    let marginBottomClass = '';
+    if(marginBottom) {
+      marginBottomClass = `input-date-dropdown-container__container_mb_${marginBottom}`;
+    }
   div(class=`input-date-dropdown-container`)
-    div(class=`input-date-dropdown-container__container ${marginTopClass}`)
+    div(class=`input-date-dropdown-container__container ${marginTopClass} ${marginBottomClass}`)
       block

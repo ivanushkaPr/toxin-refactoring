@@ -1,28 +1,75 @@
-mixin registration({sendTo, formName, registationConfHeadline, nameTextField,  surnameTextField, radioButtons, maskedTextFieldDescription, maskedTextField, authBlockHeadline, emailTextField, passwordTextField, toggle, checkoutButton, buttonSubmitCont, buttonSubmitDescription, buttonSubmit})
+mixin registration({ sendTo, formName })
   section(class=`registration`)
     section(class=`registration__container`)
-    form(class='registation_conf__form' 	action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
-      +component-headline(registationConfHeadline)
-      +text-field(nameTextField)
-      +text-field(surnameTextField)
-      +radio-buttons(radioButtons)
+      form(class='registation_conf__form' 	action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
+        +component-headline({
+          description: "Регистрация аккаунта",
+          mods: "component-headline__text_mb_20",
+        })
+        +text-field({
+          contMarginBottom: 9,
+          type: "text",
+          placeholder: "Имя",
+          name: "firstName",
+          value: "",
+        })
+
+        +text-field({
+          contMarginBottom: 9,
+          type: "text",
+          placeholder: "Фамилия",
+          name: "secondName",
+          value: "",
+        })
+        
+        +radio-buttons({options: [["Мужчина", true], ["Женщина", false]], marginBottom: "21"})
 
 
-      
-      +input-description(maskedTextFieldDescription)
-      +masked-text-field(maskedTextField)
+        
+        +input-description({contentMods: "", description: "дата рождения"})
+        +masked-text-field({
+          contClassMods: "none",
+          inputClassMods: "masked-text-field__input_vertical-padding_12",
+          type: "text",
+          placeholder: "ДД.ММ.ГГГГ",
+          name: "masked_text_field",
+          value: "",
+        })
 
-      +input-description(authBlockHeadline)
-      +text-field(emailTextField)
-      +text-field(passwordTextField)
-      +toggle(toggle)
+        +input-description({contMT: 19, description: "данные для входа в сервис"})
+        +text-field({
+          contMarginBottom: 10,
+          type: "text",
+          placeholder: "Email",
+          name: "Email",
+          value: "",
+        })
+        +text-field({
+          contMarginBottom: 8,
+          type: "text",
+          placeholder: "Пароль",
+          name: "password",
+          value: "",
+        })
+        +toggle({
+          descText: "Получать спецпредложения",
+          containerMarginBottom: 24,
+        })
 
 
-      +button-wide(checkoutButton)
+        +button-wide({
+          buttonText: "перейти к оплате",
+          type: "submit",
+          buttonMarginBottom: 30,
+        })
 
-      +button-container(buttonSubmitCont)
-        +input-description(buttonSubmitDescription)
-        +button(buttonSubmit)
+        +button-container({ buttonMarginBottom: 30 })
+          +input-description({description: "Уже есть аккаунт на Toxin", descriptionBg: true,})
+          +button({
+            buttonText: "Войти", buttonType: "transparent", 
+            link: true,
+            href: "https://www.mock-adress/full-stack-development.ru/submit",
+          })
 
     
 

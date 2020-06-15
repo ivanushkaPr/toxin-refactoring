@@ -1,14 +1,87 @@
-mixin cost-calculator({roomInfo, sendTo, formName, doubleDateDropdown, inputDropdownGuests, balance, bookButton})
+mixin cost-calculator({ sendTo, formName })
   div(class=`cost-calculator `)
     div(class=`cost-calculator__cont`)
-    +room-info(roomInfo)
+    +room-info({
+        blockMods: "",
+        overallMods: "",
+        numberMods: "",
+        numberSymbol: "№ ",
+        numberText: "888",
+        typeMods: "",
+        typeText: "люкс",
+        priceMods: "",
+        costMods:"",
+        costText: "9 990₽ ",
+        periodMods: "",
+        periodText: "&nbsp; в сутки",
+      })
     form(class='cost-calculator__form' 	action=`${sendTo}` method=`post` name=`${formName}` autocomplete=`false`)
-      +double-date-dropdown(doubleDateDropdown)
+      +double-date-dropdown({
+        inputDateDropdownContainer: { marginBottom: '21' },
+        inputDateDropdownDescriptionFirst:  {
+          containerMods: "",
+          contentMods: "",
+          description: "Прибытие"
+        } ,
+        inputDateDropdownFirst: {
+          contClassMods: "none",
+          inputClassMods: "",
+          type: "text",
+          placeholder: "19.08.2019",
+          name: "input_date_dropdown_default",
+          value: "",
+          id: 'start-2',
+
+        },
+        inputDateDropdownDescriptionSecond: {
+          containerMods: "",
+          contentMods: "",
+          description: "Выезд"
+        },
+        inputDateDropdownSecond: {
+          contClassMods: "none",
+          inputClassMods: "",
+          type: "text",
+          placeholder: "23.08.2019",
+          name: "input_date_dropdown_default",
+          value: "",
+          id: 'end-2',
+
+        },
+        calendar: {
+            id: 'calendar-start-2'
+        }
+      })
 
       +input-description({containerMods: '',contentMods: '', description: 'гости'})
-      +input-dropdown-guests(inputDropdownGuests)
+      +input-dropdown-guests({
+        contMarginBottom: 8,
+        properties: [["взрослый", 0], ["дети", 0], ["младенцы", 0]],
+        controlsMods: "input-dropdown-guests__controls_closed",
+        contClassMods: "input-dropdown-guests_margin-bottom-in-balance-component",
+        inputClassMods: "input_dropdown_guests__input_controls_closed ",
+        type: "text",
+        placeholder: "Сколько гостей",
+        name: "input_dropdown_guests__input",
+        value: "3 гостя",
+        resetMods: "input-dropdown-guests__button-reset_hidden"
+      })
 
-      +balance(balance)
-      +button-wide(bookButton)
+      +balance({
+        blockMods: "",
+        services: [["9 990₽ х 4 суток", false, "39 960₽"], ["Сбор за услуги: скидка 2 179₽", true, "0₽"], ["Сбор за дополнительные услуги", true, "300₽"]],
+        feeMods: "",
+        contMods: "",
+        serviceMods: "",
+        tooltipMods: "",
+        contMods: "",
+        totalMods: "",
+        totalCostText: "Итого",
+        sumText: "38 081₽",
+      })
+
+      +button-wide({
+        buttonText: "Забронировать"
+      })
 
     

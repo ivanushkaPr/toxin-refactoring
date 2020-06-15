@@ -9,15 +9,37 @@ mixin room({paddingBottom, imageMarginTop, carouselID, imageOne, imageTwo, image
     if(imageMarginTop) {
       imageMarginTopMod = `room__images_mt_${imageMarginTop}`;
     }
+
+
+    let imageMods = ''; 
+
+
+    let imageOneMod = ''
+    if(imageOne !== undefined) {
+      imageOneMod =`room__image_background-${imageOne}`
+    }
+    let imageTwoMod = ''
+    if(imageTwo !== undefined) {
+      imageTwoMod =`room__image_background-${imageTwo}`
+    }
+    let imageThreeMod = ''
+    if(imageThree !== undefined) {
+      imageThreeMod =`room__image_background-${imageThree}`
+    }
+    let imageFourMod = ''
+    if(imageFour !== undefined) {
+      imageFourMod =`room__image_background-${imageFour}`
+    }
+
   
   div(class=`room`)
     div(class=`room__container ${containerPaddingBottomMod}`)
       div(class=`room__images ${imageMarginTopMod}`)
         ul(class=`room__gallery owl-carousel owl-theme` id=`${carouselID}`)
-          li(class=`room__image ${imageOne}`)
-          li(class=`room__image ${imageTwo}`)
-          li(class=`room__image ${imageThree}`)
-          li(class=`room__image ${imageFour}`)
+          li(class=`room__image ${imageOneMod}`)
+          li(class=`room__image ${imageTwoMod}`)
+          li(class=`room__image ${imageThreeMod}`)
+          li(class=`room__image ${imageFourMod}`)
         
         div(class=`room__controls` id=`${controlsID}`)
 

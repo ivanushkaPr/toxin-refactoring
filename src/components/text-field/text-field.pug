@@ -1,13 +1,18 @@
-mixin text-field({inputMarginBottom, hovered, type, placeholder, name, value})
+mixin text-field({contMarginBottom, inputMarginBottom, hovered, type, placeholder, name, value})
   -
     const marginSize = [0, 8, 9, 10, 11, 14.4, 20];
 
-    let sizeOfInputPaddingBottom;
+    let contMarginBottomMod = '';
+    if(marginSize.indexOf(contMarginBottom)) {
+      contMarginBottomMod = `text-field__container_mb_${marginSize[marginSize.indexOf(contMarginBottom)]}`;
+    }
+
+    let sizeOfInputPaddingBottom = '';
     if(marginSize.indexOf(inputMarginBottom)) {
       sizeOfInputPaddingBottom = `text-field__input_pb_${marginSize[marginSize.indexOf(inputMarginBottom)]}`;
     }
 
-    let hoverClass;
+    let hoverClass = '';
     if(hovered) {
       hoverClass = 'text-field__input_hover';
     }
@@ -16,5 +21,5 @@ mixin text-field({inputMarginBottom, hovered, type, placeholder, name, value})
     
     
   div(class=`text-field ${blockMods}`)
-    div(class=`text-field__container`)
+    div(class=`text-field__container ${contMarginBottomMod}`)
       input(class=`${inputClasses}` type=`${type}` placeholder=`${placeholder}` name=`${name}` value=`${value}`)

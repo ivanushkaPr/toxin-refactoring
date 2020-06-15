@@ -1,16 +1,39 @@
-mixin auth-form({authFormHeadline, sendTo, formName, nameTextField, surnameTextField, checkoutButton, buttonSubmitCont, buttonSubmitDescription,  buttonSubmit})
+mixin auth-form({ sendTo, formName,  buttonSubmitDescription,  buttonSubmit})
   section(class=`auth-form`)
     section(class=`auth-form__container`)
-      +component-headline(authFormHeadline)
+      +component-headline({
+        description: "Войти",
+        containerMods: "component-headline__container_margin-bottom ",
+        mods: ""
+      })
       form(class='auth-form__form' 	action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
-        +text-field(nameTextField)
-        +text-field(surnameTextField)
+        +text-field({
+          contMarginBottom: 10,
+          type: "text",
+          placeholder: "Имя",
+          name: "firstName",
+          value: "",
+        })
+        +text-field({
+          contMarginBottom: 20,
+          type: "text",
+          placeholder: "Фамилия",
+          name: "secondName",
+          value: "",
+        })
 
-        +button-wide(checkoutButton)
+        +button-wide({
+          buttonText: "войти",
+          link: true,
+          href: 'https://www.mock-adress/full-stack-development.ru/createAccount'
+        })
 
-        +button-container(buttonSubmitCont)
-          +input-description(buttonSubmitDescription)
-          +button(buttonSubmit)
+        +button-container({ buttonContMods: "button-container_vertical-padding button-container_align-items_center" })
+          +input-description({
+            descriptionBg: true,
+            description: "Нет аккаунта на Toxin?"
+          })
+          +button({  buttonText: "Создать", buttonType: "transparent",  type: "submit" })
 
     
 
