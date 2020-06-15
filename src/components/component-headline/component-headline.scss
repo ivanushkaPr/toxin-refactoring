@@ -1,14 +1,14 @@
 .component-headline {
   &__container {
-    &_margin-bottom {
+    &_mb_20 {
       margin-bottom: 20px;
     }
   
-    &_mt_69px {
+    &_mt_69 {
       margin-top: 68px;
     }
   
-    &_ml {
+    &_ml_108 {
       margin-left: 108px;
     }
   }
@@ -38,7 +38,7 @@
       max-width: inherit;
     }
 
-    &_margin-top_zero {
+    &_margin-top_0 {
       margin-top: 0px;
     }
     

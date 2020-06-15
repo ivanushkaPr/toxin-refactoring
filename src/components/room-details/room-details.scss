@@ -1,4 +1,4 @@
-.room_details {
+.room-details {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -105,12 +105,12 @@
   }
 
   &__wrapper {
-    &_d-flex_jc-sb {
+    &_display_flex{
       display: flex;
       justify-content: space-between;
     }
   
-    &_max-width {
+    &_max-width_686 {
       max-width: 686px;
     }
   }
