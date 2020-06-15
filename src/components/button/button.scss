@@ -65,13 +65,15 @@
     }
 
     // Стиля для кнопок в хедере.
-  
-    &_header-size_sm {
+  //  &_header-size_sm
+    &_sm {
       margin-top: 0px;
       padding: 9px 19px 9px 19px;
     }
   
-    &_header-margin-right {
+
+    //  &_header-margin-right
+    &_mr_20 {
       margin-right: 20px;
     }
   }

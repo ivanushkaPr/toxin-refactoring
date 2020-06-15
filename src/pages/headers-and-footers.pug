@@ -4,7 +4,9 @@ include ../utils/mixins.pug
   let headersAndFootersConfiguration = {
     headerRegister: {
       mods: "",
-      containerMods: "header-register_mt-hf",
+      containerMarginTop: 67, 
+      containerMarginBottom: 39,
+      containerVerticalPadding: 8, 
       items: [
         {value: "Home", active: true, submenu: false},
         {value: "About Us", active: false, submenu: false},
@@ -16,20 +18,20 @@ include ../utils/mixins.pug
         ],
       buttonLogin: {
         buttonText: "login", 
-        buttonMods: "button__body_button_ellipse button__body_transparent_button_extra-fields button__body_header-margin-right",
+        buttonType: "transparent",
+        buttonSm: true,
+        marginRight: true,
         link: true,
         href: "https://mock-adress.ru/login.php"
       },
       buttonRegister: {
         buttonText: "register",
-        buttonMods: "button__body_button_ellipse button__body_background-linear-gradient_purple button__body_small-vertical-padding",
+        buttonType: "gradient",
+        buttonSm: true,
         link: true,
         href: "https://mock-adress.ru/submit.php"
       },
     },
-
-    
-      
 
     headerAuthorized: {
       items: [
@@ -47,7 +49,8 @@ include ../utils/mixins.pug
     footer: {
       sendTo: "https://www.mock-adress/full-stack-development.ru",
       formName: "subscribe",
-      mods: "footer_mt-hf",
+      contMarginTop: '37',
+      containerPaddingBottom: '18',
       info: [
         "Lorem ipsum dolor sit amet",
         "consectetur adipiscing elit aliquam",

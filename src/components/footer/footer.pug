@@ -1,4 +1,27 @@
-mixin footer({mods, containerMods, info, navContMods, lists, subscribe, sendTo, formName, subscriptionTextField, copyright})
+mixin footer({contMarginTop, contMarginBottom, containerPaddingTop, containerPaddingBottom, info, navContMods, lists, subscribe, sendTo, formName, subscriptionTextField, copyright})
+  -
+    let contMarginTopMod = '';
+    if(contMarginTop) {
+      contMarginTopMod = `footer__container_mt_${contMarginTop}`;
+    }
+
+    let containerMarginBottoMod = '';
+    if(contMarginBottom) {
+       contMarginBottomMod = `footer__container_mb_${contMarginBottom}`;
+    }
+
+    let containerPaddingTopMod = '';
+    if(containerPaddingTop) {
+      contPaddingTopMod = `footer__container_pt_${containerPaddingTop}`;
+    }
+
+    
+    let containerPaddingBottomMod = '';
+    if(containerPaddingBottom) {
+      contPaddingBottomMod = `footer__container_pt_${containerPaddingBottom}`;
+    }
+    const containerMods = `${contMarginTopMod} ${contMarginBottomMod} ${contPaddingTopMod}`;
+
   footer(class=`footer ${mods}`)
     div(class=`footer__container ${containerMods}`)
       div(class=`footer__about`)

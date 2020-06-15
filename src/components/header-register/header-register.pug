@@ -1,5 +1,22 @@
-mixin header-register({mods, containerMods, items, buttonLogin, buttonRegister})
-  section(class=`header-register ${mods}`)
+mixin header-register({containerMarginTop, containerMarginBottom, containerVerticalPadding, items, buttonLogin, buttonRegister})
+  -
+    let containerMarginTopMod = '';
+    if(containerMarginTop) {
+      containerMarginTopMod = `header-register__container_mt_${containerMarginTop}`;
+    }
+
+    let containerMarginBottomMod = '';
+    if(containerMarginBottom) {
+      containerMarginBottomMod = `header-register__container_mb_${containerMarginBottom}`;
+    }
+
+    let containerVerticalPaddingMod = '';
+     if(containerVerticalPadding) {
+       containerVerticalPaddingMod = `header-register__container_padding-vertical_8`;
+    }
+
+    const containerMods = `${containerMarginTopMod} ${containerMarginBottomMod} ${containerVerticalPaddingMod}`;
+  section(class=`header-register`)
     section(class=`header-register__container ${containerMods}`)
       div(class=`header-register__logo`)
         <svg width="106" height="46" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">

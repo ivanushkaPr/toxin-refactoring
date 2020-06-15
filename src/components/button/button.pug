@@ -1,4 +1,4 @@
-mixin button({buttonType, link, type, href, buttonText})
+mixin button({buttonType, buttonSm, marginRight, link, type, href, buttonText})
   -
     let buttonMods = '';
     if(buttonType === 'transparent') {
@@ -8,10 +8,24 @@ mixin button({buttonType, link, type, href, buttonText})
     } else {
       buttonMods = ``;
     }
+
+
+    let buttonSizeMod = '';
+    if(buttonSm) {
+      buttonSizeMod = `button__body_sm`;
+    }
+
+    let marginRightMod = ''
+    if(marginRight) {
+      marginRightMod = `button__body_mr_20`;
+    }
+
+    const mods = `${buttonMods} ${buttonSizeMod} ${marginRightMod}`;
+
   div(class=`button`)
     div(class=`button__container`)
       if(link === true)
-        button(class=`button__body ${buttonMods}` type=`${type}`)
+        button(class=`button__body ${mods}` type=`${type}`)
           a(class=`button__link` href=`${href}`) #{buttonText}
       else 
         button(class=`button__body ${buttonMods}` type=`${type}`) #{buttonText}
