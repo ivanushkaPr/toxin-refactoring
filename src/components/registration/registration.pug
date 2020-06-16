@@ -1,6 +1,12 @@
-mixin registration({ sendTo, formName })
+mixin registration({ sendTo, formName, marginAuto })
+  -
+    let marginAutoMod = '';
+    if(marginAuto) {
+      marginAutoMod = 'registration__container_horizontal-margin-auto'
+    }
+    
   section(class=`registration`)
-    section(class=`registration__container`)
+    section(class=`registration__container ${ marginAutoMod}`)
       form(class='registation_conf__form' 	action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
         +component-headline({
           description: "Регистрация аккаунта",

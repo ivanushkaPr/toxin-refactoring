@@ -1,10 +1,6 @@
 
 .auth-form {
-  &_horizontal-margin_auto {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 161px;
-  }
+
 
   &__container {
     width: 100%;
@@ -17,6 +13,12 @@
     border-radius: 4px;
     background: #FFFFFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+
+    &_horizontal-margin_auto {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 161px;
+    }
     
     &_margin-top {
      margin-top: 39px;

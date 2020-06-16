@@ -2,23 +2,23 @@ mixin search-room({position, top, left, sendTo, formName, buttonWide})
   -
     let positionMod = '';
     if(position === 'absolute' || position === 'static') {
-      positionMod = `search-room__container_position_${position}`
+      positionMod = `search-room_position_${position}`
     }
 
     let topMod = '';
     if(top === 140) {
-      topMod = `search-room__container_top_${top}`
+      topMod = `search-room_top_${top}`
     }
 
     let leftMod = '';
     if(left === 140) {
-      leftMod = `search-room__container_top_${left}`
+      leftMod = `search-room_left_${left}`
     }
     const containerMods = `${positionMod} ${topMod} ${leftMod}`;
 
 
-  section(class=`search-room`)
-    section(class=`search-room__container ${containerMods}`)
+  section(class=`search-room ${containerMods}`)
+    section(class=`search-room__container`)
       form(class='search-room__form' action=`${sendTo}`, method=`post` name=`${formName}` autocomplete=`false`)
         +component-headline({description: "Найдём номера под ваши пожелания"})
 

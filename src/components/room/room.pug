@@ -1,8 +1,8 @@
-mixin room({paddingBottom, imageMarginTop, carouselID, imageOne, imageTwo, imageThree, imageFour, controlsID, dotsID, specialChar, roomNumber,  status, price, period, rating, ammount})
+mixin room({marginBottom, imageMarginTop, carouselID, imageOne, imageTwo, imageThree, imageFour, controlsID, dotsID, specialChar, roomNumber,  status, price, period, rating, ammount})
   -
-    let containerPaddingBottomMod = '';
-    if(paddingBottom) {
-      containerPaddingBottomMod = `room__container_pb_${paddingBottom}`;
+    let containerMarginBottomMod = '';
+    if(marginBottom) {
+      containerMarginBottomMod = `room__container_mb_${marginBottom}`;
     }
 
     let imageMarginTopMod = '';
@@ -31,7 +31,7 @@ mixin room({paddingBottom, imageMarginTop, carouselID, imageOne, imageTwo, image
 
   
   div(class=`room`)
-    div(class=`room__container ${containerPaddingBottomMod}`)
+    div(class=`room__container ${containerMarginBottomMod}`)
       div(class=`room__images ${imageMarginTopMod}`)
         ul(class=`room__gallery owl-carousel owl-theme` id=`${carouselID}`)
           li(class=`room__image ${imageOneMod}`)

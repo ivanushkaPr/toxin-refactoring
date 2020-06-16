@@ -4,18 +4,18 @@ include ../utils/mixins.pug
 -
   const roomDetailsConfiguration = {
     headerRegisterConfiguration: {
-      mods: 'header_register--padding',
-      containerMods: 'header_register__container--padding-vertical',
+      containerVerticalPadding: true,
       items: [
-        {value: 'О нас', active: true, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Услуги', active: false, submenu: true, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Вакансии', active: false, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Новости', active: false, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Соглашения', active: false, submenu: true, itemMods: 'header__item--margin-right-pages'},
+        {value: 'О нас', active: true, submenu: false, marginRight: true },
+        {value: 'Услуги', active: false, submenu: true, marginRight: true },
+        {value: 'Вакансии', active: false, submenu: false, marginRight: true },
+        {value: 'Новости', active: false, submenu: false, marginRight: true },
+        {value: 'Соглашения', active: false, submenu: true, marginRight: true },
         ],
         buttonLogin: {
         buttonText: 'Войти', 
         buttonType: 'transparent',
+        marginRight: true,
         link: true,
         href: 'https://mock-address.ru/login.php'
       },

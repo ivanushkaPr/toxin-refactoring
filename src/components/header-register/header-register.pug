@@ -50,15 +50,18 @@ mixin header-register({containerMarginTop, containerMarginBottom, containerVerti
       div(class='header-register__menu-container')
         nav(class=`header-register__menu`)
           ul(class=`header-register__list`)
-            each menu_item in items
-              if(menu_item.active === true)
-                li(class=`header-register__item header-register__item_active ${menu_item.itemMods}`) 
-                  a(class=`header-register__link` href=`href="/mock-address/change-me`) #{menu_item.value}
-              else
-                li(class=`header-register__item ${menu_item.itemMods}`)
-                  a(class=`header-register__link` href=`href="/mock-address/change-me`) #{menu_item.value}
+            each menuItem in items
+              -  let marginRightMod = '';
+              -  if(menuItem.marginRight === true) marginRightMod = `header-register__item__mr_20`;
 
-                  if(menu_item.submenu === true)
+              if(menuItem.active === true)
+                li(class=`header-register__item header-register__item_active ${marginRightMod}`) 
+                  a(class=`header-register__link` href=`href="/mock-address/change-me`) #{menuItem.value}
+              else
+                li(class=`header-register__item ${marginRightMod}`)
+                  a(class=`header-register__link` href=`href="/mock-address/change-me`) #{menuItem.value}
+
+                  if(menuItem.submenu === true)
                     button(class=`header-register__item-button`) 
                       <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.5"/>

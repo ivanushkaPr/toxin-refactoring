@@ -1,8 +1,13 @@
-mixin component-headline({marginTop, marginLeft, fontSize, containerMods, mods, description})
+mixin component-headline({marginTop, marginBottom, marginLeft, fontSize, textAlign, maxWidth, containerMods, mods, description})
   -
     let marginTopMod = '';
     if(marginTop) {
       marginTopMod = `component-headline__container_mt_${marginTop}`;
+    }
+
+    let marginBottomMod = '';
+    if(marginBottom) {
+      marginBottomMod = `component-headline__container_mb_${marginBottom}`;
     }
 
     let marginLeftMod = '';
@@ -14,6 +19,17 @@ mixin component-headline({marginTop, marginLeft, fontSize, containerMods, mods, 
     if(fontSize) {
       fontSizeMod = `component-headline__text_font-size_${fontSize}`;
     }
+
+    let textAlignMod = '';
+    if(textAlign) {
+      marginLeftMod = `component-headline__text_text-align_${textAlign}`;
+    }
+
+    let maxWidthMod = '';
+    if(maxWidth) {
+      maxWidthMod = `component-headline__text_max-width_${maxWidth}`;
+    }
+
   div(class=`component-headline`)
-    div(class=`component-headline__container ${marginTopMod} ${marginLeftMod}`)
-      p(class=`component-headline__text ${fontSizeMod}`) #{description}
+    div(class=`component-headline__container ${marginTopMod} ${marginLeftMod} ${marginBottomMod}`)
+      p(class=`component-headline__text ${fontSizeMod} ${textAlignMod} ${maxWidthMod}`) #{description}

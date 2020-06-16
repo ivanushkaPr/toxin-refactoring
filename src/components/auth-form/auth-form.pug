@@ -1,6 +1,12 @@
-mixin auth-form({ sendTo, formName,  buttonSubmitDescription,  buttonSubmit})
+mixin auth-form({ sendTo, formName, marginAuto })
+  -
+    let marginAutoMod = '';
+    if(marginAuto) {
+      marginAutoMod = `auth-form__container_horizontal-margin_auto`;
+    }
+
   section(class=`auth-form`)
-    section(class=`auth-form__container`)
+    section(class=`auth-form__container ${marginAutoMod}`)
       +component-headline({
         description: "Войти",
         containerMods: "component-headline__container_margin-bottom ",

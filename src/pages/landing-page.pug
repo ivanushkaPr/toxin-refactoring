@@ -4,110 +4,35 @@ include ../utils/mixins.pug
 -
   const landingPageConfiguration = {
     headerRegisterConfiguration: {
-      mods: '',
-      containerMods: 'header-register__container_padding-vertical',
+      containerVerticalPadding: true,
       items: [
-        {value: 'О нас', active: true, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Услуги', active: false, submenu: true, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Вакансии', active: false, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Новости', active: false, submenu: false, itemMods: 'header__item--margin-right-pages'},
-        {value: 'Соглашения', active: false, submenu: true, itemMods: 'header__item--margin-right-pages'},
+        {value: 'О нас', active: true, submenu: false, marginRight: true },
+        {value: 'Услуги', active: false, submenu: true, marginRight: true },
+        {value: 'Вакансии', active: false, submenu: false, marginRight: true },
+        {value: 'Новости', active: false, submenu: false, marginRight: true },
+        {value: 'Соглашения', active: false, submenu: true, marginRight: true },
         ],
         buttonLogin: {
         buttonText: 'Войти', 
-        buttonMods: 'button__body_button_ellipse button__body_transparent-button_extra-fields button__body_header-margin-right  button__body_header-size_sm',
+        buttonType: 'transparent',
+        marginRight: true,
         link: true,
         href: 'https://mock-address.ru/login.php'
       },
       buttonRegister: {
         buttonText: 'Зарегистрироваться',
-        buttonMods: 'button__body_button_ellipse button__body_background-linear-gradient_purple button__body_small-vertical-padding button__body_header-size_sm',
+        buttonType: 'gradient',
         link: true,
         href: 'https://mock-address.ru/register.php'
       },
     },
     searchRoomConfiguration: {
+      position: 'absolute',
+      top: 140,
+      left: 140,
       mods: 'search-room_position-absolute-lp',
-      containerMods: '',
-      send_to: 'https://www.mock-adress/full-stack-development.ru',
-      form_name: 'search_room',
-    search_room_headline: {
-      description: 'Найдём номера под ваши пожелания',
-    },
-
-    double_date_dropdown: {
-      inputDateDropdownContainer: {mods: 'input-date-dropdown-container_cards-margin-bottom'},
-      inputDateDropdownDescriptionFirst:  {
-        containerMods: "",
-        contentMods: "",
-        description: "Прибытие"
-      } ,
-      inputDateDropdownFirst: {
-        contClassMods: "none",
-        inputClassMods: "datepick-start",
-        type: "text",
-        placeholder: "ДД.ММ.ГГГГ",
-        name: "input_date_dropdown_default",
-        value: "",
-        id: 'start',
-        buttonID: 'start-button'
-      },
-      inputDateDropdownDescriptionSecond: {
-        containerMods: "",
-        contentMods: "",
-        description: "Выезд"
-      },
-      inputDateDropdownSecond: {
-        contClassMods: "none",
-        inputClassMods: "datepick-end",
-        type: "text",
-        placeholder: "ДД.ММ.ГГГГ",
-        name: "input_date_dropdown_default",
-        value: "",
-        id: 'end',
-        buttonID: 'end-button'
-      },
-      calendar: {
-          id: 'calendar-start'
-        }
-    },
-    input_date_dropdown_first_description: {
-        containerMods: '',
-        contentMods: '',
-        description: 'Прибытие'
-      },
-    input_date_dropdown_first: {
-        contClassMods: 'none',
-        inputClassMods: 'datepick-start',
-        type: 'text',
-        placeholder: 'ДД.ММ.ГГГГ',
-        name: 'input_date_dropdown_default',
-        value: '',
-      },
-      input_date_dropdown_second_description: {
-        containerMods: '',
-        contentMods: '',
-        description: 'Выезд'
-      },
-      input_date_dropdown_second: {
-        contClassMods: 'none',
-        inputClassMods: 'datepick-end',
-        type: 'text',
-        placeholder: 'ДД.ММ.ГГГГ',
-        name: 'input_date_dropdown_default',
-        value: '',
-      },
-      input_dropdown_guests: {
-        containerMods: 'input-dropdown-guests_margin-bottom-on-cards-page',
-        properties: [['взрослый', 0], ['дети', 0], ['младенцы', 0]],
-        controlsMods: 'input-dropdown-guests__controls_closed',
-        inputClassMods: 'input-dropdown-guests__input_controls-closed ',
-        type: 'text',
-        placeholder: 'Сколько гостей',
-        name: 'input_dropdown_guests__input',
-        value: '',
-        resetMods: 'input-dropdown-guests__button-reset--hidden'
-      }, 
+      sendTo: 'https://www.mock-adress/full-stack-development.ru',
+      formName: 'search_room',
       button_wide: {
         buttonText: 'подобрать номер',
         type: 'submit'
@@ -116,13 +41,13 @@ include ../utils/mixins.pug
     footerConfiguration: {
       sendTo: 'https://www.mock-adress/full-stack-development.ru',
       formName: 'subscribe',
-      mods: 'footer_pt-lp',
+      mods: '',
       info: [
         'Бронирование номеров в лучшем',
         'отеле 2019 года по версии',
         'ассоциации «‎Отельные взгляды».',
       ],
-      navContMods: 'footer__navcont_min-width-pages',
+      navContMr: true,
       lists: {
         menu1: {
           headline: 'Навигация', 
@@ -159,8 +84,8 @@ include ../utils/mixins.pug
         descript: ['Получайте специальные', 'предложения и новости сервиса']
       },
       subscriptionTextField: {
-        containerMods: 'subscription-text-field_mt',
-        inputClassMods: 'subscription-text-field__input_width-correction',
+        containerMarginTop: 24,
+        inputWidth: 260,
         type: 'Email',
         placeholder: 'Email',
         name: 'subscription_text_field',
