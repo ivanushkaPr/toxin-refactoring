@@ -1,22 +1,16 @@
-<<<<<<< HEAD
 mixin component-headline({marginTop, marginBottom, marginLeft, fontSize, textAlign, maxWidth, containerMods, mods, description})
-=======
-mixin component-headline({marginTop, marginLeft, fontSize, containerMods, mods, description})
->>>>>>> 9405958dc3e9d49e034ebf39d5117be5252b955a
+
   -
     let marginTopMod = '';
     if(marginTop) {
       marginTopMod = `component-headline__container_mt_${marginTop}`;
     }
 
-<<<<<<< HEAD
     let marginBottomMod = '';
     if(marginBottom) {
       marginBottomMod = `component-headline__container_mb_${marginBottom}`;
     }
 
-=======
->>>>>>> 9405958dc3e9d49e034ebf39d5117be5252b955a
     let marginLeftMod = '';
     if(marginLeft) {
       marginLeftMod = `component-headline__container_ml_${marginLeft}`;
@@ -26,7 +20,6 @@ mixin component-headline({marginTop, marginLeft, fontSize, containerMods, mods, 
     if(fontSize) {
       fontSizeMod = `component-headline__text_font-size_${fontSize}`;
     }
-<<<<<<< HEAD
 
     let textAlignMod = '';
     if(textAlign) {
@@ -41,8 +34,4 @@ mixin component-headline({marginTop, marginLeft, fontSize, containerMods, mods, 
   div(class=`component-headline`)
     div(class=`component-headline__container ${marginTopMod} ${marginLeftMod} ${marginBottomMod}`)
       p(class=`component-headline__text ${fontSizeMod} ${textAlignMod} ${maxWidthMod}`) #{description}
-=======
-  div(class=`component-headline`)
-    div(class=`component-headline__container ${marginTopMod} ${marginLeftMod}`)
-      p(class=`component-headline__text ${fontSizeMod}`) #{description}
->>>>>>> 9405958dc3e9d49e034ebf39d5117be5252b955a
+
