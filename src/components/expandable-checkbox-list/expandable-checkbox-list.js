@@ -1,27 +1,35 @@
 $(document).ready(function() {
   class ExpandableCheckBoxList {
-    constructor(buttonClassName) {
+    constructor(obj) {
+
+      const { buttonClassName, listName, mod} = obj;
       this.button = $(buttonClassName);
       this.root = this.button.parent().parent();
+      this.list = $(listName, this.root);
+      this.mod = mod;
       this.init();
     }
 
     init() {
       const that = this;
       that.button.click(function() {
-        that.toggleButtonClass.call(this);
+        that.toggleButtonClass.call(this, that.mod);
         that.toggleCheckboxList();
       });
     }
 
-    toggleButtonClass() {
-      $(this).toggleClass('expandable-checkbox-list__button-open_opened');
+    toggleButtonClass(mod) {
+      $(this).toggleClass(mod);
     }
 
     toggleCheckboxList() {
-      $('.js-expandable-checkbox-list__list', this.root).toggle(300);
+      this.list.toggle(300);
     }
   }
 
-  let expandable = new ExpandableCheckBoxList('.js-expandable-checkbox-list__button-open');
+  let expandable = new ExpandableCheckBoxList({
+    buttonClassName: '.js-expandable-checkbox-list__button-open',
+    listName: '.js-expandable-checkbox-list__list',
+    mod:'expandable-checkbox-list__button-open_opened'
+  });
 });
