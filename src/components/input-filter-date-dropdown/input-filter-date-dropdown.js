@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#input_filter_date_dropdown--calendar').datepicker({
+  $('#input-filter-date-dropdown-calendar').datepicker({
     clearButton: true,
     range: true,
     inline: true,
@@ -12,8 +12,8 @@ $(document).ready(function() {
     },
 
     onSelect: function (fd, d, picker) { 
-      const sibling =  $('#input_filter_date_dropdown--calendar').prev();
-      const input = $('.input_filter_date_dropdown__input', sibling);
+      const sibling =  $('#input-filter-date-dropdown-calendar').prev();
+      const input = $('.input-filter-date-dropdown__input', sibling);
 
       input.val(fd);
     }
@@ -21,22 +21,23 @@ $(document).ready(function() {
 
   console.log('worked')
   
-  $('#input_filter_date_dropdown--calendar').hide();
+  $('#input-filter-date-dropdown-calendar').hide();
 
-  const parent = $('#input_filter_date_dropdown--calendar');
+  const parent = $('#input-filter-date-dropdown-calendar');
   $('.datepicker--buttons', parent).append("<span class='datepicker--pseudo-button'> Применить </span>")
   $('.datepicker--pseudo-button', parent).click(() => {
-    $('#input_filter_date_dropdown--calendar').hide();
+    $('#input-filter-date-dropdown-calendar').hide();
   })
 
-  const sibling =  $('#input_filter_date_dropdown--calendar').prev();
+  const sibling =  $('#input-filter-date-dropdown-calendar').prev();
+  console.log(sibling);
 
-  $('.input_filter_date_dropdown__button' , sibling).click(() => {
-    console.log('sparta')
-    $('#input_filter_date_dropdown--calendar').show();
+  $('.input-filter-date-dropdown__button' , sibling).click(() => {
+    console.log('show')
+    $('#input-filter-date-dropdown-calendar').show();
   })
 
-  $('.input_filter_date_dropdown__input', sibling).keydown(() => {
+  $('.input-filter-date-dropdown__input', sibling).keydown(() => {
     return false
   })
 
